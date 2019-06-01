@@ -221,7 +221,7 @@ public class ControllerTest : MonoBehaviour
 
             if (onConflictZone == false)
             {
-                WorldChangerManager.Instance.PlayerWorldChange(this.gameObject);
+                WorldChangerManagerTest.Instance.PlayerWorldChange(this.gameObject);
                 worldChangeTimer = worldChangeTime;
             }
         }
