@@ -1,0 +1,551 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 114096625987081808}
+  - {fileID: 114493673886639714}
+  EditorEvents:
+  - {fileID: 114252775913592810}
+  - {fileID: 114080270410594080}
+  - {fileID: 114847205456079612}
+  - {fileID: 114994930482081552}
+  - {fileID: 114487901323890758}
+  - {fileID: 114332842787479720}
+  - {fileID: 114654523604623724}
+  - {fileID: 114257421504638222}
+  - {fileID: 114140835870906006}
+  - {fileID: 114101898732452566}
+  - {fileID: 114159322487926834}
+  - {fileID: 114454298534398116}
+  - {fileID: 114276193180642770}
+  - {fileID: 114905971312030084}
+  - {fileID: 114662177937319508}
+  - {fileID: 114786059447644702}
+  - {fileID: 114811119402438906}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 114493673886639714}
+  StringsBanks:
+  - {fileID: 114096625987081808}
+  stringsBankWriteTime: 636948138621849640
+  cacheVersion: 3
+--- !u!114 &114080270410594080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/Portales Enemigos/Portales 2
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente/Portales Enemigos/Portales 2
+  guid: 108ac58b743ce44eb123c8ee592e33e9
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7929
+--- !u!114 &114096625987081808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.strings.bank
+  m_EditorClassIdentifier: 
+  Path: D:\Proyecto HellZebu\InBetweenProto\Assets\SonidosGrupoChico\Entrega_1\Build\Desktop\Master
+    Bank.strings.bank
+  SubDir: 
+  lastModified: 636948138621849640
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1612
+  Exists: 1
+--- !u!114 &114101898732452566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/Lava moviendo/Lava moviendo
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente/Lava moviendo/Lava moviendo
+  guid: 71e6b6f0ce09a444b03277f52cd90205
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10207
+--- !u!114 &114140835870906006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Ambiente/Colisi\xF3n Balas/Balas 1.L"
+  m_EditorClassIdentifier: 
+  Path: "event:/Ambiente/Colisi\xF3n Balas/Balas 1.L"
+  guid: 6c59ac41bc212c4bbac88f72f74754e2
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 752
+--- !u!114 &114159322487926834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/Antorcha/Antorcha3D
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente/Antorcha/Antorcha3D
+  guid: 9c7887af2d38024992d9fb488c63034b
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 8.549999
+  Length: 16451
+--- !u!114 &114252775913592810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/TeleportGun/TeleportGunShot
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/TeleportGun/TeleportGunShot
+  guid: 04ad3b9fcd572c4b95acd0ea71cd7b88
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 436
+--- !u!114 &114257421504638222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Ambiente/Colisi\xF3n Balas/Balas 3.R"
+  m_EditorClassIdentifier: 
+  Path: "event:/Ambiente/Colisi\xF3n Balas/Balas 3.R"
+  guid: 4ff9cbde0c395140b292b6ebc379ccc3
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 631
+--- !u!114 &114276193180642770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Ambiente/Risas diab\xF3licas/Balas diab\xF3licas"
+  m_EditorClassIdentifier: 
+  Path: "event:/Ambiente/Risas diab\xF3licas/Balas diab\xF3licas"
+  guid: cabbf8377fcf1a4292d3718238ab8db6
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2194
+--- !u!114 &114332842787479720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/ChangeWeapon/ChangeWeapon
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/ChangeWeapon/ChangeWeapon
+  guid: 385b79f363661c419fdef376f5244881
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 166
+--- !u!114 &114360267189355720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:\Users\GL552V\Desktop\TRIM 3\Proyecto\HellZebu_Project\InBetweenProto\Assets\GrupoChicos\Entrega_1\Build\Desktop\Master
+    Bank.strings.bank
+  SubDir: 
+  lastModified: 636947628733579576
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114454298534398116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/TeleportGun/TeleportGun Reload
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/TeleportGun/TeleportGun Reload
+  guid: bb92e120cdf2044888b005f5c7ee4d6b
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 415
+--- !u!114 &114487901323890758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/Portales Enemigos/Portales 2 3D
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente/Portales Enemigos/Portales 2 3D
+  guid: 33a6ea3d76f485459110c54aee6464e1
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7929
+--- !u!114 &114493673886639714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: D:\Proyecto HellZebu\InBetweenProto\Assets\SonidosGrupoChico\Entrega_1\Build\Desktop\Master
+    Bank.bank
+  SubDir: 
+  lastModified: 636948138621800048
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 509536
+  Exists: 1
+--- !u!114 &114500784588740598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:\Users\peret\Desktop\El Projecto\hellzebu\InBetweenProto\Assets\GrupoChicos\Entrega_1\Build\Desktop\Master
+    Bank.strings.bank
+  SubDir: 
+  lastModified: 636947761338343098
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114645052520899894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: C:\Users\peret\Desktop\El Projecto\hellzebu\InBetweenProto\Assets\GrupoChicos\Entrega_1\Build\Desktop\Master
+    Bank.bank
+  SubDir: 
+  lastModified: 636947761338328117
+  LoadResult: 13
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114654523604623724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/ShotGun/Shot Gun Shot
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/ShotGun/Shot Gun Shot
+  guid: 416968c0e453db4e8936975acd8ef097
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 860
+--- !u!114 &114662177937319508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/Lava moviendo/Lava moviendo 3d
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente/Lava moviendo/Lava moviendo 3d
+  guid: d040b7495f03e349a9f6acb18e0bf562
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 8.6
+  MaxDistance: 200
+  Length: 10007
+--- !u!114 &114786059447644702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/Overheat/Overheat
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/Overheat/Overheat
+  guid: e8a68e2efdcd614ebd3807beb803345f
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 835
+--- !u!114 &114811119402438906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapons/RifleShot/3Rifle
+  m_EditorClassIdentifier: 
+  Path: event:/Weapons/RifleShot/3Rifle
+  guid: f81359dfbb41d947b0b74e67473a08ad
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 77
+--- !u!114 &114847205456079612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/Portales Enemigos/Portales 1
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente/Portales Enemigos/Portales 1
+  guid: 1968f74b51213a4c9e56e2ca14adc80b
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7221
+--- !u!114 &114905971312030084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Ambiente/Colisi\xF3n Balas/Balas 2.L"
+  m_EditorClassIdentifier: 
+  Path: "event:/Ambiente/Colisi\xF3n Balas/Balas 2.L"
+  guid: cd973801ff40054e922f8a2ae63ccb0e
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 280
+--- !u!114 &114978784853304098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master Bank.bank
+  m_EditorClassIdentifier: 
+  Path: C:\Users\GL552V\Desktop\TRIM 3\Proyecto\HellZebu_Project\InBetweenProto\Assets\GrupoChicos\Entrega_1\Build\Desktop\Master
+    Bank.bank
+  SubDir: 
+  lastModified: 636947628733559819
+  LoadResult: 13
+  FileSizes: []
+  Exists: 1
+--- !u!114 &114994930482081552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiente/Portales Enemigos/Portales 1 3D
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiente/Portales Enemigos/Portales 1 3D
+  guid: 2ac2df97c2551742a238b3558fe61bea
+  Banks:
+  - {fileID: 114493673886639714}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7221

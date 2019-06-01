@@ -1,0 +1,435 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ee4375e5dfede4aaf8d29b8532b766, type: 3}
+  m_Name: HardTotem
+  m_EditorClassIdentifier: 
+  wavesAmount: 8
+  waves:
+  - timeBetweenWaves: 3
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 7
+    enemies:
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+  - timeBetweenWaves: 15
+    spawnTimeBetweenEnemies: 0.2
+    enemiesAmount: 14
+    enemies:
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+  - timeBetweenWaves: 25
+    spawnTimeBetweenEnemies: 0.2
+    enemiesAmount: 15
+    enemies:
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -5, y: 48, z: -110}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: -5, y: 48, z: -110}
+  - timeBetweenWaves: 40
+    spawnTimeBetweenEnemies: 0.2
+    enemiesAmount: 10
+    enemies:
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -27, y: 48, z: -120}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: 54, y: 59, z: -93}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -27, y: 48, z: -120}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -5, y: 48, z: -110}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: 44, y: 48, z: -116}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: 54, y: 59, z: -93}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: -5, y: 48, z: -110}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: 44, y: 48, z: -116}
+    - spawnPointID: 0
+      type: 4
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 1
+      type: 4
+      spawnPosition: {x: 15, y: 48, z: -66}
+  - timeBetweenWaves: 50
+    spawnTimeBetweenEnemies: 0.2
+    enemiesAmount: 20
+    enemies:
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 0
+      type: 4
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 3
+      type: 4
+      spawnPosition: {x: -31, y: 48, z: -66}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 56, y: 48, z: -84}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 56, y: 48, z: -84}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 56, y: 48, z: -84}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 56, y: 48, z: -84}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 56, y: 48, z: -84}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 56, y: 48, z: -84}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 56, y: 48, z: -84}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 56, y: 48, z: -84}
+  - timeBetweenWaves: 60
+    spawnTimeBetweenEnemies: 0.2
+    enemiesAmount: 18
+    enemies:
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: 54, y: 59, z: -93}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -27, y: 48, z: -120}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -27, y: 48, z: -120}
+    - spawnPointID: 1
+      type: 2
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: 44, y: 48, z: -116}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: -27, y: 48, z: -120}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: 54, y: 59, z: -93}
+  - timeBetweenWaves: 70
+    spawnTimeBetweenEnemies: 0.2
+    enemiesAmount: 20
+    enemies:
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 1
+      type: 2
+      spawnPosition: {x: 15, y: 48, z: -66}
+  - timeBetweenWaves: 80
+    spawnTimeBetweenEnemies: 0.2
+    enemiesAmount: 25
+    enemies:
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: -31, y: 48, z: -66}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: -31, y: 48, z: -66}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: -31, y: 48, z: -66}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: -31, y: 48, z: -66}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: -31, y: 48, z: -66}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: -31, y: 48, z: -66}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: -31, y: 48, z: -66}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: -31, y: 48, z: -66}
+    - spawnPointID: 2
+      type: 1
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 2
+      type: 1
+      spawnPosition: {x: -55, y: 50, z: -44}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -27, y: 48, z: -120}
+    - spawnPointID: 3
+      type: 2
+      spawnPosition: {x: -31, y: 48, z: -66}
+    - spawnPointID: 3
+      type: 2
+      spawnPosition: {x: -31, y: 48, z: -66}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: 44, y: 48, z: -116}
+    - spawnPointID: 0
+      type: 4
+      spawnPosition: {x: -63, y: 48, z: -98}
+    - spawnPointID: 1
+      type: 4
+      spawnPosition: {x: 15, y: 48, z: -66}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -55, y: 50, z: -44}

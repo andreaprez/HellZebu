@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ee4375e5dfede4aaf8d29b8532b766, type: 3}
+  m_Name: testproto
+  m_EditorClassIdentifier: 
+  wavesAmount: 5
+  waves:
+  - timeBetweenWaves: 3
+    spawnTimeBetweenEnemies: 0.2
+    enemiesAmount: 7
+    enemies:
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}
+  - timeBetweenWaves: 15
+    spawnTimeBetweenEnemies: 0.2
+    enemiesAmount: 14
+    enemies:
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 18, y: 48, z: -65}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 18, y: 48, z: -65}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 18, y: 48, z: -65}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 18, y: 48, z: -65}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 18, y: 48, z: -65}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 18, y: 48, z: -65}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: 18, y: 48, z: -65}
+  - timeBetweenWaves: 20
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 1
+    enemies:
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: 15.699997, y: 48, z: -79.47}
+  - timeBetweenWaves: 5
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 2
+    enemies:
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: 15.699997, y: 48, z: -79.47}
+  - timeBetweenWaves: 1
+    spawnTimeBetweenEnemies: 1
+    enemiesAmount: 3
+    enemies:
+    - spawnPointID: 1
+      type: 4
+      spawnPosition: {x: 18, y: 48, z: -65}
+    - spawnPointID: 0
+      type: 4
+      spawnPosition: {x: -26.300003, y: 48, z: -100.47}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -64.3, y: 48, z: -80.47}

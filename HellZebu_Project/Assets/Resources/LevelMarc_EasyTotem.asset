@@ -1,0 +1,576 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ee4375e5dfede4aaf8d29b8532b766, type: 3}
+  m_Name: LevelMarc_EasyTotem
+  m_EditorClassIdentifier: 
+  wavesAmount: 11
+  waves:
+  - timeBetweenWaves: 3
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 10
+    enemies:
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: 6.4599953, y: 43.31771, z: -43.23001}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: 6.4599953, y: 43.31771, z: -43.23001}
+  - timeBetweenWaves: 20
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 12
+    enemies:
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 5
+      type: 0
+      spawnPosition: {x: 35.479996, y: 45.937714, z: -94.44001}
+    - spawnPointID: 5
+      type: 0
+      spawnPosition: {x: 35.479996, y: 45.937714, z: -94.44001}
+    - spawnPointID: 5
+      type: 0
+      spawnPosition: {x: 35.479996, y: 45.937714, z: -94.44001}
+    - spawnPointID: 5
+      type: 0
+      spawnPosition: {x: 35.479996, y: 45.937714, z: -94.44001}
+    - spawnPointID: 5
+      type: 0
+      spawnPosition: {x: 35.479996, y: 45.937714, z: -94.44001}
+    - spawnPointID: 5
+      type: 2
+      spawnPosition: {x: 35.479996, y: 45.937714, z: -94.44001}
+  - timeBetweenWaves: 30
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 12
+    enemies:
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: 9.159996, y: 48.967712, z: -110.07001}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -7.340003, y: 47.99771, z: -115.23001}
+    - spawnPointID: 5
+      type: 4
+      spawnPosition: {x: 35.479996, y: 45.937714, z: -94.44001}
+  - timeBetweenWaves: 35
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 11
+    enemies:
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 6
+      type: 5
+      spawnPosition: {x: 67.869995, y: 36.077713, z: -40.97001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+  - timeBetweenWaves: 30
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 17
+    enemies:
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 2
+      type: 2
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+  - timeBetweenWaves: 40
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 17
+    enemies:
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 2
+      type: 4
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 6
+      type: 4
+      spawnPosition: {x: 67.869995, y: 36.077713, z: -40.97001}
+  - timeBetweenWaves: 40
+    spawnTimeBetweenEnemies: 0.2
+    enemiesAmount: 18
+    enemies:
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 1
+      type: 1
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 3
+      type: 2
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 5
+      type: 4
+      spawnPosition: {x: 35.479996, y: 45.937714, z: -94.44001}
+  - timeBetweenWaves: 30
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 14
+    enemies:
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+  - timeBetweenWaves: 35
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 13
+    enemies:
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 5
+      type: 0
+      spawnPosition: {x: 35.479996, y: 45.937714, z: -94.44001}
+    - spawnPointID: 5
+      type: 0
+      spawnPosition: {x: 35.479996, y: 45.937714, z: -94.44001}
+    - spawnPointID: 5
+      type: 0
+      spawnPosition: {x: 35.479996, y: 45.937714, z: -94.44001}
+    - spawnPointID: 5
+      type: 0
+      spawnPosition: {x: 35.479996, y: 45.937714, z: -94.44001}
+    - spawnPointID: 5
+      type: 0
+      spawnPosition: {x: 35.479996, y: 45.937714, z: -94.44001}
+    - spawnPointID: 5
+      type: 2
+      spawnPosition: {x: 35.479996, y: 45.937714, z: -94.44001}
+    - spawnPointID: 6
+      type: 5
+      spawnPosition: {x: 67.869995, y: 36.077713, z: -40.97001}
+  - timeBetweenWaves: 60
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 24
+    enemies:
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 2
+      type: 1
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 3
+      type: 0
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 2
+      type: 4
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 3
+      type: 2
+      spawnPosition: {x: 45.77999, y: 46.377712, z: -81.09001}
+    - spawnPointID: 6
+      type: 4
+      spawnPosition: {x: 67.869995, y: 36.077713, z: -40.97001}
+  - timeBetweenWaves: 70
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 24
+    enemies:
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -5.790004, y: 43.277714, z: -74.55}
+    - spawnPointID: 4
+      type: 1
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 50.319992, y: 36.667713, z: -95.770004}
+    - spawnPointID: 2
+      type: 1
+      spawnPosition: {x: -60.480003, y: 34.627712, z: -69.490005}
+    - spawnPointID: 1
+      type: 2
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 1
+      type: 0
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}
+    - spawnPointID: 1
+      type: 2
+      spawnPosition: {x: -52.300003, y: 53.99771, z: -67.33001}

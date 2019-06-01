@@ -1,0 +1,202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5ee4375e5dfede4aaf8d29b8532b766, type: 3}
+  m_Name: Level1_Easy
+  m_EditorClassIdentifier: 
+  wavesAmount: 15
+  waves:
+  - timeBetweenWaves: 10
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 5
+    enemies:
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 16.259996, y: 45.93771, z: -92.8078}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 16.259996, y: 45.93771, z: -92.8078}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 16.259996, y: 45.93771, z: -92.8078}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 16.259996, y: 45.93771, z: -92.8078}
+    - spawnPointID: 4
+      type: 0
+      spawnPosition: {x: 16.259996, y: 45.93771, z: -92.8078}
+  - timeBetweenWaves: 2
+    spawnTimeBetweenEnemies: 0
+    enemiesAmount: 2
+    enemies:
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -9.280004, y: 49.00771, z: -51.927803}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: -9.280004, y: 49.00771, z: -51.927803}
+  - timeBetweenWaves: 30
+    spawnTimeBetweenEnemies: 0
+    enemiesAmount: 10
+    enemies:
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -46.820004, y: 44.81771, z: -76.0178}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -46.820004, y: 44.81771, z: -76.0178}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -46.820004, y: 44.81771, z: -76.0178}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -46.820004, y: 44.81771, z: -76.0178}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -46.820004, y: 44.81771, z: -76.0178}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: 30.76, y: 45.077713, z: -115.62779}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: 30.76, y: 45.077713, z: -115.62779}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: 30.76, y: 45.077713, z: -115.62779}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: 30.76, y: 45.077713, z: -115.62779}
+    - spawnPointID: 2
+      type: 0
+      spawnPosition: {x: 30.76, y: 45.077713, z: -115.62779}
+  - timeBetweenWaves: 20
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 4
+    enemies:
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: 9.249996, y: 41.55771, z: -93.1478}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: 9.249996, y: 41.55771, z: -93.1478}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: -8.980003, y: 49.35771, z: -135.3578}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: -8.980003, y: 49.35771, z: -135.3578}
+  - timeBetweenWaves: 30
+    spawnTimeBetweenEnemies: 5
+    enemiesAmount: 4
+    enemies:
+    - spawnPointID: 0
+      type: 4
+      spawnPosition: {x: -46.820004, y: 44.81771, z: -76.0178}
+    - spawnPointID: 1
+      type: 4
+      spawnPosition: {x: -16.160004, y: 49.22771, z: -137.68779}
+    - spawnPointID: 2
+      type: 4
+      spawnPosition: {x: 30.76, y: 45.077713, z: -115.62779}
+    - spawnPointID: 3
+      type: 4
+      spawnPosition: {x: 0.3299966, y: 49.47771, z: -49.4078}
+  - timeBetweenWaves: 30
+    spawnTimeBetweenEnemies: 0.1
+    enemiesAmount: 10
+    enemies:
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -25.780003, y: 41.41771, z: -93.2178}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -8.980003, y: 49.35771, z: -135.3578}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -9.280004, y: 49.00771, z: -51.927803}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -25.780003, y: 41.41771, z: -93.2178}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: 9.249996, y: 41.55771, z: -93.1478}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -25.780003, y: 41.41771, z: -93.2178}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -25.780003, y: 41.41771, z: -93.2178}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -25.780003, y: 41.41771, z: -93.2178}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -9.280004, y: 49.00771, z: -51.927803}
+    - spawnPointID: 0
+      type: 0
+      spawnPosition: {x: -25.780003, y: 41.41771, z: -93.2178}
+  - timeBetweenWaves: 20
+    spawnTimeBetweenEnemies: 5
+    enemiesAmount: 6
+    enemies:
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -25.780003, y: 41.41771, z: -93.2178}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: 9.249996, y: 41.55771, z: -93.1478}
+    - spawnPointID: 0
+      type: 1
+      spawnPosition: {x: -25.780003, y: 41.41771, z: -93.2178}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: -9.280004, y: 49.00771, z: -51.927803}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: -9.280004, y: 49.00771, z: -51.927803}
+    - spawnPointID: 0
+      type: 2
+      spawnPosition: {x: 9.249996, y: 41.55771, z: -93.1478}
+  - timeBetweenWaves: 1
+    spawnTimeBetweenEnemies: 0
+    enemiesAmount: 1
+    enemies:
+    - spawnPointID: 6
+      type: 5
+      spawnPosition: {x: -7.7400036, y: 55.41771, z: -92.3378}
+  - timeBetweenWaves: 0
+    spawnTimeBetweenEnemies: 0
+    enemiesAmount: 0
+    enemies: []
+  - timeBetweenWaves: 0
+    spawnTimeBetweenEnemies: 0
+    enemiesAmount: 0
+    enemies: []
+  - timeBetweenWaves: 0
+    spawnTimeBetweenEnemies: 0
+    enemiesAmount: 0
+    enemies: []
+  - timeBetweenWaves: 0
+    spawnTimeBetweenEnemies: 0
+    enemiesAmount: 0
+    enemies: []
+  - timeBetweenWaves: 0
+    spawnTimeBetweenEnemies: 0
+    enemiesAmount: 0
+    enemies: []
+  - timeBetweenWaves: 0
+    spawnTimeBetweenEnemies: 0
+    enemiesAmount: 0
+    enemies: []
+  - timeBetweenWaves: 0
+    spawnTimeBetweenEnemies: 0
+    enemiesAmount: 0
+    enemies: []
