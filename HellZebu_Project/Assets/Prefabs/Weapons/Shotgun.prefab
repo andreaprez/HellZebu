@@ -56,7 +56,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5759409008751114446
 RectTransform:
   m_ObjectHideFlags: 0
@@ -820,8 +820,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5691480802723718524}
   - component: {fileID: 5691480802723718525}
-  - component: {fileID: 3191594506460277214}
-  - component: {fileID: 8299845956691669717}
   - component: {fileID: 2528620828431249731}
   - component: {fileID: 6082696653424123035}
   m_Layer: 0
@@ -860,31 +858,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5691480802723718515}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &3191594506460277214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5691480802723718515}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f05b19732c527644b542af7fdd0e287, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &8299845956691669717
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5691480802723718515}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.4, z: 3}
-  m_Center: {x: 0, y: 0, z: 0.2}
 --- !u!114 &2528620828431249731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -892,7 +865,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5691480802723718515}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1ed7a3c9fa0f074b822747c5f45cfd0, type: 3}
   m_Name: 
@@ -915,12 +888,14 @@ MonoBehaviour:
     type: 3}
   fireMaterial: {fileID: 2100000, guid: 6680414ef2045214aaad52941a484cec, type: 2}
   currentOverheatValueFire: 0
-  muzzlePrefFireRifle: {fileID: 0}
+  muzzlePrefFireRifle: {fileID: 2454040419565562408, guid: a1d307c1aab42f94eb8a741536f01ddc,
+    type: 3}
   muzzlePrefFireShot: {fileID: 2454040419565562408, guid: a1d307c1aab42f94eb8a741536f01ddc,
     type: 3}
   iceAmmo: {fileID: 857074888630527538, guid: bd41948e0d3dc084eabf3774cb1bea98, type: 3}
   iceMaterial: {fileID: 2100000, guid: 6680414ef2045214aaad52941a484cec, type: 2}
-  muzzlePrefIceRifle: {fileID: 0}
+  muzzlePrefIceRifle: {fileID: 2454040419565562408, guid: ba08d567173aa604cb18fe407394ae07,
+    type: 3}
   muzzlePrefIceShot: {fileID: 2454040419565562408, guid: ba08d567173aa604cb18fe407394ae07,
     type: 3}
   currentOverheatValueIce: 0
@@ -1317,14 +1292,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4361255463869489859}
     m_Modifications:
-    - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6680414ef2045214aaad52941a484cec, type: 2}
     - target: {fileID: 100000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
       propertyPath: m_Name
       value: escopetaLOW
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6680414ef2045214aaad52941a484cec, type: 2}
     - target: {fileID: 400000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.007
@@ -1371,15 +1346,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
---- !u!4 &2067014002 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 6a401a0461eacb746acb2363dd190cf7,
-    type: 3}
-  m_PrefabInstance: {fileID: 2066889714}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &2064720786 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2066889714}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2067014002 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 6a401a0461eacb746acb2363dd190cf7,
     type: 3}
   m_PrefabInstance: {fileID: 2066889714}
   m_PrefabAsset: {fileID: 0}
