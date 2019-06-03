@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lights: {fileID: 1200820334}
+  particles: {fileID: 4146654855733861714}
 --- !u!1 &1200820334
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +238,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 695571504}
     m_Modifications:
+    - target: {fileID: 2773984525126209324, guid: a2cf5d97e53e84d4fa4f18df7d491728,
+        type: 3}
+      propertyPath: m_Name
+      value: TorchEffectRed
+      objectReference: {fileID: 0}
     - target: {fileID: 413319154762796319, guid: a2cf5d97e53e84d4fa4f18df7d491728,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -306,11 +312,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 6.8520246
-      objectReference: {fileID: 0}
-    - target: {fileID: 2773984525126209324, guid: a2cf5d97e53e84d4fa4f18df7d491728,
-        type: 3}
-      propertyPath: m_Name
-      value: TorchEffectRed
       objectReference: {fileID: 0}
     - target: {fileID: 7676930759549541533, guid: a2cf5d97e53e84d4fa4f18df7d491728,
         type: 3}

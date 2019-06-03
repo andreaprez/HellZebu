@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lights: {fileID: 1200820334}
+  particles: {fileID: 6230252808465069890}
 --- !u!1 &1200820334
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,6 +307,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 152ef7aa0ca840e46ae1fd13e2fc9ee6, type: 3}
+--- !u!1 &6230252808465069890 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2773984525126209324, guid: 152ef7aa0ca840e46ae1fd13e2fc9ee6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8073091361574008942}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8481692367372744049 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 413319154762796319, guid: 152ef7aa0ca840e46ae1fd13e2fc9ee6,
