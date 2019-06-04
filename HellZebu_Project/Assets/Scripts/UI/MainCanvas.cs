@@ -36,6 +36,10 @@ public class MainCanvas : MonoBehaviour
     [HideInInspector]
     public float maxWChangeCD;
 
+    [Header("Splashes")]
+    public Animation splashHeal;
+    public Animation splashDamage;
+    public Animation splashChangeWorld;
     [Header("WChange Accesory")]
     public int maxBullets;
     public int currentBullets;
@@ -472,6 +476,21 @@ public class MainCanvas : MonoBehaviour
     {
         hitmarker.Rewind();
         hitmarker.Play();
+    }
+    public void SplashHeal()
+    {
+        splashHeal.Rewind();
+        splashHeal.Play();
+    }
+    public void SplashDamage()
+    {
+        splashDamage.Rewind();
+        splashDamage.Play();
+    }
+    public void SplashChangeWorld()
+    {
+        splashChangeWorld.Rewind();
+        splashChangeWorld.Play();
     }
 
 }

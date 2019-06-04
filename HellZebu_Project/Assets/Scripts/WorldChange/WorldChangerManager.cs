@@ -83,8 +83,7 @@ public class WorldChangerManager : MonoBehaviour,DataInterface
 
         CollisionFilterAndCullingMaskWorldPlayerChange();
         worldChangeEvent();
-
-
+        MainCanvas.Instance.SplashChangeWorld();
     }
     
     public void CollisionFilterAndCullingMaskWorldPlayerChange()

@@ -451,6 +451,7 @@ public class Controller : MonoBehaviour, DataInterface
     {
         if (vulnerable || respawning)
         {
+            MainCanvas.Instance.SplashDamage();
             currentHealth--;
             vulnerable = false;
             StartCoroutine("InvulnerabilityTimer");

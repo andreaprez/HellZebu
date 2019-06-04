@@ -13,6 +13,7 @@ public class LifePickUp : MonoBehaviour
                 if (other.GetComponent<Controller>().currentHealth < MainCanvas.Instance.UILifes.Length)
                 {
                     other.GetComponent<Controller>().currentHealth++;
+                    MainCanvas.Instance.SplashHeal();
                     Destroy(this.gameObject);
                 }
             }
