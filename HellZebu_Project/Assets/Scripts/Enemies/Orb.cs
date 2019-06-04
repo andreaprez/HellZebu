@@ -245,7 +245,7 @@ public class Orb : Enemy
     }
 
     void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Player")) {
+        if (other.gameObject.CompareTag("Player") && EnemyGlobalBlackboard.playerController.Vulnerable) {
             DamagePlayer(other.GetComponent<Controller>());
             if (currentState == State.CHASE) ChangeState(State.DIE);
         }

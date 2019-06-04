@@ -113,9 +113,7 @@ public class SpawnManager : MonoBehaviour
                     StartCoroutine(SpawnWave(currentWave));
                     foreach(Vector3 vec in spawnPoints[currentWave])
                     {
-
                         Instantiate(particle, vec, Quaternion.identity);
-                        print("SpawnParticle");
                     }
                     currentWave++;
                     if (currentWave < maxWaves)
