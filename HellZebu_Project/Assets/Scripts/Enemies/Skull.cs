@@ -317,7 +317,10 @@ public class Skull : Enemy
         FMODUnity.RuntimeManager.PlayOneShot(BulletCollision, transform.position);
 
         if (type == WorldType.ICE && currentWorld == EWorld.FIRE ||
-            type == WorldType.FIRE && currentWorld == EWorld.ICE) 
+            type == WorldType.FIRE && currentWorld == EWorld.ICE)
+        {
             healthPoints--;
+            MainCanvas.Instance.ShowHitmarker();
+        }
     }
 }
