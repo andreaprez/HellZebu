@@ -211,7 +211,7 @@ public class Skull : Enemy
         shootingTimePassed = 0f;
         EnemyProjectile p = Instantiate(projectile, transform.position, transform.rotation);
         p.Speed = projectilesSpeed;
-        p.Direction = transform.forward;
+        p.Direction = (player.transform.position - transform.position).normalized;
         p.CurrentWorld = currentWorld == EWorld.FIRE ? EnemyProjectile.EWorld.FIRE : EnemyProjectile.EWorld.ICE;
     }
 
@@ -262,7 +262,6 @@ public class Skull : Enemy
                 SetPatrol(EnemyGlobalBlackboard.lastPlayerKnownPosition);
                 break;
             case  State.CHASE:
-               
                 SetChase(player.transform.position);
                 navMeshAgent.speed = chasingSpeed;
                 timePassed = 0f;
@@ -307,7 +306,7 @@ public class Skull : Enemy
     }
     
     void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Player")) {
+        if (other.gameObject.CompareTag("Player") && EnemyGlobalBlackboard.playerController.Vulnerable) {
             DamagePlayer(other.GetComponent<Controller>());
             if (currentState == State.CHARGE) ChangeState(State.DIE);
         }
