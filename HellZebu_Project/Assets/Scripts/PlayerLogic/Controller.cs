@@ -61,18 +61,18 @@ public class Controller : MonoBehaviour, DataInterface
     private Transform respawnPoint;
     private bool respawning;
 
-
-    #endregion
-
-    #region TEMP DATA
-    [Header("Health (temp)")]
+    [Header("Health")]
     public int currentHealth = 5;
+    [SerializeField] private float invulnerabilityTime = 3f; 
+    private float invulnerabilityTimer;
+    private bool vulnerable = true;
+
+    public bool Vulnerable { get { return vulnerable; } }
+
     #endregion
 
-    //Cheats
-    public bool Invencible;
-    //Recoil
 
+    //Recoil
     public float lerpRecoil;
     public bool pauseOn;
 
@@ -449,10 +449,23 @@ public class Controller : MonoBehaviour, DataInterface
 
     void TakeDamage()
     {
-        if (Invencible == false)
+        if (vulnerable || respawning)
         {
             currentHealth--;
+            vulnerable = false;
+            StartCoroutine("InvulnerabilityTimer");
         }
+    }
+
+    public IEnumerator InvulnerabilityTimer()
+    {
+        while (invulnerabilityTimer <= invulnerabilityTime)
+        {
+            invulnerabilityTimer += Time.deltaTime;
+            yield return null;
+        }
+        invulnerabilityTimer = 0f;
+        vulnerable = true;
     }
 
     private void OnTriggerEnter(Collider other)

@@ -236,7 +236,7 @@ public class Orb : Enemy
                 break;
             case  State.DIE:
                // FMODUnity.RuntimeManager.PlayOneShot(BulletCollision, transform.position);
-                Instantiate(deathParticles, transform.position, Quaternion.identity);
+                Instantiate(deathParticles, transform.position, Quaternion.identity, transform.parent);
                 SetDie(true);
                 break;
         }
@@ -245,7 +245,7 @@ public class Orb : Enemy
     }
 
     void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Player")) {
+        if (other.gameObject.CompareTag("Player") && EnemyGlobalBlackboard.playerController.Vulnerable) {
             DamagePlayer(other.GetComponent<Controller>());
             if (currentState == State.CHASE) ChangeState(State.DIE);
         }
@@ -254,6 +254,7 @@ public class Orb : Enemy
     public void Damage() {
         base.TakeDamage();
         healthPoints--;
+        MainCanvas.Instance.ShowHitmarker();
     }
    
 }
