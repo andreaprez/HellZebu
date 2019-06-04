@@ -38,6 +38,7 @@ public class MainCanvas : MonoBehaviour
 
     [Header("Splashes")]
     public Animation splashHeal;
+    public ParticleSystem healParticle;
     public Animation splashDamage;
     public Animation splashChangeWorld;
     [Header("WChange Accesory")]

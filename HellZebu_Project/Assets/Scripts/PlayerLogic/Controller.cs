@@ -66,6 +66,7 @@ public class Controller : MonoBehaviour, DataInterface
     [SerializeField] private float invulnerabilityTime = 3f; 
     private float invulnerabilityTimer;
     private bool vulnerable = true;
+    [SerializeField] private ParticleSystem healParticle;
 
     public bool Vulnerable { get { return vulnerable; } }
 
@@ -456,6 +457,13 @@ public class Controller : MonoBehaviour, DataInterface
             vulnerable = false;
             StartCoroutine("InvulnerabilityTimer");
         }
+    }
+
+    public void Heal()
+    {
+        currentHealth++;
+        MainCanvas.Instance.SplashHeal();
+        healParticle.Play();
     }
 
     public IEnumerator InvulnerabilityTimer()
