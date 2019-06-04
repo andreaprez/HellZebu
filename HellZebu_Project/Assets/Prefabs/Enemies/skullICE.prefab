@@ -55,9 +55,9 @@ MonoBehaviour:
   playerNearbyRadius: 6
   destinationReachedRadius: 1
   light: {fileID: 8447189321472404293}
-  BulletCollision: "event:/Ambiente/Colisi\xF3n Balas/Balas 2.L"
-  Idle: event:/Ambiente/Portales Enemigos/Portales 2 3D
-  Attack: event:/Weapons/TeleportGun/TeleportGunHit
+  BulletCollision: event:/Enemies/Enemies_Skull_Bullet_Hit
+  Idle: event:/Enemies/Enemies_Skull_move 2
+  Attack: event:/Enemies/Enemies_Skull_shoot
   type: 0
   normalSpeed: 6
   chasingSpeed: 10
@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Ambiente/Portales Enemigos/Portales 2 3D
+  Event: event:/Enemies/Enemies_Skull_move 1
   PlayEvent: 1
   StopEvent: 2
   AllowFadeout: 1
