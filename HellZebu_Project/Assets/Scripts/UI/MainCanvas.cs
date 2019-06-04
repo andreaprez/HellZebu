@@ -18,6 +18,8 @@ public class MainCanvas : MonoBehaviour
     public GameObject configPanel;
     public GameObject bindingPanel;
     public bool menuOpened;
+    [Header("Hitmarker")]
+    public Animation hitmarker;
     [Header("Spread")]
     public RectTransform spreadCrossFire;
     [Header("Player life")]
@@ -464,6 +466,12 @@ public class MainCanvas : MonoBehaviour
 
         }
 
+    }
+
+    public void ShowHitmarker()
+    {
+        hitmarker.Rewind();
+        hitmarker.Play();
     }
 
 }

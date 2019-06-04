@@ -177,5 +177,6 @@ public class Turret : Enemy
     public void Damage() {
         base.TakeDamage();
         healthPoints--;
+        MainCanvas.Instance.ShowHitmarker();
     }
 }
