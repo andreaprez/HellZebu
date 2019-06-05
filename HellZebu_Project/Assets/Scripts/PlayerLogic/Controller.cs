@@ -41,6 +41,8 @@ public class Controller : MonoBehaviour, DataInterface
     private float dashCurrentSpeed;
     private float verticalSpeed;
     private bool onGround;
+    private bool movementLocked;
+    
     [Header("World Change")]
     [HideInInspector] public bool onConflictZone;
 
@@ -60,12 +62,14 @@ public class Controller : MonoBehaviour, DataInterface
     //Da error al cargar escena porque ese transform se desvincula del controller al destruirse, lo hardcodeo de momento y ya veremos como lo hacemos
     private Transform respawnPoint;
     private bool respawning;
+    [SerializeField] private CameraShake cameraShake;
 
     [Header("Health")]
     public int currentHealth = 5;
     [SerializeField] private float invulnerabilityTime = 3f; 
     private float invulnerabilityTimer;
     private bool vulnerable = true;
+    [SerializeField] private ParticleSystem healParticle;
 
     public bool Vulnerable { get { return vulnerable; } }
 
@@ -169,22 +173,26 @@ public class Controller : MonoBehaviour, DataInterface
         {
             MainCanvas.Instance.playerLife = currentHealth;
 
-            // !!!!!!!!!!!!! TEMP HEALTH MANAGEMENT
-            if (currentHealth <= 0)
+            if (!movementLocked)
             {
-                Restart();
-            }
+                ChangeActiveWeapon();
+                Rotate();
+                Move();
 
-            ChangeActiveWeapon();
-            Rotate();
-            Move();
 
-            if (worldChangeTimer > 0) { worldChangeTimer -= Time.deltaTime; }
-            if (worldChangeTimer <= 0)
-            {
-                CheckWorldChange();
+                if (worldChangeTimer > 0)
+                {
+                    worldChangeTimer -= Time.deltaTime;
+                }
+
+                if (worldChangeTimer <= 0)
+                {
+                    CheckWorldChange();
+                }
+
+                MainCanvas.Instance.wChangeCD = worldChangeTimer;
+
             }
-            MainCanvas.Instance.wChangeCD = worldChangeTimer;
         }
     }
 
@@ -424,11 +432,9 @@ public class Controller : MonoBehaviour, DataInterface
         pauseOn = false;
     }
 
-    void Restart()
-    {
-        currentHealth = 5;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        
+    void Restart() {
+        StartCoroutine(cameraShake.Shake(0.2f, 0.4f));
+        StartCoroutine(RestartGame(0.21f));
     }
 
     private void LateUpdate()
@@ -451,12 +457,37 @@ public class Controller : MonoBehaviour, DataInterface
     {
         if (vulnerable || respawning)
         {
+            MainCanvas.Instance.SplashDamage();
             currentHealth--;
-            vulnerable = false;
-            StartCoroutine("InvulnerabilityTimer");
+            if (!CheckHealth()) {
+                vulnerable = false;
+                StartCoroutine("InvulnerabilityTimer");
+            }
         }
     }
 
+    bool CheckHealth() {
+        if (currentHealth <= 0) {
+            movementLocked = true;
+            Restart();
+            return true;
+        }
+        return false;
+    }
+    
+    public void Heal()
+    {
+        currentHealth++;
+        MainCanvas.Instance.SplashHeal();
+        healParticle.Play();
+    }
+
+    public IEnumerator RestartGame(float _time) {
+        yield return new WaitForSeconds(_time);
+        movementLocked = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    
     public IEnumerator InvulnerabilityTimer()
     {
         while (invulnerabilityTimer <= invulnerabilityTime)
@@ -472,7 +503,8 @@ public class Controller : MonoBehaviour, DataInterface
     {
         if (!respawning && other.gameObject.CompareTag("DeathZone") && other.gameObject.layer == LayerMask.NameToLayer("Default"))
         {
-            respawning = true;
+            if (currentHealth > 1)
+                respawning = true;
             TakeDamage();
         }
     }

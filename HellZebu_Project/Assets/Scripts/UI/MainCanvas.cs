@@ -36,6 +36,11 @@ public class MainCanvas : MonoBehaviour
     [HideInInspector]
     public float maxWChangeCD;
 
+    [Header("Splashes")]
+    public Animation splashHeal;
+    public ParticleSystem healParticle;
+    public Animation splashDamage;
+    public Animation splashChangeWorld;
     [Header("WChange Accesory")]
     public int maxBullets;
     public int currentBullets;
@@ -54,6 +59,11 @@ public class MainCanvas : MonoBehaviour
     bool waitingForKey;
     string keyName;
     bool waitOut;
+
+    [Header("Scenes")]
+    public string sceneToLoad;
+    [SerializeField] private Animator fadeAnimator;
+
 
     //Score
 
@@ -472,6 +482,29 @@ public class MainCanvas : MonoBehaviour
     {
         hitmarker.Rewind();
         hitmarker.Play();
+    }
+    public void SplashHeal()
+    {
+        splashHeal.Rewind();
+        splashHeal.Play();
+    }
+    public void SplashDamage()
+    {
+        splashDamage.Rewind();
+        splashDamage.Play();
+    }
+    public void SplashChangeWorld()
+    {
+        splashChangeWorld.Rewind();
+        splashChangeWorld.Play();
+    }
+
+    public void FadeOut() {
+        fadeAnimator.SetTrigger("FadeOut");
+    }
+    
+    public void LoadScene() {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneToLoad);
     }
 
 }
