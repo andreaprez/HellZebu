@@ -55,8 +55,8 @@ MonoBehaviour:
   playerNearbyRadius: 6
   destinationReachedRadius: 1
   light: {fileID: 8613292069196831180}
-  BulletCollision: "event:/Ambiente/Colisi\xF3n Balas/Balas 1.L"
-  Idle: event:/Ambiente/Portales Enemigos/Portales 1 3D
+  BulletCollision: event:/Enemies/Enemies_Orb_die
+  Idle: event:/Enemies/Enemies_Skull_Bullet_Hit
   Attack: 
   normalSpeed: 10
   chasingSpeed: 25
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Ambiente/Portales Enemigos/Portales 1 3D
+  Event: event:/Portales Enemigos/Portales 1 3D
   PlayEvent: 1
   StopEvent: 2
   AllowFadeout: 1
@@ -160,16 +160,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: "event:/Ambiente/Colisi\xF3n Balas/Balas 1.L"
+  Event: "event:/Colisi\xF3n Balas/Balas 1.L"
   PlayEvent: 2
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 35
 --- !u!1 &8613292069196831180
 GameObject:
   m_ObjectHideFlags: 0
