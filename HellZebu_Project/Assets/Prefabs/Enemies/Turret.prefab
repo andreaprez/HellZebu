@@ -472,16 +472,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Weapons/TeleportGun/TeleportGunShot
+  Event: event:/Enemies/Enemies_Turret_shoot 1
   PlayEvent: 1
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 10
-  OverrideMaxDistance: 30
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8919990375406468662
 GameObject:
   m_ObjectHideFlags: 0

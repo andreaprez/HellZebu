@@ -115,6 +115,11 @@
 			<destination>{22ff4816-a5e9-4cf0-90c0-aa07447bb035}</destination>
 			<destination>{ed18fe8e-b851-4d1b-9a86-f1f4f07231ec}</destination>
 			<destination>{249b3d60-1740-4256-a2cc-d2dbc47cc04d}</destination>
+			<destination>{59ac1650-f04f-4bba-b7ea-ac6c6c1a0eee}</destination>
+			<destination>{e63799e0-8598-420d-ae18-c2645db7ced4}</destination>
+			<destination>{479e4aa9-022d-4720-9c37-1c07d3af4d92}</destination>
+			<destination>{7166b5b9-8315-4c7b-bb88-c284ff08de52}</destination>
+			<destination>{717887b6-e4aa-48c4-a482-45c18ff091c9}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{73979811-8622-4732-9db9-5907e1d99c72}" />
@@ -132,5 +137,66 @@
 	</object>
 	<object class="LimiterEffect" id="{ed18fe8e-b851-4d1b-9a86-f1f4f07231ec}" />
 	<object class="MixerBusFader" id="{249b3d60-1740-4256-a2cc-d2dbc47cc04d}" />
+	<object class="ThreeEQEffect" id="{59ac1650-f04f-4bba-b7ea-ac6c6c1a0eee}">
+		<property name="lowGain">
+			<value>10</value>
+		</property>
+		<property name="midGain">
+			<value>-7</value>
+		</property>
+		<property name="highGain">
+			<value>-15.5</value>
+		</property>
+		<property name="lowCrossover">
+			<value>660</value>
+		</property>
+		<property name="highCrossover">
+			<value>2500</value>
+		</property>
+	</object>
+	<object class="PitchShifterEffect" id="{e63799e0-8598-420d-ae18-c2645db7ced4}">
+		<property name="pitch">
+			<value>0.690000057</value>
+		</property>
+		<property name="fftSize">
+			<value>1820</value>
+		</property>
+		<property name="overlap">
+			<value>15.6000004</value>
+		</property>
+		<property name="maxChannels">
+			<value>2.49999976</value>
+		</property>
+	</object>
+	<object class="DistortionEffect" id="{479e4aa9-022d-4720-9c37-1c07d3af4d92}">
+		<property name="level">
+			<value>0.195000008</value>
+		</property>
+	</object>
+	<object class="FlangerEffect" id="{7166b5b9-8315-4c7b-bb88-c284ff08de52}">
+		<property name="rate">
+			<value>1.19999993</value>
+		</property>
+		<property name="mix">
+			<value>100</value>
+		</property>
+	</object>
+	<object class="CompressorEffect" id="{717887b6-e4aa-48c4-a482-45c18ff091c9}">
+		<property name="threshold">
+			<value>-11</value>
+		</property>
+		<property name="ratio">
+			<value>3.79999971</value>
+		</property>
+		<property name="attackTime">
+			<value>58</value>
+		</property>
+		<property name="releaseTime">
+			<value>82</value>
+		</property>
+		<property name="gain">
+			<value>4</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{6758bbdf-1cb2-49ce-982f-e6e06da78cb9}" />
 </objects>

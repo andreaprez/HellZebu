@@ -12,7 +12,7 @@ public class LifePickUp : MonoBehaviour
             {
                 if (other.GetComponent<Controller>().currentHealth < MainCanvas.Instance.UILifes.Length)
                 {
-                    other.GetComponent<Controller>().currentHealth++;
+                    other.GetComponent<Controller>().Heal();
                     Destroy(this.gameObject);
                 }
             }

@@ -7,15 +7,32 @@ public class openDoor : MonoBehaviour
     // Start is called before the first frame update
     public GameObject door, heart;
     public GameObject [] platforms;
+    public Animation myAnimation;
+    private bool played = false;
+      
     void Start()
     {
-        
+        if (!myAnimation)
+        {
+            myAnimation = GetComponent<Animation>();
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (tag == "Door")
+        {
+            if (door == null && heart == null)
+            {
+                if (!played)
+                {
+                    myAnimation.Play();
+                    played = true;               
+                }
+
+            }
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
