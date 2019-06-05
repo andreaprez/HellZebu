@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
    [SerializeField] protected GameObject light;
 
    public enum EWorld { ICE, FIRE };
-   protected EWorld currentWorld;
+   public EWorld currentWorld;
    protected GameObject player;
     [Header("Sounds")]
     [FMODUnity.EventRef]
