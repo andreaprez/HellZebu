@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 1075875578}
   - component: {fileID: 1075875575}
   - component: {fileID: 6899012827553430867}
+  - component: {fileID: 1933403399960020730}
   m_Layer: 0
   m_Name: AssaultRifle
   m_TagString: Untagged
@@ -188,6 +189,7 @@ MonoBehaviour:
   recoilTime: 0.1
   recoilDown: 1
   enableGizmos: 0
+  shootAnimation: {fileID: 1933403399960020730}
 --- !u!120 &6899012827553430867
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -283,6 +285,22 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!111 &1933403399960020730
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075875574}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 7d01443131b373445997d501246c9dfd, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 7d01443131b373445997d501246c9dfd, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &647826252714038832
 GameObject:
   m_ObjectHideFlags: 0

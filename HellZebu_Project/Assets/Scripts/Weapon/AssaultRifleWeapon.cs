@@ -31,7 +31,8 @@ public class AssaultRifleWeapon : Weapon
     private Vector3 bulletDirection;
     private Quaternion rotationDirection;
 
-
+    public Animation shootAnimation;
+    
 
     // Start is called before the first frame update
     public override void Start()
@@ -106,6 +107,8 @@ public class AssaultRifleWeapon : Weapon
      
         base.Shoot();
         FMODUnity.RuntimeManager.PlayOneShot(Shot, transform.position);
+        shootAnimation.Play();
+
         currentSpreadValue += spreadShotCost;
         if (currentSpreadValue > maxSpreadValue)
         {
