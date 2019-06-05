@@ -60,6 +60,11 @@ public class MainCanvas : MonoBehaviour
     string keyName;
     bool waitOut;
 
+    [Header("Scenes")]
+    public string sceneToLoad;
+    [SerializeField] private Animator fadeAnimator;
+
+
     //Score
 
     public float killStreakTime;
@@ -492,6 +497,14 @@ public class MainCanvas : MonoBehaviour
     {
         splashChangeWorld.Rewind();
         splashChangeWorld.Play();
+    }
+
+    public void FadeOut() {
+        fadeAnimator.SetTrigger("FadeOut");
+    }
+    
+    public void LoadScene() {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneToLoad);
     }
 
 }

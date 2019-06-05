@@ -10,8 +10,8 @@ public class LoadSceneTrigger : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-          
-            UnityEngine.SceneManagement.SceneManager.LoadScene(SceneName);
+            MainCanvas.Instance.sceneToLoad = SceneName;
+            MainCanvas.Instance.FadeOut();
         }
     }
 }
