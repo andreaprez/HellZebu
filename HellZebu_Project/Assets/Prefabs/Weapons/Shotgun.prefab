@@ -922,10 +922,10 @@ MonoBehaviour:
   baseColorFireBar: {r: 1, g: 0.2723468, b: 0, a: 1}
   baseColorIceBar: {r: 0.08235294, g: 0.7058824, b: 1, a: 1}
   lastMode: 0
-  OverHeated: event:/Weapons/Overheat/Overheat
-  Shot: event:/Weapons/ShotGun/Shot Gun Shot
-  Teleport: event:/Weapons/TeleportGun/TeleportGunShot
-  ChangeWeaponSound: event:/Weapons/ChangeWeapon/ChangeWeapon
+  OverHeated: event:/Weapon/Weapon_Overheat1
+  Shot: event:/Weapon/Weapon_Shotgun_Shoot2
+  Teleport: event:/Weapon/Weapon_Teleport_Shoot2
+  ChangeWeaponSound: event:/Weapon/Weapon_ChangeWeapon2
   pellets: 6
   spreadValue: 30
   spreadCrossfireModifier: 6
