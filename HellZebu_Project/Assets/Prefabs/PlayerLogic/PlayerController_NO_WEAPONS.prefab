@@ -218,8 +218,10 @@ MonoBehaviour:
   worldChangeTime: 2
   worldChangeTimer: 0
   UIAnimator: {fileID: 0}
+  cameraShake: {fileID: 0}
   currentHealth: 5
-  Invencible: 0
+  invulnerabilityTime: 3
+  healParticle: {fileID: 0}
   lerpRecoil: 0
   pauseOn: 0
 --- !u!54 &4522717497244274024
@@ -345,7 +347,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5440788710722928148}
   m_LocalRotation: {x: -0, y: -0.039020948, z: -0, w: 0.99923843}
-  m_LocalPosition: {x: 0.51, y: -0.34500122, z: 1.72}
+  m_LocalPosition: {x: 0.51, y: -0.34500122, z: 1.61}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 146802570633001321}
@@ -391,7 +393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6054231571349211884}
   m_LocalRotation: {x: -0, y: -0.039020948, z: -0, w: 0.99923843}
-  m_LocalPosition: {x: 0.52, y: -0.34500122, z: 1.6}
+  m_LocalPosition: {x: 0.52, y: -0.34500122, z: 1.6100006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 146802570633001321}

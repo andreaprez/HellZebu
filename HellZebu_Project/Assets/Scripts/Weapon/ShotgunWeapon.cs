@@ -35,7 +35,7 @@ public class ShotgunWeapon : Weapon
     private Vector3 bulletDirection;
     private Quaternion rotationDirection;
 
-    
+    public Animation shotgun_anim;
 
     public override void Start()
     {
@@ -103,6 +103,7 @@ public class ShotgunWeapon : Weapon
         base.Shoot();
         Controller.Instance.Recoil(recoilAmountY, recoilAmountX, recoilTime, recoilDown);
         FMODUnity.RuntimeManager.PlayOneShot(Shot, transform.position);
+        shotgun_anim.Play();
 
     }
     public override void WChangeShoot()
