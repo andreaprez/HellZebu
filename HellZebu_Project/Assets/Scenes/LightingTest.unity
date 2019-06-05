@@ -150,7 +150,7 @@ MonoBehaviour:
   coolDown: 2
   red: {r: 0.18867922, g: 0.11302953, b: 0.11302953, a: 0}
   blue: {r: 0.12281951, g: 0.17505778, b: 0.2264151, a: 0}
-  backgroundColorCamera: {fileID: 6535428586361096723}
+  backgroundColorCamera: {fileID: 620114338}
   redLighting: {fileID: 5323676845620998554}
   blueLighting: {fileID: 7039466625304582178}
   directionalLight: {fileID: 1829116401869486300}
@@ -16379,6 +16379,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36d6b15d75f5f914f829b518df2f009f, type: 3}
+--- !u!20 &620114338 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1006041428126677260, guid: 36d6b15d75f5f914f829b518df2f009f,
+    type: 3}
+  m_PrefabInstance: {fileID: 620114337}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &621070344 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 205854163, guid: c276b8a268e0d7a4aa93cb6393fd03a7,
@@ -56879,7 +56885,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0.4
   m_Range: 10
   m_SpotAngle: 30
@@ -80698,12 +80704,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!20 &6535428586361096723 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 6535428586361096723, guid: 36d6b15d75f5f914f829b518df2f009f,
-    type: 3}
-  m_PrefabInstance: {fileID: 620114337}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7039466624038633065
 GameObject:
   m_ObjectHideFlags: 0
