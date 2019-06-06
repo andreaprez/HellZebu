@@ -41,7 +41,7 @@ public class Controller : MonoBehaviour, DataInterface
     private float dashCurrentSpeed;
     private float verticalSpeed;
     private bool onGround;
-    private bool movementLocked;
+    public bool movementLocked;
     
     [Header("World Change")]
     [HideInInspector] public bool onConflictZone;
