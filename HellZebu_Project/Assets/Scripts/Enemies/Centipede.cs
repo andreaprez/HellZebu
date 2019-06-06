@@ -37,8 +37,7 @@ public class Centipede : Enemy
         weakPoints = new List<GameObject>();
         player = EnemyGlobalBlackboard.player;
         
-        if (currentWorld == EWorld.FIRE)
-            transform.parent = EnemyGlobalBlackboard.fireHiddenParent;
+        if (currentWorld == EWorld.FIRE) transform.parent = EnemyGlobalBlackboard.fireHiddenParent;
         else transform.parent = EnemyGlobalBlackboard.iceHiddenParent;
 
         if (CheckPlayerIsInMyWorld()) {
