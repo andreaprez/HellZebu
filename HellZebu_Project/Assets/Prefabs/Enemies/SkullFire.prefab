@@ -216,9 +216,11 @@ MonoBehaviour:
   playerNearbyRadius: 6
   destinationReachedRadius: 1
   light: {fileID: 258565379506760591}
+  currentWorld: 1
   BulletCollision: event:/Enemies/Enemies_Skull_Bullet_Hit
   Idle: event:/Enemies/Enemies_Skull_move 1
   Attack: event:/Enemies/Enemies_Skull_shoot
+  tutorial: 0
   type: 1
   normalSpeed: 6
   chasingSpeed: 10

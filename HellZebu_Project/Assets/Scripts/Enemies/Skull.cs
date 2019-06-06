@@ -9,6 +9,9 @@ using Vector3 = UnityEngine.Vector3;
 public class Skull : Enemy
 {
     #region VARIABLES
+
+    [SerializeField] private bool tutorial = false;
+    [SerializeField] private GameObject patrolPoint;
     [SerializeField] private WorldType type;
     [SerializeField] private float normalSpeed;
     [SerializeField] private float chasingSpeed;
@@ -48,9 +51,10 @@ public class Skull : Enemy
     
     void Start()
     {
-
-       
-
+        if (tutorial) {
+            currentWorld = type == WorldType.ICE ? EWorld.ICE : EWorld.FIRE;
+        }
+            
         player = EnemyGlobalBlackboard.player;
         navMeshAgent.speed = normalSpeed;
         navMeshAgent.acceleration = overshootingAcceleration;
@@ -110,15 +114,29 @@ public class Skull : Enemy
                     }
                     break;
                 }
-                if (initializing && initialTimePassed >= initialCooldownForChasing) {
-                    ChangeState(State.CHASE);
-                    initializing = false;
-                    break;
+
+                if (!tutorial) {
+                    if (initializing && initialTimePassed >= initialCooldownForChasing)
+                    {
+                        ChangeState(State.CHASE);
+                        initializing = false;
+                        break;
+                    }
+
+                    if (!initializing && timePassed >= timeToDetect && CheckPlayerIsInMyWorld())
+                    {
+                        ChangeState(State.CHASE);
+                        break;
+                    }
                 }
-                if (!initializing && timePassed >= timeToDetect && CheckPlayerIsInMyWorld()) {
-                    ChangeState(State.CHASE);
-                    break;
+
+                else {
+                    if (playerIsInMyWorld && Vector3.SqrMagnitude(distanceToPlayer) < shootingRadius * shootingRadius) {
+                        ChangeState(State.CHASE);
+                        break;
+                    }
                 }
+
                 if (Vector3.SqrMagnitude(distanceToDestination) < destinationReachedRadius * destinationReachedRadius) {
                     ChangeState(State.PATROL);
                     break;
@@ -259,7 +277,8 @@ public class Skull : Enemy
         }
         switch (newState) {
             case  State.PATROL:
-                SetPatrol(EnemyGlobalBlackboard.lastPlayerKnownPosition);
+                if (tutorial) SetPatrol(patrolPoint.transform.position);
+                else SetPatrol(EnemyGlobalBlackboard.lastPlayerKnownPosition);
                 break;
             case  State.CHASE:
                 SetChase(player.transform.position);
