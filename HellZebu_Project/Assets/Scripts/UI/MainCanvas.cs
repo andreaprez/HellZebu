@@ -62,7 +62,9 @@ public class MainCanvas : MonoBehaviour
 
     [Header("Scenes")]
     public string sceneToLoad;
-    [SerializeField] private Animator fadeAnimator;
+    [SerializeField] private Animation fadeAnimation;
+    [SerializeField] private AnimationClip fadeOut;
+    [SerializeField] private AnimationClip fadeIn;
 
 
     //Score
@@ -499,8 +501,14 @@ public class MainCanvas : MonoBehaviour
         splashChangeWorld.Play();
     }
 
-    public void FadeOut() {
-        fadeAnimator.SetTrigger("FadeOut");
+    public void FadeOut()
+    {
+        fadeAnimation.clip = fadeOut;
+        fadeAnimation.Play();
+    }
+    public void FadeIn() {
+        fadeAnimation.clip = fadeIn;
+        fadeAnimation.Play();
     }
     
     public void LoadScene() {
