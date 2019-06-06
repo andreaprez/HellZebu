@@ -62,7 +62,7 @@ public class MainCanvas : MonoBehaviour
 
     [Header("Scenes")]
     public string sceneToLoad;
-    [SerializeField] private Animator fadeAnimator;
+    [SerializeField] private Animation fadeOutAnimation;
 
 
     //Score
@@ -500,7 +500,7 @@ public class MainCanvas : MonoBehaviour
     }
 
     public void FadeOut() {
-        fadeAnimator.SetTrigger("FadeOut");
+        fadeOutAnimation.Play();
     }
     
     public void LoadScene() {
