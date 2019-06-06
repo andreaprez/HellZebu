@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 205854163}
   m_Layer: 0
-  m_Name: rock2_low
+  m_Name: rock_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 592082519}
   - component: {fileID: 592082518}
   - component: {fileID: 2772193354579795185}
+  - component: {fileID: 503540617896034896}
   m_Layer: 0
   m_Name: rock2_low
   m_TagString: Untagged
@@ -123,3 +124,17 @@ CapsuleCollider:
   m_Height: 4
   m_Direction: 0
   m_Center: {x: -5.83, y: 1.03, z: 0.06}
+--- !u!64 &503540617896034896
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592082516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 8929fd0e5bc180b4897f3efe64fd49b2, type: 3}
