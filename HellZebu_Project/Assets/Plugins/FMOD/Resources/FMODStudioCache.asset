@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114154692705979240}
-  - {fileID: 114317723143920992}
+  - {fileID: 114099383773429408}
+  - {fileID: 114945652266914828}
   EditorEvents:
   - {fileID: 114207449736397678}
   - {fileID: 114773956172221820}
@@ -111,9 +111,9 @@ MonoBehaviour:
   - {fileID: 114630917143000470}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   StringsBanks:
-  - {fileID: 114154692705979240}
+  - {fileID: 114099383773429408}
   stringsBankWriteTime: 636953455100000000
   cacheVersion: 3
 --- !u!114 &114002775298532650
@@ -131,7 +131,7 @@ MonoBehaviour:
   Path: event:/Weapon/Weapon_Teleport_Shoot2
   guid: efbc7d5fe745574bb10d597ce5db7c36
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -154,7 +154,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Antorcha 2
   guid: 2f3a11f9a10ba3408363efab6a3c6c10
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Centipide_Bullet
   guid: 1c481f7b8fbfc64b8024d488f3d0a240
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -223,7 +223,7 @@ MonoBehaviour:
   Path: "event:/Colisi\xF3n Balas/Balas 1.L"
   guid: e7387eeb9ffa5144af787871a13d0c93
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -269,7 +269,7 @@ MonoBehaviour:
   Path: event:/Weapon/Weapon_Shotgun_Shoot1
   guid: 34b9e5a6ed2f1c4f964a40a58e6c21d3
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -315,7 +315,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Turret_die_grito
   guid: 4fedc2aaf7572c4c8b0fde193abd423c
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -453,7 +453,7 @@ MonoBehaviour:
   Path: event:/Items/Items_Life_Pickup
   guid: 32a0398f0e79c640a12742426b1e1be8
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -476,7 +476,7 @@ MonoBehaviour:
   Path: event:/Weapon/Weapon_Overheat1
   guid: 88c1a926a7a6674a9e37612c979c1dda
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -522,7 +522,7 @@ MonoBehaviour:
   Path: event:/Items/Items_Puzzle_Orb 3
   guid: 75304b23c3a79f47b79485cc2a7955a4
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -614,7 +614,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Skull_charge
   guid: 9ae4f4be8703b94a990eba35fcf7f493
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -637,7 +637,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Gas 2
   guid: d490bd4eb6622143955e274403bc527f
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -665,6 +665,27 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1612
+  Exists: 1
+--- !u!114 &114099383773429408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: D:\ANDREA\GITHUB_REPOSITORIES\HellZebu\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
+    entrega final\Build\Desktop\Master.strings.bank
+  SubDir: 
+  lastModified: 636953455100000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 4956
   Exists: 1
 --- !u!114 &114101898732452566
 MonoBehaviour:
@@ -750,7 +771,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Antorcha 1
   guid: 742e66497ae37447abacea4c3652c9b7
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -773,7 +794,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Goteo 5
   guid: f2d07b67f6a1d24d9dabc437fea71eaf
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -819,7 +840,7 @@ MonoBehaviour:
   Path: event:/Items/Items_Life_Heart take 1
   guid: d753c984b4ce1a48a6aab607e9788795
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -842,7 +863,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Antorcha 3
   guid: 782174c7dc388b49a5f73d60ebf0cab4
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -1093,7 +1114,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Torret_Die
   guid: a29fa4f0ed200847a9b43284365f4a08
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1206,7 +1227,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Death_Enemy 2
   guid: 1c555a62747dcd40b7bfd01d9384a846
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1229,7 +1250,7 @@ MonoBehaviour:
   Path: event:/Weapon/Weapon_Shotgun_Shoot3
   guid: 10720aa9e4765b40b24078591908a00c
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1252,7 +1273,7 @@ MonoBehaviour:
   Path: event:/Enemies/Aparicion Enemigos
   guid: efd6d2aab4dd6742b821aa4ded16611b
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1298,7 +1319,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Death_Enemy 3
   guid: 142b4ad49a987e4e85c05ed627c63084
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1344,7 +1365,7 @@ MonoBehaviour:
   Path: event:/Weapon/Weapon_Rifle_Shoot3
   guid: 7af051d9d84eba4b8a3d41dbb70635ae
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1478,7 +1499,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Skull_move 1
   guid: 632966d8220968468a00eff476c564d2
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1773,7 +1794,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Skull_Bullet_die
   guid: a4ef47f315ec9140b036fcc158484f8f
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1842,7 +1863,7 @@ MonoBehaviour:
   Path: event:/Enemies/Aparicion centipede
   guid: df790915a7ce914c93928a516ff68f3a
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -1942,6 +1963,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4414
+--- !u!114 &114308622881869640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
+    entrega final\Build\Desktop\Master.bank
+  SubDir: 
+  lastModified: 636954703461304984
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 30200736
+  Exists: 1
 --- !u!114 &114312632041211186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1957,7 +1999,7 @@ MonoBehaviour:
   Path: event:/Items/Items_Totem_Activation 3
   guid: e9191b69276edd439722d56630125068
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2003,7 +2045,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Centepide_move 2
   guid: 897a8a8d532d8d4f97513449c855298c
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -2055,6 +2097,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1100
+--- !u!114 &114326219668834652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Portales Enemigos/VozDIablo
+  m_EditorClassIdentifier: 
+  Path: event:/Portales Enemigos/VozDIablo
+  guid: 7eb1f5418f6eb84e8a87e4e8cbe1231c
+  Banks:
+  - {fileID: 114308622881869640}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6138
 --- !u!114 &114331566051292286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2070,7 +2135,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Skull_shoot
   guid: af010f7d0a56154baa24584831de40e5
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2162,7 +2227,7 @@ MonoBehaviour:
   Path: event:/Portales Enemigos/Portales 2 3D
   guid: 9a622e2c5696a243baa3dc7445372c27
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -2208,7 +2273,7 @@ MonoBehaviour:
   Path: event:/Weapon/Weapon_Rifle_Shoot2
   guid: 70241f5560df0348b10906ea7b36abb1
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2250,7 +2315,7 @@ MonoBehaviour:
   Path: event:/Player/Player_ChangeWorld
   guid: 2aea1cecd4719e4fad679b50526d7231
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2273,7 +2338,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Lava_moviendo 1
   guid: 18d26e8ebd560440ae1cadae23f84f18
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -2304,6 +2369,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 8672
+--- !u!114 &114382677800998098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
+    entrega final\Build\Desktop\Master.strings.bank
+  SubDir: 
+  lastModified: 636954703461444579
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 5008
+  Exists: 1
 --- !u!114 &114390549809179034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2411,7 +2497,7 @@ MonoBehaviour:
   Path: event:/UI/UI_Confirm_Option
   guid: 3ea94450861fb447a3b50722daefe237
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2480,7 +2566,7 @@ MonoBehaviour:
   Path: event:/Items/Items_Puzzle_Orb 2
   guid: ee21a8e103cdfa40a1c76630cce44537
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -2503,7 +2589,7 @@ MonoBehaviour:
   Path: event:/Weapon/Weapon_ChangeWeapon2
   guid: be8d85ddc10ed840b01d310ffa424579
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2526,7 +2612,7 @@ MonoBehaviour:
   Path: event:/Items/Items_Totem_Activation 4
   guid: 5a029e3e05cf6144bf32fdf3a38a7bd5
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2549,7 +2635,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Death_Enemy 1
   guid: 3bfbff15791b514e9e47f5abdd895ed0
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2641,7 +2727,7 @@ MonoBehaviour:
   Path: event:/Weapon/TeleportReload2D
   guid: 314780e8803e664c853982074d8e4d9c
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2664,7 +2750,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Cueva 6
   guid: c35812f8afb85e4691a11b240d662b91
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -2733,7 +2819,7 @@ MonoBehaviour:
   Path: event:/Player/Player_RecieveDamage
   guid: 5fc8cafe4776574caa146e3c14cc101b
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2779,7 +2865,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Centepide_move 1
   guid: a69c6ffe6b54c341aea9ba136a7dfe12
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -2825,7 +2911,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Run 2
   guid: a0b0738214e8f24785dd93db8ed86ccb
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -2848,7 +2934,7 @@ MonoBehaviour:
   Path: event:/Weapon/Weapon_Teleport_Reload
   guid: c26c9e2f55fbbe44b7096939a4e68e7d
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -2917,7 +3003,7 @@ MonoBehaviour:
   Path: event:/Scenario/Scenario_Platform_Fall
   guid: 561fe7d45287b94eab9297f7ef55ed20
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3030,7 +3116,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Colision_balas 4
   guid: d0016fbe6948464eb9350dcb034d28f3
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3053,7 +3139,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Risa_diabolica 2
   guid: 60b00b3ec9a0ef4ea0ac789c276fe6fc
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3141,7 +3227,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Gas 1
   guid: 5835a3b489bf0a428cc02edf63562dea
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -3233,7 +3319,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Centepie_die 1
   guid: 5666dcca76398d40a910809fd3c61595
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -3256,7 +3342,7 @@ MonoBehaviour:
   Path: event:/Portales Enemigos/Portales 1 3D
   guid: 7b5cae6c01c7a44088f98415cf1357f5
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -3348,7 +3434,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Orb_move 1
   guid: c0322825e39a8244a4bc3e49630cca0c
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3438,7 +3524,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Cueva 4
   guid: a7875b17b3d0a64286888e5558f1e2f3
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -3530,7 +3616,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Goteo 3
   guid: d4e5c66023ac424c878a9cf1b3e118b5
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -3553,7 +3639,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Death_Lava
   guid: d0d46fbbca35014b801cca0477369268
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3689,7 +3775,7 @@ MonoBehaviour:
   Path: "event:/Risas diab\xF3licas/Balas diab\xF3licas"
   guid: 29159c65d1dc4840bdeee36fef89680d
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3758,7 +3844,7 @@ MonoBehaviour:
   Path: event:/Player/Death
   guid: 48044cabb191d2489d9e22800d8e14ed
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3781,7 +3867,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Goteo 1
   guid: 88a7872fe7198049ae7a11b25c5727cb
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -3804,7 +3890,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Orb_die
   guid: fe1e122cfb63e043a8d95325692d7e64
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3850,7 +3936,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Skull_Bullet_Hit
   guid: 80a454db2099e14186167427c75ef1fb
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -3959,7 +4045,7 @@ MonoBehaviour:
   Path: event:/Weapon/Weapon_Shotgun_Shoot2
   guid: 6d972b8ae61505488140b25ac81bf5db
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4097,7 +4183,7 @@ MonoBehaviour:
   Path: event:/Items/Items_Totem_Activation 1
   guid: d8144a2fbe40e54984ddf28698966058
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4189,7 +4275,7 @@ MonoBehaviour:
   Path: event:/Weapon/Weapon_Rifle_Shoot1
   guid: cb10e257984936478e1943d363a2668d
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4212,7 +4298,7 @@ MonoBehaviour:
   Path: "event:/Colisi\xF3n Balas/Balas 3.R"
   guid: e32a0b73ac58504694045a254d79b0de
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4258,7 +4344,7 @@ MonoBehaviour:
   Path: event:/Items/Items_Totem_Activation 2
   guid: ae5798f7d84e3c4da1c2023cea6741d1
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4281,7 +4367,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Colision_balas 2
   guid: 270dcb1de4159a429de15e456fb57162
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4417,7 +4503,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Turret_shoot 2
   guid: eca401a863fcd44c8759c51e5fed5ace
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4463,7 +4549,7 @@ MonoBehaviour:
   Path: event:/Weapon/Weapon_ChangeWeapon1
   guid: 682dca81b1a5b745a0902038ddeadee2
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4486,7 +4572,7 @@ MonoBehaviour:
   Path: event:/Weapon/Weapon_Grenade_Shoot
   guid: 1464eded957c7e4195b85516f68e1dd7
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4532,7 +4618,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Torret_move
   guid: e244ea37bde2e846ba74cf1b0ecd781e
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4555,7 +4641,7 @@ MonoBehaviour:
   Path: event:/Items/LifePickup2D
   guid: c03532f076f8a94d9f4e911e1e5f436c
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4647,7 +4733,7 @@ MonoBehaviour:
   Path: event:/UI/UI_Select_Option
   guid: 1095fbeb70c4964e9e263a79c929ace4
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4691,7 +4777,7 @@ MonoBehaviour:
   Path: event:/Weapon/Weapon_Grenade_Explosion
   guid: 8837b6349b3064468dbe20838a87e2b3
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -4829,7 +4915,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Cadenas 1
   guid: f9f89392eeec6c48a066e8c691897a04
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -4921,7 +5007,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Cueva 3
   guid: 7330227fc76ed44f8a0765ef94cd5fea
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -5057,7 +5143,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Cueva 1
   guid: 60fff7f6c1613843975c75ed6b7d492b
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -5149,7 +5235,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Cueva 2
   guid: dd65b2eff26e8d4f839e59f5c2082a9a
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -5218,7 +5304,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Lava_moviendo 2
   guid: 91d6397e4e632e4293108b79d35ea4e1
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -5287,7 +5373,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Breath
   guid: 647bca8e66a86243bc79ed1fc191542c
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -5310,7 +5396,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Goteo 4
   guid: fc2f915135691e4eb4da3bce56e6b200
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -5356,7 +5442,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Landing
   guid: da616f7229ca5d44a822f6b0db330a45
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -5402,7 +5488,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Risa_diabolica 1
   guid: d3531320b2c876459322281212416a1b
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -5425,7 +5511,7 @@ MonoBehaviour:
   Path: event:/Items/Items_Puzzle_Orb 1
   guid: 4867277d3d893c4a9699ae46a85a67f5
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -5448,7 +5534,7 @@ MonoBehaviour:
   Path: event:/Weapon/Weapon_Teleport_Hit1
   guid: 7c1396a1f1c1d34cb7abed5535849e5e
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -5471,7 +5557,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Cueva 5
   guid: fca31bab0488b046bbe232b0253fd0fa
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -5494,7 +5580,7 @@ MonoBehaviour:
   Path: event:/Scenario/Scenario_Door_Opening
   guid: 4e0e2f834fab0c45ad55cca57ca44375
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -5586,7 +5672,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Orb_move 2
   guid: b5fe6df1043db544b250419dfd475ae8
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -5609,7 +5695,7 @@ MonoBehaviour:
   Path: event:/Weapon/Weapon_Overheat3
   guid: ce9f7f59870aa046889abc4461484a17
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -5632,7 +5718,7 @@ MonoBehaviour:
   Path: event:/Player/Player_Run 1
   guid: aca3d474920c9f49b305d26aa39342b6
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -5640,6 +5726,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 77035
+--- !u!114 &114945652266914828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: D:\ANDREA\GITHUB_REPOSITORIES\HellZebu\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
+    entrega final\Build\Desktop\Master.bank
+  SubDir: 
+  lastModified: 636953455100000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 30198656
+  Exists: 1
 --- !u!114 &114945847201680838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5655,7 +5762,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Colision_balas 3
   guid: c0415e084faa8d4190071fc4feabd0d4
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -5701,7 +5808,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Goteo 2
   guid: 51d557d8dca65546a45bb65f5be7dd6f
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -5791,7 +5898,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Turret_shoot 1
   guid: ab99b38071a3c7498ab2498b6c5591ef
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -5837,7 +5944,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Centipide_attack
   guid: 75b9e3532e234745931d3b1749a36e5d
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -5883,7 +5990,7 @@ MonoBehaviour:
   Path: event:/Enemies/Enemies_Take_damage 1
   guid: 760400b781f5a44baa14563c8cf1235f
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -5906,7 +6013,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Gas 3
   guid: d66aa83995dc65418efda3f97a2adc7e
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -6017,7 +6124,7 @@ MonoBehaviour:
   Path: event:/Ambient/Ambiente_Cadenas 2
   guid: 7a8bc3859f4a334cb46353ad4d2ad24b
   Banks:
-  - {fileID: 114317723143920992}
+  - {fileID: 114945652266914828}
   IsStream: 1
   Is3D: 1
   IsOneShot: 1

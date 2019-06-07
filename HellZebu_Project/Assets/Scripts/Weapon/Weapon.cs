@@ -372,7 +372,7 @@ public class Weapon : MonoBehaviour
             accesory.SetActive(true);
             if (lastMode == WeaponElementalModes.Fire) { fireUI.SetActive(true); }
             else if (lastMode == WeaponElementalModes.Ice) { iceUI.SetActive(true); }
-            FMODUnity.RuntimeManager.PlayOneShot(ChangeWeaponSound, transform.position);
+           // FMODUnity.RuntimeManager.PlayOneShot(ChangeWeaponSound, transform.position);
             weaponCanvas.SetActive(true);
             
 

@@ -9,7 +9,6 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="ActiveParticle.cs" t="Include" />
         <e p="Audio" t="Include">
           <e p="SonidoGrupoChicas" t="Include">
             <e p="Hellzebu entrega final" t="Include">
@@ -146,6 +145,7 @@
                   <e p="{39a86ad6-dc95-4165-8efd-a3f97a2adc7e}.xml" t="Include" />
                   <e p="{3e0bb060-a0c9-4eef-a0ac-789c276fe6fc}.xml" t="Include" />
                   <e p="{3e9e025a-cf05-4461-bf32-fdf3a38a7bd5}.xml" t="Include" />
+                  <e p="{41f5b17e-6e8f-4eb8-8a87-e4e8cbe1231c}.xml" t="Include" />
                   <e p="{49662e74-e37a-4774-abac-ea4c3652c9b7}.xml" t="Include" />
                   <e p="{4ebd90d4-62b6-4321-955e-274403bc527f}.xml" t="Include" />
                   <e p="{5044a93e-1f86-47b4-a3b5-0722daefe237}.xml" t="Include" />
@@ -467,7 +467,6 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="AutoDestroy.cs" t="Include" />
           <e p="DataManagement" t="Include">
             <e p="Data.cs" t="Include" />
             <e p="DataInterface.cs" t="Include" />
@@ -491,7 +490,10 @@
             <e p="Turret.cs" t="Include" />
             <e p="TurretLaser.cs" t="Include" />
           </e>
+          <e p="eventPlayer.cs" t="Include" />
           <e p="GameplayLogic" t="Include">
+            <e p="ActiveParticle.cs" t="Include" />
+            <e p="AutoDestroy.cs" t="Include" />
             <e p="fallingPlatform.cs" t="Include" />
             <e p="LifePickUp.cs" t="Include" />
             <e p="LoadSceneTrigger.cs" t="Include" />
@@ -529,18 +531,24 @@
               <e p="UIGradientUtils.cs" t="Include" />
             </e>
             <e p="MainCanvas.cs" t="Include" />
+            <e p="textDestroy.cs" t="Include" />
+            <e p="txtPopUp.cs" t="Include" />
+            <e p="TypeWritterEffect.cs" t="Include" />
           </e>
           <e p="Weapon" t="Include">
             <e p="AddWeaponTrigger.cs" t="Include" />
             <e p="AssaultRifleWeapon.cs" t="Include" />
-            <e p="FireProjectile.cs" t="Include" />
-            <e p="IceProjectile.cs" t="Include" />
-            <e p="Projectile.cs" t="Include" />
+            <e p="Projectiles" t="Include">
+              <e p="FireProjectile.cs" t="Include" />
+              <e p="IceProjectile.cs" t="Include" />
+              <e p="Projectile.cs" t="Include" />
+              <e p="WorldChangeProjectile.cs" t="Include" />
+            </e>
             <e p="ShotgunSpecialShootTrigger.cs" t="Include" />
             <e p="ShotgunWeapon.cs" t="Include" />
+            <e p="UnlockAccesory.cs" t="Include" />
             <e p="Weapon.cs" t="Include" />
             <e p="WeaponSlot.cs" t="Include" />
-            <e p="WorldChangeProjectile.cs" t="Include" />
           </e>
           <e p="WorldChange" t="Include">
             <e p="DeactivateLights.cs" t="Include" />
@@ -553,7 +561,6 @@
           <e p="Halo.shader" t="Include" />
           <e p="Lava.shader" t="Include" />
         </e>
-        <e p="textDestroy.cs" t="Include" />
         <e p="Trello Bug Tracker - Pro" t="Include">
           <e p="Changelog.txt" t="Include" />
           <e p="DrawingToolAssets" t="Include">
@@ -589,8 +596,6 @@
             </e>
           </e>
         </e>
-        <e p="txtPopUp.cs" t="Include" />
-        <e p="UnlockAccesory.cs" t="Include" />
       </e>
       <e p="HellZebu_Project.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

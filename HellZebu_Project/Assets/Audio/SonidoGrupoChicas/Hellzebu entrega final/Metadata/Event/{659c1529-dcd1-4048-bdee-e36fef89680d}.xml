@@ -97,6 +97,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{e7b325c5-2501-4ce1-9bde-3d084e7d96e4}">
+		<property name="volume">
+			<value>10</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -130,11 +133,7 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{dfba327f-3bdc-407a-a9bc-54bd623743fe}" />
-	<object class="GainEffect" id="{3c73e21e-a418-47f6-b1d3-b092665485c2}">
-		<property name="gain">
-			<value>5.5</value>
-		</property>
-	</object>
+	<object class="GainEffect" id="{3c73e21e-a418-47f6-b1d3-b092665485c2}" />
 	<object class="LimiterEffect" id="{18ae7090-a32a-44ac-973b-ffc41c4ff08e}" />
 	<object class="MixerBusFader" id="{2de19c9c-4bf0-41ea-b623-93d28c0b3a05}" />
 	<object class="ThreeEQEffect" id="{5211661d-d1d1-4d7c-bd21-823045a3ed35}">
@@ -170,7 +169,7 @@
 	</object>
 	<object class="DistortionEffect" id="{fb025cf2-5c9a-4a83-b0cd-4d6e2766f6a3}">
 		<property name="level">
-			<value>0.195000008</value>
+			<value>0.135000005</value>
 		</property>
 	</object>
 	<object class="FlangerEffect" id="{d54156fa-46ae-4f19-bd3a-a489b743f910}">
