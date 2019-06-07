@@ -97,6 +97,9 @@ public class Weapon : MonoBehaviour
     [FMODUnity.EventRef]
     public string ChangeWeaponSound = "";
 
+
+    private Controller playerController;
+
     void OnWorldChange()
     {
         ChangeWeaponState();
@@ -105,6 +108,8 @@ public class Weapon : MonoBehaviour
 
     public virtual void Start()
     {
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<Controller>();
+        
         WorldChangerManager.worldChangeEvent += OnWorldChange;
         fireFillBar.fillAmount = iceFillBar.fillAmount = 0;
         fireUI.SetActive(true);
@@ -127,7 +132,7 @@ public class Weapon : MonoBehaviour
 
     public virtual void Update()
     {
-        if (Controller.Instance.pauseOn == false)
+        if (Controller.Instance.pauseOn == false && !playerController.movementLocked)
         {
             //Testing UI
             fireFillBar.fillAmount = (float)currentOverheatValueFire / (float)maxOverheatValue;
@@ -149,7 +154,7 @@ public class Weapon : MonoBehaviour
 
                 if (weaponShootMode == WeaponShootModes.Automatic)
                 {
-                    if (Input.GetKey(InputsManager.Instance.currentInputs.shoot))
+                    if ( Input.GetKey(InputsManager.Instance.currentInputs.shoot))
                     {
                         if (weaponElementalMode == WeaponElementalModes.Fire)
                         {
