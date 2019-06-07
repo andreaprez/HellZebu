@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -6,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class DemonDialogueManager : MonoBehaviour
 {
     [SerializeField] private List<GameObject> dialogues;
-    [SerializeField] private float dialoguesDuration;
+    [SerializeField] private List<float> durations;
     [SerializeField] private AnimationClip textFadeIn;
     [SerializeField] private AnimationClip textFadeOut;
 
@@ -32,7 +33,7 @@ public class DemonDialogueManager : MonoBehaviour
         if (!finished)
         {
             timer += Time.deltaTime;
-            if (timer >= dialoguesDuration)
+            if (timer >= durations[currentScene - 1])
             {
                 textFadeAnimation.clip = textFadeOut;
                 textFadeAnimation.Play();
