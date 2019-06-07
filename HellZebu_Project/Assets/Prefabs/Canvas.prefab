@@ -287,6 +287,7 @@ GameObject:
   - component: {fileID: 7980074951995948064}
   - component: {fileID: 4470733595436080146}
   - component: {fileID: 8764230629253170608}
+  - component: {fileID: 7019830826640824859}
   m_Layer: 5
   m_Name: Scene_02
   m_TagString: Untagged
@@ -334,7 +335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -370,6 +371,23 @@ MonoBehaviour:
   delay: 0.08
   fullText: "La espera se ha hecho aburrida....  A por \xE9l hordas!"
   myText: {fileID: 0}
+--- !u!111 &7019830826640824859
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72735261099265297}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &94222206732818015
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,6 +627,7 @@ GameObject:
   - component: {fileID: 5084714646362075186}
   - component: {fileID: 3593144361640811460}
   - component: {fileID: 3771268512992307363}
+  - component: {fileID: 106822678384019489}
   m_Layer: 5
   m_Name: Scene_05
   m_TagString: Untagged
@@ -656,7 +675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -679,6 +698,23 @@ MonoBehaviour:
   m_Text: 'Pobre cucaracha... Ha ha ha.... parece perdida
 
     Atrevete a coger el nuevo camino si eres tan valiente como dices....'
+--- !u!111 &106822678384019489
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286923640522672719}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &608631924714446898
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,6 +954,8 @@ MonoBehaviour:
   - {fileID: 5714688275576861482}
   - {fileID: 996109259864899292}
   dialoguesDuration: 6
+  textFadeIn: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  textFadeOut: {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
 --- !u!1 &799912826458626400
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,6 +1121,7 @@ GameObject:
   - component: {fileID: 4373483431677033174}
   - component: {fileID: 5520547499500080387}
   - component: {fileID: 1129182510527211109}
+  - component: {fileID: 7963965965600713577}
   m_Layer: 5
   m_Name: Scene_08_En
   m_TagString: Untagged
@@ -1130,7 +1169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1179,6 +1218,23 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!111 &7963965965600713577
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996109259864899292}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1178345326439459746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,6 +1858,7 @@ GameObject:
   - component: {fileID: 2229820418799626415}
   - component: {fileID: 6031256126507673634}
   - component: {fileID: 7515938179663153090}
+  - component: {fileID: 7314896850026561404}
   m_Layer: 5
   m_Name: Scene_07
   m_TagString: Untagged
@@ -1849,7 +1906,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1871,6 +1928,23 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "\xBFEso es todo lo que puedes hacer, insignificante alima\xF1a? \n\xA1No
     dejaremos que un par\xE1sito como tu escape de aqu\xED!"
+--- !u!111 &7314896850026561404
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036489377322228706}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2219888120871659589
 GameObject:
   m_ObjectHideFlags: 0
@@ -2341,6 +2415,7 @@ GameObject:
   - component: {fileID: 7760312151801910190}
   - component: {fileID: 2320354947490772449}
   - component: {fileID: 1449999144841780740}
+  - component: {fileID: 863344581988581505}
   m_Layer: 5
   m_Name: Scene_06
   m_TagString: Untagged
@@ -2388,7 +2463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2410,6 +2485,23 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: No tienes donde huir... Invoco a todos los seres de esta arena para que
     no tengas escapatoria Mwa ha ha
+--- !u!111 &863344581988581505
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2799137425461840755}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2914103592956613843
 GameObject:
   m_ObjectHideFlags: 0
@@ -3069,6 +3161,7 @@ GameObject:
   - component: {fileID: 1938303761585450834}
   - component: {fileID: 6003639033479203529}
   - component: {fileID: 8003352176837366968}
+  - component: {fileID: 395298971301727363}
   m_Layer: 5
   m_Name: Scene_02_En
   m_TagString: Untagged
@@ -3116,7 +3209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3175,6 +3268,23 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!111 &395298971301727363
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3513883234382168470}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &3519956710003188809
 GameObject:
   m_ObjectHideFlags: 0
@@ -3702,6 +3812,7 @@ GameObject:
   - component: {fileID: 8779335009767979546}
   - component: {fileID: 4374389196573820627}
   - component: {fileID: 4101540672513210061}
+  - component: {fileID: 1733947041512736460}
   m_Layer: 5
   m_Name: Scene_05_En
   m_TagString: Untagged
@@ -3749,7 +3860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3811,6 +3922,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myEvent: "event:/Risas diab\xF3licas/Balas diab\xF3licas"
   timer: 2
+--- !u!111 &1733947041512736460
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4039085319063067323}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &4138504776787483578
 GameObject:
   m_ObjectHideFlags: 0
@@ -4318,6 +4446,7 @@ GameObject:
   - component: {fileID: 4359918578780000367}
   - component: {fileID: 7939280642080650193}
   - component: {fileID: 4268760609039801736}
+  - component: {fileID: 5095619832482319986}
   m_Layer: 5
   m_Name: Scene_04
   m_TagString: Untagged
@@ -4365,7 +4494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4387,6 +4516,23 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Me sorpende que hayas llegado tan lejos,\n pero este infierno ser\xE1 tu
     tumba."
+--- !u!111 &5095619832482319986
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4487052243817568763}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &4538218014309955596
 GameObject:
   m_ObjectHideFlags: 0
@@ -4509,6 +4655,7 @@ GameObject:
   - component: {fileID: 1499305307162717454}
   - component: {fileID: 4610092698930841543}
   - component: {fileID: 367700958716537186}
+  - component: {fileID: 605455731586182978}
   m_Layer: 5
   m_Name: Scene_08
   m_TagString: Untagged
@@ -4556,7 +4703,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4579,6 +4726,23 @@ MonoBehaviour:
   m_Text: "Aqu\xED se termina todo. Si sobrevives a mi mayor ejercito podr\xE1s purificarte
     y salir de esta pesadilla.\nAunque no hay raz\xF3n por la que ilusionarse, nunca
     nadie ha conseguido sobrevivir a esto..."
+--- !u!111 &605455731586182978
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4590981478495542089}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &4662546583204743069
 GameObject:
   m_ObjectHideFlags: 0
@@ -4591,6 +4755,7 @@ GameObject:
   - component: {fileID: 9045016733824939849}
   - component: {fileID: 8956342974352057446}
   - component: {fileID: 3640449724313943756}
+  - component: {fileID: 4186667307753596397}
   m_Layer: 5
   m_Name: Scene_06_En
   m_TagString: Untagged
@@ -4638,7 +4803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4685,6 +4850,23 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!111 &4186667307753596397
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4662546583204743069}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &4690085396835143803
 GameObject:
   m_ObjectHideFlags: 0
@@ -5258,6 +5440,7 @@ GameObject:
   - component: {fileID: 7386594335010674165}
   - component: {fileID: 8535745860663358044}
   - component: {fileID: 6001990086627168432}
+  - component: {fileID: 7159807068419003940}
   m_Layer: 5
   m_Name: Scene_04_En
   m_TagString: Untagged
@@ -5305,7 +5488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5349,6 +5532,23 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!111 &7159807068419003940
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877636558833917506}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &5038301789542446116
 GameObject:
   m_ObjectHideFlags: 0
@@ -5441,6 +5641,7 @@ GameObject:
   - component: {fileID: 7864022079024085826}
   - component: {fileID: 1991878509252331030}
   - component: {fileID: 2810678204512298954}
+  - component: {fileID: 4658525631369185729}
   m_Layer: 5
   m_Name: Scene_01
   m_TagString: Untagged
@@ -5547,6 +5748,23 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!111 &4658525631369185729
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5177532372315749107}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &5249320438090383653
 GameObject:
   m_ObjectHideFlags: 0
@@ -6467,6 +6685,7 @@ GameObject:
   - component: {fileID: 7537684745063830028}
   - component: {fileID: 4349691704414705217}
   - component: {fileID: 1970069334050634360}
+  - component: {fileID: 2184342282172915739}
   m_Layer: 5
   m_Name: Scene_07_En
   m_TagString: Untagged
@@ -6514,7 +6733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6562,6 +6781,23 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 0
   OverrideMaxDistance: 0
+--- !u!111 &2184342282172915739
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5714688275576861482}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &5716121143929847051
 GameObject:
   m_ObjectHideFlags: 0
@@ -6654,6 +6890,7 @@ GameObject:
   - component: {fileID: 6148116472078568988}
   - component: {fileID: 6049377952985696470}
   - component: {fileID: 4117636770271275397}
+  - component: {fileID: 5210583893387591451}
   m_Layer: 5
   m_Name: Scene_01_En
   m_TagString: Untagged
@@ -6701,7 +6938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6722,6 +6959,23 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: You don't belong here... Exterminate this useless rat!
+--- !u!111 &5210583893387591451
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5736995279639851624}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &5811296821306721541
 GameObject:
   m_ObjectHideFlags: 0
@@ -8826,6 +9080,7 @@ GameObject:
   - component: {fileID: 4344046904149019096}
   - component: {fileID: 4285214460201757230}
   - component: {fileID: 1943185483843588971}
+  - component: {fileID: 6470990263045339801}
   m_Layer: 5
   m_Name: Scene_03_En
   m_TagString: Untagged
@@ -8873,7 +9128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8947,6 +9202,23 @@ MonoBehaviour:
   fullText: 'If the first puzzle was hard this one is imposible! Breathe while you
     still can... Ha ha ha '
   myText: {fileID: 0}
+--- !u!111 &6470990263045339801
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7491070401359078031}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &7528205424345033993
 GameObject:
   m_ObjectHideFlags: 0
@@ -9418,6 +9690,7 @@ GameObject:
   - component: {fileID: 4587678831258737769}
   - component: {fileID: 3536217099811333810}
   - component: {fileID: 1731250832831170248}
+  - component: {fileID: 5104207521131876008}
   m_Layer: 5
   m_Name: Scene_03
   m_TagString: Untagged
@@ -9465,7 +9738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9487,6 +9760,23 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Si el primer puzzle te ha sido complicado, este ser\xE1 imposible.\nRespira
     mientras puedas... Ha ha ha..."
+--- !u!111 &5104207521131876008
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7894397549002000407}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &7936001389220351708
 GameObject:
   m_ObjectHideFlags: 0
