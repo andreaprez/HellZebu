@@ -116,15 +116,21 @@ public class ShotgunWeapon : Weapon
         if (weaponElementalMode == WeaponElementalModes.Fire)
         {
             currentOverheatValueFire += specialShotCost;
-
+            GameObject muzz = Instantiate(muzzlePrefFireShot, shootingPoint.transform.position, Quaternion.identity, this.gameObject.transform);
+            muzz.transform.localEulerAngles = Vector3.zero;
         }
         else
         {
             currentOverheatValueIce += specialShotCost;
+            GameObject muzz = Instantiate(muzzlePrefIceShot, shootingPoint.transform.position, Quaternion.identity, this.gameObject.transform);
+            muzz.transform.localEulerAngles = Vector3.zero;
         }
         StartCoroutine(activateXFrames(framesActives));
         if(Vector3.Dot(Vector3.down, transform.forward) > 0.65f)
         {
+            GameObject airWave = Instantiate(specialShotgunPart, specialShotgunShootPoint.transform.position, Quaternion.identity);
+            airWave.transform.localEulerAngles = new Vector3 (-90f,0f,0f);
+          
             Controller.Instance.SpecialShotJump(-transform.forward, specialShotJumpForce);
         }
         base.SpecialShoot();
