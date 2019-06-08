@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62fb1c06-732e-4901-9f9a-71120f82f36c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Assets/cave/mat_cave.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Assets/cave/mat_cave.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Assets/rocks_ice/rock_ice2/RockMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Assets/rocks_ice/rock_ice2/RockMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Scenario_Modular/wall/mat_wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Scenario_Modular/wall/mat_wall.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/PostProcessing_Test.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PostProcessing/PostProcessing_Test.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Assets/Lighting/antorchaBlue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Assets/Lighting/antorchaBlue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Assets/Lighting/antorchaRed.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Assets/Lighting/antorchaRed.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Assets/Lighting/cristales.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Assets/Lighting/cristales.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Assets/Lighting/pilarBlue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Assets/Lighting/pilarBlue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Assets/Lighting/pilarRed.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Assets/Lighting/pilarRed.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_Marc/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_Marc/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LightingTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LightingTest.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorldChange/WorldChangerManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WorldChange/WorldChangerManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_Marc.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_Marc.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WorldChange/DeactivateLights.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WorldChange/DeactivateLights.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -349,11 +337,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldChange/WorldChangerManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="120" column="5" lean-forward="true" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
+            <state relative-caret-position="1728">
+              <caret line="120" column="5" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
               <folding>
                 <marker date="1559929297064" expanded="false" signature="6:78" ph="..." />
                 <marker date="1559929297064" expanded="true" signature="231:4768" ph="{...}" />
@@ -376,6 +364,25 @@
                 <marker date="1559929297064" expanded="true" signature="4170:4501" ph="{...}" />
                 <marker date="1559929297064" expanded="true" signature="4525:4758" ph="{...}" />
                 <marker date="1559929297064" expanded="true" signature="4622:4747" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldChange/DeactivateLights.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
+              <folding>
+                <marker date="1560015105004" expanded="false" signature="6:92" ph="..." />
+                <marker date="1560015105004" expanded="true" signature="139:751" ph="{...}" />
+                <marker date="1560015105004" expanded="true" signature="191:212" ph="{...}" />
+                <marker date="1560015105004" expanded="true" signature="270:749" ph="{...}" />
+                <marker date="1560015105004" expanded="true" signature="349:442" ph="{...}" />
+                <marker date="1560015105004" expanded="true" signature="455:743" ph="{...}" />
+                <marker date="1560015105004" expanded="true" signature="500:733" ph="{...}" />
+                <marker date="1560015105004" expanded="true" signature="602:719" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -433,7 +440,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/WorldChange/WorldChangerManagerTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/WorldChange/DeactivateLights.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnerManagement/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemies/Orb.cs" />
@@ -448,6 +454,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/DisableDialogue.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/DemonDialogueManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/WorldChange/WorldChangerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/WorldChange/DeactivateLights.cs" />
       </list>
     </option>
   </component>
@@ -470,14 +477,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AssemblyExplorer" />
-      <pane id="FileSystemExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
       </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -532,11 +539,12 @@
       <workItem from="1559902884675" duration="1892000" />
       <workItem from="1559913355186" duration="1384000" />
       <workItem from="1559927971363" duration="619000" />
+      <workItem from="1560015084834" duration="618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13685000" />
+    <option name="totallyTimeSpent" value="14303000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -599,23 +607,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldChange/DeactivateLights.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="29" column="80" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
-          <folding>
-            <marker date="1559547110560" expanded="true" signature="6:92" ph="..." />
-            <marker date="1559547110560" expanded="true" signature="139:854" ph="{...}" />
-            <marker date="1559547110560" expanded="true" signature="221:242" ph="{...}" />
-            <marker date="1559547110560" expanded="true" signature="300:852" ph="{...}" />
-            <marker date="1559547110560" expanded="true" signature="379:509" ph="{...}" />
-            <marker date="1559547110560" expanded="true" signature="522:846" ph="{...}" />
-            <marker date="1559547110560" expanded="true" signature="603:836" ph="{...}" />
-            <marker date="1559547110560" expanded="true" signature="705:822" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerLogic/ControllerTest.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1170,18 +1161,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/DisableDialogue.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
-          <folding>
-            <marker date="1559915504718" expanded="false" signature="6:78" ph="..." />
-            <marker date="1559915504718" expanded="true" signature="124:203" ph="{...}" />
-            <marker date="1559915504718" expanded="true" signature="152:201" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/DemonDialogueManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -1198,10 +1177,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/UI/DisableDialogue.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding>
+            <marker date="1559915504718" expanded="false" signature="6:78" ph="..." />
+            <marker date="1559915504718" expanded="true" signature="124:203" ph="{...}" />
+            <marker date="1559915504718" expanded="true" signature="152:201" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldChange/WorldChangerManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="120" column="5" lean-forward="true" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
+        <state relative-caret-position="1728">
+          <caret line="120" column="5" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
           <folding>
             <marker date="1559929297064" expanded="false" signature="6:78" ph="..." />
             <marker date="1559929297064" expanded="true" signature="231:4768" ph="{...}" />
@@ -1224,6 +1215,23 @@
             <marker date="1559929297064" expanded="true" signature="4170:4501" ph="{...}" />
             <marker date="1559929297064" expanded="true" signature="4525:4758" ph="{...}" />
             <marker date="1559929297064" expanded="true" signature="4622:4747" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/WorldChange/DeactivateLights.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="26" column="72" selection-start-line="26" selection-start-column="72" selection-end-line="26" selection-end-column="72" />
+          <folding>
+            <marker date="1560015105004" expanded="false" signature="6:92" ph="..." />
+            <marker date="1560015105004" expanded="true" signature="139:751" ph="{...}" />
+            <marker date="1560015105004" expanded="true" signature="191:212" ph="{...}" />
+            <marker date="1560015105004" expanded="true" signature="270:749" ph="{...}" />
+            <marker date="1560015105004" expanded="true" signature="349:442" ph="{...}" />
+            <marker date="1560015105004" expanded="true" signature="455:743" ph="{...}" />
+            <marker date="1560015105004" expanded="true" signature="500:733" ph="{...}" />
+            <marker date="1560015105004" expanded="true" signature="602:719" ph="{...}" />
           </folding>
         </state>
       </provider>
