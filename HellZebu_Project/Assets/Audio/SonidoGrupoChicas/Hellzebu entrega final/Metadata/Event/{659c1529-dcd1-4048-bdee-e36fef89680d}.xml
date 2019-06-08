@@ -8,7 +8,7 @@
 			<value>0</value>
 		</property>
 		<relationship name="folder">
-			<destination>{e7b9b7a5-e4d8-4755-9172-6a5d32ad4ec3}</destination>
+			<destination>{8312afcf-cd6e-4cb8-bf5a-49823a28c533}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{bfd3e819-5716-40b0-92d6-738647e08fae}</destination>
@@ -123,6 +123,7 @@
 			<destination>{fb025cf2-5c9a-4a83-b0cd-4d6e2766f6a3}</destination>
 			<destination>{d54156fa-46ae-4f19-bd3a-a489b743f910}</destination>
 			<destination>{d06e2b24-10fe-4bd2-b871-a00af7967a83}</destination>
+			<destination>{4d0441ae-758c-4a0f-94d2-bed44e0e9358}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{211809df-14ca-4c0b-9580-e61353a34c5c}" />
@@ -154,9 +155,6 @@
 		</property>
 	</object>
 	<object class="PitchShifterEffect" id="{bca39900-c5fd-41bc-b8a3-5d620568a78e}">
-		<property name="pitch">
-			<value>0.690000057</value>
-		</property>
 		<property name="fftSize">
 			<value>1820</value>
 		</property>
@@ -197,5 +195,6 @@
 			<value>4</value>
 		</property>
 	</object>
+	<object class="PitchShifterEffect" id="{4d0441ae-758c-4a0f-94d2-bed44e0e9358}" />
 	<object class="MixerBusFader" id="{ca0875ff-f8b3-443f-95e6-4f9c53fd0740}" />
 </objects>
