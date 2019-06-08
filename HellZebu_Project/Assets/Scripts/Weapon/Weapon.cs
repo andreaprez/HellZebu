@@ -24,7 +24,7 @@ public class Weapon : MonoBehaviour
     public float shotCost;
     public float coolingSpeed;
     public float overheatedRecoveryTime;
-    public GameObject shootingPoint;
+    public GameObject shootingPoint, specialShotgunShootPoint;
     public LayerMask ignoreMasks;
 
     protected GameObject currentAmmo;
@@ -39,6 +39,7 @@ public class Weapon : MonoBehaviour
     private bool overheatedFire;
     private float overheatLerpFire;
     public GameObject muzzlePrefFireRifle, muzzlePrefFireShot;
+    public GameObject specialShotgunPart;
 
     [Header("Ice")]
     public GameObject iceAmmo;
