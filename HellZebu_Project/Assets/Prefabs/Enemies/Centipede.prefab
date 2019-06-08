@@ -425,6 +425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centipede: {fileID: 5114852854112780470}
+  pointsGiven: 40
 --- !u!1 &655145177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,9 +1871,11 @@ MonoBehaviour:
   playerNearbyRadius: 0
   destinationReachedRadius: 0
   light: {fileID: 4752107918699805912}
+  currentWorld: 0
   BulletCollision: event:/Enemies/Enemies_Centepie_die 1
   Idle: event:/Enemies/Enemies_Centepide_move 1
   Attack: 
+  pointsGiven: 100
   currentState: 0
   movementSpeed: 5
   timeToChangeDirection: 3
@@ -2088,6 +2091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centipede: {fileID: 5114852854112780470}
+  pointsGiven: 40
 --- !u!1 &8933827242134351600
 GameObject:
   m_ObjectHideFlags: 0

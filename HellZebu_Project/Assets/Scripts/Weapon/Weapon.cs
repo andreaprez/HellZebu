@@ -40,6 +40,10 @@ public class Weapon : MonoBehaviour
     private float overheatLerpFire;
     public GameObject muzzlePrefFireRifle, muzzlePrefFireShot;
 
+    public GameObject overheatFireParticle;
+    public GameObject overheatFireParticlePos;
+
+
     [Header("Ice")]
     public GameObject iceAmmo;
     public Material iceMaterial;
@@ -49,6 +53,10 @@ public class Weapon : MonoBehaviour
     public float currentOverheatValueIce;
     private bool overheatedIce;
     private float overheatLerpIce;
+
+
+    public GameObject overheatIceParticle;
+    public GameObject overheatIceParticlePos;
 
     [Header("WorldChange")]
     public GameObject accesory;
@@ -97,9 +105,6 @@ public class Weapon : MonoBehaviour
     [FMODUnity.EventRef]
     public string ChangeWeaponSound = "";
 
-
-    private Controller playerController;
-
     void OnWorldChange()
     {
         ChangeWeaponState();
@@ -108,8 +113,6 @@ public class Weapon : MonoBehaviour
 
     public virtual void Start()
     {
-        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<Controller>();
-        
         WorldChangerManager.worldChangeEvent += OnWorldChange;
         fireFillBar.fillAmount = iceFillBar.fillAmount = 0;
         fireUI.SetActive(true);
@@ -132,7 +135,7 @@ public class Weapon : MonoBehaviour
 
     public virtual void Update()
     {
-        if (Controller.Instance.pauseOn == false && !playerController.movementLocked)
+        if (Controller.Instance.pauseOn == false)
         {
             //Testing UI
             fireFillBar.fillAmount = (float)currentOverheatValueFire / (float)maxOverheatValue;
@@ -154,7 +157,7 @@ public class Weapon : MonoBehaviour
 
                 if (weaponShootMode == WeaponShootModes.Automatic)
                 {
-                    if ( Input.GetKey(InputsManager.Instance.currentInputs.shoot))
+                    if (Input.GetKey(InputsManager.Instance.currentInputs.shoot))
                     {
                         if (weaponElementalMode == WeaponElementalModes.Fire)
                         {
@@ -171,6 +174,14 @@ public class Weapon : MonoBehaviour
                                     FMODUnity.RuntimeManager.PlayOneShot(OverHeated, transform.position);
                                     //clamp
                                     currentOverheatValueFire = maxOverheatValue;
+
+                                    GameObject overheatParticle = Instantiate(overheatFireParticle, overheatFireParticlePos.transform.position, Quaternion.identity);
+                                    overheatParticle.transform.parent = overheatFireParticlePos.transform;
+
+
+
+
+
                                 }
                                 automaticWaitTimer = timeBetweenShootsAutomatic;
                             }
@@ -192,6 +203,9 @@ public class Weapon : MonoBehaviour
                                     //clamp
                                     FMODUnity.RuntimeManager.PlayOneShot(OverHeated, transform.position);
                                     currentOverheatValueIce = maxOverheatValue;
+
+                                    GameObject overheatParticle = Instantiate(overheatIceParticle, overheatIceParticlePos.transform.position, Quaternion.identity);
+                                    overheatParticle.transform.parent = overheatIceParticlePos.transform;
                                 }
                                 automaticWaitTimer = timeBetweenShootsAutomatic;
                             }
@@ -222,6 +236,9 @@ public class Weapon : MonoBehaviour
                                     fireOverheatedText.SetActive(true);
                                     //clamp
                                     currentOverheatValueFire = maxOverheatValue;
+
+                                    GameObject overheatParticle = Instantiate(overheatFireParticle, overheatFireParticlePos.transform.position, Quaternion.identity);
+                                    overheatParticle.transform.parent = overheatFireParticlePos.transform;
                                 }
                                 semiautomaticWaitTimer = timeBetweenShootsSemiutomatic;
                             }
@@ -242,6 +259,9 @@ public class Weapon : MonoBehaviour
                                     iceOverheatedText.SetActive(true);
                                     //clamp
                                     currentOverheatValueIce = maxOverheatValue;
+
+                                    GameObject overheatParticle = Instantiate(overheatIceParticle, overheatIceParticlePos.transform.position, Quaternion.identity);
+                                    overheatParticle.transform.parent = overheatIceParticlePos.transform;
                                 }
                                 semiautomaticWaitTimer = timeBetweenShootsSemiutomatic;
                             }
@@ -286,6 +306,11 @@ public class Weapon : MonoBehaviour
                                     fireOverheatedText.SetActive(true);
                                     //clamp
                                     currentOverheatValueFire = maxOverheatValue;
+
+
+                                    GameObject overheatParticle = Instantiate(overheatFireParticle, overheatFireParticlePos.transform.position, Quaternion.identity);
+                                    overheatParticle.transform.parent = overheatFireParticlePos.transform;
+
                                 }
                                 specialShotTimer = specialShotTime;
                             }
@@ -305,6 +330,9 @@ public class Weapon : MonoBehaviour
                                     iceOverheatedText.SetActive(true);
                                     //clamp
                                     currentOverheatValueIce = maxOverheatValue;
+
+                                    GameObject overheatParticle = Instantiate(overheatIceParticle, overheatIceParticlePos.transform.position, Quaternion.identity);
+                                    overheatParticle.transform.parent = overheatIceParticlePos.transform;
                                 }
                                 specialShotTimer = specialShotTime;
                             }
@@ -377,7 +405,7 @@ public class Weapon : MonoBehaviour
             accesory.SetActive(true);
             if (lastMode == WeaponElementalModes.Fire) { fireUI.SetActive(true); }
             else if (lastMode == WeaponElementalModes.Ice) { iceUI.SetActive(true); }
-           // FMODUnity.RuntimeManager.PlayOneShot(ChangeWeaponSound, transform.position);
+            FMODUnity.RuntimeManager.PlayOneShot(ChangeWeaponSound, transform.position);
             weaponCanvas.SetActive(true);
             
 
@@ -439,19 +467,7 @@ public class Weapon : MonoBehaviour
     }
     public IEnumerator activateLineRenderer(float secs)
     {
-        //lr.enabled = true;
-
-
-        //for(int i = 0; i < (int)(60*secs)+1; i++)
-        //{
-        //    alphaLerpValue += i*Time.deltaTime;
-        //    lr.material.color = Color.Lerp(Color.white, Color.clear, alphaLerpValue);
-        //    yield return new WaitForSeconds(Time.deltaTime);
-        //}
-        //lr.enabled = false;
-        //alphaLerpValue = 0;
-        //yield  break;
-
+  
         lr.enabled = true;
 
         while (alphaLerpValue < 1)

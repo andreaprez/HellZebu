@@ -32,7 +32,7 @@ public class Controller : MonoBehaviour, DataInterface
     [SerializeField] private float movementTiltSpeed;
     [SerializeField] private float jumpForce;
     [SerializeField] private float gravity;
-    [SerializeField] private bool  dashEnabled;
+    [SerializeField] private bool dashEnabled;
     [SerializeField] private float dashImpulse;
     [SerializeField] private float dashCoolDown;
     [SerializeField] private float dashDuration;
@@ -42,7 +42,7 @@ public class Controller : MonoBehaviour, DataInterface
     private float verticalSpeed;
     private bool onGround;
     public bool movementLocked;
-    
+
     [Header("World Change")]
     [HideInInspector] public bool onConflictZone;
 
@@ -66,7 +66,7 @@ public class Controller : MonoBehaviour, DataInterface
 
     [Header("Health")]
     public int currentHealth = 5;
-    [SerializeField] private float invulnerabilityTime = 3f; 
+    [SerializeField] private float invulnerabilityTime = 3f;
     private float invulnerabilityTimer;
     private bool vulnerable = true;
     [SerializeField] private ParticleSystem healParticle;
@@ -203,7 +203,7 @@ public class Controller : MonoBehaviour, DataInterface
         float mouseAxisX = Input.GetAxis("Mouse X");
 
         if (invertedPitch) mouseAxisY = -mouseAxisY;
-        pitch += mouseAxisY * pitchRotationalSpeed*currentMouseSensitivity * Time.deltaTime;
+        pitch += mouseAxisY * pitchRotationalSpeed * currentMouseSensitivity * Time.deltaTime;
         pitch = Mathf.Clamp(pitch, minPitch, maxPitch);
 
         if (invertedYaw) mouseAxisX = -mouseAxisX;
@@ -247,7 +247,7 @@ public class Controller : MonoBehaviour, DataInterface
             verticalSpeed = 0.0f;
 
         verticalSpeed += gravity * Time.deltaTime;
-        
+
         // check onGround (para poder saltar en bajada)
         Ray ray = new Ray(transform.position, -transform.up);
         RaycastHit hit;
@@ -300,10 +300,11 @@ public class Controller : MonoBehaviour, DataInterface
             weaponSlot1.active = true;
             weaponSlot2.active = false;
             weapon.SendMessage("ActivateCanvas");
-            foreach (Transform t in weapon.GetComponentsInChildren<Transform>()) {
+            foreach (Transform t in weapon.GetComponentsInChildren<Transform>())
+            {
                 t.gameObject.layer = LayerMask.NameToLayer(MaskNames.Weapon.ToString());
             }
-            
+
         }
         else if (weaponSlot2.empty)
         {
@@ -316,10 +317,11 @@ public class Controller : MonoBehaviour, DataInterface
             weaponSlot1.currentWeapon.ChangeWeapon(false);
             weaponSlot2.active = true;
             weapon.SendMessage("ActivateCanvas");
-            foreach (Transform t in weapon.GetComponentsInChildren<Transform>()) {
+            foreach (Transform t in weapon.GetComponentsInChildren<Transform>())
+            {
                 t.gameObject.layer = LayerMask.NameToLayer(MaskNames.Weapon.ToString());
             }
-            
+
         }
 
     }
@@ -360,39 +362,45 @@ public class Controller : MonoBehaviour, DataInterface
                 weaponSlot2.currentWeapon.ChangeWeapon(true);
             }
         }
-        if(Input.GetAxis("Mouse ScrollWheel") < -0.05f)
+        if (Input.GetAxis("Mouse ScrollWheel") != 0)
         {
-
-            activeWeapon = 1;
-            weaponSlot2.active = false;
-            if (weaponSlot2.currentWeapon != null)
+            if (weaponSlot1.active)
             {
-                weaponSlot2.currentWeapon.ChangeWeapon(false);
+                activeWeapon = 2;
+                weaponSlot1.active = false;
+                if (weaponSlot1.currentWeapon != null)
+                {
+                    weaponSlot1.currentWeapon.ChangeWeapon(false);
+                }
+                weaponSlot2.active = true;
+                if (weaponSlot2.currentWeapon != null)
+                {
+                    weaponSlot2.currentWeapon.ChangeWeapon(true);
+                }
             }
-            weaponSlot1.active = true;
-            if (weaponSlot1.currentWeapon != null)
+            else
             {
-                weaponSlot1.currentWeapon.ChangeWeapon(true);
+                activeWeapon = 1;
+                weaponSlot2.active = false;
+                if (weaponSlot2.currentWeapon != null)
+                {
+                    weaponSlot2.currentWeapon.ChangeWeapon(false);
+                }
+                weaponSlot1.active = true;
+                if (weaponSlot1.currentWeapon != null)
+                {
+                    weaponSlot1.currentWeapon.ChangeWeapon(true);
+                }
             }
         }
-        if (Input.GetAxis("Mouse ScrollWheel") > 0.05f)
-        {
 
 
-            activeWeapon = 2;
-            weaponSlot1.active = false;
-            if (weaponSlot1.currentWeapon != null)
-            {
-                weaponSlot1.currentWeapon.ChangeWeapon(false);
-            }
-            weaponSlot2.active = true;
-            if (weaponSlot2.currentWeapon != null)
-            {
-                weaponSlot2.currentWeapon.ChangeWeapon(true);
-            }
-        }
+
     }
-    
+
+
+
+
     void CheckWorldChange()
     {
         if (Input.GetKeyDown(InputsManager.Instance.currentInputs.changeWorld))
@@ -418,7 +426,7 @@ public class Controller : MonoBehaviour, DataInterface
 
     public void OnLoad()
     {
-   
+
         currentHealth = playerData.currentHealth;
     }
     void OnPause()
@@ -432,14 +440,16 @@ public class Controller : MonoBehaviour, DataInterface
         pauseOn = false;
     }
 
-    void Restart() {
+    void Restart()
+    {
         StartCoroutine(cameraShake.Shake(0.2f, 0.4f));
         StartCoroutine(RestartGame(0.21f));
     }
 
     private void LateUpdate()
     {
-        if (respawning) {
+        if (respawning)
+        {
             ResetPosition();
             respawning = false;
         }
@@ -459,22 +469,25 @@ public class Controller : MonoBehaviour, DataInterface
         {
             MainCanvas.Instance.SplashDamage();
             currentHealth--;
-            if (!CheckHealth()) {
+            if (!CheckHealth())
+            {
                 vulnerable = false;
                 StartCoroutine("InvulnerabilityTimer");
             }
         }
     }
 
-    bool CheckHealth() {
-        if (currentHealth <= 0) {
+    bool CheckHealth()
+    {
+        if (currentHealth <= 0)
+        {
             movementLocked = true;
             Restart();
             return true;
         }
         return false;
     }
-    
+
     public void Heal()
     {
         currentHealth++;
@@ -482,12 +495,13 @@ public class Controller : MonoBehaviour, DataInterface
         healParticle.Play();
     }
 
-    public IEnumerator RestartGame(float _time) {
+    public IEnumerator RestartGame(float _time)
+    {
         yield return new WaitForSeconds(_time);
         movementLocked = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
-    
+
     public IEnumerator InvulnerabilityTimer()
     {
         while (invulnerabilityTimer <= invulnerabilityTime)

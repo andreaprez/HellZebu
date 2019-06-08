@@ -66,7 +66,6 @@ public class MainCanvas : MonoBehaviour
     [SerializeField] private AnimationClip fadeOut;
     [SerializeField] private AnimationClip fadeIn;
 
-
     //Score
 
     public float killStreakTime;
@@ -75,18 +74,34 @@ public class MainCanvas : MonoBehaviour
     public int pointsGiven;
     public int pointMultiplier;
     public int playerScore;
-
+    public Animation killstreakAnim;
     public Text killStreak;
     public Text score;
     public Text popUpText;
+    public Text popUpComboText;
     public Animator popUp;
-    public void OnKillStreak()
+    public void ResetComboTime()
+    {
+        killStreakTimer = killStreakTime;
+    }
+    public void OnKillStreak(int points)
     {
         if (popUp != null)
         {
             popUp.SetBool("OnKill", true);
 
-            popUpText.text = "+" + pointsGiven * pointMultiplier;
+            popUpText.text = "+" + points * pointMultiplier;
+            popUpComboText.text = "";
+            if ((pointMultiplier + 1) % 5 == 0 || (pointMultiplier + 1) % 10 == 0)
+            {
+                popUpComboText.text = "X" + (pointMultiplier + 1);
+                if (killstreakAnim.isPlaying == false)
+                {
+                    killstreakAnim.Play();
+                }
+                print("PLAy");
+             
+            }
             playerScore += pointsGiven * pointMultiplier;
             onKillStreak = true;
             pointMultiplier++;
@@ -106,9 +121,11 @@ public class MainCanvas : MonoBehaviour
 
         }
         else { Destroy(this.gameObject); }
-        Enemy.enemyKillEvent += OnKillStreak;
+      
+
      //   OpenPauseMenu(menuOpened);
     }
+
     private void Start()
     {
         pointMultiplier = 1;
@@ -506,11 +523,11 @@ public class MainCanvas : MonoBehaviour
         fadeAnimation.clip = fadeOut;
         fadeAnimation.Play();
     }
-    public void FadeIn() {
+    public void FadeIn()
+    {
         fadeAnimation.clip = fadeIn;
         fadeAnimation.Play();
     }
-    
     public void LoadScene() {
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneToLoad);
     }

@@ -154,9 +154,11 @@ MonoBehaviour:
   playerNearbyRadius: 0
   destinationReachedRadius: 0
   light: {fileID: 793550419126713965}
+  currentWorld: 0
   BulletCollision: 
   Idle: 
   Attack: 
+  pointsGiven: 30
   rotationSpeed: 5
   scopeRange: 60
   chargeTime: 2
