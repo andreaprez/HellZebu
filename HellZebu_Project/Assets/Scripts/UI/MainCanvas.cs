@@ -28,6 +28,7 @@ public class MainCanvas : MonoBehaviour
     [Header("World change")]
     public Image wChangeImageCooldown;
     public Color wChangeBarColor;
+    public Color wChangeHolderColor;
     public Image wChangeCooldownHolder;
     public Text wChangeTextCooldown;
     public Image fillImageWC;
@@ -250,7 +251,7 @@ public class MainCanvas : MonoBehaviour
         }
         else if (wChangeImageCooldown.color != Color.white){
             wChangeImageCooldown.color = Color.white;
-            wChangeCooldownHolder.color = Color.black;
+            wChangeCooldownHolder.color = wChangeHolderColor;
         }
 
     }

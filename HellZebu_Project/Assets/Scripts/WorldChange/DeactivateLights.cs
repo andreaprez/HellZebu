@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class DeactivateLights : MonoBehaviour
 {
-    public GameObject lights;
     public GameObject particles;
     void Start()
     {
@@ -17,12 +16,10 @@ public class DeactivateLights : MonoBehaviour
     {
         if (gameObject.layer == LayerMask.NameToLayer("HideFromCamera"))
         {
-            lights.SetActive(false);
             //particles.layer = LayerMask.NameToLayer("HideFromCamera");
         }
         else
         {
-            lights.SetActive(true);
             if (particles != null)
             {
                 foreach (Transform t in particles.GetComponentsInChildren<Transform>())
