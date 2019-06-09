@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 557623994}
   - component: {fileID: 557623993}
   - component: {fileID: 557623992}
+  - component: {fileID: 2586753106512854113}
   m_Layer: 13
   m_Name: WeakPoint (1)
   m_TagString: EnemyWeakPoint
@@ -425,6 +426,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centipede: {fileID: 5114852854112780470}
+--- !u!114 &2586753106512854113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557623990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Enemies/Enemies_Centipide_Bullet
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 15
+  OverrideMaxDistance: 35
 --- !u!1 &655145177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1820,6 +1844,7 @@ GameObject:
   - component: {fileID: 5695016381212969952}
   - component: {fileID: 5114852854112780470}
   - component: {fileID: 8944928560324416159}
+  - component: {fileID: 6195025359602744144}
   m_Layer: 13
   m_Name: Centipede
   m_TagString: Centipede
@@ -1928,7 +1953,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Enemies/Aparicion centipede
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -1936,6 +1961,29 @@ MonoBehaviour:
   OverrideAttenuation: 1
   OverrideMinDistance: 50
   OverrideMaxDistance: 200
+--- !u!114 &6195025359602744144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6600309243462833948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Enemies/Aparicion centipede
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 20
+  OverrideMaxDistance: 150
 --- !u!1 &7675634645000795271
 GameObject:
   m_ObjectHideFlags: 0
@@ -1996,6 +2044,7 @@ GameObject:
   - component: {fileID: 5904041223904410886}
   - component: {fileID: 2584577523158761018}
   - component: {fileID: 5992836169957499557}
+  - component: {fileID: 842372712106042911}
   m_Layer: 13
   m_Name: WeakPoint
   m_TagString: EnemyWeakPoint
@@ -2089,6 +2138,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centipede: {fileID: 5114852854112780470}
+--- !u!114 &842372712106042911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8031125201071917547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Enemies/Enemies_Centipide_Bullet
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 15
+  OverrideMaxDistance: 35
 --- !u!1 &8933827242134351600
 GameObject:
   m_ObjectHideFlags: 0

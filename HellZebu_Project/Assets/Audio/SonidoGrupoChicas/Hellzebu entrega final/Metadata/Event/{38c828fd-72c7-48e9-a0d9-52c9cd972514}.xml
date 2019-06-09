@@ -5,7 +5,7 @@
 			<value>Death by enemy</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{c3b7980e-8b6f-4c8c-831d-1afca7553289}</destination>
@@ -89,8 +89,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{5a8f94cc-c1a9-405c-8a19-194358ba555a}" />
 	<object class="MultiSound" id="{4af4b998-3655-438c-8cc2-309b8ebacb4a}">
+		<property name="isAsync">
+			<value>true</value>
+		</property>
+		<property name="start">
+			<value>0.10000000000000001</value>
+		</property>
 		<property name="length">
-			<value>2</value>
+			<value>1.8399999999999994</value>
 		</property>
 		<property name="playlistMode">
 			<value>1</value>
@@ -118,7 +124,6 @@
 	<object class="MixerBusEffectChain" id="{d281c263-27b2-48fe-bf6b-abaeb3a7db14}">
 		<relationship name="effects">
 			<destination>{8ce3b71e-5603-479b-ace7-4a632e16294c}</destination>
-			<destination>{0d2b3094-5fb3-44cc-92fb-4ff5997b9a56}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{bf919e6e-effd-4366-8984-1f96d0dc1a4e}" />
@@ -145,6 +150,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{7bf1ecc0-0181-4703-a376-6c25bb3a3001}" />
 	<object class="MixerBusFader" id="{8ce3b71e-5603-479b-ace7-4a632e16294c}" />
-	<object class="SpatialiserEffect" id="{0d2b3094-5fb3-44cc-92fb-4ff5997b9a56}" />
 	<object class="MixerBusFader" id="{e4b221ee-1d95-49cf-a114-fd17c72ac5ab}" />
 </objects>

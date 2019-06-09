@@ -134,6 +134,8 @@ public class ShotgunWeapon : Weapon
           
             Controller.Instance.SpecialShotJump(-transform.forward, specialShotJumpForce);
         }
+        FMODUnity.RuntimeManager.PlayOneShot(specialShotShotgun, transform.position);
+
         base.SpecialShoot();
     }
     IEnumerator activateXFrames(float frames)

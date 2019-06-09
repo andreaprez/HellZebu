@@ -98,6 +98,10 @@ public class Weapon : MonoBehaviour
 
     [FMODUnity.EventRef]
     public string ChangeWeaponSound = "";
+    [FMODUnity.EventRef]
+    public string specialShotRifle = "";
+    [FMODUnity.EventRef]
+    public string specialShotShotgun = "";
 
 
     private Controller playerController;

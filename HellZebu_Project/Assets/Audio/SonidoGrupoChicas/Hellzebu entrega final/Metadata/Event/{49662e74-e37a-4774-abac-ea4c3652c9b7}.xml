@@ -132,8 +132,11 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{a2782080-1d5f-4d83-bf72-419cd661b903}">
 		<relationship name="effects">
+			<destination>{cd9495ad-33d8-46ec-ba71-7bafae684383}</destination>
 			<destination>{1f71f909-e23d-45b2-8c54-deeca8b53430}</destination>
 			<destination>{d7a6badf-099d-4cb0-9198-57cd50910eaf}</destination>
+			<destination>{ce794c92-2133-4e84-8475-01b8aa54dd29}</destination>
+			<destination>{57e52f80-0471-4313-a97a-11feb81dc4ca}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{36c5d574-7b19-43ed-a26d-83d15ba07663}" />
@@ -144,7 +147,28 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{58bb0ac7-2cd3-4e16-a5c3-22526c5d58c8}" />
+	<object class="HighpassEffect" id="{cd9495ad-33d8-46ec-ba71-7bafae684383}">
+		<property name="cutoff">
+			<value>700</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{1f71f909-e23d-45b2-8c54-deeca8b53430}" />
 	<object class="SpatialiserEffect" id="{d7a6badf-099d-4cb0-9198-57cd50910eaf}" />
+	<object class="ThreeEQEffect" id="{ce794c92-2133-4e84-8475-01b8aa54dd29}">
+		<property name="lowGain">
+			<value>-6.5</value>
+		</property>
+		<property name="highGain">
+			<value>3</value>
+		</property>
+	</object>
+	<object class="PitchShifterEffect" id="{57e52f80-0471-4313-a97a-11feb81dc4ca}">
+		<property name="pitch">
+			<value>1.43000007</value>
+		</property>
+		<property name="overlap">
+			<value>7.4000001</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{85aeb917-be7f-4444-a05f-cb9f9cfbc19a}" />
 </objects>
