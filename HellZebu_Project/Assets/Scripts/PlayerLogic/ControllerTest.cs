@@ -63,7 +63,10 @@ public class ControllerTest : MonoBehaviour
         if (currentHealth <= 0) {
             Restart();
         }
-
+        if (currentHealth == 1)
+        {
+            Restart();
+        }
         ChangeActiveWeapon();
         Rotate();
         Move();

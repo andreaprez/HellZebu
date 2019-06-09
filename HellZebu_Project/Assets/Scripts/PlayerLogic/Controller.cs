@@ -71,6 +71,27 @@ public class Controller : MonoBehaviour, DataInterface
     private bool vulnerable = true;
     [SerializeField] private ParticleSystem healParticle;
 
+    [Header("Audio")]
+    [FMODUnity.EventRef]
+     public string deathLava = "";
+    [FMODUnity.EventRef]
+    public string deathOrb = "";
+    [FMODUnity.EventRef]
+    public string deathSkullProjectile = "";
+    [FMODUnity.EventRef]
+    public string deathSkullCollision = "";
+    [FMODUnity.EventRef]
+    public string deathTurretLaser = "";
+    [FMODUnity.EventRef]
+    public string deathTurretCollision = "";
+    [FMODUnity.EventRef]
+    public string deathCentipedeCollision = "";
+    [FMODUnity.EventRef]
+    public string changeWorld = "";
+    [FMODUnity.EventRef]
+    public string lifePick = "";
+    public FMODUnity.StudioEventEmitter eventEmiiter;
+
     public bool Vulnerable { get { return vulnerable; } }
 
     #endregion
@@ -175,6 +196,22 @@ public class Controller : MonoBehaviour, DataInterface
 
             if (!movementLocked)
             {
+                if (currentHealth==1)
+                {
+                    if (!eventEmiiter.IsPlaying())
+                    {
+                        eventEmiiter.Play();
+                    }
+                }
+                else
+                {
+                    if (eventEmiiter.IsPlaying())
+                    {
+                        eventEmiiter.Stop();
+                    }
+                }
+               
+
                 ChangeActiveWeapon();
                 Rotate();
                 Move();
@@ -401,6 +438,8 @@ public class Controller : MonoBehaviour, DataInterface
             if (onConflictZone == false)
             {
                 WorldChangerManager.Instance.PlayerWorldChange(this.gameObject);
+                FMODUnity.RuntimeManager.PlayOneShot(changeWorld);
+
                 worldChangeTimer = worldChangeTime;
             }
             else
@@ -453,16 +492,43 @@ public class Controller : MonoBehaviour, DataInterface
         characterController.enabled = true;
     }
 
-    void TakeDamage()
+    void TakeDamage(string audio)
     {
         if (vulnerable || respawning)
         {
             MainCanvas.Instance.SplashDamage();
             currentHealth--;
+            switch (audio)
+            {
+                case "turretLaser":
+                    FMODUnity.RuntimeManager.PlayOneShot(deathTurretLaser);
+                    break;
+                case "turretCollision":
+                    FMODUnity.RuntimeManager.PlayOneShot(deathTurretCollision);
+                    break;
+                case "centipedeCollisions":
+                    FMODUnity.RuntimeManager.PlayOneShot(deathCentipedeCollision);
+                    break;
+                case "skullProjectile":
+                    FMODUnity.RuntimeManager.PlayOneShot(deathSkullProjectile);
+                    break;
+                case "skullCollide":
+                    FMODUnity.RuntimeManager.PlayOneShot(deathSkullCollision);
+                    break;
+                case "orb":
+                    FMODUnity.RuntimeManager.PlayOneShot(deathOrb);
+                    break;
+                case "lava":
+                    FMODUnity.RuntimeManager.PlayOneShot(deathLava);                    
+                    break;
+                default:
+                    break;
+            }
             if (!CheckHealth()) {
                 vulnerable = false;
                 StartCoroutine("InvulnerabilityTimer");
             }
+
         }
     }
 
@@ -480,6 +546,8 @@ public class Controller : MonoBehaviour, DataInterface
         currentHealth++;
         MainCanvas.Instance.SplashHeal();
         healParticle.Play();
+        FMODUnity.RuntimeManager.PlayOneShot(lifePick);
+
     }
 
     public IEnumerator RestartGame(float _time) {
@@ -505,7 +573,8 @@ public class Controller : MonoBehaviour, DataInterface
         {
             if (currentHealth > 1)
                 respawning = true;
-            TakeDamage();
+
+            TakeDamage("lava");
         }
     }
     private void OnLevelWasLoaded(int level)

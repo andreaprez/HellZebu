@@ -70,7 +70,6 @@ MonoBehaviour:
   - {fileID: 114345174544551118}
   - {fileID: 114564580218735864}
   - {fileID: 114008869962676828}
-  - {fileID: 114632390046309206}
   - {fileID: 114882758974558888}
   - {fileID: 114917317293690222}
   - {fileID: 114922672233472840}
@@ -106,7 +105,6 @@ MonoBehaviour:
   - {fileID: 114075141704128652}
   - {fileID: 114682244052943576}
   - {fileID: 114424679592428078}
-  - {fileID: 114597385126323880}
   - {fileID: 114981770189386704}
   - {fileID: 114020408018604504}
   - {fileID: 114603367799214698}
@@ -121,14 +119,27 @@ MonoBehaviour:
   - {fileID: 114673311627876792}
   - {fileID: 114276400913758396}
   - {fileID: 114763439297542538}
-  - {fileID: 114337936129476874}
   - {fileID: 114258057433898856}
+  - {fileID: 114576869995510730}
+  - {fileID: 114720719426557824}
+  - {fileID: 114367078778021114}
+  - {fileID: 114219257247142768}
+  - {fileID: 114935060791919492}
+  - {fileID: 114888940896660796}
+  - {fileID: 114084147641134446}
+  - {fileID: 114474593467854224}
+  - {fileID: 114847787544282948}
+  - {fileID: 114391312297222432}
+  - {fileID: 114939378753536650}
+  - {fileID: 114552212459324828}
+  - {fileID: 114181015245898792}
+  - {fileID: 114764134998947664}
   EditorParameters: []
   MasterBanks:
   - {fileID: 114066776612648174}
   StringsBanks:
   - {fileID: 114119644881640356}
-  stringsBankWriteTime: 636956248449009087
+  stringsBankWriteTime: 636957101006577781
   cacheVersion: 3
 --- !u!114 &114002775298532650
 MonoBehaviour:
@@ -676,11 +687,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 114066776612648174}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 2037
 --- !u!114 &114066776612648174
 MonoBehaviour:
@@ -697,11 +708,11 @@ MonoBehaviour:
   Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
     entrega final\Build\Desktop\Master.bank
   SubDir: 
-  lastModified: 636956248448889411
+  lastModified: 636957101006418207
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 30484864
+    Value: 30600992
   Exists: 1
 --- !u!114 &114069450228176096
 MonoBehaviour:
@@ -742,13 +753,13 @@ MonoBehaviour:
   guid: 647bca8e66a86243bc79ed1fc191542c
   Banks:
   - {fileID: 114066776612648174}
-  IsStream: 0
+  IsStream: 1
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5851
+  Length: 4800
 --- !u!114 &114075141704128652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -933,6 +944,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 138360
+--- !u!114 &114084147641134446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player (2)/Death by enemy/Death by skull
+  m_EditorClassIdentifier: 
+  Path: event:/Player (2)/Death by enemy/Death by skull
+  guid: 6139942199c8cc4483ff0bec25a19c96
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1498
 --- !u!114 &114090321717631280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1266,11 +1300,11 @@ MonoBehaviour:
   Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
     entrega final\Build\Desktop\Master.strings.bank
   SubDir: 
-  lastModified: 636956248449009087
+  lastModified: 636957101006577781
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 5866
+    Value: 6344
   Exists: 1
 --- !u!114 &114120202887303890
 MonoBehaviour:
@@ -1382,11 +1416,11 @@ MonoBehaviour:
   - {fileID: 114066776612648174}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 743
+  Length: 410
 --- !u!114 &114130186149614878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1797,6 +1831,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 4956
   Exists: 1
+--- !u!114 &114181015245898792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/VocesEnemigos/Frase diab\xF3lica 1"
+  m_EditorClassIdentifier: 
+  Path: "event:/VocesEnemigos/Frase diab\xF3lica 1"
+  guid: 6efd1e76d8a37b47bdf55a1e271222a3
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2978
 --- !u!114 &114181722719448234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2096,6 +2153,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 72
+--- !u!114 &114219257247142768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemies/Enemies_SkullIce_Move
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/Enemies_SkullIce_Move
+  guid: b5fe6df1043db544b250419dfd475ae8
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2900
 --- !u!114 &114221449410516982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2319,8 +2399,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 10
+  MaxDistance: 150
   Length: 175480
 --- !u!114 &114238253365190868
 MonoBehaviour:
@@ -2567,12 +2647,12 @@ MonoBehaviour:
   Banks:
   - {fileID: 114066776612648174}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2000
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1940
 --- !u!114 &114262296549652746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2727,11 +2807,11 @@ MonoBehaviour:
   - {fileID: 114066776612648174}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 442
+  Length: 1400
 --- !u!114 &114277305450280368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3294,14 +3374,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Player (2)/Recieve damage/Recieve damage
   guid: d1bc3e573cf83d48acef3ef986d18081
-  Banks:
-  - {fileID: 114066776612648174}
+  Banks: []
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 2000
 --- !u!114 &114340337567894272
 MonoBehaviour:
@@ -3506,6 +3585,51 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &114367078778021114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/VocesEnemigos/Frases Diab\xF3licas"
+  m_EditorClassIdentifier: 
+  Path: "event:/VocesEnemigos/Frases Diab\xF3licas"
+  guid: f34b25f53b5eac4daf2c63fb8b03659c
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 1000
+  Length: 3500
+--- !u!114 &114372292942939914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player (2)/Death by enemy/Death by enemy 3.R
+  m_EditorClassIdentifier: 
+  Path: event:/Player (2)/Death by enemy/Death by enemy 3.R
+  guid: 151ea025a21bac4db4e44a5a8110978f
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 834
 --- !u!114 &114372812548939048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3688,6 +3812,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 7221
+--- !u!114 &114391312297222432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player (2)/Death by enemy/Death by projectile
+  m_EditorClassIdentifier: 
+  Path: event:/Player (2)/Death by enemy/Death by projectile
+  guid: d1bc3e573cf83d48acef3ef986d18081
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2000
 --- !u!114 &114396929116816450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3729,7 +3876,7 @@ MonoBehaviour:
   - {fileID: 114066776612648174}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -4171,6 +4318,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 814
+--- !u!114 &114443146551076018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/VocesEnemigos/Frases diab\xF3licas"
+  m_EditorClassIdentifier: 
+  Path: "event:/VocesEnemigos/Frases diab\xF3licas"
+  guid: f34b25f53b5eac4daf2c63fb8b03659c
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 1000
+  Length: 3500
 --- !u!114 &114445183093110718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4447,6 +4617,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10605
+--- !u!114 &114474593467854224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player (2)/Death by enemy/Death by enemy 1.R
+  m_EditorClassIdentifier: 
+  Path: event:/Player (2)/Death by enemy/Death by enemy 1.R
+  guid: bb73f532a5898c4f8471c27e5bc4d2d2
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1426
 --- !u!114 &114480349771784510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4647,7 +4840,7 @@ MonoBehaviour:
   - {fileID: 114066776612648174}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -4762,7 +4955,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2070
+  Length: 2820
 --- !u!114 &114505454946609346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5100,12 +5293,35 @@ MonoBehaviour:
   Banks:
   - {fileID: 114066776612648174}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 72
+--- !u!114 &114552212459324828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/VocesEnemigos/Frase diab\xF3lica 3"
+  m_EditorClassIdentifier: 
+  Path: "event:/VocesEnemigos/Frase diab\xF3lica 3"
+  guid: 58a9e80e1fb34541ae13be7fd3c298a7
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3114
 --- !u!114 &114556496960522964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5336,6 +5552,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 145000
+--- !u!114 &114576869995510730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemies (2)/Turret/Turretdie
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies (2)/Turret/Turretdie
+  guid: 2ab382b800639240beab827a8a1ac30b
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 714
 --- !u!114 &114579802530837146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5420,11 +5659,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 114066776612648174}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 3500
 --- !u!114 &114597385126323880
 MonoBehaviour:
@@ -5440,15 +5679,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Player (2)/Recieve damage/Recieve damage 2
   guid: 2e583ca2b5bda947a4237319f3ad6ecc
-  Banks:
-  - {fileID: 114066776612648174}
+  Banks: []
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 725
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 620
 --- !u!114 &114598180004987998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5512,11 +5750,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 114066776612648174}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 2000
 --- !u!114 &114605295316324992
 MonoBehaviour:
@@ -5624,8 +5862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Enemies/Enemies_Orb_move 2
   guid: b5fe6df1043db544b250419dfd475ae8
-  Banks:
-  - {fileID: 114066776612648174}
+  Banks: []
   IsStream: 1
   Is3D: 1
   IsOneShot: 1
@@ -5920,11 +6157,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 114066776612648174}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 3000
 --- !u!114 &114677432362967102
 MonoBehaviour:
@@ -6409,6 +6646,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 926
+--- !u!114 &114720719426557824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VocesEnemigos/Frases Diablo 2d
+  m_EditorClassIdentifier: 
+  Path: event:/VocesEnemigos/Frases Diablo 2d
+  guid: d0afcbefa0ab6442a5459391956a6720
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3500
 --- !u!114 &114722546499276624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6792,12 +7052,35 @@ MonoBehaviour:
   Banks:
   - {fileID: 114066776612648174}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 2000
+--- !u!114 &114764134998947664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/VocesEnemigos/Frase diab\xF3lica 2"
+  m_EditorClassIdentifier: 
+  Path: "event:/VocesEnemigos/Frase diab\xF3lica 2"
+  guid: 8077b27cbc93af44aebbc3705d6f68f4
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1700
 --- !u!114 &114769961461056278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7484,6 +7767,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 7221
+--- !u!114 &114847787544282948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player (2)/Death by enemy/Death orgasmo
+  m_EditorClassIdentifier: 
+  Path: event:/Player (2)/Death by enemy/Death orgasmo
+  guid: c1ee86d1b957ae4383ca9497cd0001c6
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 814
 --- !u!114 &114858729174516984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7668,6 +7974,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 175480
+--- !u!114 &114888940896660796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player (2)/Death by enemy/Death by turret
+  m_EditorClassIdentifier: 
+  Path: event:/Player (2)/Death by enemy/Death by turret
+  guid: 2e583ca2b5bda947a4237319f3ad6ecc
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 620
 --- !u!114 &114889522252281368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8197,6 +8526,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 12904
+--- !u!114 &114935060791919492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player (2)/Death by enemy/Death by orb
+  m_EditorClassIdentifier: 
+  Path: event:/Player (2)/Death by enemy/Death by orb
+  guid: 151ea025a21bac4db4e44a5a8110978f
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 834
 --- !u!114 &114936679241863830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8220,6 +8572,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1150
+--- !u!114 &114939378753536650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Items/Item_life_pickup3
+  m_EditorClassIdentifier: 
+  Path: event:/Items/Item_life_pickup3
+  guid: 0892ea0e143dd743a33165336d9c3490
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10000
 --- !u!114 &114943129719386132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8712,12 +9087,12 @@ MonoBehaviour:
   Banks:
   - {fileID: 114066776612648174}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3754
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3250
 --- !u!114 &114989641553294578
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -108,8 +108,8 @@ public class Enemy : MonoBehaviour
       else return false;
    }
 
-   protected void DamagePlayer(Controller player) {
-         player.SendMessage("TakeDamage");
+   protected void DamagePlayer(Controller player, string audio) {
+         player.SendMessage("TakeDamage", audio);
    }
    
    protected void TakeDamage() { }

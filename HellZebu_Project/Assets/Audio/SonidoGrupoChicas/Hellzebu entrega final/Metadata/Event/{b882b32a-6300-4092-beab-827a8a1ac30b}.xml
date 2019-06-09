@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{b882b32a-6300-4092-beab-827a8a1ac30b}">
 		<property name="name">
-			<value>Skull DIe</value>
+			<value>Turretdie</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
 		</property>
 		<relationship name="folder">
-			<destination>{b6b1a22a-0bbf-4a5c-a5f0-c9268b44ea69}</destination>
+			<destination>{ff3f4e8f-f24c-4a0c-a150-70478c810248}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{17af9a5b-54bd-4943-aadb-56611d1f5e88}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{0a311f0f-876e-45da-89f2-f5cac3ee3d0b}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{6f227961-5900-4a13-8413-c0baf766961a}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{17af9a5b-54bd-4943-aadb-56611d1f5e88}">

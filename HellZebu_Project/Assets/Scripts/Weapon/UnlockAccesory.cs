@@ -6,11 +6,18 @@ public class UnlockAccesory : MonoBehaviour
 {
     public bool rifleAcc;
     public GameObject text;
+    public FMODUnity.StudioEventEmitter eventEmiiter;
     //Weapon[] weapons;
+    void Start()
+    {
+        if (!eventEmiiter)
+        eventEmiiter = GetComponent<FMODUnity.StudioEventEmitter>();     
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
+            eventEmiiter.Play();
             text.SetActive(true);
             if (rifleAcc)
             {

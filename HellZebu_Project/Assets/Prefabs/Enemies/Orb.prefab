@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1628076483053124093}
   - component: {fileID: 3653580765971036799}
   - component: {fileID: 5845767355319589381}
+  - component: {fileID: 2323856481689156909}
   m_Layer: 13
   m_Name: Orb
   m_TagString: Enemy
@@ -138,7 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Portales Enemigos/Portales 1 3D
+  Event: event:/VocesEnemigos/Portales 1 3D
   PlayEvent: 1
   StopEvent: 2
   AllowFadeout: 1
@@ -146,7 +147,7 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 4
+  OverrideMinDistance: 5
   OverrideMaxDistance: 25
 --- !u!114 &5845767355319589381
 MonoBehaviour:
@@ -168,9 +169,23 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 35
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &2323856481689156909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4666846228424158038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c66f993eddf53ac4fa521b9d2c9e0a39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  eventEmiiter: {fileID: 3653580765971036799}
 --- !u!1 &8613292069196831180
 GameObject:
   m_ObjectHideFlags: 0

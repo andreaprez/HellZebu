@@ -67,6 +67,9 @@ public class MainCanvas : MonoBehaviour
     [SerializeField] private AnimationClip fadeOut;
     [SerializeField] private AnimationClip fadeIn;
 
+    [FMODUnity.EventRef]
+    public string confirmOption = "";
+  
 
     //Score
 
@@ -167,6 +170,8 @@ public class MainCanvas : MonoBehaviour
     }
     public void OpenPauseMenu(bool open)
     {
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
         if (open)
         {
             Cursor.visible = true;
@@ -191,6 +196,8 @@ public class MainCanvas : MonoBehaviour
     #region PanelSetActiveMethods
     public void SetActivePausePanel(bool active)
     {
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
         if (active)
         {
             pausePanel.SetActive(true);
@@ -202,6 +209,8 @@ public class MainCanvas : MonoBehaviour
     }
     public void SetActiveConfigPanel(bool active)
     {
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
         if (active)
         {
             configPanel.SetActive(true);
@@ -215,6 +224,8 @@ public class MainCanvas : MonoBehaviour
     }
     public void SetActiveBindingPanel(bool active)
     {
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
         if (active)
         {
             bindingPanel.SetActive(true);
@@ -289,6 +300,8 @@ public class MainCanvas : MonoBehaviour
 
     public void ExitGame()
     {
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
@@ -298,6 +311,8 @@ public class MainCanvas : MonoBehaviour
     }
     public void BackToMainMenu()
     {
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
         SceneManager.LoadScene("MainMenu");
     }
     public void UpdateKeyText()

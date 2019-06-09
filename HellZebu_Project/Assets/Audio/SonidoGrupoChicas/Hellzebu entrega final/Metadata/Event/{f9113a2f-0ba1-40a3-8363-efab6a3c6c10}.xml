@@ -75,6 +75,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{3f0d4319-e3ef-48b5-b5bb-c4cefd74504a}">
+		<property name="volume">
+			<value>2</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{fa101879-f239-4a80-b65d-0bf75be789e8}</destination>
 		</relationship>
@@ -131,6 +134,8 @@
 		<relationship name="effects">
 			<destination>{384432f3-3b84-4789-b81c-6d550b82a7d0}</destination>
 			<destination>{9301a9a0-5643-44a4-b718-b21a979eab6a}</destination>
+			<destination>{d1a46c14-19d8-494f-83b7-05e42cb51a6f}</destination>
+			<destination>{b0c01fbd-c1f1-4ca9-9b9c-8bcbe38d6ddf}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f39c09ae-4e8d-41e5-b0ac-5b8855ed8f39}" />
@@ -143,5 +148,21 @@
 	<object class="MixerBusPanner" id="{f2553dd6-347e-4d83-a1b9-99b5633c6058}" />
 	<object class="MixerBusFader" id="{384432f3-3b84-4789-b81c-6d550b82a7d0}" />
 	<object class="SpatialiserEffect" id="{9301a9a0-5643-44a4-b718-b21a979eab6a}" />
+	<object class="ThreeEQEffect" id="{d1a46c14-19d8-494f-83b7-05e42cb51a6f}">
+		<property name="lowGain">
+			<value>3.5</value>
+		</property>
+		<property name="highGain">
+			<value>-4.5</value>
+		</property>
+	</object>
+	<object class="PitchShifterEffect" id="{b0c01fbd-c1f1-4ca9-9b9c-8bcbe38d6ddf}">
+		<property name="pitch">
+			<value>0.820000052</value>
+		</property>
+		<property name="overlap">
+			<value>2</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{0cb7d7ff-264e-4036-b4fb-7320370a5774}" />
 </objects>

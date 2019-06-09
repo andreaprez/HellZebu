@@ -117,7 +117,7 @@ public class Centipede : Enemy
     }
 
     public void PlayerCollision(Controller player) {
-        DamagePlayer(player);
+        DamagePlayer(player,"centipedeCollisions");
     }
 
     public void Damage() {

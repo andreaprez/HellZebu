@@ -485,6 +485,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -40.399902
       objectReference: {fileID: 0}
+    - target: {fileID: 7649385214093811296, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: durations.Array.data[0]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 559755190569331837, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: delay
+      value: 0.08
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebc7509cdd32d3a4ead6dcdca5674646, type: 3}
 --- !u!1001 &40753688
@@ -2996,7 +3006,7 @@ Transform:
   m_LocalScale: {x: 6.8520555, y: 6.852059, z: 6.8520594}
   m_Children: []
   m_Father: {fileID: 1129007055}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -78.795006, y: 217.109, z: -190.765}
 --- !u!108 &181493743
 Light:
@@ -6603,7 +6613,7 @@ Transform:
   m_LocalScale: {x: 6.8520555, y: 6.852059, z: 6.8520594}
   m_Children: []
   m_Father: {fileID: 704310593}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -78.795006, y: 217.109, z: -190.765}
 --- !u!108 &492242999
 Light:
@@ -14275,16 +14285,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4632511633824272463, guid: b510604231d0f9d4b9bb2228b6ce96a9,
-        type: 3}
-      propertyPath: specialShootUnlocked
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595786455259011975, guid: b510604231d0f9d4b9bb2228b6ce96a9,
-        type: 3}
-      propertyPath: specialShootUnlocked
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1400472882056766078, guid: b510604231d0f9d4b9bb2228b6ce96a9,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -14295,10 +14295,25 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6730969378356262601, guid: b510604231d0f9d4b9bb2228b6ce96a9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1634704126339350965, guid: b510604231d0f9d4b9bb2228b6ce96a9,
         type: 3}
       propertyPath: pauseOn
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4632511633824272463, guid: b510604231d0f9d4b9bb2228b6ce96a9,
+        type: 3}
+      propertyPath: specialShootUnlocked
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6595786455259011975, guid: b510604231d0f9d4b9bb2228b6ce96a9,
+        type: 3}
+      propertyPath: specialShootUnlocked
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7543270518449494340, guid: b510604231d0f9d4b9bb2228b6ce96a9, type: 3}
@@ -18211,6 +18226,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1294325431}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1362205312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1362205313}
+  - component: {fileID: 1362205315}
+  - component: {fileID: 1362205314}
+  m_Layer: 0
+  m_Name: SonidoCueva (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1362205313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362205312}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -152.8, y: -14.599998, z: -123.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1823021413}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1362205314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362205312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambient/Ambiente_Cueva 2
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 100
+--- !u!114 &1362205315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362205312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c66f993eddf53ac4fa521b9d2c9e0a39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  eventEmiiter: {fileID: 1362205314}
 --- !u!1 &1363890953
 GameObject:
   m_ObjectHideFlags: 0
@@ -23270,6 +23354,75 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1779237950
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1779237951}
+  - component: {fileID: 1779237953}
+  - component: {fileID: 1779237952}
+  m_Layer: 0
+  m_Name: SonidoCueva
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1779237951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779237950}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.3, y: -14.6, z: -75.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1823021413}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1779237952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779237950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambient/Ambiente_Cueva 2
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 100
+--- !u!114 &1779237953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779237950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c66f993eddf53ac4fa521b9d2c9e0a39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  eventEmiiter: {fileID: 1779237952}
 --- !u!1001 &1779238370
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23580,6 +23733,8 @@ Transform:
   - {fileID: 319787164}
   - {fileID: 700073939}
   - {fileID: 82853316}
+  - {fileID: 1779237951}
+  - {fileID: 1362205313}
   m_Father: {fileID: 393047317}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

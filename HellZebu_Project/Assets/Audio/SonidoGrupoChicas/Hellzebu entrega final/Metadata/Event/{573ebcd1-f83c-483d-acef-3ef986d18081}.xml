@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{573ebcd1-f83c-483d-acef-3ef986d18081}">
 		<property name="name">
-			<value>Recieve damage</value>
+			<value>Death by projectile</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
-			<destination>{67cb705d-f473-4d90-ae6c-841e467bb461}</destination>
+			<destination>{c3b7980e-8b6f-4c8c-831d-1afca7553289}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{e36ae0c6-508c-4a64-87e0-fa3a46383ed3}</destination>
@@ -145,7 +145,6 @@
 	<object class="MixerBusEffectChain" id="{a60df5ff-1ba6-41f9-84d7-d9ad163031c2}">
 		<relationship name="effects">
 			<destination>{6e6c7735-d764-4b9f-bff1-d9a50a920536}</destination>
-			<destination>{942f1f5b-bbdf-43de-ae7b-e9143fc67e12}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c1cd770a-d3e8-4f73-abe5-578af5b67a5a}" />
@@ -163,7 +162,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{32eafdf8-2a9c-4e8c-b6a3-c79aa9b898b9}" />
 	<object class="MixerBusFader" id="{6e6c7735-d764-4b9f-bff1-d9a50a920536}" />
-	<object class="SpatialiserEffect" id="{942f1f5b-bbdf-43de-ae7b-e9143fc67e12}" />
 	<object class="MixerBusFader" id="{c14d941b-0d60-4791-9144-5d6a372b9bc0}" />
 	<object class="MixerBusFader" id="{55e30d0a-218a-40c4-a49b-74ccbb0fc874}" />
 </objects>
