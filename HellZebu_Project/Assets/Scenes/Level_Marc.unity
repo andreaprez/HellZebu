@@ -3904,13 +3904,14 @@ GameObject:
   m_Component:
   - component: {fileID: 93437979}
   - component: {fileID: 93437980}
+  - component: {fileID: 93437981}
   m_Layer: 0
   m_Name: Cueva (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &93437979
 Transform:
   m_ObjectHideFlags: 0
@@ -3919,11 +3920,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 93437978}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -141.1, y: 123.2, z: -199.2}
+  m_LocalPosition: {x: -81.77015, y: 15.283882, z: -73.865875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1619001400}
-  m_RootOrder: 1
+  m_Father: {fileID: 361622077}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &93437980
 MonoBehaviour:
@@ -3938,16 +3939,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: 
+  Event: event:/Ambient/Ambiente_Cueva 2
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 15.7
-  OverrideMaxDistance: 45
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 60
+--- !u!114 &93437981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93437978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c66f993eddf53ac4fa521b9d2c9e0a39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  eventEmiiter: {fileID: 93437980}
 --- !u!1001 &93639507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13859,6 +13874,8 @@ Transform:
   - {fileID: 831574596}
   - {fileID: 1958805657}
   - {fileID: 86872242}
+  - {fileID: 93437979}
+  - {fileID: 1905184035}
   m_Father: {fileID: 1823021413}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24899,7 +24916,7 @@ Transform:
   m_Children:
   - {fileID: 581053889}
   m_Father: {fileID: 1619001400}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &661334530
 MonoBehaviour:
@@ -24921,9 +24938,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 30
 --- !u!4 &662239736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2138430271, guid: 3410675e952a62b4bb8f4eeaaa78be5e,
@@ -27075,9 +27092,32 @@ PrefabInstance:
     - target: {fileID: 7649385214093811296, guid: ebc7509cdd32d3a4ead6dcdca5674646,
         type: 3}
       propertyPath: durations.Array.data[3]
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8816063929237022975, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: confirmOption
+      value: event:/UI (2)/Confirm option/Confirm option
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535745860663358044, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: m_Text
+      value: '
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5798229153560824692, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: StopEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5798229153560824692, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: Event
+      value: "event:/VocesEnemigos/Frase diab\xF3lica 1"
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5798229153560824692, guid: ebc7509cdd32d3a4ead6dcdca5674646, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ebc7509cdd32d3a4ead6dcdca5674646, type: 3}
 --- !u!4 &713288869 stripped
 Transform:
@@ -43034,6 +43074,26 @@ PrefabInstance:
       propertyPath: StopEvent
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5067414307890283009, guid: d90776200a7c12a46b2d881d702f366c,
+        type: 3}
+      propertyPath: OverrideAttenuation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5067414307890283009, guid: d90776200a7c12a46b2d881d702f366c,
+        type: 3}
+      propertyPath: OverrideMinDistance
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5067414307890283009, guid: d90776200a7c12a46b2d881d702f366c,
+        type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5067414307890283009, guid: d90776200a7c12a46b2d881d702f366c,
+        type: 3}
+      propertyPath: Event
+      value: event:/Items/Items_Totem_Activation 4
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 975589233, guid: d90776200a7c12a46b2d881d702f366c, type: 3}
     - {fileID: 975589234, guid: d90776200a7c12a46b2d881d702f366c, type: 3}
@@ -46651,6 +46711,84 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7246afb2bc6e7f4b8e46805bc1bf3c3, type: 3}
+--- !u!1 &1226972527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4877636558833917506, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+    type: 3}
+  m_PrefabInstance: {fileID: 710412241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1226972529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226972527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent: "event:/VocesEnemigos/Frase diab\xF3lica 2"
+  timer: 5
+--- !u!114 &1226972532 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8535745860663358044, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+    type: 3}
+  m_PrefabInstance: {fileID: 710412241}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226972527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1226972534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226972527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  timer: 0.2
+  fullText: You surprised me arriving so far...
+  myText: {fileID: 1226972532}
+--- !u!114 &1226972535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226972527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent: "event:/VocesEnemigos/Frase diab\xF3lica 1"
+  timer: 0.4
+--- !u!114 &1226972536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226972527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.05
+  timer: 5
+  fullText: But this hell will be your end!
+  myText: {fileID: 1226972532}
 --- !u!1001 &1227329539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53504,7 +53642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1418874130
 Transform:
   m_ObjectHideFlags: 0
@@ -53533,16 +53671,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Ambient/Ambiente_Cueva 2
+  Event: event:/Ambient/Ambiente_Cueva 4
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 30
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &1420083701 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1464711993, guid: 4930e1e4f92c9334fab44d7e2971194f,
@@ -61425,7 +61563,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1418874130}
-  - {fileID: 93437979}
   - {fileID: 661334529}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -72693,6 +72830,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1084525151}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1905184034
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1905184035}
+  - component: {fileID: 1905184037}
+  - component: {fileID: 1905184036}
+  m_Layer: 0
+  m_Name: Cueva (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1905184035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905184034}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 80.529854, y: 10.483887, z: -36.365875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 361622077}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1905184036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905184034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c66f993eddf53ac4fa521b9d2c9e0a39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  eventEmiiter: {fileID: 1905184037}
+--- !u!114 &1905184037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905184034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Ambient/Ambiente_Cueva 2
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 60
 --- !u!1001 &1906635458
 PrefabInstance:
   m_ObjectHideFlags: 0

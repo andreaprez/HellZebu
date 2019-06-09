@@ -6,20 +6,28 @@ using UnityEngine.UI;
 public class TypeWritterEffect : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float delay = 0.2f;
+    public float delay = 0.2f, timer;
     public string fullText;
     private string currentText = "";
     public Text myText;
+    private float counter;
+    private bool shown = false;
     void Start()
     {
         myText = GetComponent<Text>();
-        StartCoroutine(ShowText());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        counter += Time.deltaTime;
+        if (counter>= timer && !shown)
+        {
+            shown = true;
+
+            StartCoroutine(ShowText());
+
+        }
     }
     IEnumerator ShowText()
     {

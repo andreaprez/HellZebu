@@ -370,6 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.08
+  timer: 0
   fullText: "La espera se ha hecho aburrida....  A por \xE9l hordas!"
   myText: {fileID: 0}
 --- !u!111 &7019830826640824859
@@ -971,7 +972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogues:
-  - {fileID: 5177532372315749107}
+  - {fileID: 5736995279639851624}
   - {fileID: 3513883234382168470}
   - {fileID: 7491070401359078031}
   - {fileID: 4877636558833917506}
@@ -980,7 +981,7 @@ MonoBehaviour:
   - {fileID: 5714688275576861482}
   - {fileID: 996109259864899292}
   durations:
-  - 6
+  - 8
   - 6
   - 10
   - 6
@@ -3317,6 +3318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.08
+  timer: 0
   fullText: I got really bored waiting for you... After him hordes!
   myText: {fileID: 0}
 --- !u!111 &395298971301727363
@@ -5875,6 +5877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.03
+  timer: 0
   fullText: Tu no perteneces a este lugar. Vamos a destruirte insecto repugnante
   myText: {fileID: 0}
 --- !u!114 &2810678204512298954
@@ -7069,7 +7072,10 @@ GameObject:
   - component: {fileID: 4117636770271275397}
   - component: {fileID: 5210583893387591451}
   - component: {fileID: 3018767832831195237}
-  - component: {fileID: 1286298961612252170}
+  - component: {fileID: 2987715196142163262}
+  - component: {fileID: 559755190569331837}
+  - component: {fileID: 63149097930498544}
+  - component: {fileID: 7511620674459484072}
   m_Layer: 5
   m_Name: Scene_01_En
   m_TagString: Untagged
@@ -7137,7 +7143,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: You don't belong here... Exterminate this useless rat!
+  m_Text: 
 --- !u!111 &5210583893387591451
 Animation:
   m_ObjectHideFlags: 0
@@ -7167,7 +7173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd8c15c02d1310f4f82f1b6a56579e0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1286298961612252170
+--- !u!114 &2987715196142163262
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7176,20 +7182,57 @@ MonoBehaviour:
   m_GameObject: {fileID: 5736995279639851624}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/VocesEnemigos/Frases Diablo 2d
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  myEvent: "event:/VocesEnemigos/Frase diab\xF3lica 3"
+  timer: 4
+--- !u!114 &559755190569331837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5736995279639851624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  timer: 0.1
+  fullText: 'You don''t belong here... '
+  myText: {fileID: 0}
+--- !u!114 &63149097930498544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5736995279639851624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent: "event:/VocesEnemigos/Frase diab\xF3lica 2"
+  timer: 0.2
+--- !u!114 &7511620674459484072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5736995279639851624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  timer: 4
+  fullText: Exterminate this useless rat!
+  myText: {fileID: 0}
 --- !u!1 &5811296821306721541
 GameObject:
   m_ObjectHideFlags: 0
@@ -9391,6 +9434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.12
+  timer: 0
   fullText: 'If the first puzzle was hard this one is imposible! Breathe while you
     still can... Ha ha ha '
   myText: {fileID: 0}

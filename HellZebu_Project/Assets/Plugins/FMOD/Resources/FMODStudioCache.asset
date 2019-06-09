@@ -130,12 +130,16 @@ MonoBehaviour:
   - {fileID: 114474593467854224}
   - {fileID: 114847787544282948}
   - {fileID: 114391312297222432}
+  - {fileID: 114939378753536650}
+  - {fileID: 114552212459324828}
+  - {fileID: 114181015245898792}
+  - {fileID: 114764134998947664}
   EditorParameters: []
   MasterBanks:
   - {fileID: 114066776612648174}
   StringsBanks:
   - {fileID: 114119644881640356}
-  stringsBankWriteTime: 636956482641008407
+  stringsBankWriteTime: 636957101006577781
   cacheVersion: 3
 --- !u!114 &114002775298532650
 MonoBehaviour:
@@ -683,11 +687,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 114066776612648174}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 2037
 --- !u!114 &114066776612648174
 MonoBehaviour:
@@ -704,11 +708,11 @@ MonoBehaviour:
   Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
     entrega final\Build\Desktop\Master.bank
   SubDir: 
-  lastModified: 636956482640868753
+  lastModified: 636957101006418207
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 30589728
+    Value: 30600992
   Exists: 1
 --- !u!114 &114069450228176096
 MonoBehaviour:
@@ -1296,11 +1300,11 @@ MonoBehaviour:
   Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
     entrega final\Build\Desktop\Master.strings.bank
   SubDir: 
-  lastModified: 636956482641008407
+  lastModified: 636957101006577781
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 6156
+    Value: 6344
   Exists: 1
 --- !u!114 &114120202887303890
 MonoBehaviour:
@@ -1827,6 +1831,29 @@ MonoBehaviour:
   - Name: Desktop
     Value: 4956
   Exists: 1
+--- !u!114 &114181015245898792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/VocesEnemigos/Frase diab\xF3lica 1"
+  m_EditorClassIdentifier: 
+  Path: "event:/VocesEnemigos/Frase diab\xF3lica 1"
+  guid: 6efd1e76d8a37b47bdf55a1e271222a3
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2978
 --- !u!114 &114181722719448234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5266,12 +5293,35 @@ MonoBehaviour:
   Banks:
   - {fileID: 114066776612648174}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 72
+--- !u!114 &114552212459324828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/VocesEnemigos/Frase diab\xF3lica 3"
+  m_EditorClassIdentifier: 
+  Path: "event:/VocesEnemigos/Frase diab\xF3lica 3"
+  guid: 58a9e80e1fb34541ae13be7fd3c298a7
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3114
 --- !u!114 &114556496960522964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5609,11 +5659,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 114066776612648174}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 3500
 --- !u!114 &114597385126323880
 MonoBehaviour:
@@ -5700,11 +5750,11 @@ MonoBehaviour:
   Banks:
   - {fileID: 114066776612648174}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 0
   Length: 2000
 --- !u!114 &114605295316324992
 MonoBehaviour:
@@ -7008,6 +7058,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 2000
+--- !u!114 &114764134998947664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/VocesEnemigos/Frase diab\xF3lica 2"
+  m_EditorClassIdentifier: 
+  Path: "event:/VocesEnemigos/Frase diab\xF3lica 2"
+  guid: 8077b27cbc93af44aebbc3705d6f68f4
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1700
 --- !u!114 &114769961461056278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8499,6 +8572,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1150
+--- !u!114 &114939378753536650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Items/Item_life_pickup3
+  m_EditorClassIdentifier: 
+  Path: event:/Items/Item_life_pickup3
+  guid: 0892ea0e143dd743a33165336d9c3490
+  Banks:
+  - {fileID: 114066776612648174}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10000
 --- !u!114 &114943129719386132
 MonoBehaviour:
   m_ObjectHideFlags: 0

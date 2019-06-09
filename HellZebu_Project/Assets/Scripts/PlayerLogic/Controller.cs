@@ -88,6 +88,8 @@ public class Controller : MonoBehaviour, DataInterface
     public string deathCentipedeCollision = "";
     [FMODUnity.EventRef]
     public string changeWorld = "";
+    [FMODUnity.EventRef]
+    public string lifePick = "";
     public FMODUnity.StudioEventEmitter eventEmiiter;
 
     public bool Vulnerable { get { return vulnerable; } }
@@ -544,6 +546,8 @@ public class Controller : MonoBehaviour, DataInterface
         currentHealth++;
         MainCanvas.Instance.SplashHeal();
         healParticle.Play();
+        FMODUnity.RuntimeManager.PlayOneShot(lifePick);
+
     }
 
     public IEnumerator RestartGame(float _time) {

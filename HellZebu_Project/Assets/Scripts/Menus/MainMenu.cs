@@ -13,6 +13,10 @@ public class MainMenu : MonoBehaviour
     KeyCode newKey;
     bool waitingForKey;
     bool waitOut;
+    [FMODUnity.EventRef]
+     public string confirmOption = "";
+    [FMODUnity.EventRef]
+    public string selectOption = "";
     // Start is called before the first frame update
     void Start()
     {
@@ -20,15 +24,21 @@ public class MainMenu : MonoBehaviour
     }
     public void PlayGame()
     {
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
         SceneManager.LoadScene("Puzzle_Gorka");
     }
     public void ExitGame()
     {
     #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-    #else 
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
+#else
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
         Application.Quit();
-    #endif
+#endif
 
     }
     // Update is called once per frame
@@ -82,6 +92,7 @@ public class MainMenu : MonoBehaviour
     }
     public void SetActiveConfigPanel(bool active)
     {
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
         if (active)
         {
             configPanel.SetActive(true);
@@ -95,6 +106,8 @@ public class MainMenu : MonoBehaviour
     }
     public void SetActiveBindingPanel(bool active)
     {
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
         if (active)
         {
             bindingPanel.SetActive(true);
