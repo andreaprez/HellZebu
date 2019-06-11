@@ -37,7 +37,7 @@ public class DemonDialogueManager : MonoBehaviour
             {
                 textFadeAnimation.clip = textFadeOut;
                 textFadeAnimation.Play();
-               // MainCanvas.Instance.FadeIn();
+                MainCanvas.Instance.FadeIn();
                 playerController.movementLocked = false;
                 finished = true;
             }

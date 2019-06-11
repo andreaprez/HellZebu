@@ -879,7 +879,7 @@ RectTransform:
   - {fileID: 6712455404482872246}
   - {fileID: 5340637942393700085}
   m_Father: {fileID: 8816063929237022974}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9787,14 +9787,13 @@ GameObject:
   - component: {fileID: 1659280842029253686}
   - component: {fileID: 4705024177312577211}
   - component: {fileID: 4388856727712815151}
-  - component: {fileID: 2083841952}
   m_Layer: 5
   m_Name: Fade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1659280842029253686
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9807,7 +9806,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8816063929237022974}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9851,21 +9850,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!111 &2083841952
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8010692262258976120}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &8167353476894172803
 GameObject:
   m_ObjectHideFlags: 0
@@ -14167,10 +14151,10 @@ RectTransform:
   - {fileID: 1689620059706092289}
   - {fileID: 222914516496723666}
   - {fileID: 342126286232676695}
-  - {fileID: 8816063930565635776}
   - {fileID: 8816063930587753207}
   - {fileID: 1659280842029253686}
   - {fileID: 8347728315283800747}
+  - {fileID: 8816063930565635776}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14301,7 +14285,7 @@ MonoBehaviour:
   - {fileID: 7762152366397833878}
   - {fileID: 86330099151790336}
   sceneToLoad: 
-  fadeAnimation: {fileID: 2083841952}
+  fadeAnimation: {fileID: 8945469270878592856}
   fadeOut: {fileID: 7400000, guid: a9b8b4a19719a0a4e88319806130164a, type: 2}
   fadeIn: {fileID: 7400000, guid: a94814e7fbc9fe845a84cacee476cc9c, type: 2}
   confirmOption: 
@@ -14357,7 +14341,7 @@ Animation:
   m_GameObject: {fileID: 8816063929237022962}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 0}
+  m_Animation: {fileID: 7400000, guid: a94814e7fbc9fe845a84cacee476cc9c, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: a94814e7fbc9fe845a84cacee476cc9c, type: 2}
   - {fileID: 7400000, guid: a9b8b4a19719a0a4e88319806130164a, type: 2}
@@ -21236,7 +21220,7 @@ RectTransform:
   - {fileID: 8816063929665106380}
   - {fileID: 8816063929751459216}
   m_Father: {fileID: 8816063929237022974}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -21510,7 +21494,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8816063929237022974}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
