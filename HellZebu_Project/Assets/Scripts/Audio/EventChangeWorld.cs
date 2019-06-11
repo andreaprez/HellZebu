@@ -31,7 +31,7 @@ public class EventChangeWorld : MonoBehaviour
     {
         if (this.gameObject.layer == 9 && activated)
         {
-            Debug.Log("stopping");
+
             // musicEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             //musicEvent.release();
             eventEmiiter.Stop();
@@ -41,7 +41,7 @@ public class EventChangeWorld : MonoBehaviour
         }
         else if (this.gameObject.layer != 9 && !activated)
         {
-            Debug.Log("playing");
+
             // musicEvent.start();
             eventEmiiter.Play();
 

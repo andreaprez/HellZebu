@@ -211,6 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a80d1e7a143b4284f8a1e8ca8e1685f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsGiven: 20
   healthPoints: 8
   navMeshAgent: {fileID: 6676836128471934209}
   flockingDistanceFromAttractor: 12
@@ -221,7 +222,6 @@ MonoBehaviour:
   BulletCollision: event:/Enemies (2)/Skull/Skull Bullet Hit/Skull Bullet Hit
   Idle: event:/Enemies/Enemies_Skull_move 1
   Attack: event:/Enemies/Enemies_Skull_shoot
-  pointsGiven: 20
   tutorial: 0
   patrolPoint: {fileID: 0}
   type: 1

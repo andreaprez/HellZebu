@@ -19,7 +19,7 @@ public class InputsManager : MonoBehaviour
     private void Awake()
     {
         customPath = Application.persistentDataPath + "/customInputs.json";
-        print(customPath);
+
         currentInputs = new CurrentInputs();
         if (Instance == null)
         {

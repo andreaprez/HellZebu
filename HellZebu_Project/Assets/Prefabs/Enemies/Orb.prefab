@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 522571359e12e6240b317d99374ca65f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsGiven: 10
   healthPoints: 1
   navMeshAgent: {fileID: 4666846228424158039}
   flockingDistanceFromAttractor: 12
@@ -60,7 +61,6 @@ MonoBehaviour:
   BulletCollision: event:/Enemies/Enemies_Orb_die
   Idle: event:/Enemies/Enemies_Skull_Bullet_Hit
   Attack: 
-  pointsGiven: 10
   normalSpeed: 10
   chasingSpeed: 25
   evadeSpeed: 15
