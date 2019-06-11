@@ -397,35 +397,35 @@ public class Controller : MonoBehaviour, DataInterface
                 weaponSlot2.currentWeapon.ChangeWeapon(true);
             }
         }
-        if(Input.GetAxis("Mouse ScrollWheel") < -0.05f)
+        if (Input.GetAxis("Mouse ScrollWheel") != 0)
         {
-
-            activeWeapon = 1;
-            weaponSlot2.active = false;
-            if (weaponSlot2.currentWeapon != null)
+            if (weaponSlot1.active)
             {
-                weaponSlot2.currentWeapon.ChangeWeapon(false);
+                activeWeapon = 2;
+                weaponSlot1.active = false;
+                if (weaponSlot1.currentWeapon != null)
+                {
+                    weaponSlot1.currentWeapon.ChangeWeapon(false);
+                }
+                weaponSlot2.active = true;
+                if (weaponSlot2.currentWeapon != null)
+                {
+                    weaponSlot2.currentWeapon.ChangeWeapon(true);
+                }
             }
-            weaponSlot1.active = true;
-            if (weaponSlot1.currentWeapon != null)
+            else
             {
-                weaponSlot1.currentWeapon.ChangeWeapon(true);
-            }
-        }
-        if (Input.GetAxis("Mouse ScrollWheel") > 0.05f)
-        {
-
-
-            activeWeapon = 2;
-            weaponSlot1.active = false;
-            if (weaponSlot1.currentWeapon != null)
-            {
-                weaponSlot1.currentWeapon.ChangeWeapon(false);
-            }
-            weaponSlot2.active = true;
-            if (weaponSlot2.currentWeapon != null)
-            {
-                weaponSlot2.currentWeapon.ChangeWeapon(true);
+                activeWeapon = 1;
+                weaponSlot2.active = false;
+                if (weaponSlot2.currentWeapon != null)
+                {
+                    weaponSlot2.currentWeapon.ChangeWeapon(false);
+                }
+                weaponSlot1.active = true;
+                if (weaponSlot1.currentWeapon != null)
+                {
+                    weaponSlot1.currentWeapon.ChangeWeapon(true);
+                }
             }
         }
     }

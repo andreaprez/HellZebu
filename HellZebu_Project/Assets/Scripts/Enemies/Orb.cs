@@ -32,7 +32,7 @@ public class Orb : Enemy
     #endregion
     
     void Start() {
-
+      
 //IdleInstance = FMODUnity.RuntimeManager.CreateInstance(Idle);
   //      FMODUnity.RuntimeManager.AttachInstanceToGameObject(IdleInstance, GetComponent<Transform>(), GetComponent<Rigidbody>());
     //    IdleInstance.start();

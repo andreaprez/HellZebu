@@ -16,11 +16,9 @@ public class OptionsManager : MonoBehaviour
     public static OptionsManager Instance;
 
     public Slider bright;
-    public Toggle superVFX;
     public Toggle fullScreen;
     public Slider FOV;
     public Toggle invertXAxis;
-    public Toggle leftHanded;
     public Slider mouseSensitivity;
 
 
@@ -60,26 +58,24 @@ public class OptionsManager : MonoBehaviour
    
     public void SetOptionsValues()
     {
-  
-
 
         bright.value = customOptions.bright;
-        superVFX.isOn = customOptions.superVFX;
+   
         fullScreen.isOn = customOptions.fullScreen;
         FOV.value = customOptions.FOV;
         invertXAxis.isOn = customOptions.invertXAxis;
-        leftHanded.isOn = customOptions.leftHanded;
+   
         mouseSensitivity.value = customOptions.mouseSensitivity;
 
     }
     public void SaveOptionsValues()
     {
         customOptions.bright = bright.value;
-        customOptions.superVFX = superVFX.isOn;
+     
         customOptions.fullScreen = fullScreen.isOn;
         customOptions.FOV = FOV.value;
         customOptions.invertXAxis = invertXAxis.isOn;
-        customOptions.leftHanded = leftHanded.isOn;
+       
         customOptions.mouseSensitivity = mouseSensitivity.value;
         customOptionsFile = JsonUtility.ToJson(customOptions);
         File.WriteAllText(customPath, customOptionsFile);
@@ -89,11 +85,11 @@ public class OptionsManager : MonoBehaviour
     {
 
         customOptions.bright = defaultOptions.bright;
-        customOptions.superVFX = defaultOptions.superVFX;
+    
         customOptions.fullScreen = defaultOptions.fullScreen;
         customOptions.FOV = defaultOptions.FOV;
         customOptions.invertXAxis = defaultOptions.invertXAxis;
-        customOptions.leftHanded = defaultOptions.leftHanded;
+
         customOptions.mouseSensitivity = defaultOptions.mouseSensitivity;
 
      

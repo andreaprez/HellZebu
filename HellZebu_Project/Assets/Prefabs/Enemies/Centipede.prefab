@@ -426,6 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centipede: {fileID: 5114852854112780470}
+  pointsGiven: 50
 --- !u!114 &2586753106512854113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1889,6 +1890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f6661239a8cd9949aba237394f721e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsGiven: 100
   healthPoints: 0
   navMeshAgent: {fileID: 0}
   flockingDistanceFromAttractor: 0
@@ -2138,6 +2140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centipede: {fileID: 5114852854112780470}
+  pointsGiven: 50
 --- !u!114 &842372712106042911
 MonoBehaviour:
   m_ObjectHideFlags: 0
