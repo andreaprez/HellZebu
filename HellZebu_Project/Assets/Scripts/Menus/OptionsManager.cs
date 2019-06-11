@@ -60,8 +60,6 @@ public class OptionsManager : MonoBehaviour
    
     public void SetOptionsValues()
     {
-  
-
 
         bright.value = customOptions.bright;
         superVFX.isOn = customOptions.superVFX;
@@ -70,7 +68,7 @@ public class OptionsManager : MonoBehaviour
         invertXAxis.isOn = customOptions.invertXAxis;
         leftHanded.isOn = customOptions.leftHanded;
         mouseSensitivity.value = customOptions.mouseSensitivity;
-
+        print(customOptions.mouseSensitivity);
     }
     public void SaveOptionsValues()
     {

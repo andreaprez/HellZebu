@@ -109,6 +109,7 @@ RectTransform:
   - {fileID: 2089752986}
   - {fileID: 862025080}
   - {fileID: 7188966911940392725}
+  - {fileID: 1884821774904836716}
   m_Father: {fileID: 8816063929237022974}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2942,7 +2943,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3016,7 +3017,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5121,7 +5122,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6117,6 +6118,102 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9dc73f6ea01c17c4f8edd82174ab2c7c, type: 3}
   - {fileID: 21300000, guid: afea40dc622a6934f9fc2a961180a2f9, type: 3}
   - {fileID: 21300000, guid: 6147572221277b34986c97ae202ecbd1, type: 3}
+--- !u!1 &5277156879797912079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1884821774904836716}
+  - component: {fileID: 3376245535777482691}
+  - component: {fileID: 7037842654144479840}
+  - component: {fileID: 4831151116158746716}
+  m_Layer: 5
+  m_Name: KillStreakPopUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1884821774904836716
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5277156879797912079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1513775737}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -400}
+  m_SizeDelta: {x: 400, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3376245535777482691
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5277156879797912079}
+  m_CullTransparentMesh: 0
+--- !u!114 &7037842654144479840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5277156879797912079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 849309753eeed7f43951f0ce3eab3cc3, type: 3}
+    m_FontSize: 74
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 112
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 0
+--- !u!111 &4831151116158746716
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5277156879797912079}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: c5689b184be34a84aa72a6fedb659ec3, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c5689b184be34a84aa72a6fedb659ec3, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &5284738538233042877
 GameObject:
   m_ObjectHideFlags: 0
@@ -7340,7 +7437,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8803,7 +8900,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -10232,13 +10329,14 @@ GameObject:
   - component: {fileID: 1659280842029253686}
   - component: {fileID: 4705024177312577211}
   - component: {fileID: 4388856727712815151}
+  - component: {fileID: 2083841952}
   m_Layer: 5
   m_Name: Fade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1659280842029253686
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10295,6 +10393,21 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!111 &2083841952
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8010692262258976120}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &8167353476894172803
 GameObject:
   m_ObjectHideFlags: 0
@@ -11347,7 +11460,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -13495,6 +13608,7 @@ GameObject:
   - component: {fileID: 8816063929125938306}
   - component: {fileID: 8816063929125938316}
   - component: {fileID: 8816063929125938307}
+  - component: {fileID: 58664840}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -13558,6 +13672,29 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &58664840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063929125938305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Weapon/TeleportReload2D
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8816063929127775409
 GameObject:
   m_ObjectHideFlags: 0
@@ -14631,7 +14768,7 @@ GameObject:
   - component: {fileID: 8816063929237022968}
   - component: {fileID: 8945469270878592856}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MainCanvas
   m_TagString: MainCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14762,7 +14899,8 @@ MonoBehaviour:
   wChangeCD: 3
   maxWChangeCD: 0
   splashHeal: {fileID: 1914349074807108914}
-  healParticle: {fileID: 0}
+  healParticle: {fileID: 2477088011150332446, guid: bf13a74ee1cf4074196e117298343960,
+    type: 3}
   splashDamage: {fileID: 610543159858797857}
   splashChangeWorld: {fileID: 247240292965895781}
   maxBullets: 0
@@ -14777,19 +14915,19 @@ MonoBehaviour:
   bulletRechargeTimer: 0
   PARAR_EL_PUTO_PAUSE_DE_MIERDA_GRACIAS: 0
   buttons:
-  - {fileID: 8816063929681946894}
-  - {fileID: 8816063930116344552}
-  - {fileID: 8816063928761021132}
-  - {fileID: 8816063928817920429}
-  - {fileID: 8816063930408221396}
-  - {fileID: 8816063929215494485}
-  - {fileID: 8816063929284034109}
-  - {fileID: 8816063930149569810}
-  - {fileID: 8816063930316303098}
-  - {fileID: 8816063929494900137}
-  - {fileID: 8816063929253037557}
+  - {fileID: 2427373231600126324}
+  - {fileID: 6661665746481626632}
+  - {fileID: 7570131676178079809}
+  - {fileID: 638380921168470626}
+  - {fileID: 264496223552184257}
+  - {fileID: 2505534331663997466}
+  - {fileID: 1095011475621242559}
+  - {fileID: 2333858892164451344}
+  - {fileID: 5057740804284769874}
+  - {fileID: 7762152366397833878}
+  - {fileID: 86330099151790336}
   sceneToLoad: 
-  fadeAnimation: {fileID: 8945469270878592856}
+  fadeAnimation: {fileID: 2083841952}
   fadeOut: {fileID: 7400000, guid: a9b8b4a19719a0a4e88319806130164a, type: 2}
   fadeIn: {fileID: 7400000, guid: a94814e7fbc9fe845a84cacee476cc9c, type: 2}
   killStreakTime: 2
@@ -14797,9 +14935,11 @@ MonoBehaviour:
   pointsGiven: 10
   pointMultiplier: 1
   playerScore: 0
+  killstreakAnim: {fileID: 4831151116158746716}
   killStreak: {fileID: 862025082}
   score: {fileID: 2089752984}
   popUpText: {fileID: 6358100399711961197}
+  popUpComboText: {fileID: 7037842654144479840}
   popUp: {fileID: 6599993803402394457}
 --- !u!114 &8816063929237022968
 MonoBehaviour:
@@ -14829,13 +14969,13 @@ MonoBehaviour:
     invertXAxis: 0
     leftHanded: 0
     mouseSensitivity: 0
-  bright: {fileID: 8816063930410149543}
-  superVFX: {fileID: 8816063929591041153}
-  fullScreen: {fileID: 8816063929281633264}
-  FOV: {fileID: 8816063929176302332}
-  invertXAxis: {fileID: 8816063930382212708}
-  leftHanded: {fileID: 8816063929186688452}
-  mouseSensitivity: {fileID: 8816063930633865425}
+  bright: {fileID: 4906785768927223566}
+  superVFX: {fileID: 1186497625021958699}
+  fullScreen: {fileID: 7474801389691071136}
+  FOV: {fileID: 3664586405302335071}
+  invertXAxis: {fileID: 7033258025572289048}
+  leftHanded: {fileID: 4546046639337584554}
+  mouseSensitivity: {fileID: 1949084415486567225}
 --- !u!111 &8945469270878592856
 Animation:
   m_ObjectHideFlags: 0
@@ -15438,6 +15578,7 @@ GameObject:
   - component: {fileID: 8816063929308657797}
   - component: {fileID: 8816063929308657799}
   - component: {fileID: 8816063929308657798}
+  - component: {fileID: 567687473}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -15501,6 +15642,29 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &567687473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063929308657796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Weapon/TeleportReload2D
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8816063929356020158
 GameObject:
   m_ObjectHideFlags: 0
@@ -16100,6 +16264,7 @@ GameObject:
   - component: {fileID: 8816063929488866312}
   - component: {fileID: 8816063929488866314}
   - component: {fileID: 8816063929488866313}
+  - component: {fileID: 1538760152}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -16163,6 +16328,29 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &1538760152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063929488866319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Weapon/TeleportReload2D
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8816063929494900143
 GameObject:
   m_ObjectHideFlags: 0
@@ -17693,7 +17881,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -40.400146}
+  m_AnchoredPosition: {x: 0, y: -40.399902}
   m_SizeDelta: {x: 551.3, y: 80.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8816063929751459218
@@ -18405,6 +18593,7 @@ GameObject:
   - component: {fileID: 8816063929911309292}
   - component: {fileID: 8816063929911309294}
   - component: {fileID: 8816063929911309293}
+  - component: {fileID: 721199133}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -18468,6 +18657,29 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &721199133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063929911309283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Weapon/TeleportReload2D
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8816063929917660015
 GameObject:
   m_ObjectHideFlags: 0
@@ -21529,6 +21741,7 @@ GameObject:
   - component: {fileID: 8816063930565358187}
   - component: {fileID: 8816063930565358165}
   - component: {fileID: 8816063930565358164}
+  - component: {fileID: 1418612095}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -21592,6 +21805,29 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &1418612095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063930565358186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Weapon/TeleportReload2D
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8816063930565635783
 GameObject:
   m_ObjectHideFlags: 0
