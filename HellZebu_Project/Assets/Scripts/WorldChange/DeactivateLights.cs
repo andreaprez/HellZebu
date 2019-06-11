@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DeactivateLights : MonoBehaviour
 {
-    public GameObject particles;
+    public GameObject lights;
     void Start()
     {
         
@@ -16,17 +15,8 @@ public class DeactivateLights : MonoBehaviour
     {
         if (gameObject.layer == LayerMask.NameToLayer("HideFromCamera"))
         {
-            //particles.layer = LayerMask.NameToLayer("HideFromCamera");
+            lights.SetActive(false);
         }
-        else
-        {
-            if (particles != null)
-            {
-                foreach (Transform t in particles.GetComponentsInChildren<Transform>())
-                {
-                    t.gameObject.layer = LayerMask.NameToLayer("AlwaysVisible");
-                }
-            }
-        }
+        else lights.SetActive(true);
     }
 }

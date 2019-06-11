@@ -12,7 +12,6 @@ public class EnemyWeakPoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Projectile")) {
-            MainCanvas.Instance.ShowHitmarker();
             centipede.weakPoints.Remove(gameObject);
             centipede.Damage();
             Destroy(gameObject);

@@ -106,29 +106,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7481153515030906153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6859492901723063919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Ambient/Ambiente_Antorcha 2
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 5
-  OverrideMaxDistance: 12
 --- !u!1001 &122351107834674963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -221,11 +198,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2311142165485206420, guid: 87dbfd2129613c844b2f28b7a9221224,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 596807349236982740, guid: 87dbfd2129613c844b2f28b7a9221224,
         type: 3}
       propertyPath: prewarm
@@ -246,12 +218,6 @@ PrefabInstance:
 --- !u!4 &6202295077726770930 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6314142524673010145, guid: 87dbfd2129613c844b2f28b7a9221224,
-    type: 3}
-  m_PrefabInstance: {fileID: 122351107834674963}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6859492901723063919 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6810425446482065788, guid: 87dbfd2129613c844b2f28b7a9221224,
     type: 3}
   m_PrefabInstance: {fileID: 122351107834674963}
   m_PrefabAsset: {fileID: 0}

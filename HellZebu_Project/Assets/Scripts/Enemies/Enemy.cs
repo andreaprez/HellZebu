@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
    [SerializeField] protected GameObject light;
 
    public enum EWorld { ICE, FIRE };
-   public EWorld currentWorld;
+   protected EWorld currentWorld;
    protected GameObject player;
     [Header("Sounds")]
     [FMODUnity.EventRef]
@@ -108,8 +108,8 @@ public class Enemy : MonoBehaviour
       else return false;
    }
 
-   protected void DamagePlayer(Controller player, string audio) {
-         player.SendMessage("TakeDamage", audio);
+   protected void DamagePlayer(Controller player) {
+         player.SendMessage("TakeDamage");
    }
    
    protected void TakeDamage() { }

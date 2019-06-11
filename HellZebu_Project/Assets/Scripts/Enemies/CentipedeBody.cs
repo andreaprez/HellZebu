@@ -10,7 +10,7 @@ public class CentipedeBody : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other) {
-        if (other.gameObject.CompareTag("Player") && EnemyGlobalBlackboard.playerController.Vulnerable) {
+        if (other.gameObject.CompareTag("Player")) {
             centipede.PlayerCollision(other.GetComponent<Controller>());
         }
     }
