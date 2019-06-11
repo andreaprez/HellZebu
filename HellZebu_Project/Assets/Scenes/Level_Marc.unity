@@ -1549,7 +1549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34122442}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -63.24, y: 60.96, z: -96.1}
+  m_LocalPosition: {x: -63.24, y: 73.16, z: -96.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1401764228}
@@ -1566,8 +1566,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0.36739042, b: 0, a: 1}
-  m_Intensity: 4.8
-  m_Range: 22.63
+  m_Intensity: 5
+  m_Range: 25
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -1600,10 +1600,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (40)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.71
@@ -1659,6 +1655,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0875
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (40)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -3615,10 +3615,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (42)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.71
@@ -3675,6 +3671,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.07474
       objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (42)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
 --- !u!1001 &86821639
@@ -3692,7 +3692,7 @@ PrefabInstance:
     - target: {fileID: 6386240920051124371, guid: 226def894e25006498ed8ca6e73a5559,
         type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6386240920051124374, guid: 226def894e25006498ed8ca6e73a5559,
         type: 3}
@@ -4266,7 +4266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 94210678}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -128.81, y: 67.95, z: -74.09}
+  m_LocalPosition: {x: -129.89, y: 67.95, z: -73.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1401764228}
@@ -4283,8 +4283,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0.36739042, b: 0, a: 1}
-  m_Intensity: 2
-  m_Range: 16.8
+  m_Intensity: 3.8
+  m_Range: 27.73
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -5641,6 +5641,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.27731636
       objectReference: {fileID: 0}
+    - target: {fileID: 791081935, guid: 4930e1e4f92c9334fab44d7e2971194f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.6
+      objectReference: {fileID: 0}
     - target: {fileID: 791081934, guid: 4930e1e4f92c9334fab44d7e2971194f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 40
@@ -5648,10 +5652,6 @@ PrefabInstance:
     - target: {fileID: 791081934, guid: 4930e1e4f92c9334fab44d7e2971194f, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 791081935, guid: 4930e1e4f92c9334fab44d7e2971194f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4930e1e4f92c9334fab44d7e2971194f, type: 3}
@@ -5985,6 +5985,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 901508106, guid: c73b277078d3eaa47aad25b86be62ce7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 901508106, guid: c73b277078d3eaa47aad25b86be62ce7, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7487196229393869796, guid: c73b277078d3eaa47aad25b86be62ce7,
         type: 3}
       propertyPath: m_IsActive
@@ -5993,14 +6001,6 @@ PrefabInstance:
     - target: {fileID: 8491679427896156518, guid: c73b277078d3eaa47aad25b86be62ce7,
         type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 901508106, guid: c73b277078d3eaa47aad25b86be62ce7, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 901508106, guid: c73b277078d3eaa47aad25b86be62ce7, type: 3}
-      propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7335,6 +7335,10 @@ PrefabInstance:
     - target: {fileID: 1340323525, guid: f212603a009d18540927250cd2a1b1d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724448537, guid: f212603a009d18540927250cd2a1b1d2, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f212603a009d18540927250cd2a1b1d2, type: 3}
@@ -8925,10 +8929,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (45)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.71
@@ -8985,6 +8985,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0875
       objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (45)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
 --- !u!4 &200814666 stripped
@@ -9000,10 +9004,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (49)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -36.811005
@@ -9059,6 +9059,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0875
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (49)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -9919,7 +9923,7 @@ PrefabInstance:
     - target: {fileID: 6386240920051124371, guid: 226def894e25006498ed8ca6e73a5559,
         type: 3}
       propertyPath: m_Layer
-      value: 2
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6386240920051124374, guid: 226def894e25006498ed8ca6e73a5559,
         type: 3}
@@ -11593,10 +11597,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.14
@@ -11652,6 +11652,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.08749811
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -11875,10 +11879,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (17)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.14
@@ -11934,6 +11934,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.10000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (17)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -14983,10 +14987,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.469986
@@ -15042,6 +15042,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -15310,7 +15314,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 394475390}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -30.76, y: 66.42, z: -121.44}
+  m_LocalPosition: {x: -32.32, y: 71.5, z: -130.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1401764228}
@@ -15327,8 +15331,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0.59836286, b: 0, a: 1}
-  m_Intensity: 2.1
-  m_Range: 14.18
+  m_Intensity: 3
+  m_Range: 15
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -15760,10 +15764,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.949997
@@ -15819,6 +15819,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.14012401
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -16089,8 +16093,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0.39526987, b: 0, a: 1}
-  m_Intensity: 2.6
-  m_Range: 16.7
+  m_Intensity: 3
+  m_Range: 19.59
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -16862,10 +16866,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (18)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -47.803497
@@ -16921,6 +16921,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (18)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -17328,10 +17332,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (37)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.14
@@ -17387,6 +17387,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0875
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (37)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -17873,10 +17877,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (22)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.52021
@@ -17932,6 +17932,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (22)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -22568,10 +22572,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.309998
@@ -22627,6 +22627,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (13)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -27423,10 +27427,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (47)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -36.57
@@ -27482,6 +27482,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0875
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (47)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -27699,25 +27703,10 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8816063929751459216, guid: ebc7509cdd32d3a4ead6dcdca5674646,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -40.399902
-      objectReference: {fileID: 0}
     - target: {fileID: 8010692262258976120, guid: ebc7509cdd32d3a4ead6dcdca5674646,
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7649385214093811296, guid: ebc7509cdd32d3a4ead6dcdca5674646,
-        type: 3}
-      propertyPath: durations.Array.data[4]
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7649385214093811296, guid: ebc7509cdd32d3a4ead6dcdca5674646,
-        type: 3}
-      propertyPath: durations.Array.data[3]
-      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8816063929237022975, guid: ebc7509cdd32d3a4ead6dcdca5674646,
         type: 3}
@@ -27734,27 +27723,25 @@ PrefabInstance:
       propertyPath: killstreakAnim
       value: 
       objectReference: {fileID: 1601956670}
-    - target: {fileID: 8535745860663358044, guid: ebc7509cdd32d3a4ead6dcdca5674646,
-        type: 3}
-      propertyPath: m_Text
-      value: '
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 5798229153560824692, guid: ebc7509cdd32d3a4ead6dcdca5674646,
-        type: 3}
-      propertyPath: StopEvent
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5798229153560824692, guid: ebc7509cdd32d3a4ead6dcdca5674646,
-        type: 3}
-      propertyPath: Event
-      value: "event:/VocesEnemigos/Frase diab\xF3lica 1"
-      objectReference: {fileID: 0}
     - target: {fileID: 8816063930565635783, guid: ebc7509cdd32d3a4ead6dcdca5674646,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816063929751459216, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -40.399902
+      objectReference: {fileID: 0}
+    - target: {fileID: 7649385214093811296, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: durations.Array.data[4]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7649385214093811296, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: durations.Array.data[3]
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7250808106487114649, guid: ebc7509cdd32d3a4ead6dcdca5674646,
         type: 3}
@@ -27780,6 +27767,23 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535745860663358044, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: m_Text
+      value: '
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5798229153560824692, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: StopEvent
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5798229153560824692, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: Event
+      value: "event:/VocesEnemigos/Frase diab\xF3lica 1"
       objectReference: {fileID: 0}
     - target: {fileID: 6611765243134046257, guid: ebc7509cdd32d3a4ead6dcdca5674646,
         type: 3}
@@ -29440,15 +29444,15 @@ PrefabInstance:
       propertyPath: m_NavMeshLayer
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2719098702376105882, guid: f7246afb2bc6e7f4b8e46805bc1bf3c3,
-        type: 3}
-      propertyPath: m_Radius
-      value: 1.52
-      objectReference: {fileID: 0}
     - target: {fileID: 6238795109162923955, guid: f7246afb2bc6e7f4b8e46805bc1bf3c3,
         type: 3}
       propertyPath: m_Radius
       value: 1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719098702376105882, guid: f7246afb2bc6e7f4b8e46805bc1bf3c3,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.52
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7246afb2bc6e7f4b8e46805bc1bf3c3, type: 3}
@@ -29882,7 +29886,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 0.8548728, b: 0, a: 1}
   m_Intensity: 2.4
-  m_Range: 7.22
+  m_Range: 8.5
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -30741,10 +30745,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (38)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.14
@@ -30800,6 +30800,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0875
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (38)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -32660,6 +32664,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.913079
       objectReference: {fileID: 0}
+    - target: {fileID: 1660643719287119556, guid: d3c5e18cc33910f46a95a9ca8bb0231d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.2911867
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660643719287119556, guid: d3c5e18cc33910f46a95a9ca8bb0231d,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.2688132
+      objectReference: {fileID: 0}
+    - target: {fileID: 1660643719287119556, guid: d3c5e18cc33910f46a95a9ca8bb0231d,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 1.03
+      objectReference: {fileID: 0}
     - target: {fileID: 5019278040720849330, guid: d3c5e18cc33910f46a95a9ca8bb0231d,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -32704,21 +32723,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.87268
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660643719287119556, guid: d3c5e18cc33910f46a95a9ca8bb0231d,
-        type: 3}
-      propertyPath: m_Radius
-      value: 1.2911867
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660643719287119556, guid: d3c5e18cc33910f46a95a9ca8bb0231d,
-        type: 3}
-      propertyPath: m_Center.z
-      value: 0.2688132
-      objectReference: {fileID: 0}
-    - target: {fileID: 1660643719287119556, guid: d3c5e18cc33910f46a95a9ca8bb0231d,
-        type: 3}
-      propertyPath: m_Center.y
-      value: 1.03
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1660643719287119556, guid: d3c5e18cc33910f46a95a9ca8bb0231d, type: 3}
@@ -34216,10 +34220,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.14
@@ -34275,6 +34275,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.07474
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -36036,7 +36040,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 0.9370693, b: 0, a: 1}
   m_Intensity: 1.62
-  m_Range: 22.09
+  m_Range: 25
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -39847,10 +39851,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (25)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.826813
@@ -39906,6 +39906,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.15000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (25)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -40838,10 +40842,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (43)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.71
@@ -40897,6 +40897,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0875
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (43)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -41922,10 +41926,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (16)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -47.18
@@ -41981,6 +41981,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.10000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (16)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -43044,10 +43048,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.284714
@@ -43103,6 +43103,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.10000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (15)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -44369,10 +44373,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.949997
@@ -44428,6 +44428,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.093416
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -48451,10 +48455,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.14
@@ -48510,6 +48510,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.074744
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -48910,7 +48914,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275401046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -93.5, y: 72.33, z: -93.25}
+  m_LocalPosition: {x: -94.93, y: 71.64, z: -93.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1401764228}
@@ -48927,8 +48931,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0.52179044, b: 0, a: 1}
-  m_Intensity: 2.4
-  m_Range: 9.68
+  m_Intensity: 3
+  m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -54042,6 +54046,7 @@ Transform:
   - {fileID: 1987877967}
   - {fileID: 1630639109}
   - {fileID: 1472614220}
+  - {fileID: 1607979403}
   m_Father: {fileID: 8904322773297826038}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -57297,16 +57302,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1868328437317491755, guid: 03e1948c6a9f42d45a94819074718069,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1868328437317491755, guid: 03e1948c6a9f42d45a94819074718069,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7519901301007334667, guid: 03e1948c6a9f42d45a94819074718069,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -57316,6 +57311,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.0068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1868328437317491755, guid: 03e1948c6a9f42d45a94819074718069,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1868328437317491755, guid: 03e1948c6a9f42d45a94819074718069,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03e1948c6a9f42d45a94819074718069, type: 3}
@@ -57527,10 +57532,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (23)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.15
@@ -57586,6 +57587,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.10000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (23)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -61679,10 +61684,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (46)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -36.72
@@ -61738,6 +61739,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0875
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (46)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -62206,6 +62211,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc80932bebbeac4ca04b1f52700608c, type: 3}
+--- !u!1 &1607979402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1607979403}
+  - component: {fileID: 1607979404}
+  m_Layer: 0
+  m_Name: Point Light (49)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1607979403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607979402}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -49.65, y: 75.41, z: -129.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1401764228}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &1607979404
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607979402}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 2
+  m_Color: {r: 1, g: 0.5471423, b: 0, a: 1}
+  m_Intensity: 3
+  m_Range: 12
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 122135
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 0
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1608732184
 GameObject:
   m_ObjectHideFlags: 0
@@ -62398,6 +62472,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: batsGameObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386240920051124371, guid: 226def894e25006498ed8ca6e73a5559,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6386240920051124374, guid: 226def894e25006498ed8ca6e73a5559,
         type: 3}
@@ -63333,7 +63412,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1630639108}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -63.47, y: 75.11, z: -132.09}
+  m_LocalPosition: {x: -75.6, y: 75.41, z: -129.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1401764228}
@@ -63350,8 +63429,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0.5471423, b: 0, a: 1}
-  m_Intensity: 1.73
-  m_Range: 18.71
+  m_Intensity: 3
+  m_Range: 12
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -65255,10 +65334,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (35)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.14
@@ -65315,6 +65390,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.0875
       objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (35)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
 --- !u!4 &1684089361 stripped
@@ -65330,10 +65409,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (36)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.14
@@ -65389,6 +65464,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0875
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (36)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -65597,10 +65676,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (20)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.315186
@@ -65656,6 +65731,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.10000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (20)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -65895,10 +65974,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (41)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.71
@@ -65954,6 +66029,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0875
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (41)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -66910,10 +66989,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (48)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -36.57
@@ -66969,6 +67044,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0875
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (48)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -69708,10 +69787,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (34)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.14
@@ -69767,6 +69842,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.07474
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (34)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -71256,10 +71335,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (39)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.14
@@ -71315,6 +71390,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0875
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (39)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -73397,10 +73476,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.309998
@@ -73456,6 +73531,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (14)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -73800,10 +73879,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (24)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -39.46871
@@ -73859,6 +73934,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (24)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -75381,16 +75460,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 19.182333
       objectReference: {fileID: 0}
-    - target: {fileID: 1868328437317491755, guid: 03e1948c6a9f42d45a94819074718069,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1868328437317491755, guid: 03e1948c6a9f42d45a94819074718069,
-        type: 3}
-      propertyPath: m_NavMeshLayer
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7519901301007334667, guid: 03e1948c6a9f42d45a94819074718069,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -75400,6 +75469,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.039
+      objectReference: {fileID: 0}
+    - target: {fileID: 1868328437317491755, guid: 03e1948c6a9f42d45a94819074718069,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1868328437317491755, guid: 03e1948c6a9f42d45a94819074718069,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03e1948c6a9f42d45a94819074718069, type: 3}
@@ -76761,10 +76840,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (44)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -40.71
@@ -76820,6 +76895,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.0875
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (44)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -77432,7 +77511,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985129130}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -93.5, y: 72.33, z: -118.71}
+  m_LocalPosition: {x: -96.81, y: 72.33, z: -118.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1401764228}
@@ -78097,10 +78176,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 392891138}
     m_Modifications:
-    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
-      propertyPath: m_Name
-      value: estalactita_low (21)
-      objectReference: {fileID: 0}
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.222855
@@ -78156,6 +78231,10 @@ PrefabInstance:
     - target: {fileID: 676902621, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.09999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 676902620, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
+      propertyPath: m_Name
+      value: estalactita_low (21)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762bcd591971e9044b4f8015329dce2e, type: 3}
@@ -81985,7 +82064,7 @@ Light:
   m_Type: 2
   m_Color: {r: 1, g: 0.36739042, b: 0, a: 1}
   m_Intensity: 4.9
-  m_Range: 29.45
+  m_Range: 33.92
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:

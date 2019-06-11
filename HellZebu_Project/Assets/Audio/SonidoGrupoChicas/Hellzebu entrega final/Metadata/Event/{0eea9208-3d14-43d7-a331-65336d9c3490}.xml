@@ -5,7 +5,7 @@
 			<value>Item_life_pickup3</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{0afb6305-bb6e-4b0b-8f94-6e80a3a6af96}</destination>
@@ -68,9 +68,6 @@
 		</relationship>
 	</object>
 	<object class="GroupTrack" id="{33366b9f-83fe-4308-adaa-8c9770c07b52}">
-		<relationship name="modules">
-			<destination>{24bedf00-64c3-4d98-9df7-e1479703222a}</destination>
-		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{b13ed8bf-401c-4d61-a581-bf3eb36a8cca}</destination>
 		</relationship>
@@ -78,7 +75,6 @@
 	<object class="Timeline" id="{c97a1ba8-7199-4ce3-9e1d-de570f01e1a0}">
 		<relationship name="modules">
 			<destination>{703e29c2-f1cc-486b-a2c0-c92c69a2c639}</destination>
-			<destination>{24bedf00-64c3-4d98-9df7-e1479703222a}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{3952ff33-d214-41e4-9182-48fbba7ec6e9}">
@@ -118,14 +114,6 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{3952ff33-d214-41e4-9182-48fbba7ec6e9}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{24bedf00-64c3-4d98-9df7-e1479703222a}">
-		<property name="length">
-			<value>10</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{54dbc2e0-be55-48c9-a09e-45878a6c5e8f}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{b13ed8bf-401c-4d61-a581-bf3eb36a8cca}">
