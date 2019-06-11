@@ -24,7 +24,7 @@ public class Weapon : MonoBehaviour
     public float shotCost;
     public float coolingSpeed;
     public float overheatedRecoveryTime;
-    public GameObject shootingPoint, specialShotgunShootPoint;
+    public GameObject shootingPoint;
     public LayerMask ignoreMasks;
 
     protected GameObject currentAmmo;
@@ -39,7 +39,6 @@ public class Weapon : MonoBehaviour
     private bool overheatedFire;
     private float overheatLerpFire;
     public GameObject muzzlePrefFireRifle, muzzlePrefFireShot;
-    public GameObject specialShotgunPart;
 
     [Header("Ice")]
     public GameObject iceAmmo;
@@ -73,7 +72,6 @@ public class Weapon : MonoBehaviour
     public Image fireFillBar;
     public Image iceFillBar;
     public Image fireHolder;
-    public Color overheatedColor;
     public GameObject fireOverheatedText;
     public Image iceHolder;
     public GameObject iceOverheatedText;
@@ -98,13 +96,6 @@ public class Weapon : MonoBehaviour
 
     [FMODUnity.EventRef]
     public string ChangeWeaponSound = "";
-    [FMODUnity.EventRef]
-    public string specialShotRifle = "";
-    [FMODUnity.EventRef]
-    public string specialShotShotgun = "";
-
-
-    private Controller playerController;
 
     void OnWorldChange()
     {
@@ -114,8 +105,6 @@ public class Weapon : MonoBehaviour
 
     public virtual void Start()
     {
-        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<Controller>();
-        
         WorldChangerManager.worldChangeEvent += OnWorldChange;
         fireFillBar.fillAmount = iceFillBar.fillAmount = 0;
         fireUI.SetActive(true);
@@ -138,7 +127,7 @@ public class Weapon : MonoBehaviour
 
     public virtual void Update()
     {
-        if (Controller.Instance.pauseOn == false && !playerController.movementLocked)
+        if (Controller.Instance.pauseOn == false)
         {
             //Testing UI
             fireFillBar.fillAmount = (float)currentOverheatValueFire / (float)maxOverheatValue;
@@ -160,7 +149,7 @@ public class Weapon : MonoBehaviour
 
                 if (weaponShootMode == WeaponShootModes.Automatic)
                 {
-                    if ( Input.GetKey(InputsManager.Instance.currentInputs.shoot))
+                    if (Input.GetKey(InputsManager.Instance.currentInputs.shoot))
                     {
                         if (weaponElementalMode == WeaponElementalModes.Fire)
                         {
@@ -171,8 +160,8 @@ public class Weapon : MonoBehaviour
                                 if (currentOverheatValueFire >= maxOverheatValue)
                                 {
                                     overheatedFire = true;
-                                    fireHolder.color = overheatedColor;
-                                    fireFillBar.color = overheatedColor;
+                                    fireHolder.color = Color.black;
+                                    fireFillBar.color = Color.white;
                                     fireOverheatedText.SetActive(true);
                                     FMODUnity.RuntimeManager.PlayOneShot(OverHeated, transform.position);
                                     //clamp
@@ -192,8 +181,8 @@ public class Weapon : MonoBehaviour
                                 if (currentOverheatValueIce >= maxOverheatValue)
                                 {
                                     overheatedIce = true;
-                                    iceHolder.color = overheatedColor;
-                                    iceFillBar.color = overheatedColor;
+                                    iceHolder.color = Color.black;
+                                    iceFillBar.color = Color.white;
                                     iceOverheatedText.SetActive(true);
                                     //clamp
                                     FMODUnity.RuntimeManager.PlayOneShot(OverHeated, transform.position);
@@ -223,8 +212,8 @@ public class Weapon : MonoBehaviour
                                 if (currentOverheatValueFire >= maxOverheatValue)
                                 {
                                     overheatedFire = true;
-                                    fireHolder.color = overheatedColor;
-                                    fireFillBar.color = overheatedColor;
+                                    fireHolder.color = Color.black;
+                                    fireFillBar.color = Color.white;
                                     fireOverheatedText.SetActive(true);
                                     //clamp
                                     currentOverheatValueFire = maxOverheatValue;
@@ -243,8 +232,8 @@ public class Weapon : MonoBehaviour
                                 if (currentOverheatValueIce >= maxOverheatValue)
                                 {
                                     overheatedIce = true;
-                                    iceHolder.color = overheatedColor;
-                                    iceFillBar.color = overheatedColor;
+                                    iceHolder.color = Color.black;
+                                    iceFillBar.color = Color.white;
                                     iceOverheatedText.SetActive(true);
                                     //clamp
                                     currentOverheatValueIce = maxOverheatValue;
@@ -287,8 +276,8 @@ public class Weapon : MonoBehaviour
                                 if (currentOverheatValueFire >= maxOverheatValue)
                                 {
                                     overheatedFire = true;
-                                    fireHolder.color = overheatedColor;
-                                    fireFillBar.color = overheatedColor;
+                                    fireHolder.color = Color.black;
+                                    fireFillBar.color = Color.white;
                                     fireOverheatedText.SetActive(true);
                                     //clamp
                                     currentOverheatValueFire = maxOverheatValue;
@@ -306,8 +295,8 @@ public class Weapon : MonoBehaviour
                                 if (currentOverheatValueIce >= maxOverheatValue)
                                 {
                                     overheatedIce = true;
-                                    iceHolder.color = overheatedColor;
-                                    iceFillBar.color = overheatedColor;
+                                    iceHolder.color = Color.black;
+                                    iceFillBar.color = Color.white;
                                     iceOverheatedText.SetActive(true);
                                     //clamp
                                     currentOverheatValueIce = maxOverheatValue;
@@ -383,7 +372,7 @@ public class Weapon : MonoBehaviour
             accesory.SetActive(true);
             if (lastMode == WeaponElementalModes.Fire) { fireUI.SetActive(true); }
             else if (lastMode == WeaponElementalModes.Ice) { iceUI.SetActive(true); }
-           // FMODUnity.RuntimeManager.PlayOneShot(ChangeWeaponSound, transform.position);
+            FMODUnity.RuntimeManager.PlayOneShot(ChangeWeaponSound, transform.position);
             weaponCanvas.SetActive(true);
             
 
