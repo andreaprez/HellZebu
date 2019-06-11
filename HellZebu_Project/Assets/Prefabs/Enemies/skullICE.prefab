@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 5389833987089000703}
   - component: {fileID: 6676836128471934209}
   - component: {fileID: 4938503761477620106}
-  - component: {fileID: 1859505853501610798}
+  - component: {fileID: 140934957710352914}
+  - component: {fileID: 7346728747735273674}
+  - component: {fileID: 2575850266656481919}
   m_Layer: 13
   m_Name: skullICE
   m_TagString: Enemy
@@ -55,9 +57,12 @@ MonoBehaviour:
   playerNearbyRadius: 6
   destinationReachedRadius: 1
   light: {fileID: 8447189321472404293}
-  BulletCollision: "event:/Ambiente/Colisi\xF3n Balas/Balas 2.L"
-  Idle: event:/Ambiente/Portales Enemigos/Portales 2 3D
-  Attack: event:/Weapons/TeleportGun/TeleportGunHit
+  currentWorld: 0
+  BulletCollision: event:/Enemies/Enemies_Take_damage 1
+  Idle: event:/Enemies/Enemies_Skull_move 2
+  Attack: event:/Enemies/Enemies_Skull_shoot
+  tutorial: 0
+  patrolPoint: {fileID: 0}
   type: 0
   normalSpeed: 6
   chasingSpeed: 10
@@ -119,7 +124,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1859505853501610798
+--- !u!114 &140934957710352914
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,16 +137,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Ambiente/Portales Enemigos/Portales 2 3D
+  Event: event:/Enemies/Enemies_Take_damage 1
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &7346728747735273674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4723667275037817886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c66f993eddf53ac4fa521b9d2c9e0a39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activated: 0
+  eventEmiiter: {fileID: 2575850266656481919}
+--- !u!114 &2575850266656481919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4723667275037817886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Enemies/Enemies_SkullIce_Move
   PlayEvent: 1
   StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 3
-  OverrideMaxDistance: 25
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &5270515564074739561
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,8 +295,8 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6024519805848210568}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -330,8 +372,8 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7539696836505331110}
   m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1

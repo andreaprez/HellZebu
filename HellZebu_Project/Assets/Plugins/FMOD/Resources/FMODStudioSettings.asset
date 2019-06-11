@@ -15,9 +15,11 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: D:\Proyecto HellZebu\InBetweenProto\Assets\SonidosGrupoChico\Entrega_1\Entrega_1.fspro
-  SourceProjectPathUnformatted: Assets\SonidosGrupoChico\Entrega_1\Entrega_1.fspro
-  SourceBankPathUnformatted: Assets\SonidosGrupoChico\Entrega_1\Build
+  sourceProjectPath: D:\PROJCT\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
+    entrega final\Hellzebu entrega final.fspro
+  SourceProjectPathUnformatted: Assets\Audio\SonidoGrupoChicas\Hellzebu entrega final\Hellzebu
+    entrega final.fspro
+  SourceBankPathUnformatted: Assets\Audio\SonidoGrupoChicas\Hellzebu entrega final\Build
   AutomaticEventLoading: 1
   BankLoadType: 0
   AutomaticSampleLoading: 0
@@ -76,7 +78,8 @@ MonoBehaviour:
   - Platform: 20
     Value: 32
   Plugins: []
-  MasterBanks: []
+  MasterBanks:
+  - Master
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264

@@ -17,6 +17,7 @@ TagManager:
   - EnemyWeakPoint
   - Centipede
   - button
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -51,6 +52,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Particles_UI
+    uniqueID: 4283642905
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
