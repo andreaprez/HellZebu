@@ -73,7 +73,7 @@ public class TurretLaser : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player") && EnemyGlobalBlackboard.playerController.Vulnerable) {
-            other.SendMessage("TakeDamage");
+            other.SendMessage("TakeDamage","turretLaser");
             gameObject.SetActive(false);
         }
         else if (!other.gameObject.CompareTag("Enemy"))

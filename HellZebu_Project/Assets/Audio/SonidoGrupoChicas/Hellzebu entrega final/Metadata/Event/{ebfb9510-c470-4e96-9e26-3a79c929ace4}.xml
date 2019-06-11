@@ -5,7 +5,7 @@
 			<value>UI_Select_Option</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{b3ef2d5f-8cac-4c35-b564-0f795acb6671}</destination>
@@ -116,7 +116,6 @@
 	<object class="MixerBusEffectChain" id="{67216365-2799-4ee8-8604-cb1cfde07b54}">
 		<relationship name="effects">
 			<destination>{8ee0042c-8b9c-4f5c-9b6e-657661c69626}</destination>
-			<destination>{12fcc495-6ec8-4ea5-abd0-bf12e00f6cc4}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f8ef5718-dd1f-4491-8f9f-68d65084a878}" />
@@ -128,6 +127,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{1d11161d-dedf-4092-a30d-0079971679d7}" />
 	<object class="MixerBusFader" id="{8ee0042c-8b9c-4f5c-9b6e-657661c69626}" />
-	<object class="SpatialiserEffect" id="{12fcc495-6ec8-4ea5-abd0-bf12e00f6cc4}" />
 	<object class="MixerBusFader" id="{c1824185-b64b-4141-8712-4bfbfec1ab97}" />
 </objects>

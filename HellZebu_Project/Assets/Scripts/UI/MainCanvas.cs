@@ -28,6 +28,7 @@ public class MainCanvas : MonoBehaviour
     [Header("World change")]
     public Image wChangeImageCooldown;
     public Color wChangeBarColor;
+    public Color wChangeHolderColor;
     public Image wChangeCooldownHolder;
     public Text wChangeTextCooldown;
     public Image fillImageWC;
@@ -66,6 +67,10 @@ public class MainCanvas : MonoBehaviour
     [SerializeField] private AnimationClip fadeOut;
     [SerializeField] private AnimationClip fadeIn;
 
+    [FMODUnity.EventRef]
+    public string confirmOption = "";
+  
+
     //Score
 
     public float killStreakTime;
@@ -74,34 +79,18 @@ public class MainCanvas : MonoBehaviour
     public int pointsGiven;
     public int pointMultiplier;
     public int playerScore;
-    public Animation killstreakAnim;
+
     public Text killStreak;
     public Text score;
     public Text popUpText;
-    public Text popUpComboText;
     public Animator popUp;
-    public void ResetComboTime()
-    {
-        killStreakTimer = killStreakTime;
-    }
-    public void OnKillStreak(int points)
+    public void OnKillStreak()
     {
         if (popUp != null)
         {
             popUp.SetBool("OnKill", true);
 
-            popUpText.text = "+" + points * pointMultiplier;
-            popUpComboText.text = "";
-            if ((pointMultiplier + 1) % 5 == 0 || (pointMultiplier + 1) % 10 == 0)
-            {
-                popUpComboText.text = "X" + (pointMultiplier + 1);
-                if (killstreakAnim.isPlaying == false)
-                {
-                    killstreakAnim.Play();
-                }
-                print("PLAy");
-             
-            }
+            popUpText.text = "+" + pointsGiven * pointMultiplier;
             playerScore += pointsGiven * pointMultiplier;
             onKillStreak = true;
             pointMultiplier++;
@@ -121,11 +110,9 @@ public class MainCanvas : MonoBehaviour
 
         }
         else { Destroy(this.gameObject); }
-      
-
+        Enemy.enemyKillEvent += OnKillStreak;
      //   OpenPauseMenu(menuOpened);
     }
-
     private void Start()
     {
         pointMultiplier = 1;
@@ -183,6 +170,8 @@ public class MainCanvas : MonoBehaviour
     }
     public void OpenPauseMenu(bool open)
     {
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
         if (open)
         {
             Cursor.visible = true;
@@ -207,6 +196,8 @@ public class MainCanvas : MonoBehaviour
     #region PanelSetActiveMethods
     public void SetActivePausePanel(bool active)
     {
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
         if (active)
         {
             pausePanel.SetActive(true);
@@ -218,6 +209,8 @@ public class MainCanvas : MonoBehaviour
     }
     public void SetActiveConfigPanel(bool active)
     {
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
         if (active)
         {
             configPanel.SetActive(true);
@@ -231,6 +224,8 @@ public class MainCanvas : MonoBehaviour
     }
     public void SetActiveBindingPanel(bool active)
     {
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
         if (active)
         {
             bindingPanel.SetActive(true);
@@ -267,7 +262,7 @@ public class MainCanvas : MonoBehaviour
         }
         else if (wChangeImageCooldown.color != Color.white){
             wChangeImageCooldown.color = Color.white;
-            wChangeCooldownHolder.color = Color.black;
+            wChangeCooldownHolder.color = wChangeHolderColor;
         }
 
     }
@@ -305,6 +300,8 @@ public class MainCanvas : MonoBehaviour
 
     public void ExitGame()
     {
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
@@ -314,6 +311,8 @@ public class MainCanvas : MonoBehaviour
     }
     public void BackToMainMenu()
     {
+        FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
+
         SceneManager.LoadScene("MainMenu");
     }
     public void UpdateKeyText()
@@ -523,11 +522,11 @@ public class MainCanvas : MonoBehaviour
         fadeAnimation.clip = fadeOut;
         fadeAnimation.Play();
     }
-    public void FadeIn()
-    {
+    public void FadeIn() {
         fadeAnimation.clip = fadeIn;
         fadeAnimation.Play();
     }
+    
     public void LoadScene() {
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneToLoad);
     }

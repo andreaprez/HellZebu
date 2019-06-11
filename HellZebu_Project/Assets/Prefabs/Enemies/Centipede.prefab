@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 557623994}
   - component: {fileID: 557623993}
   - component: {fileID: 557623992}
+  - component: {fileID: 2586753106512854113}
   m_Layer: 13
   m_Name: WeakPoint (1)
   m_TagString: EnemyWeakPoint
@@ -425,7 +426,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centipede: {fileID: 5114852854112780470}
-  pointsGiven: 40
+--- !u!114 &2586753106512854113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 557623990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Enemies/Enemies_Centipide_Bullet
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 15
+  OverrideMaxDistance: 35
 --- !u!1 &655145177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,6 +1844,7 @@ GameObject:
   - component: {fileID: 5695016381212969952}
   - component: {fileID: 5114852854112780470}
   - component: {fileID: 8944928560324416159}
+  - component: {fileID: 6195025359602744144}
   m_Layer: 13
   m_Name: Centipede
   m_TagString: Centipede
@@ -1875,7 +1899,6 @@ MonoBehaviour:
   BulletCollision: event:/Enemies/Enemies_Centepie_die 1
   Idle: event:/Enemies/Enemies_Centepide_move 1
   Attack: 
-  pointsGiven: 100
   currentState: 0
   movementSpeed: 5
   timeToChangeDirection: 3
@@ -1930,7 +1953,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Enemies/Aparicion centipede
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -1938,6 +1961,29 @@ MonoBehaviour:
   OverrideAttenuation: 1
   OverrideMinDistance: 50
   OverrideMaxDistance: 200
+--- !u!114 &6195025359602744144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6600309243462833948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Enemies/Aparicion centipede
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 20
+  OverrideMaxDistance: 150
 --- !u!1 &7675634645000795271
 GameObject:
   m_ObjectHideFlags: 0
@@ -1998,6 +2044,7 @@ GameObject:
   - component: {fileID: 5904041223904410886}
   - component: {fileID: 2584577523158761018}
   - component: {fileID: 5992836169957499557}
+  - component: {fileID: 842372712106042911}
   m_Layer: 13
   m_Name: WeakPoint
   m_TagString: EnemyWeakPoint
@@ -2091,7 +2138,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centipede: {fileID: 5114852854112780470}
-  pointsGiven: 40
+--- !u!114 &842372712106042911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8031125201071917547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Enemies/Enemies_Centipide_Bullet
+  PlayEvent: 2
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 15
+  OverrideMaxDistance: 35
 --- !u!1 &8933827242134351600
 GameObject:
   m_ObjectHideFlags: 0
@@ -2415,6 +2484,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 44cdc4f8bbc96604ba00cade1d98dad2, type: 2}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
 --- !u!4 &1215400800012315422 stripped
@@ -2514,6 +2591,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f9caea4764c79e04fb034c030d79345a, type: 2}
+    - target: {fileID: 2300000, guid: 8b768434d95816f4aabea3cc4a5bb75e, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 8b768434d95816f4aabea3cc4a5bb75e, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b768434d95816f4aabea3cc4a5bb75e, type: 3}
 --- !u!4 &1667350500316823952 stripped
@@ -2613,6 +2698,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 44cdc4f8bbc96604ba00cade1d98dad2, type: 2}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
 --- !u!4 &2263575393125689149 stripped
@@ -2712,6 +2805,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 44cdc4f8bbc96604ba00cade1d98dad2, type: 2}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
 --- !u!4 &2295747201702068136 stripped
@@ -2935,6 +3036,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 052925c83de66d04fa8789f91f5e01c8, type: 2}
+    - target: {fileID: 2300000, guid: dfed5cc3a5c894344a5b3c16ee176095, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: dfed5cc3a5c894344a5b3c16ee176095, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfed5cc3a5c894344a5b3c16ee176095, type: 3}
 --- !u!4 &2399015470638816218 stripped
@@ -3034,6 +3143,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 44cdc4f8bbc96604ba00cade1d98dad2, type: 2}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
 --- !u!4 &2555450523851733694 stripped
@@ -3133,6 +3250,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 44cdc4f8bbc96604ba00cade1d98dad2, type: 2}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
 --- !u!4 &5635426023817162292 stripped
@@ -3232,6 +3357,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 44cdc4f8bbc96604ba00cade1d98dad2, type: 2}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
 --- !u!4 &7830950245289946611 stripped
@@ -3331,6 +3464,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 44cdc4f8bbc96604ba00cade1d98dad2, type: 2}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
 --- !u!4 &8582007528600591767 stripped
@@ -3430,6 +3571,14 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 44cdc4f8bbc96604ba00cade1d98dad2, type: 2}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0e4b93829118ed459b23514f931dbc0, type: 3}
 --- !u!4 &8979950748867497311 stripped

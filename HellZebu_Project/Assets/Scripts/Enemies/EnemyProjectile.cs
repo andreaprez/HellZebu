@@ -29,7 +29,7 @@ public class EnemyProjectile : MonoBehaviour
     protected void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player")) {
-            other.SendMessage("TakeDamage");
+            other.SendMessage("TakeDamage","skullProjectile");
         }
         if (!other.gameObject.CompareTag("Enemy")) {
             Destroy(gameObject);

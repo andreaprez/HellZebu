@@ -326,7 +326,7 @@ public class Skull : Enemy
     
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Player") && EnemyGlobalBlackboard.playerController.Vulnerable) {
-            DamagePlayer(other.GetComponent<Controller>());
+            DamagePlayer(other.GetComponent<Controller>(),"skullCollide");
             if (currentState == State.CHARGE) ChangeState(State.DIE);
         }
     }

@@ -35,6 +35,7 @@ public class ShotgunWeapon : Weapon
     private Vector3 bulletDirection;
     private Quaternion rotationDirection;
 
+    public GameObject muzzleSpecialPartIce, muzzleSpecialPartFire;
     public Animation shotgun_anim;
 
     public override void Start()
@@ -116,17 +117,25 @@ public class ShotgunWeapon : Weapon
         if (weaponElementalMode == WeaponElementalModes.Fire)
         {
             currentOverheatValueFire += specialShotCost;
-
+            GameObject muzz = Instantiate(muzzleSpecialPartFire, shootingPoint.transform.position, Quaternion.identity, this.gameObject.transform);
+            muzz.transform.localEulerAngles = Vector3.zero;
         }
         else
         {
             currentOverheatValueIce += specialShotCost;
+            GameObject muzz = Instantiate(muzzleSpecialPartIce, shootingPoint.transform.position, Quaternion.identity, this.gameObject.transform);
+            muzz.transform.localEulerAngles = Vector3.zero;
         }
         StartCoroutine(activateXFrames(framesActives));
         if(Vector3.Dot(Vector3.down, transform.forward) > 0.65f)
         {
+            GameObject airWave = Instantiate(specialShotgunPart, specialShotgunShootPoint.transform.position, Quaternion.identity);
+            airWave.transform.localEulerAngles = Vector3.zero;
+          
             Controller.Instance.SpecialShotJump(-transform.forward, specialShotJumpForce);
         }
+        FMODUnity.RuntimeManager.PlayOneShot(specialShotShotgun, transform.position);
+
         base.SpecialShoot();
     }
     IEnumerator activateXFrames(float frames)

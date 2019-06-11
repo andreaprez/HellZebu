@@ -159,7 +159,8 @@ public class AssaultRifleWeapon : Weapon
         lr.endColor = Color.red;
         StartCoroutine(activateLineRenderer(specialShotRayDuration));
 
-      
+        FMODUnity.RuntimeManager.PlayOneShot(specialShotRifle, transform.position);
+
         base.SpecialShoot();
     }
     private void OnDrawGizmos()

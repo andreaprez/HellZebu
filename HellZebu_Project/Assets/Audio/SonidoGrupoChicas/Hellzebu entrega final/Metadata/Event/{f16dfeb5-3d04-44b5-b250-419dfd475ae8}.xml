@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="Event" id="{f16dfeb5-3d04-44b5-b250-419dfd475ae8}">
 		<property name="name">
-			<value>Enemies_Orb_move 2</value>
+			<value>Enemies_SkullIce_Move</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -70,6 +70,9 @@
 		<relationship name="modules">
 			<destination>{8cc70479-6241-44ed-88e8-27626873aabb}</destination>
 		</relationship>
+		<relationship name="markers">
+			<destination>{7af19be9-0ff0-4735-aec5-3eeba840081b}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{12f27ab8-fb94-4697-b3b7-f467ecdd476d}">
 		<relationship name="effectChain">
@@ -90,7 +93,10 @@
 	<object class="MixerBusPanner" id="{a30724e6-6c49-4865-a504-b6f19e9b20b0}" />
 	<object class="SingleSound" id="{8cc70479-6241-44ed-88e8-27626873aabb}">
 		<property name="length">
-			<value>12.904489795918368</value>
+			<value>2.9000000000000012</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>6.7000000000000002</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{2fa1adce-304b-4742-8f35-6c74fb1598ec}</destination>
@@ -108,6 +114,20 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{12f27ab8-fb94-4697-b3b7-f467ecdd476d}</destination>
+		</relationship>
+	</object>
+	<object class="LoopRegion" id="{7af19be9-0ff0-4735-aec5-3eeba840081b}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>2.9000000000000012</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{6c977063-aea6-4db2-85a7-f2956e0c1acd}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{673019d6-063b-4782-820d-72f886a7b28b}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{9044ec51-a7ff-4468-ba24-a3c1fb7d8c99}">

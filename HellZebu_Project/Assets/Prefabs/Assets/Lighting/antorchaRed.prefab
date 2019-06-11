@@ -121,7 +121,6 @@ Transform:
   m_Children:
   - {fileID: 507448864}
   - {fileID: 1893951873409228641}
-  - {fileID: 1200820335}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 5.051, y: 1.723, z: 18.862001}
@@ -137,77 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a26f82723e387034698476cfc995f16b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lights: {fileID: 1200820334}
   particles: {fileID: 4146654855733861714}
---- !u!1 &1200820334
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1200820335}
-  - component: {fileID: 1200820336}
-  m_Layer: 0
-  m_Name: Point Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1200820335
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200820334}
-  m_LocalRotation: {x: -0.7483115, y: 0.1323517, z: 0.18837206, w: 0.6221165}
-  m_LocalPosition: {x: 0, y: 134.5, z: 0.8}
-  m_LocalScale: {x: 6.8520236, y: 6.852022, z: 6.852022}
-  m_Children: []
-  m_Father: {fileID: 695571504}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: -78.795006, y: 217.109, z: -190.765}
---- !u!108 &1200820336
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200820334}
-  m_Enabled: 1
-  serializedVersion: 8
-  m_Type: 2
-  m_Color: {r: 0.9372549, g: 0.85490197, b: 0.7647059, a: 1}
-  m_Intensity: 0.7
-  m_Range: 30
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 8449
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!114 &6023388096788069288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,7 +158,7 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 5
+  OverrideMinDistance: 1
   OverrideMaxDistance: 25
 --- !u!1001 &2302690320325694078
 PrefabInstance:
@@ -238,6 +167,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 695571504}
     m_Modifications:
+    - target: {fileID: 2773984525126209324, guid: a2cf5d97e53e84d4fa4f18df7d491728,
+        type: 3}
+      propertyPath: m_Name
+      value: TorchEffectRed
+      objectReference: {fileID: 0}
     - target: {fileID: 413319154762796319, guid: a2cf5d97e53e84d4fa4f18df7d491728,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -307,11 +241,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 6.8520246
-      objectReference: {fileID: 0}
-    - target: {fileID: 2773984525126209324, guid: a2cf5d97e53e84d4fa4f18df7d491728,
-        type: 3}
-      propertyPath: m_Name
-      value: TorchEffectRed
       objectReference: {fileID: 0}
     - target: {fileID: 7676930759549541533, guid: a2cf5d97e53e84d4fa4f18df7d491728,
         type: 3}

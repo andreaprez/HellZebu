@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3074345034182558471}
   - component: {fileID: 3074345034182558464}
   - component: {fileID: 3074345034182558465}
+  - component: {fileID: 8155461246356949911}
   m_Layer: 0
   m_Name: UnlockSpecialShoot
   m_TagString: Untagged
@@ -104,3 +105,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c3f5b4fefdfd1a449f47a64535e9f6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rifleAcc: 0
+  text: {fileID: 0}
+  eventEmiiter: {fileID: 8155461246356949911}
+--- !u!114 &8155461246356949911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074345034182558466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Items/Item_life_pickup3
+  PlayEvent: 0
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0

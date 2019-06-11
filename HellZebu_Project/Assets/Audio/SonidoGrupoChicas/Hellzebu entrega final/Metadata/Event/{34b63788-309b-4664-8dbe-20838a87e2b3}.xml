@@ -5,7 +5,7 @@
 			<value>Weapon_Grenade_Explosion</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{bad0f672-512f-4b91-ac8b-af145ffc6108}</destination>
@@ -113,7 +113,6 @@
 	<object class="MixerBusEffectChain" id="{02a6c3b2-7623-4dd2-8da1-d7f23626b39a}">
 		<relationship name="effects">
 			<destination>{06c500cb-9435-464a-bb84-3e7b50813d5e}</destination>
-			<destination>{42b90a94-199f-4d7f-b3c3-132a493456e6}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{42f0663b-d047-44e3-99b4-43fcf07317af}" />
@@ -125,6 +124,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{f9350204-17ef-44ea-bd2d-1b5ebc368ecd}" />
 	<object class="MixerBusFader" id="{06c500cb-9435-464a-bb84-3e7b50813d5e}" />
-	<object class="SpatialiserEffect" id="{42b90a94-199f-4d7f-b3c3-132a493456e6}" />
 	<object class="MixerBusFader" id="{e28466d7-5819-4b54-b832-6360cc9439bb}" />
 </objects>

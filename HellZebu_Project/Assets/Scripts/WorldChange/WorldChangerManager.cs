@@ -30,7 +30,6 @@ public class WorldChangerManager : MonoBehaviour,DataInterface
     [Header("Lighting Settings")] 
     [SerializeField] private GameObject redLighting;
     [SerializeField] private GameObject blueLighting;
-    [SerializeField] private Light directionalLight;
 
     [Header("UI")]
     [SerializeField] private Crossfire crossfireCanvas;
@@ -75,7 +74,6 @@ public class WorldChangerManager : MonoBehaviour,DataInterface
         if (blueLighting != null) {
             blueLighting.SetActive(true);
             redLighting.SetActive(false);
-            directionalLight.intensity = 0.8f;
         }
     }
     public void PlayerWorldChange(GameObject target)
@@ -101,7 +99,6 @@ public class WorldChangerManager : MonoBehaviour,DataInterface
             if (blueLighting != null) {
                 blueLighting.SetActive(true);
                 redLighting.SetActive(false);
-                directionalLight.intensity = 0.8f;
             }
         }
         else
@@ -118,7 +115,6 @@ public class WorldChangerManager : MonoBehaviour,DataInterface
             if (blueLighting != null) {
                 blueLighting.SetActive(false);
                 redLighting.SetActive(true);
-                directionalLight.intensity = 0.4f;
 
             }
         }

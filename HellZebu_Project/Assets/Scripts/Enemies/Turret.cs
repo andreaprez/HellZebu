@@ -171,7 +171,7 @@ public class Turret : Enemy
     
     void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Player"))
-            DamagePlayer(other.GetComponent<Controller>());
+            DamagePlayer(other.GetComponent<Controller>(),"turretCollision");
     }
     
     public void Damage() {
