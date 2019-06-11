@@ -41,7 +41,7 @@ public class OverheatParticleFix : MonoBehaviour
         {
             particlePos.SetActive(false);
         }
-       
+
 
     }
 }

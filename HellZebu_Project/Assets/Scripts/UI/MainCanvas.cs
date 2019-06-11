@@ -76,7 +76,7 @@ public class MainCanvas : MonoBehaviour
     public float killStreakTime;
     public float killStreakTimer;
     bool onKillStreak;
-    public int pointsGiven;
+ 
     public int pointMultiplier;
     public int playerScore;
 
@@ -84,14 +84,31 @@ public class MainCanvas : MonoBehaviour
     public Text score;
     public Text popUpText;
     public Animator popUp;
-    public void OnKillStreak()
+    public Animation killstreakAnim;
+    public Text popUpComboText;
+    public void ResetComboTime()
+    {
+        killStreakTimer = killStreakTime;
+    }
+    public void OnKillStreak(int points)
     {
         if (popUp != null)
         {
             popUp.SetBool("OnKill", true);
+            print("Points:" + points);
+            popUpText.text = "+" + points * pointMultiplier;
+            popUpComboText.text = "";
+            if ((pointMultiplier + 1) % 5 == 0 || (pointMultiplier + 1) % 10 == 0)
+            {
+                popUpComboText.text = "X" + (pointMultiplier + 1);
+                if (killstreakAnim.isPlaying == false)
+                {
+                    killstreakAnim.Play();
+                }
 
-            popUpText.text = "+" + pointsGiven * pointMultiplier;
-            playerScore += pointsGiven * pointMultiplier;
+
+            }
+            playerScore += points * pointMultiplier;
             onKillStreak = true;
             pointMultiplier++;
             killStreakTimer = killStreakTime;
@@ -110,7 +127,7 @@ public class MainCanvas : MonoBehaviour
 
         }
         else { Destroy(this.gameObject); }
-        Enemy.enemyKillEvent += OnKillStreak;
+       
      //   OpenPauseMenu(menuOpened);
     }
     private void Start()
