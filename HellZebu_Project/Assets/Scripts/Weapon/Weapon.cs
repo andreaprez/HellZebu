@@ -19,6 +19,7 @@ public class Weapon : MonoBehaviour
 
 
     [Header("Weapon general")]
+    public Controller playerController;
     public bool specialShootUnlocked;
     public float maxOverheatValue;
     public float shotCost;
@@ -158,7 +159,7 @@ public class Weapon : MonoBehaviour
                 iceFillBar.color = baseColorIceBar;
             }
 
-            if (currentWeaponSlot.active)
+            if (currentWeaponSlot.active && !playerController.movementLocked)
             {
 
                 if (weaponShootMode == WeaponShootModes.Automatic)
