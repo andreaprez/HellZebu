@@ -10577,7 +10577,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh755294
+  m_Name: pb_Mesh159872
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -26583,17 +26583,17 @@ PrefabInstance:
     - target: {fileID: 549910983054446956, guid: b510604231d0f9d4b9bb2228b6ce96a9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.223562
+      value: -7.03
       objectReference: {fileID: 0}
     - target: {fileID: 549910983054446956, guid: b510604231d0f9d4b9bb2228b6ce96a9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.302437
+      value: 19.17
       objectReference: {fileID: 0}
     - target: {fileID: 549910983054446956, guid: b510604231d0f9d4b9bb2228b6ce96a9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.551819
+      value: 92.69
       objectReference: {fileID: 0}
     - target: {fileID: 549910983054446956, guid: b510604231d0f9d4b9bb2228b6ce96a9,
         type: 3}
@@ -40825,6 +40825,31 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 2019932851}
+    - target: {fileID: 8155461246356949911, guid: ff90c82b750d4df4d929195aa0ace50a,
+        type: 3}
+      propertyPath: Event
+      value: event:/Items/Items_Puzzle_Orb 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155461246356949911, guid: ff90c82b750d4df4d929195aa0ace50a,
+        type: 3}
+      propertyPath: OverrideAttenuation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155461246356949911, guid: ff90c82b750d4df4d929195aa0ace50a,
+        type: 3}
+      propertyPath: OverrideMinDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155461246356949911, guid: ff90c82b750d4df4d929195aa0ace50a,
+        type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756554448569360530, guid: ff90c82b750d4df4d929195aa0ace50a,
+        type: 3}
+      propertyPath: StopEvent
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff90c82b750d4df4d929195aa0ace50a, type: 3}
 --- !u!1001 &1337830831
@@ -42101,6 +42126,36 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 990731486}
+    - target: {fileID: 8155461246356949911, guid: ff90c82b750d4df4d929195aa0ace50a,
+        type: 3}
+      propertyPath: Event
+      value: event:/Items/Items_Puzzle_Orb 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155461246356949911, guid: ff90c82b750d4df4d929195aa0ace50a,
+        type: 3}
+      propertyPath: OverrideAttenuation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155461246356949911, guid: ff90c82b750d4df4d929195aa0ace50a,
+        type: 3}
+      propertyPath: OverrideMinDistance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8155461246356949911, guid: ff90c82b750d4df4d929195aa0ace50a,
+        type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028417978432274484, guid: ff90c82b750d4df4d929195aa0ace50a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 8756554448569360530, guid: ff90c82b750d4df4d929195aa0ace50a,
+        type: 3}
+      propertyPath: StopEvent
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff90c82b750d4df4d929195aa0ace50a, type: 3}
 --- !u!1001 &1357144017
@@ -42180,21 +42235,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5062639552945639408, guid: 735b61de51076ba40849d908d2514020,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -75.39601
-      objectReference: {fileID: 0}
-    - target: {fileID: 5062639553966709644, guid: 735b61de51076ba40849d908d2514020,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 75.14053
-      objectReference: {fileID: 0}
-    - target: {fileID: 671869656994698488, guid: 735b61de51076ba40849d908d2514020,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 671869656994698489, guid: 735b61de51076ba40849d908d2514020,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -42228,11 +42268,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 671869656994698494, guid: 735b61de51076ba40849d908d2514020,
-        type: 3}
-      propertyPath: SceneName
-      value: Level_Marc_Hard
-      objectReference: {fileID: 0}
     - target: {fileID: 3722561141972442108, guid: 735b61de51076ba40849d908d2514020,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -42247,6 +42282,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062639552945639408, guid: 735b61de51076ba40849d908d2514020,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -75.39601
+      objectReference: {fileID: 0}
+    - target: {fileID: 5062639553966709644, guid: 735b61de51076ba40849d908d2514020,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 75.14053
+      objectReference: {fileID: 0}
+    - target: {fileID: 671869656994698488, guid: 735b61de51076ba40849d908d2514020,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 671869656994698494, guid: 735b61de51076ba40849d908d2514020,
+        type: 3}
+      propertyPath: SceneName
+      value: Level_Marc_Hard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 735b61de51076ba40849d908d2514020, type: 3}
@@ -54049,6 +54104,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7649385214093811296, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: durations.Array.data[2]
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebc7509cdd32d3a4ead6dcdca5674646, type: 3}

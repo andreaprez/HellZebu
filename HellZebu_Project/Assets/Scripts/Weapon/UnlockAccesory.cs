@@ -6,6 +6,8 @@ public class UnlockAccesory : MonoBehaviour
 {
     public bool rifleAcc;
     public GameObject text;
+    public GameObject auraHolder;
+    public ParticleSystem aura;
     public FMODUnity.StudioEventEmitter eventEmiiter;
     //Weapon[] weapons;
     void Start()
@@ -17,6 +19,9 @@ public class UnlockAccesory : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            auraHolder.transform.parent = other.transform;
+            auraHolder.transform.localPosition = Vector3.zero;
+            aura.Play();
             eventEmiiter.Play();
             text.SetActive(true);
             if (rifleAcc)
