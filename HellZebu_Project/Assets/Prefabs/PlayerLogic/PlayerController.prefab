@@ -444,7 +444,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 85
   far clip plane: 200
   field of view: 60
   orthographic: 0
@@ -972,6 +972,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 6707487103729012565, guid: 52bda3ae20214f04ab92dc661b21f4bb,
+        type: 3}
+      propertyPath: slot
+      value: 
+      objectReference: {fileID: 17277166721947210}
+    - target: {fileID: 2561547524096368942, guid: 52bda3ae20214f04ab92dc661b21f4bb,
+        type: 3}
+      propertyPath: slot
+      value: 
+      objectReference: {fileID: 17277166721947210}
     - target: {fileID: 8337641873085179705, guid: 52bda3ae20214f04ab92dc661b21f4bb,
         type: 3}
       propertyPath: m_Layer
@@ -987,16 +997,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 2561547524096368942, guid: 52bda3ae20214f04ab92dc661b21f4bb,
-        type: 3}
-      propertyPath: slot
-      value: 
-      objectReference: {fileID: 17277166721947210}
-    - target: {fileID: 6707487103729012565, guid: 52bda3ae20214f04ab92dc661b21f4bb,
-        type: 3}
-      propertyPath: slot
-      value: 
-      objectReference: {fileID: 17277166721947210}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
 --- !u!4 &4632511633824272452 stripped
@@ -1024,6 +1024,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1465460363577017641}
     m_Modifications:
+    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_Name
+      value: Shotgun 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 5691480802723718524, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1107,25 +1117,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2454040419565562408, guid: 91e38c07171f87a4585e4792a82e7e2e,
         type: 3}
-    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_Name
-      value: Shotgun 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
     - target: {fileID: 5399376365185320823, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 4066672944915057910, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4018856982755850234, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_Layer
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 2993585255937252947, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3065388565572261130, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
@@ -1156,11 +1166,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 3985747163923475999, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: slot
+      value: 
+      objectReference: {fileID: 5369590464113332997}
     - target: {fileID: 3065388565572261128, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 2041028295820460399, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: slot
+      value: 
+      objectReference: {fileID: 5369590464113332997}
     - target: {fileID: 2066988370, guid: 64f5c69e6ff4fb54784d57588993428e, type: 3}
       propertyPath: m_Layer
       value: 14
@@ -1240,26 +1260,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 4066672944915057910, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2993585255937252947, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3985747163923475999, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: slot
-      value: 
-      objectReference: {fileID: 5369590464113332997}
-    - target: {fileID: 2041028295820460399, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: slot
-      value: 
-      objectReference: {fileID: 5369590464113332997}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64f5c69e6ff4fb54784d57588993428e, type: 3}
 --- !u!114 &6595786455259011975 stripped
