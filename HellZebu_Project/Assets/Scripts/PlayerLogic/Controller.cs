@@ -49,7 +49,10 @@ public class Controller : MonoBehaviour, DataInterface
     [Header("Weapons")]
     public WeaponSlot weaponSlot1;
     public WeaponSlot weaponSlot2;
-    public int activeWeapon;
+    public int activeWeapon = 1;
+    //animation
+    public Animation rifleAnimation, shotgunAnimation;
+    public AnimationClip rifleRun, rifleIdle, shotgunRun, shotgunIdle;
 
     [Header("TestingUI")]
     public float worldChangeTime;
@@ -101,11 +104,6 @@ public class Controller : MonoBehaviour, DataInterface
     public float lerpRecoil;
     public bool pauseOn;
 
-    //animation
-    public Animation rifle_animations;
-
-    public AnimationClip run_clip;
-    public AnimationClip idle_rifle_clip;
     
     public void Recoil(float recoilAmountY, float recoilAmountX, float lerpTimeRecoil, bool recoilDown)
     {
@@ -267,12 +265,22 @@ public class Controller : MonoBehaviour, DataInterface
         //create normalized vector from inputs
         float movementAxisZ = Input.GetAxis("Vertical");
         float movementAxisX = Input.GetAxis("Horizontal");
-        if (movementAxisZ != 0) {
-            if(rifle_animations.isPlaying == false)
+        if (activeWeapon == 1)
+        {
+            if (movementAxisZ != 0f)
             {
-               rifle_animations.CrossFade(run_clip.name, 0.5f);
+                rifleAnimation.CrossFade(rifleRun.name, 0.2f, PlayMode.StopAll);
             }
-        }else rifle_animations.CrossFade(idle_rifle_clip.name);
+            else rifleAnimation.CrossFade(rifleIdle.name, 0.2f, PlayMode.StopAll);
+        }
+        else if (activeWeapon == 2)
+        {
+            if (movementAxisZ != 0f)
+            {
+                shotgunAnimation.CrossFade(shotgunRun.name,0.2f, PlayMode.StopAll);
+            }
+            else shotgunAnimation.CrossFade(shotgunIdle.name, 0.2f, PlayMode.StopAll);
+        }
 
 
         movement = (transform.forward * movementAxisZ + transform.right * movementAxisX);

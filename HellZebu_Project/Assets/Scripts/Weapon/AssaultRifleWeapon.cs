@@ -22,6 +22,8 @@ public class AssaultRifleWeapon : Weapon
     public bool recoilDown;
     private RectTransform spreadCrossfire;
     private float currentSpreadValue;
+    public Animation rifleAnimation;
+    public AnimationClip shootClip;
     [Header("Draw gizmos")]
     public bool enableGizmos;
 
@@ -31,10 +33,6 @@ public class AssaultRifleWeapon : Weapon
     private Vector3 bulletDirection;
     private Quaternion rotationDirection;
 
-    public Animation rifle_Animation;
-
-    public AnimationClip rifle_run;
-    public AnimationClip rigle_shoot;
 
     // Start is called before the first frame update
     public override void Start()
@@ -104,7 +102,7 @@ public class AssaultRifleWeapon : Weapon
         base.Shoot();
         FMODUnity.RuntimeManager.PlayOneShot(Shot, transform.position);
       
-        rifle_Animation.Play("rifle_anim");
+        rifleAnimation.CrossFade(shootClip.name, 0f, PlayMode.StopAll);
                 
 
         currentSpreadValue += spreadShotCost;
