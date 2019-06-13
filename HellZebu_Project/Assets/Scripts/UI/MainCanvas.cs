@@ -95,7 +95,6 @@ public class MainCanvas : MonoBehaviour
         if (popUp != null)
         {
             popUp.SetBool("OnKill", true);
-            print("Points:" + points);
             popUpText.text = "+" + points * pointMultiplier;
             popUpComboText.text = "";
             if ((pointMultiplier + 1) % 5 == 0 || (pointMultiplier + 1) % 10 == 0)
@@ -105,21 +104,16 @@ public class MainCanvas : MonoBehaviour
                 {
                     killstreakAnim.Play();
                 }
-
-
             }
             playerScore += points * pointMultiplier;
             onKillStreak = true;
             pointMultiplier++;
             killStreakTimer = killStreakTime;
-
         }
     }
 
     private void Awake()
     {
-        
-        
         if (Instance == null)
         {
             Instance = this;
