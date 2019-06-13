@@ -770,6 +770,7 @@ MonoBehaviour:
   weaponElementalMode: 0
   timeBetweenShootsAutomatic: 0.5
   timeBetweenShootsSemiutomatic: 1
+  playerController: {fileID: 0}
   specialShootUnlocked: 0
   maxOverheatValue: 110
   shotCost: 20
@@ -958,11 +959,13 @@ Animation:
   m_GameObject: {fileID: 5691480802723718515}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: f63fc7e3e7629a343988990c5099d57f, type: 2}
+  m_Animation: {fileID: 7400000, guid: 3fa8cb36ea4897341adc58c5b09cc202, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: f63fc7e3e7629a343988990c5099d57f, type: 2}
+  - {fileID: 7400000, guid: 3fa8cb36ea4897341adc58c5b09cc202, type: 2}
+  - {fileID: 7400000, guid: 77c02751dd17505499c11785f3d469f3, type: 2}
   m_WrapMode: 0
-  m_PlayAutomatically: 0
+  m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!1 &6055074779066469148
@@ -1661,6 +1664,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4361255463869489859}
     m_Modifications:
+    - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6680414ef2045214aaad52941a484cec, type: 2}
+    - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
       propertyPath: m_Name
       value: escopetaLOW
@@ -1709,17 +1724,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6680414ef2045214aaad52941a484cec, type: 2}
-    - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
-      propertyPath: m_CastShadows
+    - target: {fileID: 400002, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
-      propertyPath: m_ReceiveShadows
-      value: 0
+    - target: {fileID: 400002, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0.024212837
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}

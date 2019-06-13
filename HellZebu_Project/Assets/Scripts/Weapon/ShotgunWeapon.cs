@@ -104,7 +104,8 @@ public class ShotgunWeapon : Weapon
         base.Shoot();
         Controller.Instance.Recoil(recoilAmountY, recoilAmountX, recoilTime, recoilDown);
         FMODUnity.RuntimeManager.PlayOneShot(Shot, transform.position);
-        shotgun_anim.Play();
+        shotgun_anim.Play("shotgun_anim");
+
 
     }
     public override void WChangeShoot()

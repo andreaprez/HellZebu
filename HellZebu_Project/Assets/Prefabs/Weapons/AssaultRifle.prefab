@@ -88,7 +88,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075875574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8, y: 49.84, z: -122}
+  m_LocalPosition: {x: -8, y: 49, z: -122}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 542078993}
@@ -126,6 +126,7 @@ MonoBehaviour:
   weaponElementalMode: 1
   timeBetweenShootsAutomatic: 0.15
   timeBetweenShootsSemiutomatic: 1
+  playerController: {fileID: 0}
   specialShootUnlocked: 0
   maxOverheatValue: 200
   shotCost: 8
@@ -202,7 +203,9 @@ MonoBehaviour:
   recoilTime: 0.1
   recoilDown: 1
   enableGizmos: 0
-  shootAnimation: {fileID: 1933403399960020730}
+  rifle_Animation: {fileID: 1933403399960020730}
+  rifle_run: {fileID: 7400000, guid: aaa1f191ee8ed454b832b5c2df0e843b, type: 2}
+  rigle_shoot: {fileID: 7400000, guid: 7d01443131b373445997d501246c9dfd, type: 2}
 --- !u!120 &6899012827553430867
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -310,6 +313,8 @@ Animation:
   m_Animation: {fileID: 7400000, guid: 7d01443131b373445997d501246c9dfd, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 7d01443131b373445997d501246c9dfd, type: 2}
+  - {fileID: 7400000, guid: aaa1f191ee8ed454b832b5c2df0e843b, type: 2}
+  - {fileID: 7400000, guid: 077da8b6b4ed814408072a541497d249, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -1531,7 +1536,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -5.0680003
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
       propertyPath: m_LocalPosition.x

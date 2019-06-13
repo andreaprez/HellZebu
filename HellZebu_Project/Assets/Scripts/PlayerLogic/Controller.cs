@@ -101,12 +101,16 @@ public class Controller : MonoBehaviour, DataInterface
     public float lerpRecoil;
     public bool pauseOn;
 
+    //animation
+    public Animation rifle_animations;
+
+    public AnimationClip run_clip;
+    public AnimationClip idle_rifle_clip;
+    
     public void Recoil(float recoilAmountY, float recoilAmountX, float lerpTimeRecoil, bool recoilDown)
     {
         if (pauseOn == false)
         {
-
-
             StartCoroutine(AddRecoil(recoilAmountY / 100, recoilAmountX / 100, lerpTimeRecoil, recoilDown));
         }
     }
@@ -170,6 +174,7 @@ public class Controller : MonoBehaviour, DataInterface
 
     private void Start()
     {
+      
         MainCanvas.pauseOnEvent += OnPause;
         MainCanvas.pauseOffEvent += OffPause;
         DataManager.savingEvent += OnSave;
@@ -242,10 +247,9 @@ public class Controller : MonoBehaviour, DataInterface
         if (invertedPitch) mouseAxisY = -mouseAxisY;
         pitch += mouseAxisY * pitchRotationalSpeed*currentMouseSensitivity * Time.deltaTime;
         pitch = Mathf.Clamp(pitch, minPitch, maxPitch);
-
+    
         if (invertedYaw) mouseAxisX = -mouseAxisX;
-        yaw += mouseAxisX * yawRotationalSpeed * currentMouseSensitivity * Time.deltaTime;
-
+        yaw += mouseAxisX * yawRotationalSpeed * currentMouseSensitivity * Time.deltaTime;    
         transform.rotation = Quaternion.Euler(0.0f, yaw, 0.0f);
         pitchController.localRotation = Quaternion.Euler(pitch, 0.0f, 0.0f);
     }
@@ -263,13 +267,20 @@ public class Controller : MonoBehaviour, DataInterface
         //create normalized vector from inputs
         float movementAxisZ = Input.GetAxis("Vertical");
         float movementAxisX = Input.GetAxis("Horizontal");
+        if (movementAxisZ != 0) {
+            if(rifle_animations.isPlaying == false)
+            {
+               rifle_animations.CrossFade(run_clip.name, 0.5f);
+            }
+        }else rifle_animations.CrossFade(idle_rifle_clip.name);
+
+
         movement = (transform.forward * movementAxisZ + transform.right * movementAxisX);
         //apply tilt on roll axis
         pitchController.localRotation = Quaternion.Euler(pitchController.localRotation.eulerAngles.x, pitchController.localRotation.eulerAngles.y, -movementAxisX * movementTiltAngle * movementTiltSpeed);
 
         if (dashEnabled) Dash(ref movement); //check dash input
-        Jump(); //check jump input
-
+        Jump(); //check jump input        
         movement.y = verticalSpeed;
         movement *= movementSpeed * Time.deltaTime;
 
@@ -279,6 +290,7 @@ public class Controller : MonoBehaviour, DataInterface
             onGround = true;
             verticalSpeed = 0.0f;
         }
+
         else onGround = false;
         if ((collisionFlags & CollisionFlags.Above) != 0 && verticalSpeed > 0.0f)
             verticalSpeed = 0.0f;
