@@ -835,6 +835,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 1933403399960020730, guid: 52bda3ae20214f04ab92dc661b21f4bb,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: 7d01443131b373445997d501246c9dfd, type: 2}
     - target: {fileID: 1075875580, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -884,10 +889,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1075875575, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
-      propertyPath: specialShootUnlocked
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1075875575, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
       propertyPath: specialShotgunPart
       value: 
       objectReference: {fileID: 8150058156404201116, guid: b260b26d8e723e347b002ff246e34fc2,
@@ -913,11 +914,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 5991624116763557062, guid: 52bda3ae20214f04ab92dc661b21f4bb,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6987183807145033404, guid: 52bda3ae20214f04ab92dc661b21f4bb,
         type: 3}
@@ -1015,11 +1011,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 1933403399960020730, guid: 52bda3ae20214f04ab92dc661b21f4bb,
-        type: 3}
-      propertyPath: m_Animation
-      value: 
-      objectReference: {fileID: 7400000, guid: 7d01443131b373445997d501246c9dfd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
 --- !u!4 &4632511633824272452 stripped
@@ -1053,6 +1044,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1465460363577017641}
     m_Modifications:
+    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_Name
+      value: Shotgun 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 5691480802723718524, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1110,11 +1111,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
-      propertyPath: specialShootUnlocked
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
       propertyPath: specialShotgunShootPoint
       value: 
       objectReference: {fileID: 1041456404}
@@ -1151,16 +1147,6 @@ PrefabInstance:
       propertyPath: shootClip
       value: 
       objectReference: {fileID: 7400000, guid: f63fc7e3e7629a343988990c5099d57f, type: 2}
-    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_Name
-      value: Shotgun 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
     - target: {fileID: 5399376365185320823, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_Layer
@@ -1185,11 +1171,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 2735570730823670797, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 124701068158120803, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}

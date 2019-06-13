@@ -14,7 +14,11 @@ public class TypeWritterEffect : MonoBehaviour
     private bool shown = false;
     void Start()
     {
-        myText = GetComponent<Text>();
+        if (!myText)
+        {
+            myText = GetComponent<Text>();
+
+        }
     }
 
     // Update is called once per frame
@@ -24,7 +28,6 @@ public class TypeWritterEffect : MonoBehaviour
         if (counter>= timer && !shown)
         {
             shown = true;
-
             StartCoroutine(ShowText());
 
         }

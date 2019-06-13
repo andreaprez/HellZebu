@@ -69,9 +69,10 @@ public class Weapon : MonoBehaviour
 
     [Header("Lasers")]
     public GameObject laser;
+    public GameObject laserSpecial;
     public LineRenderer lr0;
     public LineRenderer lr1;
-    public Color rayColor;
+    public Color rayColor, rayOutsideColor;
     public Color rayTransparentColor;
     public float alphaLerpValue;
 
@@ -466,6 +467,8 @@ public class Weapon : MonoBehaviour
         
         lr1.SetPosition (0, rayShootingPoint.transform.position);
         lr1.SetPosition(1, hit.point);
+        lr1.startColor = rayOutsideColor;
+        lr1.endColor = rayOutsideColor;
         StartCoroutine(activateLineRenderer(rayDuration));
         if (hit.transform.tag.Contains("DynamicWorld"))
         {
@@ -481,14 +484,25 @@ public class Weapon : MonoBehaviour
         //SOUND
         FMODUnity.RuntimeManager.PlayOneShot(Teleport, transform.position);
     }
-    public IEnumerator activateLineRenderer(float secs)
+    public IEnumerator activateLineRenderer(float secs, bool special = false)
     {
-        laser.SetActive(true);
         lr0.enabled = true;
         lr1.enabled = true;
+        if (!special)
+        {
+            laser.SetActive(true);
 
-        laser.transform.position = transform.position + transform.forward * 10;
-        laser.transform.up = transform.forward;
+            laser.transform.position = transform.position + transform.forward * 10;
+            laser.transform.up = transform.forward;
+        }
+        else
+        {
+            laserSpecial.SetActive(true);
+
+            laserSpecial.transform.position = transform.position + transform.forward * 10;
+            laserSpecial.transform.up = transform.forward;
+        }
+       
 
         while (alphaLerpValue < 1)
         {
@@ -498,7 +512,9 @@ public class Weapon : MonoBehaviour
             yield return new WaitForEndOfFrame();
 
         }
-        laser.SetActive(false);
+        if(special)laserSpecial.SetActive(false);
+        else laser.SetActive(false);
+
         lr0.enabled = false;
         lr1.enabled = false;
         alphaLerpValue = 0;
