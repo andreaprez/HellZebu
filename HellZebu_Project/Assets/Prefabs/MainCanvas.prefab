@@ -118,6 +118,85 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -540}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1786242569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1786242570}
+  - component: {fileID: 1786242572}
+  - component: {fileID: 1786242571}
+  m_Layer: 5
+  m_Name: high score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1786242570
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786242569}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8816063930565635776}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -591.3, y: -445.74}
+  m_SizeDelta: {x: 674.2, y: 188.1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1786242572
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786242569}
+  m_CullTransparentMesh: 0
+--- !u!114 &1786242571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1786242569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ac6bf08c5fe19f04a855a5511f680151, type: 3}
+    m_FontSize: 35
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 46
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'high score: '
 --- !u!1 &2089752983
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,7 +1055,7 @@ MonoBehaviour:
   - 8
   - 6
   - 10
-  - 6
+  - 8
   - 6
   - 6
   - 6
@@ -6477,7 +6556,10 @@ GameObject:
   - component: {fileID: 8535745860663358044}
   - component: {fileID: 7159807068419003940}
   - component: {fileID: 743265351329652201}
-  - component: {fileID: 5798229153560824692}
+  - component: {fileID: 1226972529}
+  - component: {fileID: 1226972534}
+  - component: {fileID: 1226972535}
+  - component: {fileID: 1226972536}
   m_Layer: 5
   m_Name: Scene_04_En
   m_TagString: Untagged
@@ -6545,7 +6627,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "You surprised me arriving so far... \nbut this hell will be your graveyard/tumbstone\n"
+  m_Text: '
+
+'
 --- !u!111 &7159807068419003940
 Animation:
   m_ObjectHideFlags: 0
@@ -6575,7 +6659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd8c15c02d1310f4f82f1b6a56579e0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5798229153560824692
+--- !u!114 &1226972529
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6584,20 +6668,57 @@ MonoBehaviour:
   m_GameObject: {fileID: 4877636558833917506}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/VocesEnemigos/Frases Diablo 2d
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  myEvent: "event:/VocesEnemigos/Frase diab\xF3lica 2"
+  timer: 5
+--- !u!114 &1226972534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877636558833917506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  timer: 0.2
+  fullText: You surprised me arriving so far...
+  myText: {fileID: 8535745860663358044}
+--- !u!114 &1226972535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877636558833917506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent: "event:/VocesEnemigos/Frase diab\xF3lica 1"
+  timer: 0.4
+--- !u!114 &1226972536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877636558833917506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.05
+  timer: 5
+  fullText: But this hell will be your end!
+  myText: {fileID: 8535745860663358044}
 --- !u!1 &4936404079850607780
 GameObject:
   m_ObjectHideFlags: 0
@@ -10450,7 +10571,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1659280842029253686
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11896,6 +12017,7 @@ GameObject:
   - component: {fileID: 8816063929125938316}
   - component: {fileID: 8816063929125938307}
   - component: {fileID: 58664840}
+  - component: {fileID: 5689467663157173388}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -11982,6 +12104,29 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &5689467663157173388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063929125938305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Weapon/TeleportReload2D
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8816063929224065805
 GameObject:
   m_ObjectHideFlags: 0
@@ -12034,6 +12179,7 @@ GameObject:
   - component: {fileID: 8816063929237022975}
   - component: {fileID: 8816063929237022968}
   - component: {fileID: 8945469270878592856}
+  - component: {fileID: 2116794067}
   m_Layer: 5
   m_Name: MainCanvas
   m_TagString: MainCanvas
@@ -12197,7 +12343,7 @@ MonoBehaviour:
   fadeAnimation: {fileID: 8945469270878592856}
   fadeOut: {fileID: 7400000, guid: a9b8b4a19719a0a4e88319806130164a, type: 2}
   fadeIn: {fileID: 7400000, guid: a94814e7fbc9fe845a84cacee476cc9c, type: 2}
-  confirmOption: 
+  confirmOption: event:/UI (2)/Confirm option/Confirm option
   killStreakTime: 2
   killStreakTimer: 0
   pointMultiplier: 1
@@ -12258,6 +12404,19 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &2116794067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063929237022962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8245cb72a8524439ec4787e29b1c52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highScoreText: {fileID: 1786242571}
 --- !u!1 &8816063929299830038
 GameObject:
   m_ObjectHideFlags: 0
@@ -12344,6 +12503,7 @@ GameObject:
   - component: {fileID: 8816063929308657799}
   - component: {fileID: 8816063929308657798}
   - component: {fileID: 567687473}
+  - component: {fileID: 8805163495523453412}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -12408,6 +12568,29 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
 --- !u!114 &567687473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063929308657796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Weapon/TeleportReload2D
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &8805163495523453412
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12653,6 +12836,7 @@ GameObject:
   - component: {fileID: 8816063929488866314}
   - component: {fileID: 8816063929488866313}
   - component: {fileID: 1538760152}
+  - component: {fileID: 6423696147565426051}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -12717,6 +12901,29 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
 --- !u!114 &1538760152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063929488866319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Weapon/TeleportReload2D
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &6423696147565426051
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13429,6 +13636,7 @@ GameObject:
   - component: {fileID: 8816063929911309294}
   - component: {fileID: 8816063929911309293}
   - component: {fileID: 721199133}
+  - component: {fileID: 5016871136022663156}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -13493,6 +13701,29 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
 --- !u!114 &721199133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063929911309283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Weapon/TeleportReload2D
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &5016871136022663156
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14399,6 +14630,7 @@ GameObject:
   - component: {fileID: 8816063930565358165}
   - component: {fileID: 8816063930565358164}
   - component: {fileID: 1418612095}
+  - component: {fileID: 5067848865858993091}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -14485,6 +14717,29 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &5067848865858993091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063930565358186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Weapon/TeleportReload2D
+  PlayEvent: 11
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &8816063930565635783
 GameObject:
   m_ObjectHideFlags: 0
@@ -14518,6 +14773,7 @@ RectTransform:
   - {fileID: 8816063929819032465}
   - {fileID: 3481019339526082604}
   - {fileID: 8944131497060579423}
+  - {fileID: 1786242570}
   m_Father: {fileID: 8816063929237022974}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
