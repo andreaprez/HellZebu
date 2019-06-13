@@ -40,12 +40,14 @@ public class Centipede : Enemy
         else transform.parent = EnemyGlobalBlackboard.iceHiddenParent;
 
         if (CheckPlayerIsInMyWorld()) {
+            playerIsInMyWorld = true;
             gameObject.layer = LayerMask.NameToLayer(MaskNames.Enemies.ToString());
             foreach (Transform t in gameObject.GetComponentsInChildren<Transform>()) {
                 t.gameObject.layer = LayerMask.NameToLayer(MaskNames.Enemies.ToString());
             }
         }
         else {
+            playerIsInMyWorld = false;
             gameObject.layer = LayerMask.NameToLayer(MaskNames.HideFromCamera.ToString());
             foreach (Transform t in gameObject.GetComponentsInChildren<Transform>()) {
                 t.gameObject.layer = LayerMask.NameToLayer(MaskNames.HideFromCamera.ToString());
