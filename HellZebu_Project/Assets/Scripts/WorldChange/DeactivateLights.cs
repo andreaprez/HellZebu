@@ -6,6 +6,7 @@ using UnityEngine;
 public class DeactivateLights : MonoBehaviour
 {
     public GameObject particles;
+    public GameObject light;
     void Start()
     {
         
@@ -17,6 +18,7 @@ public class DeactivateLights : MonoBehaviour
         if (gameObject.layer == LayerMask.NameToLayer("HideFromCamera"))
         {
             //particles.layer = LayerMask.NameToLayer("HideFromCamera");
+            if (light != null) light.SetActive(false);
         }
         else
         {
@@ -27,6 +29,7 @@ public class DeactivateLights : MonoBehaviour
                     t.gameObject.layer = LayerMask.NameToLayer("AlwaysVisible");
                 }
             }
+            if (light != null) light.SetActive(true);
         }
     }
 }

@@ -14,8 +14,7 @@ public class Centipede : Enemy
     [SerializeField] private CentipedeMovement movementBehaviour;
     [SerializeField] private List<Rigidbody> bodyBlocks;
     [SerializeField] private List<Collider> bodyColliders;
-    [SerializeField] private List<GameObject> joints;
-    [SerializeField] private CentipedeMovement movementScript;
+    [SerializeField] private List<HingeJoint> joints;
 
     [HideInInspector] public List<GameObject> weakPoints;
     private bool playerIsInMyWorld;
@@ -42,14 +41,12 @@ public class Centipede : Enemy
 
         if (CheckPlayerIsInMyWorld()) {
             gameObject.layer = LayerMask.NameToLayer(MaskNames.Enemies.ToString());
-            light.SetActive(true);
             foreach (Transform t in gameObject.GetComponentsInChildren<Transform>()) {
                 t.gameObject.layer = LayerMask.NameToLayer(MaskNames.Enemies.ToString());
             }
         }
         else {
             gameObject.layer = LayerMask.NameToLayer(MaskNames.HideFromCamera.ToString());
-            light.SetActive(false);
             foreach (Transform t in gameObject.GetComponentsInChildren<Transform>()) {
                 t.gameObject.layer = LayerMask.NameToLayer(MaskNames.HideFromCamera.ToString());
             }
@@ -60,13 +57,6 @@ public class Centipede : Enemy
 
     void Update()
     {
-        if (playerIsInMyWorld && !CheckPlayerIsInMyWorld()) {
-            light.SetActive(false);
-        }
-        if (!playerIsInMyWorld && CheckPlayerIsInMyWorld()) {
-            light.SetActive(true);
-        }
-        
         switch (currentState) {
             case  State.WANDER:
                 if (playerIsInMyWorld && !CheckPlayerIsInMyWorld()) playerIsInMyWorld = false;
@@ -97,15 +87,18 @@ public class Centipede : Enemy
                 movementBehaviour.enabled = true;
                 break;
             case State.DIE:
-                movementScript.enabled = false;
+                movementBehaviour.enabled = false;
                 foreach (Collider collider in bodyColliders) {
                     collider.isTrigger = false;
                 }
-                foreach (GameObject joint in joints) {
-                    joint.SetActive(false);
+                foreach (HingeJoint joint in joints) {
+                    joint.breakForce = 0f;
                 }
                 foreach (Rigidbody block in bodyBlocks) {
                     block.useGravity = true;
+                    block.isKinematic = false;
+                    block.mass = 1.5f;
+                    block.drag = 0.5f;
                     block.velocity = Random.Range(-4f, 4f) * Vector3.one;
                 }
                 StopCoroutine("ChangeWorld");
@@ -161,11 +154,9 @@ public class Centipede : Enemy
             else transform.parent = EnemyGlobalBlackboard.iceHiddenParent;
             if (gameObject.layer == LayerMask.NameToLayer(MaskNames.Enemies.ToString())) {
                 gameObject.layer = LayerMask.NameToLayer(MaskNames.HideFromCamera.ToString());
-                light.SetActive(false);
             }
             else {
                 gameObject.layer = LayerMask.NameToLayer(MaskNames.Enemies.ToString());
-                light.SetActive(true);
             }
             
             currentBodyBlock = 0;
