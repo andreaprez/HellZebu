@@ -126,6 +126,7 @@ MonoBehaviour:
   weaponElementalMode: 1
   timeBetweenShootsAutomatic: 0.15
   timeBetweenShootsSemiutomatic: 1
+  playerController: {fileID: 0}
   specialShootUnlocked: 0
   maxOverheatValue: 200
   shotCost: 8
@@ -163,7 +164,9 @@ MonoBehaviour:
   rayDuration: 0.4
   timeBetweenShootsWC: 1
   timeBetweenShootsWCTimer: 0
-  lr: {fileID: 6899012827553430867}
+  laser: {fileID: 0}
+  lr0: {fileID: 0}
+  lr1: {fileID: 0}
   rayColor: {r: 0.7647059, g: 0, b: 0.6431373, a: 1}
   rayTransparentColor: {r: 0.7647059, g: 0, b: 0.6431373, a: 0}
   alphaLerpValue: 0
