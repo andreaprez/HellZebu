@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4539252607021859600}
   m_Layer: 0
-  m_Name: viga_low
+  m_Name: viga
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 8973879459513996816}
   - component: {fileID: 8117979285387177248}
   - component: {fileID: 2286720381133792483}
-  - component: {fileID: 7566057207161925453}
+  - component: {fileID: 1537578589670083779}
   m_Layer: 0
   m_Name: viga_low
   m_TagString: Untagged
@@ -109,8 +109,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &7566057207161925453
-MeshCollider:
+--- !u!65 &1537578589670083779
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -119,7 +119,6 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 6f3f97ee10adeb54a9f452a19e1736b6, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 6.21, y: 38.52, z: 6.5}
+  m_Center: {x: -0.47735, y: 18.875998, z: -0.72679996}
