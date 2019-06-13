@@ -31,15 +31,17 @@ public class AssaultRifleWeapon : Weapon
     private Vector3 bulletDirection;
     private Quaternion rotationDirection;
 
-    public Animation shootAnimation;
-    
+    public Animation rifle_Animation;
+
+    public AnimationClip rifle_run;
+    public AnimationClip rigle_shoot;
 
     // Start is called before the first frame update
     public override void Start()
     {
         spreadCrossfire = MainCanvas.Instance.spreadCrossFire;
         currentSpreadValue = minSpreadValue;
-      
+                    
         base.Start();
     }
 
@@ -53,12 +55,9 @@ public class AssaultRifleWeapon : Weapon
         }
         if (currentSpreadValue > minSpreadValue)
         {
-
-            currentSpreadValue -= reduceSpreadSpeed * Time.deltaTime;
-            
+            currentSpreadValue -= reduceSpreadSpeed * Time.deltaTime;            
         }
-
-
+       
         base.Update();
     }
     public override void Shoot()
@@ -79,10 +78,7 @@ public class AssaultRifleWeapon : Weapon
         //Calculate direction from shooting point to hit
         bulletDirection = (hit.point - shootingPoint.transform.position);
         bulletDirection.Normalize();
-
-
-
-       
+                             
         
         //Create projectile and set direction
         GameObject b = Instantiate(currentAmmo, shootingPoint.transform.position, rotationDirection);
@@ -107,7 +103,9 @@ public class AssaultRifleWeapon : Weapon
      
         base.Shoot();
         FMODUnity.RuntimeManager.PlayOneShot(Shot, transform.position);
-        shootAnimation.Play();
+      
+        rifle_Animation.Play("rifle_anim");
+                
 
         currentSpreadValue += spreadShotCost;
         if (currentSpreadValue > maxSpreadValue)

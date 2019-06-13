@@ -268,6 +268,9 @@ MonoBehaviour:
   eventEmiiter: {fileID: 9077948442394933301}
   lerpRecoil: 0
   pauseOn: 0
+  rifle_animations: {fileID: 6529420042288961602}
+  run_clip: {fileID: 7400000, guid: aaa1f191ee8ed454b832b5c2df0e843b, type: 2}
+  idle_rifle_clip: {fileID: 7400000, guid: 077da8b6b4ed814408072a541497d249, type: 2}
 --- !u!54 &1200268860659519679
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1001,6 +1004,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 1933403399960020730, guid: 52bda3ae20214f04ab92dc661b21f4bb,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: 7d01443131b373445997d501246c9dfd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
 --- !u!4 &4632511633824272452 stripped
@@ -1021,6 +1029,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecc412ec05032d444b7dacc177b86633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!111 &6529420042288961602 stripped
+Animation:
+  m_CorrespondingSourceObject: {fileID: 1933403399960020730, guid: 52bda3ae20214f04ab92dc661b21f4bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 4632511632748404408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8691815248199920324
 PrefabInstance:
   m_ObjectHideFlags: 0
