@@ -66,7 +66,11 @@ public class Weapon : MonoBehaviour
     public float rayDuration;
     public float timeBetweenShootsWC;
     public float timeBetweenShootsWCTimer;
-    public LineRenderer lr;
+
+    [Header("Lasers")]
+    public GameObject laser;
+    public LineRenderer lr0;
+    public LineRenderer lr1;
     public Color rayColor;
     public Color rayTransparentColor;
     public float alphaLerpValue;
@@ -130,8 +134,10 @@ public class Weapon : MonoBehaviour
 
         currentAmmo = fireAmmo;
         lastMode = WeaponElementalModes.Fire;
-        lr.startColor = rayColor;
-        lr.endColor = rayColor;
+        lr0.startColor = rayColor;
+        lr0.endColor = rayColor;
+        lr1.startColor = rayColor;
+        lr1.endColor = rayColor;
 
         ChangeWeaponState();
 
@@ -453,10 +459,13 @@ public class Weapon : MonoBehaviour
         bulletDirection = (hit.point - shootingPoint.transform.position);
         bulletDirection.Normalize();
 
-        lr.SetPosition(0, rayShootingPoint.transform.position);
-        lr.SetPosition(1, hit.point);
-        lr.startColor = rayColor;
-        lr.endColor = rayColor;
+        lr0.SetPosition(0, rayShootingPoint.transform.position);
+        lr0.SetPosition(1, hit.point);
+        lr0.startColor = rayColor;
+        lr0.endColor = rayColor;
+        
+        lr1.SetPosition (0, rayShootingPoint.transform.position);
+        lr1.SetPosition(1, hit.point);
         StartCoroutine(activateLineRenderer(rayDuration));
         if (hit.transform.tag.Contains("DynamicWorld"))
         {
@@ -474,17 +483,24 @@ public class Weapon : MonoBehaviour
     }
     public IEnumerator activateLineRenderer(float secs)
     {
-  
-        lr.enabled = true;
+        laser.SetActive(true);
+        lr0.enabled = true;
+        lr1.enabled = true;
+
+        laser.transform.position = transform.position + transform.forward * 10;
+        laser.transform.up = transform.forward;
 
         while (alphaLerpValue < 1)
         {
             alphaLerpValue += Time.deltaTime / secs;
-            lr.material.color = Color.Lerp(Color.white, Color.clear, alphaLerpValue);
+            lr0.material.color = Color.Lerp(Color.white, Color.clear, alphaLerpValue);
+            lr1.material.color = Color.Lerp(Color.white, Color.clear, alphaLerpValue);
             yield return new WaitForEndOfFrame();
 
         }
-        lr.enabled = false;
+        laser.SetActive(false);
+        lr0.enabled = false;
+        lr1.enabled = false;
         alphaLerpValue = 0;
         yield break;
 
