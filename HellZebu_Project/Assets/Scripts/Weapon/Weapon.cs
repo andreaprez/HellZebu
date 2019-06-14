@@ -33,6 +33,9 @@ public class Weapon : MonoBehaviour
     public Light light;
     public Color redColor;
     public Color blueColor;
+    public Color blueFlash;
+    public Color redFlash;
+    public Light shotFlash;
 
     protected GameObject currentAmmo;
 
@@ -427,10 +430,7 @@ public class Weapon : MonoBehaviour
             else if (lastMode == WeaponElementalModes.Ice) { iceUI.SetActive(true); }
             FMODUnity.RuntimeManager.PlayOneShot(ChangeWeaponSound, transform.position);
             weaponCanvas.SetActive(true);
-            
-
-
-
+            light.gameObject.SetActive(true);
         }
         else
         {
@@ -439,7 +439,7 @@ public class Weapon : MonoBehaviour
             fireUI.SetActive(false);
             iceUI.SetActive(false);
             weaponCanvas.SetActive(false);
-
+            light.gameObject.SetActive(false);
         }
 
     }
@@ -450,8 +450,16 @@ public class Weapon : MonoBehaviour
     }
     public virtual void Shoot()
     {
-
+        shotFlash.gameObject.SetActive(true);
+        StartCoroutine("FlashTimer");
     }
+
+    public IEnumerator FlashTimer()
+    {
+        yield return new WaitForSeconds(0.08f);
+        shotFlash.gameObject.SetActive(false);
+    }
+    
     public virtual void WChangeShoot()
     {
         //Calculate direction
@@ -555,6 +563,7 @@ public class Weapon : MonoBehaviour
 
                 emissiveMaterial.SetTexture("_EmissionMap", emissiveTextureBlue);
                 light.color = blueColor;
+                shotFlash.color = blueFlash;
             }
             else if (WorldChangerManager.Instance.currentWorld == WorldChangerManager.Worlds.Fire)
             {
@@ -575,6 +584,7 @@ public class Weapon : MonoBehaviour
                 
                 emissiveMaterial.SetTexture("_EmissionMap", emissiveTextureRed);
                 light.color = redColor;
+                shotFlash.color = redFlash;
             }
         }
     }
