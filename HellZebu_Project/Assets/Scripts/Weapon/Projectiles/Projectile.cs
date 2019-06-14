@@ -43,8 +43,9 @@ public class Projectile : MonoBehaviour
         if (other.gameObject.tag == "SpawnerActivator")
         {
             other.GetComponent<SpawnerActivation>().Activate();
+            Destroy(this.gameObject);
         }
-        else if (other.gameObject.layer != LayerMask.NameToLayer("InvisibleTrigger") && !other.gameObject.CompareTag("Projectile") && !other.gameObject.CompareTag("Centipede") && other.gameObject.layer != LayerMask.NameToLayer("Player"))
+       if (other.gameObject.layer != LayerMask.NameToLayer("InvisibleTrigger") && !other.gameObject.CompareTag("Projectile") && !other.gameObject.CompareTag("Centipede") && other.gameObject.layer != LayerMask.NameToLayer("Player"))
         {
             Vector3 position = hitPoint;
             GameObject decal = Instantiate(testingDecal, hitPoint + normalHit * noOverlapValue, Quaternion.identity);
@@ -54,15 +55,16 @@ public class Projectile : MonoBehaviour
             GameObject hitP = Instantiate(hitParticle, hitPoint + normalHit * noOverlapValue, Quaternion.identity);
             hitP.transform.parent = other.gameObject.transform;
             hitP.transform.forward = normalHit;
-
+            Destroy(this.gameObject);
         }
-        Destroy(this.gameObject);
+       
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "SpawnerActivator")
         {
             collision.gameObject.GetComponent<SpawnerActivation>().Activate();
+            Destroy(this.gameObject);
         }
         else if (collision.gameObject.layer != LayerMask.NameToLayer("InvisibleTrigger") && !collision.gameObject.CompareTag("Projectile") && !collision.gameObject.CompareTag("Centipede") && collision.gameObject.layer != LayerMask.NameToLayer("Player"))
         {
@@ -74,7 +76,8 @@ public class Projectile : MonoBehaviour
             GameObject hitP = Instantiate(hitParticle, hitPoint + normalHit * noOverlapValue, Quaternion.identity);
             hitP.transform.parent = collision.gameObject.transform;
             hitP.transform.forward = normalHit;
+            Destroy(this.gameObject);
         }
-        Destroy(this.gameObject);
+        
     }
 }

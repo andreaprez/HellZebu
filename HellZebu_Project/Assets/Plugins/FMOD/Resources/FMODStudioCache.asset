@@ -134,12 +134,25 @@ MonoBehaviour:
   - {fileID: 114147690977507970}
   - {fileID: 114380477494872650}
   - {fileID: 114293108530130606}
+  - {fileID: 114617688771360866}
+  - {fileID: 114885556441040898}
+  - {fileID: 114467604028951206}
+  - {fileID: 114840954168329790}
+  - {fileID: 114481691211315558}
+  - {fileID: 114046474110557740}
+  - {fileID: 114395731486793792}
+  - {fileID: 114952585996217500}
+  - {fileID: 114558270873191318}
+  - {fileID: 114036687950923616}
+  - {fileID: 114976876996957010}
+  - {fileID: 114756711092391648}
+  - {fileID: 114706459064316048}
   EditorParameters: []
   MasterBanks:
   - {fileID: 114389505947758508}
   StringsBanks:
   - {fileID: 114285772663542802}
-  stringsBankWriteTime: 636958906755133515
+  stringsBankWriteTime: 636961492901511480
   cacheVersion: 3
 --- !u!114 &114000243800457328
 MonoBehaviour:
@@ -1128,6 +1141,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5093
+--- !u!114 &114036687950923616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VocesEnemigos/Frase 2 (2)
+  m_EditorClassIdentifier: 
+  Path: event:/VocesEnemigos/Frase 2 (2)
+  guid: 5499f3e2b284bb4abc5656f93443f117
+  Banks:
+  - {fileID: 114389505947758508}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7628
 --- !u!114 &114037146033285370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1358,6 +1394,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 700
+--- !u!114 &114046474110557740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VocesEnemigos/Frase 4
+  m_EditorClassIdentifier: 
+  Path: event:/VocesEnemigos/Frase 4
+  guid: a75b0dc029502f40b6ef2a3e4044ab2c
+  Banks:
+  - {fileID: 114389505947758508}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10893
 --- !u!114 &114048150401688774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6796,11 +6855,11 @@ MonoBehaviour:
   Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
     entrega final\Build\Desktop\Master.strings.bank
   SubDir: 
-  lastModified: 636958906755133515
+  lastModified: 636961492901511480
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 6344
+    Value: 6830
   Exists: 1
 --- !u!114 &114286893987232026
 MonoBehaviour:
@@ -8011,7 +8070,7 @@ MonoBehaviour:
   - {fileID: 114389505947758508}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
@@ -9105,11 +9164,11 @@ MonoBehaviour:
   Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
     entrega final\Build\Desktop\Master.bank
   SubDir: 
-  lastModified: 636958906755023806
+  lastModified: 636961492901347794
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 30600800
+    Value: 31370016
   Exists: 1
 --- !u!114 &114390549809179034
 MonoBehaviour:
@@ -9272,6 +9331,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3422
+--- !u!114 &114395731486793792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VocesEnemigos/Frase 5
+  m_EditorClassIdentifier: 
+  Path: event:/VocesEnemigos/Frase 5
+  guid: cf1e613dc72a6640af235adae3d46189
+  Banks:
+  - {fileID: 114389505947758508}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 9600
 --- !u!114 &114396929116816450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11181,6 +11263,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 9524
+--- !u!114 &114467604028951206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VocesEnemigos/Frase 6
+  m_EditorClassIdentifier: 
+  Path: event:/VocesEnemigos/Frase 6
+  guid: 90f00c4ae9bd4441aa883ac167456e3d
+  Banks:
+  - {fileID: 114389505947758508}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5926
 --- !u!114 &114468903875602806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11434,6 +11539,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2037
+--- !u!114 &114481691211315558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VocesEnemigos/Frase 10
+  m_EditorClassIdentifier: 
+  Path: event:/VocesEnemigos/Frase 10
+  guid: a3c5a3257e1b554db3f6d7c3acc0dd13
+  Banks:
+  - {fileID: 114389505947758508}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7735
 --- !u!114 &114482235657898158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12944,6 +13072,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 350
+--- !u!114 &114558270873191318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VocesEnemigos/Frase 2
+  m_EditorClassIdentifier: 
+  Path: event:/VocesEnemigos/Frase 2
+  guid: f1bcb99cb5dd38458059af91c43ab72d
+  Banks:
+  - {fileID: 114389505947758508}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5900
 --- !u!114 &114559233608377286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14250,6 +14401,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 30000
+--- !u!114 &114617688771360866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VocesEnemigos/Frase 9
+  m_EditorClassIdentifier: 
+  Path: event:/VocesEnemigos/Frase 9
+  guid: 0352508d8d70fa4fadfd09d2c8a45ec8
+  Banks:
+  - {fileID: 114389505947758508}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10570
 --- !u!114 &114619895568646416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16060,6 +16234,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 140000
+--- !u!114 &114706459064316048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VocesEnemigos/FraseFinal
+  m_EditorClassIdentifier: 
+  Path: event:/VocesEnemigos/FraseFinal
+  guid: 56b0a2bf72716046955842141bf775af
+  Banks:
+  - {fileID: 114389505947758508}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6100
 --- !u!114 &114707822248685096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17277,6 +17474,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3000
+--- !u!114 &114756711092391648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/VocesEnemigos/Frase diab\xF3lica 1 (2)"
+  m_EditorClassIdentifier: 
+  Path: "event:/VocesEnemigos/Frase diab\xF3lica 1 (2)"
+  guid: f8ee2a6b56d8c24cb8cf7f2e2a2cd898
+  Banks:
+  - {fileID: 114389505947758508}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3309
 --- !u!114 &114762143603997962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19019,6 +19239,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7221
+--- !u!114 &114840954168329790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VocesEnemigos/Frase 1
+  m_EditorClassIdentifier: 
+  Path: event:/VocesEnemigos/Frase 1
+  guid: 944ae0be63cf4044843f65a43459f3e4
+  Banks:
+  - {fileID: 114389505947758508}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5259
 --- !u!114 &114841344385498058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19870,6 +20113,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 175480
+--- !u!114 &114885556441040898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VocesEnemigos/Frase 7
+  m_EditorClassIdentifier: 
+  Path: event:/VocesEnemigos/Frase 7
+  guid: 554c98c0efd013439e4cb62cac0c4aaf
+  Banks:
+  - {fileID: 114389505947758508}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 9468
 --- !u!114 &114887202788206730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21453,6 +21719,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 415
+--- !u!114 &114952585996217500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VocesEnemigos/Frase 3
+  m_EditorClassIdentifier: 
+  Path: event:/VocesEnemigos/Frase 3
+  guid: d8fa9774ebf8e54ab071a7b5a91f5fdb
+  Banks:
+  - {fileID: 114389505947758508}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 9603
 --- !u!114 &114955223126328008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22026,6 +22315,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3000
+--- !u!114 &114976876996957010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/VocesEnemigos/Frase diab\xF3lica 2 (2)"
+  m_EditorClassIdentifier: 
+  Path: "event:/VocesEnemigos/Frase diab\xF3lica 2 (2)"
+  guid: 737ac9330116ab40b014037d5402bd99
+  Banks:
+  - {fileID: 114389505947758508}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2725
 --- !u!114 &114977630632667262
 MonoBehaviour:
   m_ObjectHideFlags: 0

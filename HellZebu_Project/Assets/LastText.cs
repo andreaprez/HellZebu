@@ -28,7 +28,9 @@ public class LastText : MonoBehaviour
         else
         {
             HighScoreSentence.text = "But your score is even worse than the last time... \n¿ what kind of meaningless fly doesn't improve?";
-      
+       
+
+
         }
 
         myScore.text = "FINAL SCORE: " + MainCanvas.Instance.playerScore;
