@@ -58,7 +58,9 @@ public class AssaultRifleWeapon : Weapon
         {
             currentSpreadValue -= reduceSpreadSpeed * Time.deltaTime;            
         }
+
        
+
         base.Update();
     }
     public override void Shoot()
@@ -102,7 +104,6 @@ public class AssaultRifleWeapon : Weapon
         bScript.normalHit = hit.normal;
         bScript.hitPoint = hit.point;
      
-        base.Shoot();
         FMODUnity.RuntimeManager.PlayOneShot(Shot, transform.position);
       
         rifleAnimation.CrossFade(shootClip.name, 0f, PlayMode.StopAll);
@@ -114,7 +115,7 @@ public class AssaultRifleWeapon : Weapon
             currentSpreadValue = maxSpreadValue;
         }
       
-
+        base.Shoot();
     }
     public override void WChangeShoot()
     {
