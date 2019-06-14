@@ -5201,9 +5201,9 @@ GameObject:
   - component: {fileID: 420058609}
   - component: {fileID: 420058607}
   - component: {fileID: 420058606}
-  - component: {fileID: 420058605}
   - component: {fileID: 420058608}
   - component: {fileID: 420058611}
+  - component: {fileID: 420058605}
   m_Layer: 5
   m_Name: Scene_09_en
   m_TagString: Untagged
@@ -5242,20 +5242,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 420058603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/VocesEnemigos/Frases Diablo 2d
-  PlayEvent: 1
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  myEvent: event:/VocesEnemigos/FraseFinal
+  timer: 0.1
 --- !u!114 &420058606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14966,36 +14957,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3630777827208155094, guid: c35e163ba88ef9941ae21d5c812f7c85,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3630777827208155094, guid: c35e163ba88ef9941ae21d5c812f7c85,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3630777827208155094, guid: c35e163ba88ef9941ae21d5c812f7c85,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3630777827208155094, guid: c35e163ba88ef9941ae21d5c812f7c85,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.46
-      objectReference: {fileID: 0}
-    - target: {fileID: 3630777827208155094, guid: c35e163ba88ef9941ae21d5c812f7c85,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 3630777827208155094, guid: c35e163ba88ef9941ae21d5c812f7c85,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.96
-      objectReference: {fileID: 0}
     - target: {fileID: 3399648951241609055, guid: c35e163ba88ef9941ae21d5c812f7c85,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15050,6 +15011,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630777827208155094, guid: c35e163ba88ef9941ae21d5c812f7c85,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630777827208155094, guid: c35e163ba88ef9941ae21d5c812f7c85,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630777827208155094, guid: c35e163ba88ef9941ae21d5c812f7c85,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630777827208155094, guid: c35e163ba88ef9941ae21d5c812f7c85,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630777827208155094, guid: c35e163ba88ef9941ae21d5c812f7c85,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630777827208155094, guid: c35e163ba88ef9941ae21d5c812f7c85,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.96
       objectReference: {fileID: 0}
     - target: {fileID: 636708348107784595, guid: c35e163ba88ef9941ae21d5c812f7c85,
         type: 3}
@@ -15632,12 +15623,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3.014899
       objectReference: {fileID: 0}
-    - target: {fileID: 4725571359698657281, guid: ed3043469cd0815439a7fc33e665cfcc,
+    - target: {fileID: 2132414869516373900, guid: ed3043469cd0815439a7fc33e665cfcc,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2132414869516373900, guid: ed3043469cd0815439a7fc33e665cfcc,
+    - target: {fileID: 4725571359698657281, guid: ed3043469cd0815439a7fc33e665cfcc,
         type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -19816,12 +19807,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 7.5329
       objectReference: {fileID: 0}
-    - target: {fileID: 4725571359698657281, guid: ed3043469cd0815439a7fc33e665cfcc,
+    - target: {fileID: 2132414869516373900, guid: ed3043469cd0815439a7fc33e665cfcc,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2132414869516373900, guid: ed3043469cd0815439a7fc33e665cfcc,
+    - target: {fileID: 4725571359698657281, guid: ed3043469cd0815439a7fc33e665cfcc,
         type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -26632,15 +26623,15 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8816063930565635783, guid: ebc7509cdd32d3a4ead6dcdca5674646,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5340637942393700085, guid: ebc7509cdd32d3a4ead6dcdca5674646,
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 1406
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816063930565635783, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4470733595436080146, guid: ebc7509cdd32d3a4ead6dcdca5674646,
         type: 3}
@@ -30972,6 +30963,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FogFloorIce (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.2999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.6000004
+      objectReference: {fileID: 0}
     - target: {fileID: 685713815, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.7
@@ -31015,14 +31014,6 @@ PrefabInstance:
     - target: {fileID: 685713815, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.2999992
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.6000004
       objectReference: {fileID: 0}
     - target: {fileID: 1164074466, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: ShapeModule.m_Scale.x
@@ -31135,6 +31126,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FogFloorIce
       objectReference: {fileID: 0}
+    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.6000004
+      objectReference: {fileID: 0}
     - target: {fileID: 685713815, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.7
@@ -31178,14 +31177,6 @@ PrefabInstance:
     - target: {fileID: 685713815, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.6000004
       objectReference: {fileID: 0}
     - target: {fileID: 1164074466, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: ShapeModule.m_Scale.x
@@ -31802,6 +31793,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FogFloorIce (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.6000004
+      objectReference: {fileID: 0}
     - target: {fileID: 685713815, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: m_LocalPosition.x
       value: -42.300003
@@ -31846,14 +31845,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.6000004
-      objectReference: {fileID: 0}
     - target: {fileID: 1164074466, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: ShapeModule.m_Scale.x
       value: 70
@@ -31880,6 +31871,14 @@ PrefabInstance:
     - target: {fileID: 685713814, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: m_Name
       value: FogFloorIce (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.699998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.5999994
       objectReference: {fileID: 0}
     - target: {fileID: 685713815, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31924,14 +31923,6 @@ PrefabInstance:
     - target: {fileID: 685713815, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.699998
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.5999994
       objectReference: {fileID: 0}
     - target: {fileID: 1164074466, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: ShapeModule.m_Scale.x
@@ -32128,6 +32119,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FogFloorIce (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.299998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.6
+      objectReference: {fileID: 0}
     - target: {fileID: 685713815, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: m_LocalPosition.x
       value: 28.7
@@ -32171,14 +32170,6 @@ PrefabInstance:
     - target: {fileID: 685713815, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.299998
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.6
       objectReference: {fileID: 0}
     - target: {fileID: 1164074466, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: ShapeModule.m_Scale.x
@@ -32291,6 +32282,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: FogFloorIce (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.6999989
+      objectReference: {fileID: 0}
+    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.6000004
+      objectReference: {fileID: 0}
     - target: {fileID: 685713815, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: m_LocalPosition.x
       value: -42.300003
@@ -32334,14 +32333,6 @@ PrefabInstance:
     - target: {fileID: 685713815, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.6999989
-      objectReference: {fileID: 0}
-    - target: {fileID: 1164074464, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.6000004
       objectReference: {fileID: 0}
     - target: {fileID: 1164074466, guid: 9b06ce17743bd49439d6b636b07ce5db, type: 3}
       propertyPath: ShapeModule.m_Scale.x

@@ -1022,6 +1022,7 @@ RectTransform:
   - {fileID: 4758118127019788107}
   - {fileID: 6712455404482872246}
   - {fileID: 5340637942393700085}
+  - {fileID: 8858885072543960213}
   m_Father: {fileID: 8816063929237022974}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1043,19 +1044,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogues:
-  - {fileID: 5736995279639851624}
-  - {fileID: 3513883234382168470}
+  - {fileID: 4039085319063067323}
+  - {fileID: 4662546583204743069}
   - {fileID: 7491070401359078031}
   - {fileID: 4877636558833917506}
-  - {fileID: 4039085319063067323}
+  - {fileID: 996109259864899292}
   - {fileID: 4662546583204743069}
   - {fileID: 5714688275576861482}
   - {fileID: 996109259864899292}
   durations:
   - 8
-  - 6
-  - 10
   - 8
+  - 10
+  - 18
   - 6
   - 6
   - 6
@@ -1406,7 +1407,12 @@ GameObject:
   - component: {fileID: 5520547499500080387}
   - component: {fileID: 7963965965600713577}
   - component: {fileID: 5433128693957764369}
-  - component: {fileID: 7358712649121220200}
+  - component: {fileID: 4050147361979823110}
+  - component: {fileID: 395498043214135968}
+  - component: {fileID: 359082769918701074}
+  - component: {fileID: 8138723507964348905}
+  - component: {fileID: 5970209691750987175}
+  - component: {fileID: 1696542645}
   m_Layer: 5
   m_Name: Scene_08_En
   m_TagString: Untagged
@@ -1462,7 +1468,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: cb9d8dcb1c711624abcfa0a5c22a2bca, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -1474,12 +1480,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'This all ends here. If you can survive my biggest army you will be able
-    to get out of this nightmare.
-
-    Although there''s no reason to get hyped, no one ever managed to survive this....
-
-'
+  m_Text: 
 --- !u!111 &7963965965600713577
 Animation:
   m_ObjectHideFlags: 0
@@ -1509,7 +1510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd8c15c02d1310f4f82f1b6a56579e0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7358712649121220200
+--- !u!114 &4050147361979823110
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1518,20 +1519,89 @@ MonoBehaviour:
   m_GameObject: {fileID: 996109259864899292}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/VocesEnemigos/Frases Diablo 2d
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  delay: 0.1
+  timer: 0
+  fullText: This all ends here...
+  myText: {fileID: 0}
+--- !u!114 &395498043214135968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996109259864899292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  timer: 3.5
+  fullText: If you survive my biggest army, you get out of this nightmare
+  myText: {fileID: 0}
+--- !u!114 &359082769918701074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996109259864899292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  timer: 11
+  fullText: Don't get too excited yet
+  myText: {fileID: 0}
+--- !u!114 &8138723507964348905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996109259864899292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  timer: 14.5
+  fullText: No one ever survived this...
+  myText: {fileID: 0}
+--- !u!114 &5970209691750987175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996109259864899292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent: event:/VocesEnemigos/Frase 9
+  timer: 0.1
+--- !u!114 &1696542645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996109259864899292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent: event:/VocesEnemigos/Frase 10
+  timer: 11
 --- !u!1 &1013845773520764004
 GameObject:
   m_ObjectHideFlags: 0
@@ -3850,6 +3920,180 @@ RectTransform:
   m_AnchoredPosition: {x: 249, y: 101}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &3127083961416204472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8858885072543960213}
+  - component: {fileID: 8651360989876051010}
+  - component: {fileID: 3679652213305026594}
+  - component: {fileID: 4177301064782889886}
+  - component: {fileID: 1376568906777846745}
+  - component: {fileID: 7411016671322387731}
+  - component: {fileID: 8180725401676167722}
+  - component: {fileID: 8996268056488811271}
+  - component: {fileID: 6651442332199675718}
+  m_Layer: 5
+  m_Name: Scene_01_En (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &8858885072543960213
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3127083961416204472}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8347728315283800747}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1400, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8651360989876051010
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3127083961416204472}
+  m_CullTransparentMesh: 0
+--- !u!114 &3679652213305026594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3127083961416204472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: cb9d8dcb1c711624abcfa0a5c22a2bca, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!111 &4177301064782889886
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3127083961416204472}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &1376568906777846745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3127083961416204472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd8c15c02d1310f4f82f1b6a56579e0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7411016671322387731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3127083961416204472}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent: "event:/VocesEnemigos/Frase diab\xF3lica 3"
+  timer: 5
+--- !u!114 &8180725401676167722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3127083961416204472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  timer: 0.2
+  fullText: 'You don''t belong here... '
+  myText: {fileID: 0}
+--- !u!114 &8996268056488811271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3127083961416204472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent: event:/VocesEnemigos/Frase 2
+  timer: 0.2
+--- !u!114 &6651442332199675718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3127083961416204472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  timer: 4
+  fullText: Exterminate this useless rat!
+  myText: {fileID: 0}
 --- !u!1 &3272712879527472871
 GameObject:
   m_ObjectHideFlags: 0
@@ -4169,7 +4413,8 @@ GameObject:
   - component: {fileID: 6003639033479203529}
   - component: {fileID: 395298971301727363}
   - component: {fileID: 1644783245563412067}
-  - component: {fileID: 3676757777802912289}
+  - component: {fileID: 2241981221659336958}
+  - component: {fileID: 2158228971741226280}
   m_Layer: 5
   m_Name: Scene_02_En
   m_TagString: Untagged
@@ -4225,7 +4470,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: cb9d8dcb1c711624abcfa0a5c22a2bca, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -4250,9 +4495,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.08
-  timer: 0
-  fullText: I got really bored waiting for you... After him hordes!
+  delay: 0.1
+  timer: 0.2
+  fullText: I got really bored waiting for you...
   myText: {fileID: 0}
 --- !u!111 &395298971301727363
 Animation:
@@ -4283,7 +4528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd8c15c02d1310f4f82f1b6a56579e0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3676757777802912289
+--- !u!114 &2241981221659336958
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4292,20 +4537,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 3513883234382168470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/VocesEnemigos/Frases Diablo 2d
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  myEvent: event:/VocesEnemigos/Frase 2 (2)
+  timer: 0.1
+--- !u!114 &2158228971741226280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3513883234382168470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  timer: 5.5
+  fullText: Get this little fly!
+  myText: {fileID: 0}
 --- !u!1 &3515754000833847774
 GameObject:
   m_ObjectHideFlags: 0
@@ -5169,7 +5421,8 @@ GameObject:
   - component: {fileID: 4101540672513210061}
   - component: {fileID: 1733947041512736460}
   - component: {fileID: 1023383285575475421}
-  - component: {fileID: 4350842162145618597}
+  - component: {fileID: 5748082323059204276}
+  - component: {fileID: 6012385967121285417}
   m_Layer: 5
   m_Name: Scene_05_En
   m_TagString: Untagged
@@ -5225,7 +5478,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: cb9d8dcb1c711624abcfa0a5c22a2bca, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -5237,9 +5490,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Poor cockroch... so small and lost.... Ha ha ha
-
-    I dare you to take the new path this time...
+  m_Text: '
 
 '
 --- !u!114 &4101540672513210061
@@ -5254,8 +5505,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myEvent: "event:/Risas diab\xF3licas/Balas diab\xF3licas"
-  timer: 2
+  myEvent: event:/VocesEnemigos/Frase 5
+  timer: 0.1
 --- !u!111 &1733947041512736460
 Animation:
   m_ObjectHideFlags: 0
@@ -5285,7 +5536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd8c15c02d1310f4f82f1b6a56579e0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4350842162145618597
+--- !u!114 &5748082323059204276
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5294,20 +5545,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 4039085319063067323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/VocesEnemigos/Frases Diablo 2d
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  delay: 0.1
+  timer: 0.2
+  fullText: 'Poor cockroch... so small and lost.... '
+  myText: {fileID: 0}
+--- !u!114 &6012385967121285417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4039085319063067323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  timer: 5
+  fullText: 'I dare you to take the new path this time... '
+  myText: {fileID: 0}
 --- !u!1 &4067797190279949047
 GameObject:
   m_ObjectHideFlags: 0
@@ -6083,7 +6343,9 @@ GameObject:
   - component: {fileID: 8956342974352057446}
   - component: {fileID: 4186667307753596397}
   - component: {fileID: 2003334552704594924}
-  - component: {fileID: 7490175994803995072}
+  - component: {fileID: 1968148421}
+  - component: {fileID: 1968148423}
+  - component: {fileID: 1968148424}
   m_Layer: 5
   m_Name: Scene_06_En
   m_TagString: Untagged
@@ -6139,7 +6401,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: cb9d8dcb1c711624abcfa0a5c22a2bca, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -6184,7 +6446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd8c15c02d1310f4f82f1b6a56579e0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7490175994803995072
+--- !u!114 &1968148421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6193,20 +6455,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 4662546583204743069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/VocesEnemigos/Frases Diablo 2d
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  delay: 0.1
+  timer: 0.1
+  fullText: You have nowhere to run...
+  myText: {fileID: 0}
+--- !u!114 &1968148423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4662546583204743069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent: event:/VocesEnemigos/Frase 6
+  timer: 0.1
+--- !u!114 &1968148424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4662546583204743069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  timer: 3.5
+  fullText: I call upon all the evil forces in this arena!
+  myText: {fileID: 0}
 --- !u!1 &4752467375787794942
 GameObject:
   m_ObjectHideFlags: 0
@@ -6615,7 +6900,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: cb9d8dcb1c711624abcfa0a5c22a2bca, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -6671,7 +6956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myEvent: "event:/VocesEnemigos/Frase diab\xF3lica 2"
+  myEvent: "event:/VocesEnemigos/Frase diab\xF3lica 2 (2)"
   timer: 5
 --- !u!114 &1226972534
 MonoBehaviour:
@@ -6701,7 +6986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myEvent: "event:/VocesEnemigos/Frase diab\xF3lica 1"
+  myEvent: "event:/VocesEnemigos/Frase diab\xF3lica 1 (2)"
   timer: 0.4
 --- !u!114 &1226972536
 MonoBehaviour:
@@ -6715,7 +7000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.05
+  delay: 0.08
   timer: 5
   fullText: But this hell will be your end!
   myText: {fileID: 8535745860663358044}
@@ -7939,7 +8224,9 @@ GameObject:
   - component: {fileID: 4349691704414705217}
   - component: {fileID: 2184342282172915739}
   - component: {fileID: 5537148699570584744}
-  - component: {fileID: 5006597781884925536}
+  - component: {fileID: 4107593547454662785}
+  - component: {fileID: 6561603943726198421}
+  - component: {fileID: 4723333743930469744}
   m_Layer: 5
   m_Name: Scene_07_En
   m_TagString: Untagged
@@ -7995,7 +8282,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: cb9d8dcb1c711624abcfa0a5c22a2bca, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -8007,9 +8294,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Is this everything you can do? What a meaningless brat
-
-    We won''t allow such a parasite like you get away from the hell
+  m_Text: '
 
 '
 --- !u!111 &2184342282172915739
@@ -8041,7 +8326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd8c15c02d1310f4f82f1b6a56579e0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5006597781884925536
+--- !u!114 &4107593547454662785
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8050,20 +8335,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 5714688275576861482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/VocesEnemigos/Frases Diablo 2d
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  delay: 0.1
+  timer: 0.2
+  fullText: Is this everything you got?
+  myText: {fileID: 0}
+--- !u!114 &6561603943726198421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5714688275576861482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent: event:/VocesEnemigos/Frase 7
+  timer: 0.1
+--- !u!114 &4723333743930469744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5714688275576861482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.09
+  timer: 3.8
+  fullText: ' We won''t let a parasite like you get away from hell...'
+  myText: {fileID: 0}
 --- !u!1 &5736995279639851624
 GameObject:
   m_ObjectHideFlags: 0
@@ -8136,7 +8444,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: cb9d8dcb1c711624abcfa0a5c22a2bca, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -9815,7 +10123,7 @@ GameObject:
   - component: {fileID: 1943185483843588971}
   - component: {fileID: 6470990263045339801}
   - component: {fileID: 3689396599806729466}
-  - component: {fileID: 2904425623282519232}
+  - component: {fileID: 1874326431420736199}
   m_Layer: 5
   m_Name: Scene_03_En
   m_TagString: Untagged
@@ -9871,7 +10179,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: cb9d8dcb1c711624abcfa0a5c22a2bca, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -9891,13 +10199,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7491070401359078031}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myEvent: "event:/Risas diab\xF3licas/Balas diab\xF3licas"
-  timer: 4
+  myEvent: event:/VocesEnemigos/Frase 3
+  timer: 0.1
 --- !u!114 &1943185483843588971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9910,10 +10218,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.12
-  timer: 0
-  fullText: 'If the first puzzle was hard this one is imposible! Breathe while you
-    still can... Ha ha ha '
+  delay: 0.1
+  timer: 0.2
+  fullText: 'If the first puzzle was hard... this one is imposible! '
   myText: {fileID: 0}
 --- !u!111 &6470990263045339801
 Animation:
@@ -9944,7 +10251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd8c15c02d1310f4f82f1b6a56579e0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2904425623282519232
+--- !u!114 &1874326431420736199
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9953,20 +10260,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7491070401359078031}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/VocesEnemigos/Frases Diablo 2d
-  PlayEvent: 1
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
+  delay: 0.1
+  timer: 6.8
+  fullText: Breathe while you still can...
+  myText: {fileID: 0}
 --- !u!1 &7798256030341516900
 GameObject:
   m_ObjectHideFlags: 0
@@ -12017,7 +12317,6 @@ GameObject:
   - component: {fileID: 8816063929125938316}
   - component: {fileID: 8816063929125938307}
   - component: {fileID: 58664840}
-  - component: {fileID: 5689467663157173388}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -12096,37 +12395,14 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Weapon/TeleportReload2D
   PlayEvent: 11
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &5689467663157173388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8816063929125938305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Weapon/TeleportReload2D
-  PlayEvent: 11
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &8816063929224065805
 GameObject:
   m_ObjectHideFlags: 0
@@ -12503,7 +12779,6 @@ GameObject:
   - component: {fileID: 8816063929308657799}
   - component: {fileID: 8816063929308657798}
   - component: {fileID: 567687473}
-  - component: {fileID: 8805163495523453412}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -12582,37 +12857,14 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Weapon/TeleportReload2D
   PlayEvent: 11
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &8805163495523453412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8816063929308657796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Weapon/TeleportReload2D
-  PlayEvent: 11
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &8816063929356020158
 GameObject:
   m_ObjectHideFlags: 0
@@ -12836,7 +13088,6 @@ GameObject:
   - component: {fileID: 8816063929488866314}
   - component: {fileID: 8816063929488866313}
   - component: {fileID: 1538760152}
-  - component: {fileID: 6423696147565426051}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -12915,37 +13166,14 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Weapon/TeleportReload2D
   PlayEvent: 11
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &6423696147565426051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8816063929488866319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Weapon/TeleportReload2D
-  PlayEvent: 11
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &8816063929529729997
 GameObject:
   m_ObjectHideFlags: 0
@@ -13636,7 +13864,6 @@ GameObject:
   - component: {fileID: 8816063929911309294}
   - component: {fileID: 8816063929911309293}
   - component: {fileID: 721199133}
-  - component: {fileID: 5016871136022663156}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -13715,37 +13942,14 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Weapon/TeleportReload2D
   PlayEvent: 11
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &5016871136022663156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8816063929911309283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Weapon/TeleportReload2D
-  PlayEvent: 11
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &8816063929933116540
 GameObject:
   m_ObjectHideFlags: 0
@@ -14630,7 +14834,6 @@ GameObject:
   - component: {fileID: 8816063930565358165}
   - component: {fileID: 8816063930565358164}
   - component: {fileID: 1418612095}
-  - component: {fileID: 5067848865858993091}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -14709,30 +14912,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Weapon/TeleportReload2D
   PlayEvent: 11
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!114 &5067848865858993091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8816063930565358186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Weapon/TeleportReload2D
-  PlayEvent: 11
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -14757,7 +14937,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8816063930565635776
 RectTransform:
   m_ObjectHideFlags: 0
