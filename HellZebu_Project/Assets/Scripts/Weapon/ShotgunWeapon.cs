@@ -102,10 +102,11 @@ public class ShotgunWeapon : Weapon
            
         }
         crossfireValue += crossfireCost;
-        base.Shoot();
         Controller.Instance.Recoil(recoilAmountY, recoilAmountX, recoilTime, recoilDown);
         FMODUnity.RuntimeManager.PlayOneShot(Shot, transform.position);
         shotgunAnimation.CrossFade(shootClip.name, 0f, PlayMode.StopAll);
+        
+        base.Shoot();
     }
     public override void WChangeShoot()
     {
