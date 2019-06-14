@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5858289912918826504}
   - component: {fileID: 8216726496316996087}
   - component: {fileID: 7702765251683294437}
-  - component: {fileID: 513004639946711109}
+  - component: {fileID: 4143862446874616212}
   m_Layer: 0
   m_Name: tabl_n_low
   m_TagString: Untagged
@@ -78,8 +78,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &513004639946711109
-MeshCollider:
+--- !u!65 &4143862446874616212
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -88,10 +88,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 02503ead1c73d1c4fbee141ac7645151, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 44.00051, y: 1.3744, z: 12.198503}
+  m_Center: {x: -4.677081, y: 0.68721527, z: 1.5737809}
 --- !u!1 &4666598387701524467
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7584141657999083501}
   m_Layer: 0
-  m_Name: tablon_low
+  m_Name: tablon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -63,6 +63,11 @@ public class HighScore : MonoBehaviour
         File.WriteAllText(customPath, highScoreFile);
 
     }
+    public int getHighScore()
+    {
+        return highScoreData.highScore;
+
+    }
 
 
 

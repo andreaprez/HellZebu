@@ -93,7 +93,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1084731784242035685}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.10799965, y: -0.0020018867, z: -0.24699855}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4066672944915057910}
@@ -379,7 +379,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4018856982755850234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.103999995, y: -0.14400001, z: 2.11}
+  m_LocalPosition: {x: 0.174, y: -0.147, z: 2.111}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5691480802723718524}
@@ -800,7 +800,7 @@ MonoBehaviour:
   muzzlePrefIceShot: {fileID: 2454040419565562408, guid: ba08d567173aa604cb18fe407394ae07,
     type: 3}
   currentOverheatValueIce: 0
-  overheatIceParticle: {fileID: 215621881323476675, guid: 51b382637d7ea3e4997e693f25b6b725,
+  overheatIceParticle: {fileID: 916472892177651050, guid: cf623609bbe4b02448e96f957efe64d6,
     type: 3}
   overheatIceParticlePos: {fileID: 6668846642016772279}
   accesory: {fileID: 124701068158120803}
@@ -808,8 +808,12 @@ MonoBehaviour:
   rayDuration: 0.2
   timeBetweenShootsWC: 1
   timeBetweenShootsWCTimer: 0
-  lr: {fileID: 6082696653424123035}
+  laser: {fileID: 0}
+  laserSpecial: {fileID: 0}
+  lr0: {fileID: 0}
+  lr1: {fileID: 0}
   rayColor: {r: 0.764151, g: 0, b: 0.6427414, a: 1}
+  rayOutsideColor: {r: 0.7496679, g: 0, b: 0.8584906, a: 0.63529414}
   rayTransparentColor: {r: 0.76470596, g: 0, b: 0.6431373, a: 0}
   alphaLerpValue: 0
   specialShotTime: 1
@@ -851,10 +855,11 @@ MonoBehaviour:
   crossfireValue: 0
   reduceCrossfire: 8
   crossfireCost: 2
+  shotgunAnimation: {fileID: 0}
+  shootClip: {fileID: 0}
   enableGizmos: 0
   muzzleSpecialPartIce: {fileID: 0}
   muzzleSpecialPartFire: {fileID: 0}
-  shotgun_anim: {fileID: 2349120829281548289}
 --- !u!120 &6082696653424123035
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1365,7 +1370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6668846642016772279}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.108, y: -0.002, z: -0.247}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2993585255937252947}
@@ -1398,7 +1403,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6702585968435232236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 141.73051}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 7103537043135357707}
@@ -1664,18 +1669,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4361255463869489859}
     m_Modifications:
-    - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6680414ef2045214aaad52941a484cec, type: 2}
-    - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
-      propertyPath: m_CastShadows
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
-      propertyPath: m_ReceiveShadows
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
       propertyPath: m_Name
       value: escopetaLOW
@@ -1722,6 +1715,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6680414ef2045214aaad52941a484cec, type: 2}
+    - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
+      propertyPath: m_ReceiveShadows
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}

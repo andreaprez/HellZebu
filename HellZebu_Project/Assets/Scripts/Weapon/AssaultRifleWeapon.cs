@@ -22,8 +22,13 @@ public class AssaultRifleWeapon : Weapon
     public bool recoilDown;
     private RectTransform spreadCrossfire;
     private float currentSpreadValue;
+    public Animation rifleAnimation;
+    public AnimationClip shootClip;
     [Header("Draw gizmos")]
     public bool enableGizmos;
+
+    public Color rayColorSpecial, rayOutsideColorSpecial;
+
 
     //Shooting direction
     private float rayDistance=90000f;
@@ -31,10 +36,6 @@ public class AssaultRifleWeapon : Weapon
     private Vector3 bulletDirection;
     private Quaternion rotationDirection;
 
-    public Animation rifle_Animation;
-
-    public AnimationClip rifle_run;
-    public AnimationClip rigle_shoot;
 
     // Start is called before the first frame update
     public override void Start()
@@ -104,7 +105,7 @@ public class AssaultRifleWeapon : Weapon
         base.Shoot();
         FMODUnity.RuntimeManager.PlayOneShot(Shot, transform.position);
       
-        rifle_Animation.Play("rifle_anim");
+        rifleAnimation.CrossFade(shootClip.name, 0f, PlayMode.StopAll);
                 
 
         currentSpreadValue += spreadShotCost;
@@ -150,13 +151,16 @@ public class AssaultRifleWeapon : Weapon
         //Calculate direction from shooting point to hit
         bulletDirection = (hits[hits.Length - 1].point - shootingPoint.transform.position);
         bulletDirection.Normalize();
-        lr.SetPosition(0, rayShootingPoint.transform.position);
-        lr.SetPosition(1, hits[hits.Length - 1].point);
-        
-        lr.startColor = Color.red;
-        lr.endColor = Color.red;
-        StartCoroutine(activateLineRenderer(specialShotRayDuration));
+        lr0.SetPosition(0, rayShootingPoint.transform.position);
+        lr0.SetPosition(1, hits[hits.Length - 1].point);
+        lr1.SetPosition(0, rayShootingPoint.transform.position);
+        lr1.SetPosition(1, hits[hits.Length - 1].point);
 
+        lr0.startColor = rayColorSpecial;
+        lr0.endColor = rayColorSpecial;
+        lr1.startColor = rayOutsideColorSpecial;
+        lr1.endColor = rayOutsideColorSpecial;
+        StartCoroutine(activateLineRenderer(specialShotRayDuration,true));
         FMODUnity.RuntimeManager.PlayOneShot(specialShotRifle, transform.position);
 
         base.SpecialShoot();
