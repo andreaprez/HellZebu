@@ -27,6 +27,12 @@ public class Weapon : MonoBehaviour
     public float overheatedRecoveryTime;
     public GameObject shootingPoint, specialShotgunShootPoint;
     public LayerMask ignoreMasks;
+    public Material emissiveMaterial;
+    public Texture emissiveTextureRed;
+    public Texture emissiveTextureBlue;
+    public Light light;
+    public Color redColor;
+    public Color blueColor;
 
     protected GameObject currentAmmo;
 
@@ -547,6 +553,8 @@ public class Weapon : MonoBehaviour
                     iceUI.SetActive(false);
                 }
 
+                emissiveMaterial.SetTexture("_EmissionMap", emissiveTextureBlue);
+                light.color = blueColor;
             }
             else if (WorldChangerManager.Instance.currentWorld == WorldChangerManager.Worlds.Fire)
             {
@@ -564,6 +572,9 @@ public class Weapon : MonoBehaviour
                     fireUI.SetActive(false);
                     iceUI.SetActive(false);
                 }
+                
+                emissiveMaterial.SetTexture("_EmissionMap", emissiveTextureRed);
+                light.color = redColor;
             }
         }
     }
