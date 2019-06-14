@@ -22,8 +22,13 @@ public class AssaultRifleWeapon : Weapon
     public bool recoilDown;
     private RectTransform spreadCrossfire;
     private float currentSpreadValue;
+    public Animation rifleAnimation;
+    public AnimationClip shootClip;
     [Header("Draw gizmos")]
     public bool enableGizmos;
+
+    public Color rayColorSpecial, rayOutsideColorSpecial;
+
 
     //Shooting direction
     private float rayDistance=90000f;
@@ -31,15 +36,13 @@ public class AssaultRifleWeapon : Weapon
     private Vector3 bulletDirection;
     private Quaternion rotationDirection;
 
-    public Animation shootAnimation;
-    
 
     // Start is called before the first frame update
     public override void Start()
     {
         spreadCrossfire = MainCanvas.Instance.spreadCrossFire;
         currentSpreadValue = minSpreadValue;
-      
+                    
         base.Start();
     }
 
@@ -53,12 +56,9 @@ public class AssaultRifleWeapon : Weapon
         }
         if (currentSpreadValue > minSpreadValue)
         {
-
-            currentSpreadValue -= reduceSpreadSpeed * Time.deltaTime;
-            
+            currentSpreadValue -= reduceSpreadSpeed * Time.deltaTime;            
         }
-
-
+       
         base.Update();
     }
     public override void Shoot()
@@ -79,10 +79,7 @@ public class AssaultRifleWeapon : Weapon
         //Calculate direction from shooting point to hit
         bulletDirection = (hit.point - shootingPoint.transform.position);
         bulletDirection.Normalize();
-
-
-
-       
+                             
         
         //Create projectile and set direction
         GameObject b = Instantiate(currentAmmo, shootingPoint.transform.position, rotationDirection);
@@ -107,7 +104,9 @@ public class AssaultRifleWeapon : Weapon
      
         base.Shoot();
         FMODUnity.RuntimeManager.PlayOneShot(Shot, transform.position);
-        shootAnimation.Play();
+      
+        rifleAnimation.CrossFade(shootClip.name, 0f, PlayMode.StopAll);
+                
 
         currentSpreadValue += spreadShotCost;
         if (currentSpreadValue > maxSpreadValue)
@@ -157,12 +156,11 @@ public class AssaultRifleWeapon : Weapon
         lr1.SetPosition(0, rayShootingPoint.transform.position);
         lr1.SetPosition(1, hits[hits.Length - 1].point);
 
-        lr0.startColor = Color.red;
-        lr0.endColor = Color.red;
-        lr1.startColor = Color.red;
-        lr1.endColor = Color.red;
-        StartCoroutine(activateLineRenderer(specialShotRayDuration));
-
+        lr0.startColor = rayColorSpecial;
+        lr0.endColor = rayColorSpecial;
+        lr1.startColor = rayOutsideColorSpecial;
+        lr1.endColor = rayOutsideColorSpecial;
+        StartCoroutine(activateLineRenderer(specialShotRayDuration,true));
         FMODUnity.RuntimeManager.PlayOneShot(specialShotRifle, transform.position);
 
         base.SpecialShoot();

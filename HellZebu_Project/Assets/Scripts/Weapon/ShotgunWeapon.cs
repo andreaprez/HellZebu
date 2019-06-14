@@ -26,6 +26,8 @@ public class ShotgunWeapon : Weapon
     public float crossfireValue;
     public float reduceCrossfire;
     public float crossfireCost;
+    public Animation shotgunAnimation;
+    public AnimationClip shootClip;
     [Header("Draw gizmos")]
     public bool enableGizmos;
 
@@ -36,7 +38,6 @@ public class ShotgunWeapon : Weapon
     private Quaternion rotationDirection;
 
     public GameObject muzzleSpecialPartIce, muzzleSpecialPartFire;
-    public Animation shotgun_anim;
 
     public override void Start()
     {
@@ -104,8 +105,7 @@ public class ShotgunWeapon : Weapon
         base.Shoot();
         Controller.Instance.Recoil(recoilAmountY, recoilAmountX, recoilTime, recoilDown);
         FMODUnity.RuntimeManager.PlayOneShot(Shot, transform.position);
-        shotgun_anim.Play();
-
+        shotgunAnimation.CrossFade(shootClip.name, 0f, PlayMode.StopAll);
     }
     public override void WChangeShoot()
     {

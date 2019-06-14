@@ -248,7 +248,13 @@ MonoBehaviour:
   onConflictZone: 0
   weaponSlot1: {fileID: 17277166721947210}
   weaponSlot2: {fileID: 5369590464113332997}
-  activeWeapon: 0
+  activeWeapon: 1
+  rifleAnimation: {fileID: 6529420042288961602}
+  shotgunAnimation: {fileID: 6342835295507681989}
+  rifleRun: {fileID: 7400000, guid: aaa1f191ee8ed454b832b5c2df0e843b, type: 2}
+  rifleIdle: {fileID: 7400000, guid: 077da8b6b4ed814408072a541497d249, type: 2}
+  shotgunRun: {fileID: 7400000, guid: 77c02751dd17505499c11785f3d469f3, type: 2}
+  shotgunIdle: {fileID: 7400000, guid: 3fa8cb36ea4897341adc58c5b09cc202, type: 2}
   worldChangeTime: 2
   worldChangeTimer: 0
   UIAnimator: {fileID: 0}
@@ -829,6 +835,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 1933403399960020730, guid: 52bda3ae20214f04ab92dc661b21f4bb,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: 7d01443131b373445997d501246c9dfd, type: 2}
     - target: {fileID: 1075875580, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -878,10 +889,6 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1075875575, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
-      propertyPath: specialShootUnlocked
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1075875575, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
       propertyPath: specialShotgunPart
       value: 
       objectReference: {fileID: 8150058156404201116, guid: b260b26d8e723e347b002ff246e34fc2,
@@ -890,6 +897,14 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1634704126339350965}
+    - target: {fileID: 1075875575, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
+      propertyPath: rifleAnimation
+      value: 
+      objectReference: {fileID: 6529420042288961602}
+    - target: {fileID: 1075875575, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
+      propertyPath: shootClip
+      value: 
+      objectReference: {fileID: 7400000, guid: 7d01443131b373445997d501246c9dfd, type: 2}
     - target: {fileID: 5031165218383511497, guid: 52bda3ae20214f04ab92dc661b21f4bb,
         type: 3}
       propertyPath: m_Layer
@@ -899,11 +914,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 5991624116763557062, guid: 52bda3ae20214f04ab92dc661b21f4bb,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6987183807145033404, guid: 52bda3ae20214f04ab92dc661b21f4bb,
         type: 3}
@@ -1021,6 +1031,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecc412ec05032d444b7dacc177b86633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!111 &6529420042288961602 stripped
+Animation:
+  m_CorrespondingSourceObject: {fileID: 1933403399960020730, guid: 52bda3ae20214f04ab92dc661b21f4bb,
+    type: 3}
+  m_PrefabInstance: {fileID: 4632511632748404408}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8691815248199920324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1028,6 +1044,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1465460363577017641}
     m_Modifications:
+    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_Name
+      value: Shotgun 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 5691480802723718524, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1085,11 +1111,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
-      propertyPath: specialShootUnlocked
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
       propertyPath: specialShotgunShootPoint
       value: 
       objectReference: {fileID: 1041456404}
@@ -1116,16 +1137,16 @@ PrefabInstance:
       propertyPath: playerController
       value: 
       objectReference: {fileID: 1634704126339350965}
-    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
-      propertyPath: m_Name
-      value: Shotgun 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+      propertyPath: shotgunAnimation
+      value: 
+      objectReference: {fileID: 6342835295507681989}
+    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
+      propertyPath: shootClip
+      value: 
+      objectReference: {fileID: 7400000, guid: f63fc7e3e7629a343988990c5099d57f, type: 2}
     - target: {fileID: 5399376365185320823, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_Layer
@@ -1150,11 +1171,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 2735570730823670797, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 124701068158120803, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
@@ -1271,6 +1287,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64f5c69e6ff4fb54784d57588993428e, type: 3}
+--- !u!4 &3919174323785093048 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5691480802723718524, guid: 64f5c69e6ff4fb54784d57588993428e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8691815248199920324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &6342835295507681989 stripped
+Animation:
+  m_CorrespondingSourceObject: {fileID: 2349120829281548289, guid: 64f5c69e6ff4fb54784d57588993428e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8691815248199920324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &6595786455259011975 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
@@ -1283,9 +1311,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1ed7a3c9fa0f074b822747c5f45cfd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &3919174323785093048 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5691480802723718524, guid: 64f5c69e6ff4fb54784d57588993428e,
-    type: 3}
-  m_PrefabInstance: {fileID: 8691815248199920324}
-  m_PrefabAsset: {fileID: 0}

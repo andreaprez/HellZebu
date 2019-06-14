@@ -30,7 +30,6 @@ public class HighScore : MonoBehaviour
 
     private void Awake()
     {
-        print("AWAKE");
         customPath = Application.persistentDataPath + "/highScore.json";
         Instance = this;
         highScoreData = new HighScoreData();
@@ -54,11 +53,7 @@ public class HighScore : MonoBehaviour
 
 
 
-        }
-
-        print(highScoreData.highScore);
-        
-
+        }        
 
     }
     public void saveHighScore()
@@ -66,6 +61,11 @@ public class HighScore : MonoBehaviour
         highScoreData.highScore = MainCanvas.Instance.playerScore;
         highScoreFile = JsonUtility.ToJson(highScoreData);
         File.WriteAllText(customPath, highScoreFile);
+
+    }
+    public int getHighScore()
+    {
+        return highScoreData.highScore;
 
     }
 
