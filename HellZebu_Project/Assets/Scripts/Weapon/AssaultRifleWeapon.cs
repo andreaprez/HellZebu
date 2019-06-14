@@ -151,9 +151,9 @@ public class AssaultRifleWeapon : Weapon
         //Calculate direction from shooting point to hit
         bulletDirection = (hits[hits.Length - 1].point - shootingPoint.transform.position);
         bulletDirection.Normalize();
-        lr0.SetPosition(0, rayShootingPoint.transform.position);
+        lr0.SetPosition (0, rayShootingPoint.transform.position - rayShootingPoint.transform.forward);
         lr0.SetPosition(1, hits[hits.Length - 1].point);
-        lr1.SetPosition(0, rayShootingPoint.transform.position);
+        lr1.SetPosition (0, rayShootingPoint.transform.position - rayShootingPoint.transform.forward);
         lr1.SetPosition(1, hits[hits.Length - 1].point);
 
         lr0.startColor = rayColorSpecial;
