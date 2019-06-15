@@ -81,7 +81,7 @@ public class ShotgunWeapon : Weapon
 
 
             //Create projectile and set direction
-            GameObject b = Instantiate(currentAmmo, shootingPoint.transform.position, rotationDirection);
+            GameObject b = Instantiate(currentAmmo, shootingPoint.transform.position, shootingPoint.transform.rotation);
             if (currentAmmo == fireAmmo)
             {
                 b.transform.parent = GameObject.Find("FireHiddenObjects").transform;
@@ -99,7 +99,7 @@ public class ShotgunWeapon : Weapon
             bScript.normalHit = hit.normal;
             bScript.hitPoint = hit.point;
             
-           
+
         }
         crossfireValue += crossfireCost;
         Controller.Instance.Recoil(recoilAmountY, recoilAmountX, recoilTime, recoilDown);

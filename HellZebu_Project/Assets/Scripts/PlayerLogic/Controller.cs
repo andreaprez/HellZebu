@@ -103,8 +103,9 @@ public class Controller : MonoBehaviour, DataInterface
     //Recoil
     public float lerpRecoil;
     public bool pauseOn;
+    [FMODUnity.EventRef]
+    public string ChangeWeaponSound = "";
 
-    
     public void Recoil(float recoilAmountY, float recoilAmountX, float lerpTimeRecoil, bool recoilDown)
     {
         if (pauseOn == false)
@@ -384,7 +385,10 @@ public class Controller : MonoBehaviour, DataInterface
     {
         if (Input.GetKeyDown(InputsManager.Instance.currentInputs.selectWeaponOne))
         {
-
+            if (activeWeapon != 1)
+            {
+                FMODUnity.RuntimeManager.PlayOneShot(ChangeWeaponSound, transform.position);
+            }
             activeWeapon = 1;
             weaponSlot2.active = false;
             if (weaponSlot2.currentWeapon != null)
@@ -403,7 +407,10 @@ public class Controller : MonoBehaviour, DataInterface
 
         if (Input.GetKeyDown(InputsManager.Instance.currentInputs.selectWeaponTwo))
         {
-
+            if (activeWeapon != 2)
+            {
+                FMODUnity.RuntimeManager.PlayOneShot(ChangeWeaponSound, transform.position);
+            }
             activeWeapon = 2;
             weaponSlot1.active = false;
             if (weaponSlot1.currentWeapon != null)
@@ -419,6 +426,8 @@ public class Controller : MonoBehaviour, DataInterface
         }
         if (Input.GetAxis("Mouse ScrollWheel") != 0)
         {
+            //play sound
+            FMODUnity.RuntimeManager.PlayOneShot(ChangeWeaponSound, transform.position);
             if (weaponSlot1.active)
             {
                 activeWeapon = 2;
