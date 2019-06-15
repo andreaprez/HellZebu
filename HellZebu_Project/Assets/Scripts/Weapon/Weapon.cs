@@ -95,10 +95,8 @@ public class Weapon : MonoBehaviour
     public GameObject iceUI;
     public Image fireFillBar;
     public Image iceFillBar;
-    public Image fireHolder;
     public Color overheatedColor;
     public GameObject fireOverheatedText;
-    public Image iceHolder;
     public GameObject iceOverheatedText;
     public Color baseColorFireBar;
     public Color baseColorIceBar;
@@ -164,13 +162,13 @@ public class Weapon : MonoBehaviour
             iceFillBar.fillAmount = (float)currentOverheatValueIce / (float)maxOverheatValue;
 
             if (!overheatedFire) {
-                fireHolder.color = Color.white;
+                //fireHolder.color = Color.white;
                 fireFillBar.color = baseColorFireBar;
             }
 
 
             if (!overheatedIce) {
-                iceHolder.color = Color.white;
+                //iceHolder.color = Color.white;
                 iceFillBar.color = baseColorIceBar;
             }
 
@@ -190,7 +188,7 @@ public class Weapon : MonoBehaviour
                                 if (currentOverheatValueFire >= maxOverheatValue)
                                 {
                                     overheatedFire = true;
-                                    fireHolder.color = overheatedColor;
+                                    //fireHolder.color = overheatedColor;
                                     fireFillBar.color = overheatedColor;
                                     fireOverheatedText.SetActive(true);
                                     FMODUnity.RuntimeManager.PlayOneShot(OverHeated, transform.position);
@@ -219,7 +217,7 @@ public class Weapon : MonoBehaviour
                                 if (currentOverheatValueIce >= maxOverheatValue)
                                 {
                                     overheatedIce = true;
-                                    iceHolder.color = overheatedColor;
+                                    //iceHolder.color = overheatedColor;
                                     iceFillBar.color = overheatedColor;
                                     iceOverheatedText.SetActive(true);
                                     //clamp
@@ -253,7 +251,7 @@ public class Weapon : MonoBehaviour
                                 if (currentOverheatValueFire >= maxOverheatValue)
                                 {
                                     overheatedFire = true;
-                                    fireHolder.color = overheatedColor;
+                                    //fireHolder.color = overheatedColor;
                                     fireFillBar.color = overheatedColor;
                                     fireOverheatedText.SetActive(true);
                                     //clamp
@@ -276,7 +274,7 @@ public class Weapon : MonoBehaviour
                                 if (currentOverheatValueIce >= maxOverheatValue)
                                 {
                                     overheatedIce = true;
-                                    iceHolder.color = overheatedColor;
+                                    //iceHolder.color = overheatedColor;
                                     iceFillBar.color = overheatedColor;
                                     iceOverheatedText.SetActive(true);
                                     //clamp
@@ -323,7 +321,7 @@ public class Weapon : MonoBehaviour
                                 if (currentOverheatValueFire >= maxOverheatValue)
                                 {
                                     overheatedFire = true;
-                                    fireHolder.color = overheatedColor;
+                                    //fireHolder.color = overheatedColor;
                                     fireFillBar.color = overheatedColor;
                                     fireOverheatedText.SetActive(true);
                                     //clamp
@@ -347,7 +345,7 @@ public class Weapon : MonoBehaviour
                                 if (currentOverheatValueIce >= maxOverheatValue)
                                 {
                                     overheatedIce = true;
-                                    iceHolder.color = overheatedColor;
+                                    //iceHolder.color = overheatedColor;
                                     iceFillBar.color = overheatedColor;
                                     iceOverheatedText.SetActive(true);
                                     //clamp
