@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using System;
+using UnityEngine.Rendering.PostProcessing;
 public class OptionsManager : MonoBehaviour
 {
     public OptionsConfiguration defaultOptions;
@@ -20,8 +21,8 @@ public class OptionsManager : MonoBehaviour
     public Slider FOV;
     public Toggle invertXAxis;
     public Slider mouseSensitivity;
-
-
+    PostProcessVolume postProcessVolume;
+    ColorGrading colorGrading;
     private void Awake()
     {
       
@@ -55,7 +56,18 @@ public class OptionsManager : MonoBehaviour
 
 
     }
-   
+    private void Start()
+    {
+        postProcessVolume = Camera.main.GetComponent<PostProcessVolume>();
+        postProcessVolume.profile.TryGetSettings(out colorGrading);
+    }
+    private void Update()
+    {
+
+        colorGrading.postExposure.value = Mathf.Lerp(0.7f, 1.7f, bright.value);
+       
+      
+    }
     public void SetOptionsValues()
     {
 

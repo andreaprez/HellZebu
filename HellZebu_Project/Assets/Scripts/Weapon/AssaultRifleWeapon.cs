@@ -58,7 +58,9 @@ public class AssaultRifleWeapon : Weapon
         {
             currentSpreadValue -= reduceSpreadSpeed * Time.deltaTime;            
         }
+
        
+
         base.Update();
     }
     public override void Shoot()
@@ -82,7 +84,7 @@ public class AssaultRifleWeapon : Weapon
                              
         
         //Create projectile and set direction
-        GameObject b = Instantiate(currentAmmo, shootingPoint.transform.position, rotationDirection);
+        GameObject b = Instantiate(currentAmmo, shootingPoint.transform.position, shootingPoint.transform.rotation);
 
         if (currentAmmo == fireAmmo)
         {
@@ -101,8 +103,7 @@ public class AssaultRifleWeapon : Weapon
         bScript.projectileDirection = bulletDirection;
         bScript.normalHit = hit.normal;
         bScript.hitPoint = hit.point;
-     
-        base.Shoot();
+        
         FMODUnity.RuntimeManager.PlayOneShot(Shot, transform.position);
       
         rifleAnimation.CrossFade(shootClip.name, 0f, PlayMode.StopAll);
@@ -114,7 +115,7 @@ public class AssaultRifleWeapon : Weapon
             currentSpreadValue = maxSpreadValue;
         }
       
-
+        base.Shoot();
     }
     public override void WChangeShoot()
     {
@@ -138,11 +139,19 @@ public class AssaultRifleWeapon : Weapon
         hits = Physics.RaycastAll(Camera.main.transform.position, cameraRayCastDir, rayDistance, ignoreMasks);
         foreach (RaycastHit hit in hits)
         {
-            if (hit.transform.tag.Contains("Enemy"))
+            if (hit.transform.tag== "Enemy")
             {
-                if (hit.transform.transform.parent.tag.Contains("Enemy"))
-                    hit.transform.parent.SendMessage("Damage");
-                else hit.transform.SendMessage("Damage");
+                
+                    if (hit.transform.transform.parent.tag.Contains("Enemy"))
+                        hit.transform.parent.SendMessage("Damage");
+                    else hit.transform.SendMessage("Damage");
+                
+            }
+         
+            if (hit.transform.tag.Contains("EnemyWeakPoint"))
+            {
+
+               hit.transform.GetComponent<EnemyWeakPoint>().DestroyHeart();
             }
         }
 

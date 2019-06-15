@@ -28,9 +28,7 @@ public class MainCanvas : MonoBehaviour
     [Header("World change")]
     public Image wChangeImageCooldown;
     public Color wChangeBarColor;
-    public Color wChangeHolderColor;
-    public Image wChangeCooldownHolder;
-    public Text wChangeTextCooldown;
+    public GameObject wChangeRechargingText;
     public Image fillImageWC;
     [HideInInspector]
     public float wChangeCD;
@@ -69,8 +67,9 @@ public class MainCanvas : MonoBehaviour
 
     [FMODUnity.EventRef]
     public string confirmOption = "";
-  
 
+    [FMODUnity.EventRef]
+    public string rechargeBullet = "";
     //Score
 
     public float killStreakTime;
@@ -99,9 +98,14 @@ public class MainCanvas : MonoBehaviour
             popUpComboText.text = "";
             if ((pointMultiplier + 1) % 5 == 0 || (pointMultiplier + 1) % 10 == 0)
             {
-                popUpComboText.text = "X" + (pointMultiplier + 1);
+                //No he podido fixearlo, cuando points mutlilpier se queda en 5/10/15...t el play se hace correctamente, cuando acto seguido matas a un enemigo
+                //la animacion sigue pasando pero el texto se borra.
+                int multiplier = pointMultiplier + 1;
+                string mstring = multiplier.ToString();
+                popUpComboText.text = "X" + mstring;
                 if (killstreakAnim.isPlaying == false)
                 {
+                    print("PLAY");
                     killstreakAnim.Play();
                 }
             }
@@ -109,6 +113,7 @@ public class MainCanvas : MonoBehaviour
             onKillStreak = true;
             pointMultiplier++;
             killStreakTimer = killStreakTime;
+         
         }
     }
 
@@ -143,6 +148,8 @@ public class MainCanvas : MonoBehaviour
     }
     private void Update()
     {
+
+     
         killStreak.text = "x " + pointMultiplier;
         score.text = "Score: " + playerScore;
         if (onKillStreak)
@@ -269,11 +276,11 @@ public class MainCanvas : MonoBehaviour
         wChangeImageCooldown.fillAmount = 1 - wChangeCD / maxWChangeCD; //hardocded cd
         if (wChangeImageCooldown.fillAmount == 1f) {
             wChangeImageCooldown.color = wChangeBarColor;
-            wChangeCooldownHolder.color = Color.white;
+            wChangeRechargingText.SetActive(false);
         }
         else if (wChangeImageCooldown.color != Color.white){
             wChangeImageCooldown.color = Color.white;
-            wChangeCooldownHolder.color = wChangeHolderColor;
+            wChangeRechargingText.SetActive(true);
         }
 
     }
@@ -284,6 +291,7 @@ public class MainCanvas : MonoBehaviour
             if (i <= currentBullets - 1)
             {
                 UIBullets[i].SetActive(true);
+               
             }
             else { UIBullets[i].SetActive(false); }
         }
@@ -298,6 +306,8 @@ public class MainCanvas : MonoBehaviour
         {
             if (currentBullets < maxBullets)
             {
+                UIBullets[currentBullets].transform.parent.GetComponent<Animation>().Play();
+                FMODUnity.RuntimeManager.PlayOneShot(rechargeBullet);
                 currentBullets++;
                 if (currentBullets == maxBullets) { }
                 else { bulletRechargeTimer = bulletRechargeTime; }

@@ -81,7 +81,7 @@ public class ShotgunWeapon : Weapon
 
 
             //Create projectile and set direction
-            GameObject b = Instantiate(currentAmmo, shootingPoint.transform.position, rotationDirection);
+            GameObject b = Instantiate(currentAmmo, shootingPoint.transform.position, shootingPoint.transform.rotation);
             if (currentAmmo == fireAmmo)
             {
                 b.transform.parent = GameObject.Find("FireHiddenObjects").transform;
@@ -99,13 +99,14 @@ public class ShotgunWeapon : Weapon
             bScript.normalHit = hit.normal;
             bScript.hitPoint = hit.point;
             
-           
+
         }
         crossfireValue += crossfireCost;
-        base.Shoot();
         Controller.Instance.Recoil(recoilAmountY, recoilAmountX, recoilTime, recoilDown);
         FMODUnity.RuntimeManager.PlayOneShot(Shot, transform.position);
         shotgunAnimation.CrossFade(shootClip.name, 0f, PlayMode.StopAll);
+        
+        base.Shoot();
     }
     public override void WChangeShoot()
     {
