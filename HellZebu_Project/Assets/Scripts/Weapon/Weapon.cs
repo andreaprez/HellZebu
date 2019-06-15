@@ -471,12 +471,12 @@ public class Weapon : MonoBehaviour
         bulletDirection = (hit.point - shootingPoint.transform.position);
         bulletDirection.Normalize();
 
-        lr0.SetPosition(0, rayShootingPoint.transform.position);
+        lr0.SetPosition(0, rayShootingPoint.transform.position - rayShootingPoint.transform.forward);
         lr0.SetPosition(1, hit.point);
         lr0.startColor = rayColor;
         lr0.endColor = rayColor;
         
-        lr1.SetPosition (0, rayShootingPoint.transform.position);
+        lr1.SetPosition (0, rayShootingPoint.transform.position - rayShootingPoint.transform.forward);
         lr1.SetPosition(1, hit.point);
         lr1.startColor = rayOutsideColor;
         lr1.endColor = rayOutsideColor;
