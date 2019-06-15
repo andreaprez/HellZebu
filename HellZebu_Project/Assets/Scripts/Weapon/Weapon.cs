@@ -490,10 +490,11 @@ public class Weapon : MonoBehaviour
 
 
         }
-        if (hit.transform.tag.Contains("Enemy"))
+        if (hit.transform.tag =="Enemy")
         {
             hit.transform.GetComponent<Enemy>().ChangeWorld();
         }
+     
         //SOUND
         FMODUnity.RuntimeManager.PlayOneShot(Teleport, transform.position);
     }
