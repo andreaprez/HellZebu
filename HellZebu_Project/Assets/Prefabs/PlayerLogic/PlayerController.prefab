@@ -483,7 +483,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 85
+  near clip plane: 87
   far clip plane: 200
   field of view: 60
   orthographic: 0
@@ -651,7 +651,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 85
+  far clip plane: 87
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -1082,16 +1082,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1465460363577017641}
     m_Modifications:
-    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_Name
-      value: Shotgun 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
     - target: {fileID: 5691480802723718524, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1185,6 +1175,16 @@ PrefabInstance:
       propertyPath: shootClip
       value: 
       objectReference: {fileID: 7400000, guid: f63fc7e3e7629a343988990c5099d57f, type: 2}
+    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_Name
+      value: Shotgun 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 5399376365185320823, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_Layer
@@ -1332,6 +1332,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4528882565749504275, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64f5c69e6ff4fb54784d57588993428e, type: 3}
