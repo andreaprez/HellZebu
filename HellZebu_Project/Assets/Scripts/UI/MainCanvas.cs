@@ -28,9 +28,7 @@ public class MainCanvas : MonoBehaviour
     [Header("World change")]
     public Image wChangeImageCooldown;
     public Color wChangeBarColor;
-    public Color wChangeHolderColor;
-    public Image wChangeCooldownHolder;
-    public Text wChangeTextCooldown;
+    public GameObject wChangeRechargingText;
     public Image fillImageWC;
     [HideInInspector]
     public float wChangeCD;
@@ -278,11 +276,11 @@ public class MainCanvas : MonoBehaviour
         wChangeImageCooldown.fillAmount = 1 - wChangeCD / maxWChangeCD; //hardocded cd
         if (wChangeImageCooldown.fillAmount == 1f) {
             wChangeImageCooldown.color = wChangeBarColor;
-            wChangeCooldownHolder.color = Color.white;
+            wChangeRechargingText.SetActive(false);
         }
         else if (wChangeImageCooldown.color != Color.white){
             wChangeImageCooldown.color = Color.white;
-            wChangeCooldownHolder.color = wChangeHolderColor;
+            wChangeRechargingText.SetActive(true);
         }
 
     }

@@ -167,7 +167,8 @@ public class Controller : MonoBehaviour, DataInterface
 
         Instance = this;
 
-
+        pitch = pitchController.localRotation.eulerAngles.x;
+        yaw = transform.rotation.eulerAngles.y;
     }
 
 
@@ -242,13 +243,15 @@ public class Controller : MonoBehaviour, DataInterface
     {
         float mouseAxisY = Input.GetAxis("Mouse Y");
         float mouseAxisX = Input.GetAxis("Mouse X");
-
-        if (invertedPitch) mouseAxisY = -mouseAxisY;
-        pitch += mouseAxisY * pitchRotationalSpeed*currentMouseSensitivity * Time.deltaTime;
-        pitch = Mathf.Clamp(pitch, minPitch, maxPitch);
-    
-        if (invertedYaw) mouseAxisX = -mouseAxisX;
-        yaw += mouseAxisX * yawRotationalSpeed * currentMouseSensitivity * Time.deltaTime;    
+        if (mouseAxisX != 0f) {
+            if (invertedPitch) mouseAxisY = -mouseAxisY;
+            pitch += mouseAxisY * pitchRotationalSpeed * currentMouseSensitivity * Time.deltaTime;
+            pitch = Mathf.Clamp(pitch, minPitch, maxPitch);
+        }
+        if (mouseAxisY != 0f) {
+            if (invertedYaw) mouseAxisX = -mouseAxisX;
+            yaw += mouseAxisX * yawRotationalSpeed * currentMouseSensitivity * Time.deltaTime;
+        }
         transform.rotation = Quaternion.Euler(0.0f, yaw, 0.0f);
         pitchController.localRotation = Quaternion.Euler(pitch, 0.0f, 0.0f);
     }
@@ -264,11 +267,13 @@ public class Controller : MonoBehaviour, DataInterface
         Vector3 movement = Vector3.zero;
 
         //create normalized vector from inputs
-        float movementAxisZ = Input.GetAxis("Vertical");
-        float movementAxisX = Input.GetAxis("Horizontal");
+        bool movementAxisZForward = Input.GetKey(InputsManager.Instance.currentInputs.moveForward);
+        bool movementAxisZBackwards = Input.GetKey(InputsManager.Instance.currentInputs.moveBackwards);
+        bool movementAxisXLeft = Input.GetKey(InputsManager.Instance.currentInputs.moveLeft);
+        bool movementAxisXRight = Input.GetKey(InputsManager.Instance.currentInputs.moveRight);
         if (activeWeapon == 1)
         {
-            if (movementAxisZ != 0f)
+            if (movementAxisZForward || movementAxisZBackwards)
             {
                 rifleAnimation.CrossFade(rifleRun.name, 0.2f, PlayMode.StopAll);
             }
@@ -276,17 +281,24 @@ public class Controller : MonoBehaviour, DataInterface
         }
         else if (activeWeapon == 2)
         {
-            if (movementAxisZ != 0f)
+            if (movementAxisZForward || movementAxisZBackwards)
             {
                 shotgunAnimation.CrossFade(shotgunRun.name,0.2f, PlayMode.StopAll);
             }
             else shotgunAnimation.CrossFade(shotgunIdle.name, 0.2f, PlayMode.StopAll);
         }
 
+        if (movementAxisZForward)
+            movement += transform.forward;
+        else if (movementAxisZBackwards)
+            movement -= transform.forward;
+        if (movementAxisXLeft)
+            movement -= transform.right;
+        else if (movementAxisXRight)
+            movement += transform.right;
 
-        movement = (transform.forward * movementAxisZ + transform.right * movementAxisX);
         //apply tilt on roll axis
-        pitchController.localRotation = Quaternion.Euler(pitchController.localRotation.eulerAngles.x, pitchController.localRotation.eulerAngles.y, -movementAxisX * movementTiltAngle * movementTiltSpeed);
+        pitchController.localRotation = Quaternion.Euler(pitchController.localRotation.eulerAngles.x, pitchController.localRotation.eulerAngles.y, -Input.GetAxis("Horizontal") * movementTiltAngle * movementTiltSpeed);
 
         if (dashEnabled) Dash(ref movement); //check dash input
         Jump(); //check jump input        
