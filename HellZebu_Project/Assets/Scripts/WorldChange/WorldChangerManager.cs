@@ -33,7 +33,8 @@ public class WorldChangerManager : MonoBehaviour,DataInterface
 
     [Header("UI")]
     [SerializeField] private Crossfire crossfireCanvas;
-    
+
+    [SerializeField] GameObject Particles;
     
     LevelData levelData;
 
@@ -75,6 +76,7 @@ public class WorldChangerManager : MonoBehaviour,DataInterface
             blueLighting.SetActive(true);
             redLighting.SetActive(false);
         }
+
     }
     public void PlayerWorldChange(GameObject target)
     {
@@ -100,6 +102,8 @@ public class WorldChangerManager : MonoBehaviour,DataInterface
                 blueLighting.SetActive(true);
                 redLighting.SetActive(false);
             }
+            Particles.SetActive(false);
+
         }
         else
         {
@@ -117,6 +121,8 @@ public class WorldChangerManager : MonoBehaviour,DataInterface
                 redLighting.SetActive(true);
 
             }
+            Particles.SetActive(true);
+
         }
     }
 
