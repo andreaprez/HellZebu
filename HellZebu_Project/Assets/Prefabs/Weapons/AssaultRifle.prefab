@@ -328,6 +328,8 @@ Animation:
   - {fileID: 7400000, guid: 7d01443131b373445997d501246c9dfd, type: 2}
   - {fileID: 7400000, guid: aaa1f191ee8ed454b832b5c2df0e843b, type: 2}
   - {fileID: 7400000, guid: 077da8b6b4ed814408072a541497d249, type: 2}
+  - {fileID: 7400000, guid: 4154c727346b69b4dafc8e28edcc8061, type: 2}
+  - {fileID: 7400000, guid: c22c2a7cc2602244da168936461514f3, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
@@ -1487,7 +1489,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -136.8, y: 43.3}
+  m_AnchoredPosition: {x: -136.80005, y: 43.30005}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8337641873085179705
@@ -1600,7 +1602,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -136.8, y: 43.3}
+  m_AnchoredPosition: {x: -136.80005, y: 43.30005}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8916248693824302531
@@ -1731,11 +1733,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -5.0680003
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90.00001
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
