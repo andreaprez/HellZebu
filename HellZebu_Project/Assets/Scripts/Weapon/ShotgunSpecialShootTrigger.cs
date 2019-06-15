@@ -11,7 +11,7 @@ public class ShotgunSpecialShootTrigger : MonoBehaviour
     {
         print(other.tag);
 
-        if (other.tag.Contains("Enemy"))
+        if (other.tag == "Enemy")
         {
             if (other.transform.parent.GetComponent<Rigidbody>() != null)
             {
@@ -19,7 +19,7 @@ public class ShotgunSpecialShootTrigger : MonoBehaviour
                 dir.Normalize();
                 other.transform.parent.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 other.transform.parent.GetComponent<Rigidbody>().AddForce(dir * shotgunWeapon.specialShotKnockBackForce);
-                
+
             }
 
             if (other.transform.transform.parent.tag.Contains("Enemy"))
@@ -27,8 +27,12 @@ public class ShotgunSpecialShootTrigger : MonoBehaviour
                 other.transform.parent.SendMessage("Damage");
             }
             else other.transform.SendMessage("Damage");
-            
-            
+
+
+        }
+        else if (other.tag == "EnemyWeakPoint")
+        {
+           // other.GetComponent<EnemyWeakPoint>().DestroyHeart();
         }
     }
 }

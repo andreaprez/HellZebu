@@ -119,8 +119,7 @@ public class Weapon : MonoBehaviour
     [FMODUnity.EventRef]
     public string Teleport = "";
 
-    [FMODUnity.EventRef]
-    public string ChangeWeaponSound = "";
+ 
     [FMODUnity.EventRef]
     public string specialShotRifle = "";
     [FMODUnity.EventRef]
@@ -428,7 +427,7 @@ public class Weapon : MonoBehaviour
             accesory.SetActive(true);
             if (lastMode == WeaponElementalModes.Fire) { fireUI.SetActive(true); }
             else if (lastMode == WeaponElementalModes.Ice) { iceUI.SetActive(true); }
-          //  FMODUnity.RuntimeManager.PlayOneShot(ChangeWeaponSound, transform.position);
+         
             weaponCanvas.SetActive(true);
             light.gameObject.SetActive(true);
         }
