@@ -112,10 +112,10 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 0.8
+    value: 1
   threshold:
     overrideState: 1
-    value: 1.55
+    value: 0.77
   softKnee:
     overrideState: 1
     value: 0.22
@@ -189,7 +189,7 @@ MonoBehaviour:
     value: 0.11
   quality:
     overrideState: 1
-    value: 2
+    value: 0
 --- !u!114 &114538043008994948
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -324,16 +324,16 @@ MonoBehaviour:
     value: 0
   saturation:
     overrideState: 1
-    value: 5
+    value: 10
   brightness:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 2
   postExposure:
     overrideState: 1
     value: 1
   contrast:
     overrideState: 1
-    value: 0
+    value: -5
   mixerRedOutRedIn:
     overrideState: 0
     value: 100
