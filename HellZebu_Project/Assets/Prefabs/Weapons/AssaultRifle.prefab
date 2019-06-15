@@ -129,7 +129,7 @@ MonoBehaviour:
   timeBetweenShootsAutomatic: 0.15
   timeBetweenShootsSemiutomatic: 1
   playerController: {fileID: 0}
-  specialShootUnlocked: 0
+  specialShootUnlocked: 1
   maxOverheatValue: 200
   shotCost: 8
   coolingSpeed: 10
@@ -179,8 +179,8 @@ MonoBehaviour:
   laserSpecial: {fileID: 0}
   lr0: {fileID: 0}
   lr1: {fileID: 0}
-  rayColor: {r: 0.6132076, g: 0, b: 0.5157231, a: 1}
-  rayOutsideColor: {r: 0.7496679, g: 0, b: 0.8584906, a: 0.63529414}
+  rayColor: {r: 0.59666616, g: 0.28969383, b: 0.6603774, a: 1}
+  rayOutsideColor: {r: 0, g: 0, b: 0, a: 1}
   rayTransparentColor: {r: 0.7647059, g: 0, b: 0.6431373, a: 0}
   alphaLerpValue: 0
   specialShotTime: 1
@@ -218,7 +218,7 @@ MonoBehaviour:
   shootClip: {fileID: 0}
   enableGizmos: 0
   rayColorSpecial: {r: 0.32656023, g: 0.4716981, b: 0, a: 1}
-  rayOutsideColorSpecial: {r: 0.035119217, g: 0.23584908, b: 0.0055624777, a: 1}
+  rayOutsideColorSpecial: {r: 0, g: 0, b: 0, a: 0.84705883}
 --- !u!120 &6899012827553430867
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -1487,7 +1487,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -136.8, y: 43.3}
+  m_AnchoredPosition: {x: -136.80005, y: 43.30005}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8337641873085179705
@@ -1600,7 +1600,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -136.8, y: 43.3}
+  m_AnchoredPosition: {x: -136.80005, y: 43.30005}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8916248693824302531

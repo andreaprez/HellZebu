@@ -938,6 +938,18 @@ PrefabInstance:
       propertyPath: shootClip
       value: 
       objectReference: {fileID: 7400000, guid: 7d01443131b373445997d501246c9dfd, type: 2}
+    - target: {fileID: 1075875575, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
+      propertyPath: rayColorSpecial.r
+      value: 0.24795601
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075875575, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
+      propertyPath: rayColorSpecial.g
+      value: 0.3584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 1075875575, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
+      propertyPath: rayColorSpecial.b
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5031165218383511497, guid: 52bda3ae20214f04ab92dc661b21f4bb,
         type: 3}
       propertyPath: m_Layer

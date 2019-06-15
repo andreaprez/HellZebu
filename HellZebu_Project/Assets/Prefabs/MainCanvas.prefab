@@ -1056,7 +1056,7 @@ MonoBehaviour:
   - 8
   - 8
   - 10
-  - 18
+  - 0.5
   - 6
   - 6
   - 6
@@ -7806,7 +7806,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7826,7 +7826,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: 
 --- !u!111 &4831151116158746716
 Animation:
   m_ObjectHideFlags: 0
@@ -12125,6 +12125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8816063928769823381}
+  - component: {fileID: 701912901}
   m_Layer: 5
   m_Name: Bullet3
   m_TagString: Untagged
@@ -12153,6 +12154,22 @@ RectTransform:
   m_AnchoredPosition: {x: 158, y: 17}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &701912901
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063928769823380}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: bcddfee8f34e00a46a598b5e8a3a629b, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: bcddfee8f34e00a46a598b5e8a3a629b, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &8816063928946777133
 GameObject:
   m_ObjectHideFlags: 0
@@ -12162,6 +12179,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8816063928946777134}
+  - component: {fileID: 1483401347}
   m_Layer: 5
   m_Name: Bullet4
   m_TagString: Untagged
@@ -12190,6 +12208,22 @@ RectTransform:
   m_AnchoredPosition: {x: 197, y: 17}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &1483401347
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063928946777133}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: bcddfee8f34e00a46a598b5e8a3a629b, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: bcddfee8f34e00a46a598b5e8a3a629b, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &8816063929015004892
 GameObject:
   m_ObjectHideFlags: 0
@@ -12463,6 +12497,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8816063929047085504}
+  - component: {fileID: 217566013}
   m_Layer: 5
   m_Name: Bullet5
   m_TagString: Untagged
@@ -12491,6 +12526,22 @@ RectTransform:
   m_AnchoredPosition: {x: 237, y: 17}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &217566013
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063929047085511}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: bcddfee8f34e00a46a598b5e8a3a629b, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: bcddfee8f34e00a46a598b5e8a3a629b, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &8816063929125938305
 GameObject:
   m_ObjectHideFlags: 0
@@ -12598,6 +12649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8816063929224065806}
+  - component: {fileID: 1931562141}
   m_Layer: 5
   m_Name: Bullet1
   m_TagString: Untagged
@@ -12626,6 +12678,22 @@ RectTransform:
   m_AnchoredPosition: {x: 81, y: 17}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &1931562141
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063929224065805}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: bcddfee8f34e00a46a598b5e8a3a629b, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: bcddfee8f34e00a46a598b5e8a3a629b, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &8816063929237022962
 GameObject:
   m_ObjectHideFlags: 0
@@ -12776,8 +12844,8 @@ MonoBehaviour:
     type: 3}
   splashDamage: {fileID: 610543159858797857}
   splashChangeWorld: {fileID: 247240292965895781}
-  maxBullets: 0
-  currentBullets: 0
+  maxBullets: 5
+  currentBullets: 5
   UIBullets:
   - {fileID: 8816063930565358186}
   - {fileID: 8816063929488866319}
@@ -12785,7 +12853,7 @@ MonoBehaviour:
   - {fileID: 8816063929308657796}
   - {fileID: 8816063929911309283}
   bulletRechargeTime: 3
-  bulletRechargeTimer: 0
+  bulletRechargeTimer: 3
   PARAR_EL_PUTO_PAUSE_DE_MIERDA_GRACIAS: 0
   buttons:
   - {fileID: 4453351489425964834}
@@ -12804,7 +12872,7 @@ MonoBehaviour:
   fadeOut: {fileID: 7400000, guid: a9b8b4a19719a0a4e88319806130164a, type: 2}
   fadeIn: {fileID: 7400000, guid: a94814e7fbc9fe845a84cacee476cc9c, type: 2}
   confirmOption: event:/UI (2)/Confirm option/Confirm option
-  rechargeBullet: 
+  rechargeBullet: event:/Weapon/Weapon_Teleport_Reload
   killStreakTime: 2
   killStreakTimer: 0
   pointMultiplier: 1
@@ -14297,6 +14365,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8816063929990559117}
+  - component: {fileID: 88550795}
   m_Layer: 5
   m_Name: Bullet2
   m_TagString: Untagged
@@ -14325,6 +14394,22 @@ RectTransform:
   m_AnchoredPosition: {x: 119, y: 17}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &88550795
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8816063929990559116}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: bcddfee8f34e00a46a598b5e8a3a629b, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: bcddfee8f34e00a46a598b5e8a3a629b, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &8816063930094520133
 GameObject:
   m_ObjectHideFlags: 0

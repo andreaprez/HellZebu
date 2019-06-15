@@ -504,7 +504,7 @@ public class Weapon : MonoBehaviour
         {
             laser.SetActive(true);
 
-            laser.transform.position = transform.position + transform.forward * 10;
+            laser.transform.position = rayShootingPoint.transform.position + transform.forward * 10;
             laser.transform.up = transform.forward;
         }
         else

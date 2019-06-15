@@ -460,7 +460,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -136.8, y: 43.3}
+  m_AnchoredPosition: {x: -136.80005, y: 43.30005}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!64 &1624563585523034255
@@ -1101,7 +1101,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -136.80002, y: 43.300003}
+  m_AnchoredPosition: {x: -136.80005, y: 43.30005}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5399376365185320823
@@ -1205,7 +1205,7 @@ MonoBehaviour:
   timeBetweenShootsAutomatic: 0.5
   timeBetweenShootsSemiutomatic: 1
   playerController: {fileID: 0}
-  specialShootUnlocked: 0
+  specialShootUnlocked: 1
   maxOverheatValue: 110
   shotCost: 20
   coolingSpeed: 5
@@ -1255,8 +1255,8 @@ MonoBehaviour:
   laserSpecial: {fileID: 0}
   lr0: {fileID: 0}
   lr1: {fileID: 0}
-  rayColor: {r: 0.764151, g: 0, b: 0.6427414, a: 1}
-  rayOutsideColor: {r: 0.7496679, g: 0, b: 0.8584906, a: 0.63529414}
+  rayColor: {r: 0.59666616, g: 0.28969383, b: 0.6603774, a: 1}
+  rayOutsideColor: {r: 0, g: 0, b: 0, a: 0.79607844}
   rayTransparentColor: {r: 0.76470596, g: 0, b: 0.6431373, a: 0}
   alphaLerpValue: 0
   specialShotTime: 1
@@ -1815,10 +1815,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4361255463869489859}
     m_Modifications:
-    - target: {fileID: 100000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
-      propertyPath: m_Name
-      value: escopetaLOW
-      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1830,6 +1826,10 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
       propertyPath: m_ReceiveShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
+      propertyPath: m_Name
+      value: escopetaLOW
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6a401a0461eacb746acb2363dd190cf7, type: 3}
       propertyPath: m_LocalPosition.x
