@@ -145,7 +145,7 @@ MonoBehaviour:
   emissiveEyes: {fileID: 0}
   light: {fileID: 2511967424918263267}
   redColor: {r: 0.9056604, g: 0.7087484, b: 0.14951938, a: 1}
-  blueColor: {r: 0.27220392, g: 0.19999997, b: 0.7176471, a: 1}
+  blueColor: {r: 0.25044498, g: 0.47482744, b: 0.7924528, a: 1}
   blueFlash: {r: 0.7122642, g: 0.89357716, b: 1, a: 1}
   redFlash: {r: 1, g: 0.81650627, b: 0.72156864, a: 1}
   shotFlash: {fileID: 4099014662068086600}
@@ -1663,14 +1663,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1075875580}
     m_Modifications:
-    - target: {fileID: 100002, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
-      propertyPath: m_Name
-      value: rifle_low
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.12999998
@@ -1715,6 +1707,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
+      propertyPath: m_Name
+      value: rifle_low
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
@@ -1755,6 +1755,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1766,10 +1770,6 @@ PrefabInstance:
     - target: {fileID: 2300000, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
       propertyPath: m_ReceiveShadows
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}
-      propertyPath: m_Layer
-      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5906511e63c3d1f4aa9f569378d89a3e, type: 3}

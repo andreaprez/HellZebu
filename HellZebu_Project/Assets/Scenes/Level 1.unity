@@ -11054,6 +11054,97 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 263101520}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &263534281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 263534282}
+  - component: {fileID: 263534285}
+  - component: {fileID: 263534284}
+  - component: {fileID: 263534283}
+  m_Layer: 0
+  m_Name: Cube (44)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 5
+  m_StaticEditorFlags: 40
+  m_IsActive: 1
+--- !u!4 &263534282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263534281}
+  m_LocalRotation: {x: -0.0056650005, y: 0.7026737, z: 0.0024124796, w: 0.71148574}
+  m_LocalPosition: {x: -18.58, y: -4.95, z: 0.88}
+  m_LocalScale: {x: 15.557285, y: 1, z: 10.986169}
+  m_Children: []
+  m_Father: {fileID: 1453059457}
+  m_RootOrder: 44
+  m_LocalEulerAnglesHint: {x: -0.656, y: 809.287, z: -0.259}
+--- !u!65 &263534283
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263534281}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &263534284
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263534281}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &263534285
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 263534281}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &263731283 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9227354, guid: e6860fe9b2cd05447982977ddbc1b0a7,
@@ -26697,7 +26788,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 689917182}
   m_LocalRotation: {x: 0.17867382, y: 0.679355, z: -0.17953481, w: 0.6887087}
-  m_LocalPosition: {x: -8.85, y: -7.39, z: 0.98999786}
+  m_LocalPosition: {x: -8.85, y: -7.3, z: 0.98999786}
   m_LocalScale: {x: 15.55728, y: 1, z: 10.2}
   m_Children: []
   m_Father: {fileID: 1453059457}
@@ -42230,7 +42321,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123109864}
   m_LocalRotation: {x: 0.17953528, y: -0.68870676, z: 0.17867328, w: 0.6793571}
-  m_LocalPosition: {x: -28.31, y: -7.38, z: 0.99}
+  m_LocalPosition: {x: -28.44, y: -7.5, z: 0.99}
   m_LocalScale: {x: 15.557267, y: 1, z: 10.7}
   m_Children: []
   m_Father: {fileID: 1453059457}
@@ -54054,6 +54145,7 @@ Transform:
   - {fileID: 1823808972}
   - {fileID: 16804383}
   - {fileID: 1793420073}
+  - {fileID: 263534282}
   m_Father: {fileID: 1642085858}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -80685,7 +80777,7 @@ PrefabInstance:
     - target: {fileID: 2917934466076413477, guid: c75cfeeb74990ec479930fbde66cd8ad,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 4294967287
       objectReference: {fileID: 0}
     - target: {fileID: 2917934466076413477, guid: c75cfeeb74990ec479930fbde66cd8ad,
         type: 3}

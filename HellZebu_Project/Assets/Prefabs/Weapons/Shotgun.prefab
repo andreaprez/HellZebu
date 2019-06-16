@@ -572,20 +572,6 @@ RectTransform:
   m_AnchoredPosition: {x: -136.80005, y: 43.30005}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!64 &1624563585523034255
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3065388565572261128}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: d5470e7c2a4b8244f834d8db83628fd6, type: 3}
 --- !u!54 &3651384091472475989
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -602,6 +588,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &1624563585523034255
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3065388565572261128}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: d5470e7c2a4b8244f834d8db83628fd6, type: 3}
 --- !u!1 &3468244958674292627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,7 +1332,7 @@ MonoBehaviour:
   emissiveEyes: {fileID: 449454127981502613}
   light: {fileID: 3821904223074379156}
   redColor: {r: 0.9056604, g: 0.7087484, b: 0.14951938, a: 1}
-  blueColor: {r: 0.27220392, g: 0.19999997, b: 0.7176471, a: 1}
+  blueColor: {r: 0.25044498, g: 0.47482744, b: 0.7924528, a: 1}
   blueFlash: {r: 0.7122642, g: 0.89357716, b: 1, a: 1}
   redFlash: {r: 1, g: 0.81650627, b: 0.72156864, a: 1}
   shotFlash: {fileID: 5693216433940689719}

@@ -17,6 +17,7 @@ public class Centipede : Enemy
     [SerializeField] private List<HingeJoint> joints;
     [SerializeField] private GameObject changeWorldParticleFire;
     [SerializeField] private GameObject changeWorldParticleIce;
+    [SerializeField] private AutoDestroy autoDestroy;
 
     [HideInInspector] public List<GameObject> weakPoints;
     private bool playerIsInMyWorld;
@@ -120,6 +121,7 @@ public class Centipede : Enemy
                 if (currentWorld == EWorld.FIRE) changeWorldParticleFire.SetActive(false);
                 else changeWorldParticleIce.SetActive(false);
 
+                autoDestroy.enabled = true;
                 this.enabled = false;
                 break;
         }
