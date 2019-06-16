@@ -1454,7 +1454,6 @@ GameObject:
   - component: {fileID: 5695016381212969952}
   - component: {fileID: 5114852854112780470}
   - component: {fileID: 8944928560324416159}
-  - component: {fileID: 6195025359602744144}
   m_Layer: 0
   m_Name: Centipede
   m_TagString: Centipede
@@ -1574,29 +1573,6 @@ MonoBehaviour:
   OverrideAttenuation: 1
   OverrideMinDistance: 50
   OverrideMaxDistance: 200
---- !u!114 &6195025359602744144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6600309243462833948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Enemies/Aparicion centipede
-  PlayEvent: 2
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 20
-  OverrideMaxDistance: 150
 --- !u!1 &8031125201071917547
 GameObject:
   m_ObjectHideFlags: 0
@@ -2330,15 +2306,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90bdb904d32bc5248adb4596f1bdfc4a, type: 3}
---- !u!4 &8801605976544916716 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7356900523372674788, guid: 90bdb904d32bc5248adb4596f1bdfc4a,
-    type: 3}
-  m_PrefabInstance: {fileID: 2034888213770357256}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8801605976544916689 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7356900523372674777, guid: 90bdb904d32bc5248adb4596f1bdfc4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2034888213770357256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8801605976544916716 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7356900523372674788, guid: 90bdb904d32bc5248adb4596f1bdfc4a,
     type: 3}
   m_PrefabInstance: {fileID: 2034888213770357256}
   m_PrefabAsset: {fileID: 0}

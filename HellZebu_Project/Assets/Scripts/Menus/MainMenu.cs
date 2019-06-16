@@ -79,7 +79,11 @@ public class MainMenu : MonoBehaviour
             SceneManager.LoadScene(8);
 
         }
-     
+        if (Input.GetKeyDown(KeyCode.F9))
+        {
+            SceneManager.LoadScene(9);
+        }
+
     }
     public void SetActiveStartButtons(bool active)
     {

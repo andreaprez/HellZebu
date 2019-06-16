@@ -6,7 +6,7 @@ public class sphereButton : MonoBehaviour
 {
     // Start is called before the first frame update
     public bool openDoor;
-    public GameObject door;
+    public GameObject door, trigger;
     public Animation animationComponent;
     void Start()
     {
@@ -25,10 +25,12 @@ public class sphereButton : MonoBehaviour
       
 
     }
-    public void Damage ()
+    public void Damage()
     {
-        if (openDoor)
-         animationComponent.Play();
+        if (openDoor) { 
+            animationComponent.Play();
+        trigger.SetActive(true);
+    }
         else
          door.SetActive(true);
 

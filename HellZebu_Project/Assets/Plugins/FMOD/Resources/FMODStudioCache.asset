@@ -147,12 +147,13 @@ MonoBehaviour:
   - {fileID: 114775461908785894}
   - {fileID: 114901193554515476}
   - {fileID: 114679614726232210}
+  - {fileID: 114921354906897862}
   EditorParameters: []
   MasterBanks:
   - {fileID: 114483218478340282}
   StringsBanks:
   - {fileID: 114184353945194136}
-  stringsBankWriteTime: 636962534846897234
+  stringsBankWriteTime: 636962962085211557
   cacheVersion: 3
 --- !u!114 &114006310594872194
 MonoBehaviour:
@@ -675,11 +676,11 @@ MonoBehaviour:
   Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
     entrega final\Build\Desktop\Master.strings.bank
   SubDir: 
-  lastModified: 636962534846897234
+  lastModified: 636962962085211557
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 6830
+    Value: 6872
   Exists: 1
 --- !u!114 &114198830944471166
 MonoBehaviour:
@@ -1455,11 +1456,11 @@ MonoBehaviour:
   Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
     entrega final\Build\Desktop\Master.bank
   SubDir: 
-  lastModified: 636962534846743460
+  lastModified: 636962962085067699
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 31369984
+    Value: 31373600
   Exists: 1
 --- !u!114 &114491358344867922
 MonoBehaviour:
@@ -3025,6 +3026,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4440
+--- !u!114 &114921354906897862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weapon/ChangeWeapon
+  m_EditorClassIdentifier: 
+  Path: event:/Weapon/ChangeWeapon
+  guid: 891945b5415d97459f8d4b2693ab8b29
+  Banks:
+  - {fileID: 114483218478340282}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 227
 --- !u!114 &114929798445103594
 MonoBehaviour:
   m_ObjectHideFlags: 0

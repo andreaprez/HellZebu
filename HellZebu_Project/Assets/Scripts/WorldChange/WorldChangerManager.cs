@@ -149,7 +149,7 @@ public class WorldChangerManager : MonoBehaviour,DataInterface
         {
             foreach (Transform t in parentObject.GetComponentsInChildren<Transform>())
             {
-                if (t.gameObject.CompareTag("Enemy") || t.gameObject.CompareTag("Centipede"))
+                if (t.gameObject.CompareTag("Enemy"))
                     t.gameObject.layer = LayerMask.NameToLayer(MaskNames.Enemies.ToString());
                 else
                     t.gameObject.layer = LayerMask.NameToLayer(MaskNames.Default.ToString());
