@@ -22,12 +22,12 @@ public class ShotgunSpecialShootTrigger : MonoBehaviour
 
             }
 
-            if (other.transform.transform.parent.tag.Contains("Enemy"))
+           /* if (other.transform.transform.parent.tag.Contains("Enemy"))
             {
                 other.transform.parent.SendMessage("Damage");
             }
             else other.transform.SendMessage("Damage");
-
+            */
 
         }
         else if (other.tag == "EnemyWeakPoint")
