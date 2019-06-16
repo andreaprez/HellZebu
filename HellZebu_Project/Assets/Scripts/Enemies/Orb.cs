@@ -18,6 +18,10 @@ public class Orb : Enemy
     [SerializeField] private float timeToRecover;
     [SerializeField] private float evadeDistance;
     [SerializeField] private GameObject deathParticles;
+    [SerializeField] private GameObject deathDecal01;
+    [SerializeField] private GameObject deathDecal02;
+    [SerializeField] private GameObject deathDecal03;
+    [SerializeField] private LayerMask deathDecalLayer;
 
     private enum State{ PATROL, CHASE, REGROUP, EVADE, DIE};
     [SerializeField] private State currentState;
@@ -234,8 +238,26 @@ public class Orb : Enemy
                 navMeshAgent.acceleration = overshootingAcceleration;
                 if (!timePassedStartsOnlyOnPatrol) countingTimePassed = true;
                 break;
-            case  State.DIE:
+            case State.DIE:
                 Instantiate(deathParticles, transform.position, Quaternion.identity, transform.parent);
+                Ray ray = new Ray(transform.position, -transform.up);
+                RaycastHit rayInfo;
+                if (Physics.Raycast(ray, out rayInfo, 6f, deathDecalLayer.value)) {
+                    int random = Random.Range(0, 4);
+                    switch (random) {
+                        case 0:
+                            break;
+                        case 1:
+                            Instantiate(deathDecal01, rayInfo.point, Quaternion.LookRotation(rayInfo.normal, Random.rotation.eulerAngles), transform.parent);
+                            break;
+                        case 2:
+                            Instantiate(deathDecal02, rayInfo.point, Quaternion.LookRotation(rayInfo.normal, Random.rotation.eulerAngles), transform.parent);
+                            break;
+                        case 3:
+                            Instantiate(deathDecal03, rayInfo.point, Quaternion.LookRotation(rayInfo.normal, Random.rotation.eulerAngles), transform.parent);
+                            break;
+                    }
+                }
                 SetDie(true);
                 break;
         }

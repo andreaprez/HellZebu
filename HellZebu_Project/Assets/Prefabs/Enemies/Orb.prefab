@@ -72,6 +72,15 @@ MonoBehaviour:
   evadeDistance: 10
   deathParticles: {fileID: 8486999805355323893, guid: 04cdc6fcaf17f1e4895fea1379d20ede,
     type: 3}
+  deathDecal01: {fileID: 1188673917822450803, guid: 6e6da166271f8344c8062286672fdfed,
+    type: 3}
+  deathDecal02: {fileID: 1188673917822450803, guid: e34d193582ecf934daa4328e62e2291e,
+    type: 3}
+  deathDecal03: {fileID: 1188673917822450803, guid: cc3a5748eaad4b04bb9b0a1fa486579c,
+    type: 3}
+  deathDecalLayer:
+    serializedVersion: 2
+    m_Bits: 1
   currentState: 0
 --- !u!195 &4666846228424158039
 NavMeshAgent:
