@@ -163,7 +163,7 @@ public class Controller : MonoBehaviour, DataInterface
     void Awake()
     {
         Cursor.lockState = CursorLockMode.Locked;
-
+        Cursor.visible = false;
 
         Instance = this;
 
@@ -503,11 +503,13 @@ public class Controller : MonoBehaviour, DataInterface
     void OnPause()
     {
         Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         pauseOn = true;
     }
     void OffPause()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         pauseOn = false;
     }
 
