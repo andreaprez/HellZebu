@@ -15,6 +15,8 @@ public class Centipede : Enemy
     [SerializeField] private List<Rigidbody> bodyBlocks;
     [SerializeField] private List<Collider> bodyColliders;
     [SerializeField] private List<HingeJoint> joints;
+    [SerializeField] private GameObject changeWorldParticleFire;
+    [SerializeField] private GameObject changeWorldParticleIce;
 
     [HideInInspector] public List<GameObject> weakPoints;
     private bool playerIsInMyWorld;
@@ -41,9 +43,9 @@ public class Centipede : Enemy
 
         if (CheckPlayerIsInMyWorld()) {
             playerIsInMyWorld = true;
-            gameObject.layer = LayerMask.NameToLayer(MaskNames.Enemies.ToString());
+            gameObject.layer = LayerMask.NameToLayer(MaskNames.Default.ToString());
             foreach (Transform t in gameObject.GetComponentsInChildren<Transform>()) {
-                t.gameObject.layer = LayerMask.NameToLayer(MaskNames.Enemies.ToString());
+                t.gameObject.layer = LayerMask.NameToLayer(MaskNames.Default.ToString());
             }
         }
         else {
@@ -68,6 +70,17 @@ public class Centipede : Enemy
                     worldChangeTimer = 0f;
                     changing = true;
                     StartCoroutine("ChangeWorld");
+                    if (currentWorld == EWorld.FIRE) {
+                        changeWorldParticleFire.SetActive(true);
+                        changeWorldParticleFire.transform.position = bodyBlocks[0].transform.position + bodyBlocks[0].transform.forward * 5f;
+                        changeWorldParticleFire.transform.localRotation = bodyBlocks[0].transform.localRotation;
+                    }
+                    else
+                    {
+                        changeWorldParticleIce.SetActive(true);
+                        changeWorldParticleIce.transform.position = bodyBlocks[0].transform.position + bodyBlocks[0].transform.forward * 5f;
+                        changeWorldParticleIce.transform.localRotation = bodyBlocks[0].transform.localRotation;
+                    }
                 }
                 break;
             case State.DIE:
@@ -104,6 +117,9 @@ public class Centipede : Enemy
                     block.velocity = Random.Range(-4f, 4f) * Vector3.one;
                 }
                 StopCoroutine("ChangeWorld");
+                if (currentWorld == EWorld.FIRE) changeWorldParticleFire.SetActive(false);
+                else changeWorldParticleIce.SetActive(false);
+
                 this.enabled = false;
                 break;
         }
@@ -129,16 +145,16 @@ public class Centipede : Enemy
         else bodyBlocks[currentBodyBlock].gameObject.transform.parent = EnemyGlobalBlackboard.iceHiddenParent;
       
         // update layer to hidden
-        if (bodyBlocks[currentBodyBlock].gameObject.layer == LayerMask.NameToLayer(MaskNames.Enemies.ToString())) {
+        if (bodyBlocks[currentBodyBlock].gameObject.layer == LayerMask.NameToLayer(MaskNames.Default.ToString())) {
             bodyBlocks[currentBodyBlock].gameObject.layer = LayerMask.NameToLayer(MaskNames.HideFromCamera.ToString());
             foreach (Transform t in bodyBlocks[currentBodyBlock].gameObject.GetComponentsInChildren<Transform>()) {
                 t.gameObject.layer = LayerMask.NameToLayer(MaskNames.HideFromCamera.ToString());
             }
         }
         else {
-            bodyBlocks[currentBodyBlock].gameObject.layer = LayerMask.NameToLayer(MaskNames.Enemies.ToString());
+            bodyBlocks[currentBodyBlock].gameObject.layer = LayerMask.NameToLayer(MaskNames.Default.ToString());
             foreach (Transform t in bodyBlocks[currentBodyBlock].gameObject.GetComponentsInChildren<Transform>()) {
-                t.gameObject.layer = LayerMask.NameToLayer(MaskNames.Enemies.ToString());
+                t.gameObject.layer = LayerMask.NameToLayer(MaskNames.Default.ToString());
             }
         }
 
@@ -154,11 +170,11 @@ public class Centipede : Enemy
             currentWorld = currentWorld == EWorld.FIRE ? EWorld.ICE : EWorld.FIRE; 
             if (currentWorld == EWorld.FIRE) transform.parent = EnemyGlobalBlackboard.fireHiddenParent;
             else transform.parent = EnemyGlobalBlackboard.iceHiddenParent;
-            if (gameObject.layer == LayerMask.NameToLayer(MaskNames.Enemies.ToString())) {
+            if (gameObject.layer == LayerMask.NameToLayer(MaskNames.Default.ToString())) {
                 gameObject.layer = LayerMask.NameToLayer(MaskNames.HideFromCamera.ToString());
             }
             else {
-                gameObject.layer = LayerMask.NameToLayer(MaskNames.Enemies.ToString());
+                gameObject.layer = LayerMask.NameToLayer(MaskNames.Default.ToString());
             }
             
             currentBodyBlock = 0;
@@ -166,6 +182,7 @@ public class Centipede : Enemy
             foreach (Rigidbody bodyBlock in bodyBlocks) {
                 bodyBlock.gameObject.transform.parent = transform;
             }
+ 
         }
     }
 }
