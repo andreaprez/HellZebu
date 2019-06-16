@@ -30,12 +30,16 @@ public class Weapon : MonoBehaviour
     public Material emissiveMaterial;
     public Texture emissiveTextureRed;
     public Texture emissiveTextureBlue;
+    public GameObject emissiveEyes;
     public Light light;
     public Color redColor;
     public Color blueColor;
     public Color blueFlash;
     public Color redFlash;
     public Light shotFlash;
+    public Animation weaponAnimation;
+    public AnimationClip activateClip;
+    public AnimationClip deactivateClip;
 
     protected GameObject currentAmmo;
 
@@ -421,24 +425,46 @@ public class Weapon : MonoBehaviour
     {
         if (active)
         {
-            meshRenderer.enabled = true;
-            accesory.SetActive(true);
-            if (lastMode == WeaponElementalModes.Fire) { fireUI.SetActive(true); }
-            else if (lastMode == WeaponElementalModes.Ice) { iceUI.SetActive(true); }
-         
-            weaponCanvas.SetActive(true);
-            light.gameObject.SetActive(true);
+            StartCoroutine("ActivateWeapon");
         }
         else
         {
-            accesory.SetActive(false);
-            meshRenderer.enabled = false;
-            fireUI.SetActive(false);
-            iceUI.SetActive(false);
-            weaponCanvas.SetActive(false);
-            light.gameObject.SetActive(false);
+            weaponAnimation.clip = deactivateClip;
+            weaponAnimation.Play();
+            
+            StartCoroutine("DeactivateWeapon");
         }
 
+    }
+
+    public IEnumerator ActivateWeapon()
+    {
+        yield return new WaitForSeconds(0.1f);
+        
+        meshRenderer.enabled = true;
+        if (emissiveEyes != null) emissiveEyes.SetActive(true);
+        accesory.SetActive(true);
+        if (lastMode == WeaponElementalModes.Fire) { fireUI.SetActive(true); }
+        else if (lastMode == WeaponElementalModes.Ice) { iceUI.SetActive(true); }
+         
+        weaponCanvas.SetActive(true);
+        light.gameObject.SetActive(true);
+            
+        weaponAnimation.clip = activateClip;
+        weaponAnimation.Play();
+    }
+
+    public IEnumerator DeactivateWeapon()
+    {
+        yield return  new WaitForSeconds(0.15f);
+        
+        accesory.SetActive(false);
+        meshRenderer.enabled = false;
+        if (emissiveEyes != null) emissiveEyes.SetActive(false);
+        fireUI.SetActive(false);
+        iceUI.SetActive(false);
+        weaponCanvas.SetActive(false);
+        light.gameObject.SetActive(false);
     }
 
     public void ActivateCanvas()

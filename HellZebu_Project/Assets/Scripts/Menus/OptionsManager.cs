@@ -64,7 +64,7 @@ public class OptionsManager : MonoBehaviour
     private void Update()
     {
 
-        colorGrading.postExposure.value = Mathf.Lerp(0.7f, 1.7f, bright.value);
+        colorGrading.postExposure.value = Mathf.Lerp(0.6f, 1.9f, bright.value);
        
       
     }

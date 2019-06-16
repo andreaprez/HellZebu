@@ -26,7 +26,7 @@ public class MainMenu : MonoBehaviour
     {
         FMODUnity.RuntimeManager.PlayOneShot(confirmOption);
 
-        SceneManager.LoadScene("Puzzle_Gorka");
+        SceneManager.LoadScene(1);
     }
     public void ExitGame()
     {

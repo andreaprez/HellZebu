@@ -208,6 +208,8 @@ MonoBehaviour:
   rifleIdle: {fileID: 7400000, guid: 077da8b6b4ed814408072a541497d249, type: 2}
   shotgunRun: {fileID: 7400000, guid: 77c02751dd17505499c11785f3d469f3, type: 2}
   shotgunIdle: {fileID: 7400000, guid: 3fa8cb36ea4897341adc58c5b09cc202, type: 2}
+  changeShotgun: {fileID: 7400000, guid: 6aa30afb6d33ac24f9a5aaa8248c5d13, type: 2}
+  changeRifle: {fileID: 7400000, guid: 4154c727346b69b4dafc8e28edcc8061, type: 2}
   worldChangeTime: 2
   worldChangeTimer: 0
   UIAnimator: {fileID: 0}
@@ -1077,11 +1079,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 309999800696738752}
     m_Modifications:
-    - target: {fileID: 5190084800949043846, guid: 3e653cff85d52334a9bf9fa163eb4f1b,
-        type: 3}
-      propertyPath: m_Name
-      value: Fire
-      objectReference: {fileID: 0}
     - target: {fileID: 5190084800949043847, guid: 3e653cff85d52334a9bf9fa163eb4f1b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1136,6 +1133,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190084800949043846, guid: 3e653cff85d52334a9bf9fa163eb4f1b,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e653cff85d52334a9bf9fa163eb4f1b, type: 3}
@@ -1152,16 +1154,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1465460363577017641}
     m_Modifications:
-    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_Name
-      value: Shotgun 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
     - target: {fileID: 5691480802723718524, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1216,6 +1208,54 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: specialShotgunShootPoint
+      value: 
+      objectReference: {fileID: 1041456404}
+    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: specialShotgunPart
+      value: 
+      objectReference: {fileID: 1844040632092881064, guid: 16d9f2578c121fe4baf07124acaea3ff,
+        type: 3}
+    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: muzzleSpecialPartIce
+      value: 
+      objectReference: {fileID: 2454040419565562408, guid: de63c6f93ea45134d9c9a6d386410931,
+        type: 3}
+    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: muzzleSpecialPartFire
+      value: 
+      objectReference: {fileID: 2454040419565562408, guid: 91e38c07171f87a4585e4792a82e7e2e,
+        type: 3}
+    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1634704126339350965}
+    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: shotgunAnimation
+      value: 
+      objectReference: {fileID: 6342835295507681989}
+    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: shootClip
+      value: 
+      objectReference: {fileID: 7400000, guid: f63fc7e3e7629a343988990c5099d57f, type: 2}
+    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_Name
+      value: Shotgun 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5436471175445029707, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
@@ -1262,44 +1302,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: specialShotgunShootPoint
-      value: 
-      objectReference: {fileID: 1041456404}
-    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: specialShotgunPart
-      value: 
-      objectReference: {fileID: 1844040632092881064, guid: 16d9f2578c121fe4baf07124acaea3ff,
-        type: 3}
-    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: muzzleSpecialPartIce
-      value: 
-      objectReference: {fileID: 2454040419565562408, guid: de63c6f93ea45134d9c9a6d386410931,
-        type: 3}
-    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: muzzleSpecialPartFire
-      value: 
-      objectReference: {fileID: 2454040419565562408, guid: 91e38c07171f87a4585e4792a82e7e2e,
-        type: 3}
-    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: playerController
-      value: 
-      objectReference: {fileID: 1634704126339350965}
-    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: shotgunAnimation
-      value: 
-      objectReference: {fileID: 6342835295507681989}
-    - target: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: shootClip
-      value: 
-      objectReference: {fileID: 7400000, guid: f63fc7e3e7629a343988990c5099d57f, type: 2}
     - target: {fileID: 124701068158120803, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_Layer

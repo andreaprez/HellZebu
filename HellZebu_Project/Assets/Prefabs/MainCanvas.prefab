@@ -12553,7 +12553,6 @@ GameObject:
   - component: {fileID: 8816063929125938306}
   - component: {fileID: 8816063929125938316}
   - component: {fileID: 8816063929125938307}
-  - component: {fileID: 58664840}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -12617,29 +12616,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &58664840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8816063929125938305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Weapon/TeleportReload2D
-  PlayEvent: 11
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1 &8816063929224065805
 GameObject:
   m_ObjectHideFlags: 0
@@ -13031,7 +13007,6 @@ GameObject:
   - component: {fileID: 8816063929308657797}
   - component: {fileID: 8816063929308657799}
   - component: {fileID: 8816063929308657798}
-  - component: {fileID: 567687473}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -13095,29 +13070,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &567687473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8816063929308657796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Weapon/TeleportReload2D
-  PlayEvent: 11
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1 &8816063929356020158
 GameObject:
   m_ObjectHideFlags: 0
@@ -13340,7 +13292,6 @@ GameObject:
   - component: {fileID: 8816063929488866312}
   - component: {fileID: 8816063929488866314}
   - component: {fileID: 8816063929488866313}
-  - component: {fileID: 1538760152}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -13404,29 +13355,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &1538760152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8816063929488866319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Weapon/TeleportReload2D
-  PlayEvent: 11
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1 &8816063929529729997
 GameObject:
   m_ObjectHideFlags: 0
@@ -14116,7 +14044,6 @@ GameObject:
   - component: {fileID: 8816063929911309292}
   - component: {fileID: 8816063929911309294}
   - component: {fileID: 8816063929911309293}
-  - component: {fileID: 721199133}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -14180,29 +14107,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &721199133
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8816063929911309283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Weapon/TeleportReload2D
-  PlayEvent: 11
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1 &8816063929933116540
 GameObject:
   m_ObjectHideFlags: 0
@@ -15025,7 +14929,6 @@ GameObject:
   - component: {fileID: 8816063930565358187}
   - component: {fileID: 8816063930565358165}
   - component: {fileID: 8816063930565358164}
-  - component: {fileID: 1418612095}
   m_Layer: 5
   m_Name: Bullet
   m_TagString: Untagged
@@ -15089,29 +14992,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &1418612095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8816063930565358186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Weapon/TeleportReload2D
-  PlayEvent: 11
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1 &8816063930565635783
 GameObject:
   m_ObjectHideFlags: 0

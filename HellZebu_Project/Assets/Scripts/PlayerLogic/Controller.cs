@@ -400,21 +400,20 @@ public class Controller : MonoBehaviour, DataInterface
             if (activeWeapon != 1)
             {
                 FMODUnity.RuntimeManager.PlayOneShot(ChangeWeaponSound, transform.position);
+                activeWeapon = 1;
+                weaponSlot2.active = false;
+                if (weaponSlot2.currentWeapon != null)
+                {
+    
+                    weaponSlot2.currentWeapon.ChangeWeapon(false);
+                }
+                weaponSlot1.active = true;
+                if (weaponSlot1.currentWeapon != null)
+                {
+    
+                    weaponSlot1.currentWeapon.ChangeWeapon(true);
+                }
             }
-            activeWeapon = 1;
-            weaponSlot2.active = false;
-            if (weaponSlot2.currentWeapon != null)
-            {
-
-                weaponSlot2.currentWeapon.ChangeWeapon(false);
-            }
-            weaponSlot1.active = true;
-            if (weaponSlot1.currentWeapon != null)
-            {
-
-                weaponSlot1.currentWeapon.ChangeWeapon(true);
-            }
-
         }
 
         if (Input.GetKeyDown(InputsManager.Instance.currentInputs.selectWeaponTwo))
@@ -422,18 +421,18 @@ public class Controller : MonoBehaviour, DataInterface
             if (activeWeapon != 2)
             {
                 FMODUnity.RuntimeManager.PlayOneShot(ChangeWeaponSound, transform.position);
-            }
-            activeWeapon = 2;
-            weaponSlot1.active = false;
-            if (weaponSlot1.currentWeapon != null)
-            {
-
-                weaponSlot1.currentWeapon.ChangeWeapon(false);
-            }
-            weaponSlot2.active = true;
-            if (weaponSlot2.currentWeapon != null)
-            {
-                weaponSlot2.currentWeapon.ChangeWeapon(true);
+                activeWeapon = 2;
+                weaponSlot1.active = false;
+                if (weaponSlot1.currentWeapon != null)
+                {
+    
+                    weaponSlot1.currentWeapon.ChangeWeapon(false);
+                }
+                weaponSlot2.active = true;
+                if (weaponSlot2.currentWeapon != null)
+                {
+                    weaponSlot2.currentWeapon.ChangeWeapon(true);
+                }
             }
         }
         if (Input.GetAxis("Mouse ScrollWheel") != 0)
