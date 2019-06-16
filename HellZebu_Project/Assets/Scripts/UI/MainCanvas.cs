@@ -166,7 +166,7 @@ public class MainCanvas : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (!PARAR_EL_PUTO_PAUSE_DE_MIERDA_GRACIAS)
+            if (!menuOpened)
             {
                 menuOpened = !menuOpened;
                 OpenPauseMenu(menuOpened);
@@ -192,6 +192,7 @@ public class MainCanvas : MonoBehaviour
 
         if (open)
         {
+            Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
             SetActivePausePanel(true);
             Time.timeScale = 0;
@@ -200,6 +201,7 @@ public class MainCanvas : MonoBehaviour
         }
         else
         {
+            Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             pausePanel.SetActive(false);
             configPanel.SetActive(false);

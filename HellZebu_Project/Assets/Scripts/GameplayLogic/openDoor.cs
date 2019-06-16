@@ -8,6 +8,7 @@ public class openDoor : MonoBehaviour
     public GameObject door, heart;
     public GameObject [] platforms;
     public Animation myAnimation;
+    public GameObject trigger;
     private bool played = false;
       
     void Start()
@@ -27,6 +28,8 @@ public class openDoor : MonoBehaviour
             {
                 if (!played)
                 {
+                    trigger.SetActive(true);
+                 //   Debug.Log("opening");
                     myAnimation.Play();
                     played = true;               
                 }

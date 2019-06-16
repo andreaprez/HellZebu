@@ -1454,7 +1454,7 @@ GameObject:
   - component: {fileID: 5695016381212969952}
   - component: {fileID: 5114852854112780470}
   - component: {fileID: 8944928560324416159}
-  - component: {fileID: 6195025359602744144}
+  - component: {fileID: 8647986786537941946}
   m_Layer: 0
   m_Name: Centipede
   m_TagString: Centipede
@@ -1550,6 +1550,7 @@ MonoBehaviour:
   - {fileID: 6076626214352209494}
   changeWorldParticleFire: {fileID: 8801605976544916689}
   changeWorldParticleIce: {fileID: 6867363633473525557}
+  autoDestroy: {fileID: 8647986786537941946}
   weakPoints: []
 --- !u!114 &8944928560324416159
 MonoBehaviour:
@@ -1574,29 +1575,19 @@ MonoBehaviour:
   OverrideAttenuation: 1
   OverrideMinDistance: 50
   OverrideMaxDistance: 200
---- !u!114 &6195025359602744144
+--- !u!114 &8647986786537941946
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6600309243462833948}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Script: {fileID: 11500000, guid: 91ba1dd80ec66d344bf71d6fbab3524d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Enemies/Aparicion centipede
-  PlayEvent: 2
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 20
-  OverrideMaxDistance: 150
+  timeToDestroy: 90
 --- !u!1 &8031125201071917547
 GameObject:
   m_ObjectHideFlags: 0

@@ -214,7 +214,7 @@ MonoBehaviour:
   cameraShake: {fileID: 7092818217372664844}
   currentHealth: 5
   invulnerabilityTime: 3
-  healParticle: {fileID: 3434934813124096670}
+  healParticle: {fileID: 993946895621350070}
   deathLava: event:/Player (2)/Death by lava/Death by lava
   deathOrb: event:/Player (2)/Death by enemy/Death by orb
   deathSkullProjectile: event:/Player (2)/Death by enemy/Death by projectile
@@ -227,7 +227,7 @@ MonoBehaviour:
   eventEmiiter: {fileID: 9077948442394933301}
   lerpRecoil: 0
   pauseOn: 0
-  ChangeWeaponSound: 
+  ChangeWeaponSound: event:/Weapon/ChangeWeapon
 --- !u!54 &1200268860659519679
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -297,7 +297,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7335859032749379593}
+  - {fileID: 993946895621349746}
   m_Father: {fileID: 309999800696738752}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -824,13 +824,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf13a74ee1cf4074196e117298343960, type: 3}
---- !u!4 &7335859032749379593 stripped
+--- !u!4 &993946895621349746 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7495398817756541065, guid: bf13a74ee1cf4074196e117298343960,
     type: 3}
   m_PrefabInstance: {fileID: 993946895621349504}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &3434934813124096670 stripped
+--- !u!198 &993946895621350070 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 2477088011150332446, guid: bf13a74ee1cf4074196e117298343960,
     type: 3}
