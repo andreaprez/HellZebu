@@ -27,9 +27,20 @@ public class DemonDialogueManager : MonoBehaviour
             dialogues[currentScene - 1].SetActive(true);
         }
     }
-
+    private void OnLevelWasLoaded(int level)
+    {
+        playerController = GameObject.FindWithTag("Player").GetComponent<Controller>();
+        playerController.movementLocked = true;
+        currentScene = level;
+        if (currentScene > 0)
+        {
+            textFadeAnimation = dialogues[currentScene - 1].GetComponent<Animation>();
+            dialogues[currentScene - 1].SetActive(true);
+        }
+    }
     private void Update()
     {
+       
         if (!finished)
         {
             timer += Time.deltaTime;
