@@ -172,16 +172,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: "event:/Colisi\xF3n Balas/Balas 1.L"
+  Event: event:/Enemies/orbDieBlood
   PlayEvent: 2
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideAttenuation: 1
+  OverrideMinDistance: 5
+  OverrideMaxDistance: 35
 --- !u!114 &2323856481689156909
 MonoBehaviour:
   m_ObjectHideFlags: 0

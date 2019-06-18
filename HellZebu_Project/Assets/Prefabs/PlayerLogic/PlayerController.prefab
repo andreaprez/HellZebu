@@ -120,6 +120,9 @@ GameObject:
   - component: {fileID: 1634704126339350965}
   - component: {fileID: 1200268860659519679}
   - component: {fileID: 9077948442394933301}
+  - component: {fileID: 1660307041506268563}
+  - component: {fileID: 253991816620801269}
+  - component: {fileID: 1823021090915723288}
   m_Layer: 10
   m_Name: PlayerController
   m_TagString: Player
@@ -214,7 +217,7 @@ MonoBehaviour:
   cameraShake: {fileID: 7092818217372664844}
   currentHealth: 5
   invulnerabilityTime: 3
-  healParticle: {fileID: 993946895621350070}
+  healParticle: {fileID: 3434934813124096670}
   deathLava: event:/Player (2)/Death by lava/Death by lava
   deathOrb: event:/Player (2)/Death by enemy/Death by orb
   deathSkullProjectile: event:/Player (2)/Death by enemy/Death by projectile
@@ -224,7 +227,10 @@ MonoBehaviour:
   deathCentipedeCollision: event:/Player (2)/Death by enemy/Death by enemy 1.R
   changeWorld: event:/Player (2)/Change World/Change World
   lifePick: event:/Items/LifePickup2D
-  eventEmiiter: {fileID: 9077948442394933301}
+  eventEmiiter1: {fileID: 9077948442394933301}
+  eventEmitter2: {fileID: 1660307041506268563}
+  eventEmitter3: {fileID: 253991816620801269}
+  eventEmitter4: {fileID: 1823021090915723288}
   lerpRecoil: 0
   pauseOn: 0
   ChangeWeaponSound: event:/Weapon/ChangeWeapon
@@ -259,7 +265,7 @@ MonoBehaviour:
   CollisionTag: 
   Event: event:/Player/Player_Breath
   PlayEvent: 0
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -267,6 +273,75 @@ MonoBehaviour:
   OverrideAttenuation: 1
   OverrideMinDistance: 0.5
   OverrideMaxDistance: 5
+--- !u!114 &1660307041506268563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3067378396679804093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Player/Player_Run 2
+  PlayEvent: 0
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 1
+  OverrideMinDistance: 10
+  OverrideMaxDistance: 11
+--- !u!114 &253991816620801269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3067378396679804093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Player/Jump_On_Concrete_-_Sound_Effect
+  PlayEvent: 0
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &1823021090915723288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3067378396679804093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Player/breathe
+  PlayEvent: 0
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &4448529916583165800
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,7 +372,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 993946895621349746}
+  - {fileID: 7335859032749379593}
   m_Father: {fileID: 309999800696738752}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -824,15 +899,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf13a74ee1cf4074196e117298343960, type: 3}
---- !u!4 &993946895621349746 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7495398817756541065, guid: bf13a74ee1cf4074196e117298343960,
+--- !u!198 &3434934813124096670 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2477088011150332446, guid: bf13a74ee1cf4074196e117298343960,
     type: 3}
   m_PrefabInstance: {fileID: 993946895621349504}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &993946895621350070 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2477088011150332446, guid: bf13a74ee1cf4074196e117298343960,
+--- !u!4 &7335859032749379593 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7495398817756541065, guid: bf13a74ee1cf4074196e117298343960,
     type: 3}
   m_PrefabInstance: {fileID: 993946895621349504}
   m_PrefabAsset: {fileID: 0}
@@ -1077,16 +1152,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 309999800696738752}
     m_Modifications:
-    - target: {fileID: 5190084800949043846, guid: 3e653cff85d52334a9bf9fa163eb4f1b,
-        type: 3}
-      propertyPath: m_Name
-      value: Fire
-      objectReference: {fileID: 0}
-    - target: {fileID: 5190084800949043846, guid: 3e653cff85d52334a9bf9fa163eb4f1b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5190084800949043847, guid: 3e653cff85d52334a9bf9fa163eb4f1b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1142,6 +1207,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5190084800949043846, guid: 3e653cff85d52334a9bf9fa163eb4f1b,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190084800949043846, guid: 3e653cff85d52334a9bf9fa163eb4f1b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e653cff85d52334a9bf9fa163eb4f1b, type: 3}
 --- !u!4 &3123713493892117813 stripped
@@ -1157,16 +1232,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1465460363577017641}
     m_Modifications:
-    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_Name
-      value: Shotgun 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
     - target: {fileID: 5691480802723718524, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1260,6 +1325,16 @@ PrefabInstance:
       propertyPath: shootClip
       value: 
       objectReference: {fileID: 7400000, guid: f63fc7e3e7629a343988990c5099d57f, type: 2}
+    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_Name
+      value: Shotgun 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 5399376365185320823, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_Layer
@@ -1415,12 +1490,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64f5c69e6ff4fb54784d57588993428e, type: 3}
---- !u!4 &3919174323785093048 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5691480802723718524, guid: 64f5c69e6ff4fb54784d57588993428e,
-    type: 3}
-  m_PrefabInstance: {fileID: 8691815248199920324}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &6595786455259011975 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2528620828431249731, guid: 64f5c69e6ff4fb54784d57588993428e,
@@ -1436,6 +1505,12 @@ MonoBehaviour:
 --- !u!111 &6342835295507681989 stripped
 Animation:
   m_CorrespondingSourceObject: {fileID: 2349120829281548289, guid: 64f5c69e6ff4fb54784d57588993428e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8691815248199920324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3919174323785093048 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5691480802723718524, guid: 64f5c69e6ff4fb54784d57588993428e,
     type: 3}
   m_PrefabInstance: {fileID: 8691815248199920324}
   m_PrefabAsset: {fileID: 0}

@@ -148,12 +148,16 @@ MonoBehaviour:
   - {fileID: 114901193554515476}
   - {fileID: 114679614726232210}
   - {fileID: 114921354906897862}
+  - {fileID: 114043282718737104}
+  - {fileID: 114315294031597848}
+  - {fileID: 114246557378911262}
+  - {fileID: 114610375046326516}
   EditorParameters: []
   MasterBanks:
   - {fileID: 114483218478340282}
   StringsBanks:
   - {fileID: 114184353945194136}
-  stringsBankWriteTime: 636962962085211557
+  stringsBankWriteTime: 636964916736556299
   cacheVersion: 3
 --- !u!114 &114006310594872194
 MonoBehaviour:
@@ -247,6 +251,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 279844
+--- !u!114 &114043282718737104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Enemies/orbDieBlood
+  m_EditorClassIdentifier: 
+  Path: event:/Enemies/orbDieBlood
+  guid: 1236761c88cbed4d917d361ff0250094
+  Banks:
+  - {fileID: 114483218478340282}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2320
 --- !u!114 &114045594114540660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -676,11 +703,11 @@ MonoBehaviour:
   Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
     entrega final\Build\Desktop\Master.strings.bank
   SubDir: 
-  lastModified: 636962962085211557
+  lastModified: 636964916736556299
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 6872
+    Value: 7058
   Exists: 1
 --- !u!114 &114198830944471166
 MonoBehaviour:
@@ -774,6 +801,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4414
+--- !u!114 &114246557378911262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/Jump_On_Concrete_-_Sound_Effect
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Jump_On_Concrete_-_Sound_Effect
+  guid: f7765e8087f8094bba33c44935bd4f3d
+  Banks:
+  - {fileID: 114483218478340282}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 250
 --- !u!114 &114261787994021022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1050,6 +1100,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 46500
+--- !u!114 &114315294031597848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/breathe
+  m_EditorClassIdentifier: 
+  Path: event:/Player/breathe
+  guid: bc1f92c14fb96f4fbc3c713f9fad5327
+  Banks:
+  - {fileID: 114483218478340282}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 15200
 --- !u!114 &114316118967635910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1456,11 +1529,11 @@ MonoBehaviour:
   Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
     entrega final\Build\Desktop\Master.bank
   SubDir: 
-  lastModified: 636962962085067699
+  lastModified: 636964916736407507
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 31373600
+    Value: 31881504
   Exists: 1
 --- !u!114 &114491358344867922
 MonoBehaviour:
@@ -1807,6 +1880,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7929
+--- !u!114 &114610375046326516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/breathe2
+  m_EditorClassIdentifier: 
+  Path: event:/Player/breathe2
+  guid: bd222283c4e31e489cefa2686af97548
+  Banks:
+  - {fileID: 114483218478340282}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 15200
 --- !u!114 &114612286304118572
 MonoBehaviour:
   m_ObjectHideFlags: 0
