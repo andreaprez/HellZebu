@@ -93,7 +93,8 @@ public class Controller : MonoBehaviour, DataInterface
     public string changeWorld = "";
     [FMODUnity.EventRef]
     public string lifePick = "";
-    public FMODUnity.StudioEventEmitter eventEmiiter1, eventEmitter2, eventEmitter3, eventEmitter4;
+    public FMODUnity.StudioEventEmitter eventEmiiter1, eventEmitter2, eventEmitter4, eventEmitterSong;
+    public bool songStarted = false;
 
     public bool Vulnerable { get { return vulnerable; } }
 
@@ -201,6 +202,12 @@ public class Controller : MonoBehaviour, DataInterface
 
             if (!movementLocked)
             {
+                if (!songStarted)
+                {
+                    eventEmitterSong.Play();
+                    songStarted = true;
+                }
+               
                 if (currentHealth==1)
                 {
                     if (!eventEmiiter1.IsPlaying())
@@ -329,13 +336,6 @@ public class Controller : MonoBehaviour, DataInterface
         CollisionFlags collisionFlags = characterController.Move(movement);
         if ((collisionFlags & CollisionFlags.Below) != 0)
         {
-            if (onGround == false)
-            {
-                if (!eventEmitter3.IsPlaying())
-                {
-                    eventEmitter3.Play();
-                }
-            }
             onGround = true;
             verticalSpeed = 0.0f;
         }

@@ -121,8 +121,8 @@ GameObject:
   - component: {fileID: 1200268860659519679}
   - component: {fileID: 9077948442394933301}
   - component: {fileID: 1660307041506268563}
-  - component: {fileID: 253991816620801269}
   - component: {fileID: 1823021090915723288}
+  - component: {fileID: 4197701247909550113}
   m_Layer: 10
   m_Name: PlayerController
   m_TagString: Player
@@ -229,8 +229,9 @@ MonoBehaviour:
   lifePick: event:/Items/LifePickup2D
   eventEmiiter1: {fileID: 9077948442394933301}
   eventEmitter2: {fileID: 1660307041506268563}
-  eventEmitter3: {fileID: 253991816620801269}
   eventEmitter4: {fileID: 1823021090915723288}
+  eventEmitterSong: {fileID: 0}
+  songStarted: 0
   lerpRecoil: 0
   pauseOn: 0
   ChangeWeaponSound: event:/Weapon/ChangeWeapon
@@ -296,29 +297,6 @@ MonoBehaviour:
   OverrideAttenuation: 1
   OverrideMinDistance: 10
   OverrideMaxDistance: 11
---- !u!114 &253991816620801269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3067378396679804093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  Event: event:/Player/Jump_On_Concrete_-_Sound_Effect
-  PlayEvent: 0
-  StopEvent: 2
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!114 &1823021090915723288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -333,6 +311,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollisionTag: 
   Event: event:/Player/breathe
+  PlayEvent: 0
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &4197701247909550113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3067378396679804093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Canciones/Royalty Free Thrash Metal Instrumental - Sonic Destruction
+    (Free Download)
   PlayEvent: 0
   StopEvent: 2
   AllowFadeout: 1
@@ -1061,14 +1063,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 41.100098
       objectReference: {fileID: 0}
-    - target: {fileID: 541647921, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 541647923, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
     - target: {fileID: 490008600187366300, guid: 52bda3ae20214f04ab92dc661b21f4bb,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1106,6 +1100,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2023523145127066356, guid: 52bda3ae20214f04ab92dc661b21f4bb,
         type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 541647921, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 541647923, guid: 52bda3ae20214f04ab92dc661b21f4bb, type: 3}
       propertyPath: m_Layer
       value: 14
       objectReference: {fileID: 0}
@@ -1152,6 +1154,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 309999800696738752}
     m_Modifications:
+    - target: {fileID: 5190084800949043846, guid: 3e653cff85d52334a9bf9fa163eb4f1b,
+        type: 3}
+      propertyPath: m_Name
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 5190084800949043846, guid: 3e653cff85d52334a9bf9fa163eb4f1b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5190084800949043847, guid: 3e653cff85d52334a9bf9fa163eb4f1b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1207,16 +1219,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5190084800949043846, guid: 3e653cff85d52334a9bf9fa163eb4f1b,
-        type: 3}
-      propertyPath: m_Name
-      value: Fire
-      objectReference: {fileID: 0}
-    - target: {fileID: 5190084800949043846, guid: 3e653cff85d52334a9bf9fa163eb4f1b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e653cff85d52334a9bf9fa163eb4f1b, type: 3}
 --- !u!4 &3123713493892117813 stripped
@@ -1232,6 +1234,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1465460363577017641}
     m_Modifications:
+    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_Name
+      value: Shotgun 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 5691480802723718524, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1325,16 +1337,6 @@ PrefabInstance:
       propertyPath: shootClip
       value: 
       objectReference: {fileID: 7400000, guid: f63fc7e3e7629a343988990c5099d57f, type: 2}
-    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_Name
-      value: Shotgun 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5691480802723718515, guid: 64f5c69e6ff4fb54784d57588993428e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
     - target: {fileID: 5399376365185320823, guid: 64f5c69e6ff4fb54784d57588993428e,
         type: 3}
       propertyPath: m_Layer

@@ -152,12 +152,16 @@ MonoBehaviour:
   - {fileID: 114315294031597848}
   - {fileID: 114246557378911262}
   - {fileID: 114610375046326516}
+  - {fileID: 114252283405288134}
+  - {fileID: 114175029696968142}
+  - {fileID: 114120490277680638}
+  - {fileID: 114805174413148122}
   EditorParameters: []
   MasterBanks:
   - {fileID: 114483218478340282}
   StringsBanks:
   - {fileID: 114184353945194136}
-  stringsBankWriteTime: 636964916736556299
+  stringsBankWriteTime: 636964992064099080
   cacheVersion: 3
 --- !u!114 &114006310594872194
 MonoBehaviour:
@@ -458,6 +462,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2900
+--- !u!114 &114120490277680638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Canciones/Lunar Ambience PADS SHORT LOOP
+  m_EditorClassIdentifier: 
+  Path: event:/Canciones/Lunar Ambience PADS SHORT LOOP
+  guid: 9c653d63f01ca6439bc599b056e84659
+  Banks:
+  - {fileID: 114483218478340282}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 113777
 --- !u!114 &114125358157685052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,6 +692,31 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 155
+--- !u!114 &114175029696968142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Canciones/Royalty Free Thrash Metal Instrumental - Sonic Destruction
+    (Free Download)
+  m_EditorClassIdentifier: 
+  Path: event:/Canciones/Royalty Free Thrash Metal Instrumental - Sonic Destruction
+    (Free Download)
+  guid: 88f4a5558f61eb47b2b38632947223f3
+  Banks:
+  - {fileID: 114483218478340282}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 227091
 --- !u!114 &114182775607732220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,11 +755,11 @@ MonoBehaviour:
   Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
     entrega final\Build\Desktop\Master.strings.bank
   SubDir: 
-  lastModified: 636964916736556299
+  lastModified: 636964992064099080
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 7058
+    Value: 7396
   Exists: 1
 --- !u!114 &114198830944471166
 MonoBehaviour:
@@ -824,6 +876,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 250
+--- !u!114 &114252283405288134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Canciones/Enmarta - Putrefaction Chamber
+  m_EditorClassIdentifier: 
+  Path: event:/Canciones/Enmarta - Putrefaction Chamber
+  guid: 259a08ff114d2c45862241e31377e242
+  Banks:
+  - {fileID: 114483218478340282}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 567859
 --- !u!114 &114261787994021022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1529,11 +1604,11 @@ MonoBehaviour:
   Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
     entrega final\Build\Desktop\Master.bank
   SubDir: 
-  lastModified: 636964916736407507
+  lastModified: 636964992063945314
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 31881504
+    Value: 46611040
   Exists: 1
 --- !u!114 &114491358344867922
 MonoBehaviour:
@@ -2570,6 +2645,29 @@ MonoBehaviour:
   MinDistance: 10
   MaxDistance: 150
   Length: 175480
+--- !u!114 &114805174413148122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Canciones/Melodic Instrumental Rock  Metal Arrangements 2
+  m_EditorClassIdentifier: 
+  Path: event:/Canciones/Melodic Instrumental Rock  Metal Arrangements 2
+  guid: c2f5bfe62b5f704282f2a111c72f6110
+  Banks:
+  - {fileID: 114483218478340282}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 292362
 --- !u!114 &114813360785387544
 MonoBehaviour:
   m_ObjectHideFlags: 0
