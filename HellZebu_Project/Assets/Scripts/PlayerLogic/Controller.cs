@@ -93,7 +93,8 @@ public class Controller : MonoBehaviour, DataInterface
     public string changeWorld = "";
     [FMODUnity.EventRef]
     public string lifePick = "";
-    public FMODUnity.StudioEventEmitter eventEmiiter;
+    public FMODUnity.StudioEventEmitter eventEmiiter1, eventEmitter2, eventEmitter4, eventEmitterSong;
+    public bool songStarted = false;
 
     public bool Vulnerable { get { return vulnerable; } }
 
@@ -201,18 +202,31 @@ public class Controller : MonoBehaviour, DataInterface
 
             if (!movementLocked)
             {
+                if (!songStarted)
+                {
+                    eventEmitterSong.Play();
+                    songStarted = true;
+                }
+               
                 if (currentHealth==1)
                 {
-                    if (!eventEmiiter.IsPlaying())
+                    if (!eventEmiiter1.IsPlaying())
                     {
-                        eventEmiiter.Play();
+                  
+
+                  
+                        eventEmiiter1.Play();
+                        eventEmitter4.Stop();
+                      
                     }
                 }
                 else
                 {
-                    if (eventEmiiter.IsPlaying())
+                    if (!eventEmitter4.IsPlaying() && !movementLocked)
                     {
-                        eventEmiiter.Stop();
+                        eventEmiiter1.Stop();
+                        eventEmitter4.Play();
+
                     }
                 }
                
@@ -271,6 +285,20 @@ public class Controller : MonoBehaviour, DataInterface
         bool movementAxisZBackwards = Input.GetKey(InputsManager.Instance.currentInputs.moveBackwards);
         bool movementAxisXLeft = Input.GetKey(InputsManager.Instance.currentInputs.moveLeft);
         bool movementAxisXRight = Input.GetKey(InputsManager.Instance.currentInputs.moveRight);
+     
+        if (movementAxisXLeft ||movementAxisXRight||  movementAxisZBackwards || movementAxisZForward)
+        {
+
+            if (!eventEmitter2.IsPlaying())
+            {
+                eventEmitter2.Play();
+            }
+         
+        }
+        else
+        {
+            eventEmitter2.Stop();
+        }
         if (activeWeapon == 1)
         {
             if (movementAxisZForward || movementAxisZBackwards)
@@ -322,7 +350,9 @@ public class Controller : MonoBehaviour, DataInterface
         Ray ray = new Ray(transform.position, -transform.up);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 2.2f))
+        {      
             onGround = true;
+        }
     }
 
     void Dash(ref Vector3 _movement)
