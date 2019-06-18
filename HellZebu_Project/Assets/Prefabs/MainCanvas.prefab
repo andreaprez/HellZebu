@@ -79,6 +79,165 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: x 1
+--- !u!1 &1325341160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1325341161}
+  - component: {fileID: 1325341168}
+  - component: {fileID: 1325341167}
+  - component: {fileID: 1325341166}
+  - component: {fileID: 1325341165}
+  - component: {fileID: 1325341164}
+  - component: {fileID: 1325341163}
+  - component: {fileID: 1325341162}
+  m_Layer: 5
+  m_Name: Scene_02_En (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1325341161
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325341160}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8347728315283800747}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1400, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &1325341168
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325341160}
+  m_CullTransparentMesh: 0
+--- !u!114 &1325341167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325341160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: cb9d8dcb1c711624abcfa0a5c22a2bca, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 50
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!114 &1325341166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325341160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  timer: 0.2
+  fullText: You are actually pretty sick...
+  myText: {fileID: 0}
+--- !u!111 &1325341165
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325341160}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
+  - {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &1325341164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325341160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd8c15c02d1310f4f82f1b6a56579e0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1325341163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325341160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent: event:/VocesEnemigos/Frase 2 (2)
+  timer: 0.1
+--- !u!114 &1325341162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325341160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.1
+  timer: 5.5
+  fullText: But this is impossible
+  myText: {fileID: 0}
 --- !u!1 &1513775736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,6 +1182,7 @@ RectTransform:
   - {fileID: 6712455404482872246}
   - {fileID: 5340637942393700085}
   - {fileID: 8858885072543960213}
+  - {fileID: 1325341161}
   m_Father: {fileID: 8816063929237022974}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1048,19 +1208,23 @@ MonoBehaviour:
   - {fileID: 4662546583204743069}
   - {fileID: 7491070401359078031}
   - {fileID: 4877636558833917506}
-  - {fileID: 996109259864899292}
+  - {fileID: 4039085319063067323}
   - {fileID: 4662546583204743069}
   - {fileID: 5714688275576861482}
   - {fileID: 996109259864899292}
+  - {fileID: 996109259864899292}
+  - {fileID: 1325341160}
   durations:
-  - 8
+  - 9
   - 8
   - 10
   - 0.5
+  - 11.5
   - 6
   - 6
-  - 6
-  - 6
+  - 20
+  - 20
+  - 10
   textFadeIn: {fileID: 7400000, guid: 85cd3d1ff3ba1a545bdca7790bb7bfd4, type: 2}
   textFadeOut: {fileID: 7400000, guid: 54c95101eaa2b684296d3c0f947e0f5d, type: 2}
 --- !u!1 &795200164762095110
@@ -1511,7 +1675,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1400, y: 400}
+  m_SizeDelta: {x: 1400, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4373483431677033174
 CanvasRenderer:
@@ -4164,7 +4328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 292d87b8fd8319b47bb3da179a4ccc54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 0.1
+  delay: 0.08
   timer: 4
   fullText: Exterminate this useless rat!
   myText: {fileID: 0}

@@ -131,6 +131,7 @@ public class MainCanvas : MonoBehaviour
     }
     private void Start()
     {
+        playerScore = ScoreStatic.Instance.playerScore;
         pointMultiplier = 1;
         killStreakTimer = killStreakTime;
         onKillStreak = false;
@@ -542,6 +543,9 @@ public class MainCanvas : MonoBehaviour
 
     public void FadeOut()
     {
+        ScoreStatic.Instance.playerScore = playerScore;
+
+
         fadeAnimation.clip = fadeOut;
         fadeAnimation.Play();
     }

@@ -58,6 +58,8 @@ public class WorldChangerManager : MonoBehaviour,DataInterface
     }
     void Start()
     {
+        crossfireCanvas = GameObject.Find("Crossfire").GetComponent<Crossfire>();
+
         DataManager.savingEvent += OnSave;
         DataManager.loadingEvent += OnLoad;
         worldChangeEvent += OnWorldChange;
@@ -69,7 +71,6 @@ public class WorldChangerManager : MonoBehaviour,DataInterface
         ShowObjets(true, iceLevelHiddenObjects);
 
         levelData = new LevelData();
-
         RenderSettings.fogColor = blue;
         backgroundColorCamera.backgroundColor = blue;
         if (blueLighting != null) {
