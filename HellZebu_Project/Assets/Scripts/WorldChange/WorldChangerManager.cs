@@ -64,7 +64,7 @@ public class WorldChangerManager : MonoBehaviour,DataInterface
         DataManager.loadingEvent += OnLoad;
         worldChangeEvent += OnWorldChange;
         currentWorld = Worlds.Ice;
-        crossfireCanvas.ChangeCrossfire(false);
+        //crossfireCanvas.ChangeCrossfire(false);
         fireLevel.SetActive(false);
         ShowObjets(false, fireLevelHiddenObjects);
         iceLevel.SetActive(true);
@@ -96,7 +96,7 @@ public class WorldChangerManager : MonoBehaviour,DataInterface
             iceLevel.SetActive(true);
             ShowObjets(true, iceLevelHiddenObjects);
             currentWorld = Worlds.Ice;
-            crossfireCanvas.ChangeCrossfire(false);
+            //crossfireCanvas.ChangeCrossfire(false);
             RenderSettings.fogColor = blue;
             backgroundColorCamera.backgroundColor = blue;
             if (blueLighting != null) {
@@ -114,7 +114,7 @@ public class WorldChangerManager : MonoBehaviour,DataInterface
             fireLevel.SetActive(true);
             ShowObjets(true, fireLevelHiddenObjects);
             currentWorld = Worlds.Fire;
-            crossfireCanvas.ChangeCrossfire(true);
+            //crossfireCanvas.ChangeCrossfire(true);
             RenderSettings.fogColor = red;
             backgroundColorCamera.backgroundColor = red;
             if (blueLighting != null) {

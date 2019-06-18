@@ -423,23 +423,23 @@ public class Weapon : MonoBehaviour
     }
     public void ChangeWeapon(bool active)
     {
-        if (active)
-        {
-            StartCoroutine("ActivateWeapon");
-        }
-        else
+        if (!active)
         {
             weaponAnimation.clip = deactivateClip;
             weaponAnimation.Play();
             
             StartCoroutine("DeactivateWeapon");
         }
+        else
+        {
+            StartCoroutine("ActivateWeapon");
+        }
 
     }
 
     public IEnumerator ActivateWeapon()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.15f);
         
         meshRenderer.enabled = true;
         if (emissiveEyes != null) emissiveEyes.SetActive(true);
