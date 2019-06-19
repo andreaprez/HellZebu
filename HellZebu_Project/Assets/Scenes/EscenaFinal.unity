@@ -4425,6 +4425,8 @@ GameObject:
   - component: {fileID: 420058608}
   - component: {fileID: 420058611}
   - component: {fileID: 420058605}
+  - component: {fileID: 420058612}
+  - component: {fileID: 420058613}
   m_Layer: 5
   m_Name: Scene_09_en
   m_TagString: Untagged
@@ -4446,6 +4448,7 @@ RectTransform:
   - {fileID: 603745175}
   - {fileID: 603727177}
   - {fileID: 1545792777}
+  - {fileID: 879996902}
   m_Father: {fileID: 1803877749}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4467,7 +4470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myEvent: event:/VocesEnemigos/FraseFinal
-  timer: 0.1
+  timer: 0.7
 --- !u!114 &420058606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4512,10 +4515,12 @@ MonoBehaviour:
   HighScoreSentence: {fileID: 603727178}
   myScore: {fileID: 603745176}
   highScore: {fileID: 1545792778}
+  surprise: {fileID: 879996903}
   delay: 0.07
-  timer1: 2.5
-  timer2: 11
+  timer1: 3.1
+  timer2: 10.6
   timer3: 12.5
+  timer4: 15
   fullText: 
 --- !u!114 &420058609
 MonoBehaviour:
@@ -4572,9 +4577,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0.07
-  timer: 0.2
+  timer: 0.8
   fullText: I'll let you go this time...
   myText: {fileID: 420058609}
+--- !u!114 &420058612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420058603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/VocesEnemigos/Triumphant Victory
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
+--- !u!114 &420058613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420058603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f2161ce2ed546b4eae04013f4e4aa12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myEvent: event:/VocesEnemigos/Frase 1
+  timer: 14.8
 --- !u!1001 &424589112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6476,7 +6518,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -411}
-  m_SizeDelta: {x: 1400, y: 92.9}
+  m_SizeDelta: {x: 1500, y: 92.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &603745176
 MonoBehaviour:
@@ -6511,9 +6553,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'FINAL SCORE: 000000
-
-'
+  m_Text: 'FINAL SCORE: '
 --- !u!222 &603745177
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9539,6 +9579,85 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e29217808ea18f46aa8488534ec3cf4, type: 3}
+--- !u!1 &879996901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 879996902}
+  - component: {fileID: 879996904}
+  - component: {fileID: 879996903}
+  m_Layer: 5
+  m_Name: Surprise
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &879996902
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879996901}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 420058604}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.00012207031, y: -635.87}
+  m_SizeDelta: {x: 1400, y: 92.9}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &879996903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879996901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: cb9d8dcb1c711624abcfa0a5c22a2bca, type: 3}
+    m_FontSize: 45
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 45
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: I've left a surprise for you...
+--- !u!222 &879996904
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879996901}
+  m_CullTransparentMesh: 0
 --- !u!1001 &897537283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9623,6 +9742,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e29217808ea18f46aa8488534ec3cf4, type: 3}
+--- !u!114 &898258273 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4197701247909550113, guid: b510604231d0f9d4b9bb2228b6ce96a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1853101630}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &901724464 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6160893932761953172, guid: ce8b5c1864f229b4784779a8389272cb,
@@ -17344,7 +17475,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.00012207031, y: -496}
-  m_SizeDelta: {x: 1400, y: 92.9}
+  m_SizeDelta: {x: 1500, y: 92.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1545792778
 MonoBehaviour:
@@ -21632,6 +21763,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerController
       objectReference: {fileID: 0}
+    - target: {fileID: 4197701247909550113, guid: b510604231d0f9d4b9bb2228b6ce96a9,
+        type: 3}
+      propertyPath: Event
+      value: event:/Canciones/Lastscene
+      objectReference: {fileID: 0}
     - target: {fileID: 4632511633824272463, guid: b510604231d0f9d4b9bb2228b6ce96a9,
         type: 3}
       propertyPath: specialShootUnlocked
@@ -21747,6 +21883,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1634704126339350965, guid: b510604231d0f9d4b9bb2228b6ce96a9,
+        type: 3}
+      propertyPath: eventEmitterSong
+      value: 
+      objectReference: {fileID: 898258273}
     - target: {fileID: 9171583288992655598, guid: b510604231d0f9d4b9bb2228b6ce96a9,
         type: 3}
       propertyPath: sharedProfile
@@ -23495,6 +23636,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8816063929237022975, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: rechargeBullet
+      value: event:/Weapon/TeleportReload2D
+      objectReference: {fileID: 0}
+    - target: {fileID: 8816063930565635783, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8010692262258976120, guid: ebc7509cdd32d3a4ead6dcdca5674646,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7649385214093811296, guid: ebc7509cdd32d3a4ead6dcdca5674646,
         type: 3}
       propertyPath: dialogues.Array.size
@@ -23539,21 +23695,6 @@ PrefabInstance:
         type: 3}
       propertyPath: durations.Array.data[9]
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8010692262258976120, guid: ebc7509cdd32d3a4ead6dcdca5674646,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8816063929237022975, guid: ebc7509cdd32d3a4ead6dcdca5674646,
-        type: 3}
-      propertyPath: rechargeBullet
-      value: event:/Weapon/TeleportReload2D
-      objectReference: {fileID: 0}
-    - target: {fileID: 8816063930565635783, guid: ebc7509cdd32d3a4ead6dcdca5674646,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5340637942393700085, guid: ebc7509cdd32d3a4ead6dcdca5674646,
         type: 3}

@@ -6,13 +6,13 @@ using UnityEngine.UI;
 public class LastText : MonoBehaviour
 {
     // Start is called before the first frame update
-    public Text HighScoreSentence, myScore, highScore;
-    public float delay = 0.2f, timer1,timer2,timer3;
+    public Text HighScoreSentence, myScore, highScore, surprise;
+    public float delay = 0.2f, timer1,timer2,timer3,timer4;
     public string fullText;
     private string currentText = "";
    
     private float counter;
-    private bool shown1 = false, shown2 = false, shown3 = false;
+    private bool shown1 = false, shown2 = false, shown3 = false, shown4 = false;
 
     private void Awake()
     {
@@ -27,9 +27,8 @@ public class LastText : MonoBehaviour
         }
         else
         {
-            HighScoreSentence.text = "But your score is even worse than the last time... \n¿ what kind of meaningless fly doesn't improve?";
+            HighScoreSentence.text = "Your score is even worse... \n¿ what kind of meaningless fly doesn't improve?";
        
-
 
         }
 
@@ -38,7 +37,7 @@ public class LastText : MonoBehaviour
         HighScoreSentence.gameObject.SetActive(false);
         myScore.gameObject.SetActive(false);
         highScore.gameObject.SetActive(false);
-
+        surprise.gameObject.SetActive(false);
     }
 
     void Update()
@@ -73,6 +72,17 @@ public class LastText : MonoBehaviour
             highScore.gameObject.SetActive(true);
 
             StartCoroutine(ShowText(highScore));
+
+        }
+        if (counter >= timer4 && !shown4)
+        {
+            shown4 = true;
+            fullText = surprise.text;
+
+            surprise.text = "";
+            surprise.gameObject.SetActive(true);
+
+            StartCoroutine(ShowText(surprise));
 
         }
     }
