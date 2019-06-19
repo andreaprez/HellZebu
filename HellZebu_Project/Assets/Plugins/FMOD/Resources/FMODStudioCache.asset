@@ -156,12 +156,16 @@ MonoBehaviour:
   - {fileID: 114175029696968142}
   - {fileID: 114120490277680638}
   - {fileID: 114805174413148122}
+  - {fileID: 114233564604454720}
+  - {fileID: 114995109947626254}
+  - {fileID: 114741427317228440}
+  - {fileID: 114643236602601518}
   EditorParameters: []
   MasterBanks:
   - {fileID: 114483218478340282}
   StringsBanks:
   - {fileID: 114184353945194136}
-  stringsBankWriteTime: 636964992064099080
+  stringsBankWriteTime: 636965083824751638
   cacheVersion: 3
 --- !u!114 &114006310594872194
 MonoBehaviour:
@@ -755,11 +759,11 @@ MonoBehaviour:
   Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
     entrega final\Build\Desktop\Master.strings.bank
   SubDir: 
-  lastModified: 636964992064099080
+  lastModified: 636965083824751638
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 7396
+    Value: 7694
   Exists: 1
 --- !u!114 &114198830944471166
 MonoBehaviour:
@@ -830,6 +834,31 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 145000
+--- !u!114 &114233564604454720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Canciones/Royalty Free Heavy Metal Instrumental - Game Over (Creative
+    Commons)
+  m_EditorClassIdentifier: 
+  Path: event:/Canciones/Royalty Free Heavy Metal Instrumental - Game Over (Creative
+    Commons)
+  guid: d00dbdc50d8dac4fb5e2e139ff949545
+  Banks:
+  - {fileID: 114483218478340282}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 231084
 --- !u!114 &114238849355876792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1082,7 +1111,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 8000
+  Length: 6900
 --- !u!114 &114302377015030584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1604,11 +1633,11 @@ MonoBehaviour:
   Path: D:\Proyecto GOld\HellZebu_Project\Assets\Audio\SonidoGrupoChicas\Hellzebu
     entrega final\Build\Desktop\Master.bank
   SubDir: 
-  lastModified: 636964992063945314
+  lastModified: 636965083824622347
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 46611040
+    Value: 55097760
   Exists: 1
 --- !u!114 &114491358344867922
 MonoBehaviour:
@@ -2116,6 +2145,29 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2200
+--- !u!114 &114643236602601518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VocesEnemigos/Triumphant Victory
+  m_EditorClassIdentifier: 
+  Path: event:/VocesEnemigos/Triumphant Victory
+  guid: 084287332b394f408538d0979cbcfce8
+  Banks:
+  - {fileID: 114483218478340282}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4750
 --- !u!114 &114668320235303070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2461,6 +2513,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 3350
+--- !u!114 &114741427317228440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Canciones/Lastscene
+  m_EditorClassIdentifier: 
+  Path: event:/Canciones/Lastscene
+  guid: f8f7f50d39881d408ec0269f5ad563b1
+  Banks:
+  - {fileID: 114483218478340282}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 189111
 --- !u!114 &114763873246177014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2759,7 +2834,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 5259
+  Length: 2700
 --- !u!114 &114836940220980642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3427,3 +3502,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5926
+--- !u!114 &114995109947626254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Canciones/Most Epic Battle Music Ever Deadwood by Really Slow Motion
+  m_EditorClassIdentifier: 
+  Path: event:/Canciones/Most Epic Battle Music Ever Deadwood by Really Slow Motion
+  guid: ef409f4ab4bb47498d1228e36335963a
+  Banks:
+  - {fileID: 114483218478340282}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 186711
